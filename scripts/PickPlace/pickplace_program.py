@@ -24,7 +24,6 @@ def get_positions(cmd):
     listener.change_base("vision_ros2_landmark_fixed")
     time.sleep(0.1)
     new_vbase = Modbus.get_base()
-    print(new_vbase)
     listener.change_base("RobotBase")
     time.sleep(0.1)
     if (cmd == "pick"):

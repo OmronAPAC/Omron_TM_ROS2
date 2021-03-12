@@ -98,25 +98,25 @@ class TransformClass():
         vbase_to_pick.header.frame_id = 'vbase'
         vbase_to_pick.header.stamp = rclpy.time.Time().to_msg()
         vbase_to_pick.child_frame_id = 'pick'
-        vbase_to_pick.transform.translation.x = -0.2
-        vbase_to_pick.transform.translation.y = 0.19
+        vbase_to_pick.transform.translation.x = 0.2
+        vbase_to_pick.transform.translation.y = -0.19
         vbase_to_pick.transform.translation.z = 0.0
-        vbase_to_pick.transform.rotation.w = 1.0
+        vbase_to_pick.transform.rotation.w = 0.0
         vbase_to_pick.transform.rotation.x = 0.0
         vbase_to_pick.transform.rotation.y = 0.0
-        vbase_to_pick.transform.rotation.z = 0.0
+        vbase_to_pick.transform.rotation.z = 1.0
 
         vbase_to_place = TransformStamped()
         vbase_to_place.header.frame_id = 'vbase'
         vbase_to_place.header.stamp = rclpy.time.Time().to_msg()
         vbase_to_place.child_frame_id = 'place'
-        vbase_to_place.transform.translation.x = 0.2
-        vbase_to_place.transform.translation.y = 0.19
+        vbase_to_place.transform.translation.x = -0.2
+        vbase_to_place.transform.translation.y = -0.19
         vbase_to_place.transform.translation.z = 0.0
-        vbase_to_place.transform.rotation.w = 1.0
+        vbase_to_place.transform.rotation.w = 0.0
         vbase_to_place.transform.rotation.x = 0.0
         vbase_to_place.transform.rotation.y = 0.0
-        vbase_to_place.transform.rotation.z = 0.0
+        vbase_to_place.transform.rotation.z = 1.0
 
         pick_to_safepick = TransformStamped()
         pick_to_safepick.header.frame_id = 'pick'
