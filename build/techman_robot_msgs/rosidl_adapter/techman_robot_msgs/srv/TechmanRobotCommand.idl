@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from techman_robot_msgs/srv/TechmanRobotCommand.srv
+// generated code does not contain a copyright notice
+
+
+module techman_robot_msgs {
+  module srv {
+    struct TechmanRobotCommand_Request {
+      string command;
+
+      string command_parameter_string;
+    };
+    struct TechmanRobotCommand_Response {
+      boolean is_success;
+    };
+  };
+};

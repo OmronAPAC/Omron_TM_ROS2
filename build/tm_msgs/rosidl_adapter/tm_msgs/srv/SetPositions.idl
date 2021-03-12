@@ -1,0 +1,46 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tm_msgs/srv/SetPositions.srv
+// generated code does not contain a copyright notice
+
+
+module tm_msgs {
+  module srv {
+    module SetPositions_Request_Constants {
+      const int8 PTP_J = 1;
+      const int8 PTP_T = 2;
+      const int8 LINE_T = 4;
+      const int8 CIRC_T = 6;
+      const int8 PLINE_T = 8;
+    };
+    @verbatim (language="comment", text=
+      "motion_type :  PTP_J , PTP_T , LINE_J , LINE_T ," "\n"
+      "               CIRC_J ,CIRC_T , PLINE_J ,PLINE_T" "\n"
+      " More details please refer to the TM_Robot_Expression.pdf Chapter 9.6-9.9")
+    struct SetPositions_Request {
+      int8 motion_type;
+
+      sequence<double> positions;
+
+      @verbatim (language="comment", text=
+        " joint velocity-> max value is Pi -> 3.14 rad/s , line velocity ->m/s")
+      double velocity;
+
+      @verbatim (language="comment", text=
+        " to max speed time in millisecond")
+      double acc_time;
+
+      @verbatim (language="comment", text=
+        " this cannot become 0")
+      int32 blend_percentage;
+
+      @verbatim (language="comment", text=
+        "if false, when it return in position, but not real in position, you should wait few ms")
+      boolean fine_goal;
+    };
+    @verbatim (language="comment", text=
+      " ok :  set motion status")
+    struct SetPositions_Response {
+      boolean ok;
+    };
+  };
+};

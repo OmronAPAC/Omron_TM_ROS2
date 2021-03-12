@@ -1,0 +1,4 @@
+srv/TechmanRobotCommand.idl
+srv/TechmanRobotCommand.srv
+srv/TechmanRobotCommand_Request.msg
+srv/TechmanRobotCommand_Response.msg

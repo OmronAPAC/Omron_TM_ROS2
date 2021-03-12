@@ -1,0 +1,6 @@
+source;share/tm_get_status/hook/pythonpath.ps1
+source;share/tm_get_status/hook/pythonpath.dsv
+source;share/tm_get_status/hook/pythonpath.sh
+source;share/tm_get_status/hook/ament_prefix_path.ps1
+source;share/tm_get_status/hook/ament_prefix_path.dsv
+source;share/tm_get_status/hook/ament_prefix_path.sh

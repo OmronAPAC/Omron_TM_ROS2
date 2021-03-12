@@ -1,0 +1,12 @@
+/home/gy/tmr_ros2/build/tmr_msgs/rosidl_adapter/tmr_msgs:msg/FeedbackState.idl
+/home/gy/tmr_ros2/build/tmr_msgs/rosidl_adapter/tmr_msgs:msg/SvrResponse.idl
+/home/gy/tmr_ros2/build/tmr_msgs/rosidl_adapter/tmr_msgs:msg/SctResponse.idl
+/home/gy/tmr_ros2/build/tmr_msgs/rosidl_adapter/tmr_msgs:msg/StaResponse.idl
+/home/gy/tmr_ros2/build/tmr_msgs/rosidl_adapter/tmr_msgs:srv/ConnectTM.idl
+/home/gy/tmr_ros2/build/tmr_msgs/rosidl_adapter/tmr_msgs:srv/WriteItem.idl
+/home/gy/tmr_ros2/build/tmr_msgs/rosidl_adapter/tmr_msgs:srv/AskItem.idl
+/home/gy/tmr_ros2/build/tmr_msgs/rosidl_adapter/tmr_msgs:srv/SendScript.idl
+/home/gy/tmr_ros2/build/tmr_msgs/rosidl_adapter/tmr_msgs:srv/SetEvent.idl
+/home/gy/tmr_ros2/build/tmr_msgs/rosidl_adapter/tmr_msgs:srv/SetIO.idl
+/home/gy/tmr_ros2/build/tmr_msgs/rosidl_adapter/tmr_msgs:srv/SetPositions.idl
+/home/gy/tmr_ros2/build/tmr_msgs/rosidl_adapter/tmr_msgs:srv/AskSta.idl

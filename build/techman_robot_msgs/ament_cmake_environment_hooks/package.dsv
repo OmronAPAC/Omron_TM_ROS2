@@ -1,0 +1,4 @@
+source;share/techman_robot_msgs/local_setup.bash
+source;share/techman_robot_msgs/local_setup.dsv
+source;share/techman_robot_msgs/local_setup.sh
+source;share/techman_robot_msgs/local_setup.zsh

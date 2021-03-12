@@ -1,0 +1,4 @@
+source;share/tm_driver/local_setup.bash
+source;share/tm_driver/local_setup.dsv
+source;share/tm_driver/local_setup.sh
+source;share/tm_driver/local_setup.zsh

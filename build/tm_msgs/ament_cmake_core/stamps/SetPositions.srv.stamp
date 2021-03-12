@@ -1,0 +1,21 @@
+#motion_type :  PTP_J , PTP_T , LINE_J , LINE_T ,
+#               CIRC_J ,CIRC_T , PLINE_J ,PLINE_T
+# More details please refer to the TM_Robot_Expression.pdf Chapter 9.6-9.9
+int8 PTP_J = 1
+int8 PTP_T = 2
+#int8 LINE_J = 3
+int8 LINE_T = 4
+#int8 CIRC_J = 5
+int8 CIRC_T = 6
+#int8 PLINE_J = 7
+int8 PLINE_T = 8
+
+int8 motion_type
+float64[] positions
+float64 velocity # joint velocity-> max value is Pi -> 3.14 rad/s , line velocity ->m/s
+float64 acc_time # to max speed time in millisecond
+int32 blend_percentage # this cannot become 0
+bool fine_goal #if false, when it return in position, but not real in position, you should wait few ms
+---
+# ok :  set motion status 
+bool ok

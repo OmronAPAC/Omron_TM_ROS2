@@ -1,0 +1,91 @@
+[0.208s] Invoking command in '/home/gy/tmr_ros2/build/tmr_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake /home/gy/tmr_ros2/tmr_description -DCMAKE_INSTALL_PREFIX=/home/gy/tmr_ros2/install/tmr_description
+[2.722s] -- The C compiler identification is GNU 9.3.0
+[4.098s] -- The CXX compiler identification is GNU 9.3.0
+[4.198s] -- Check for working C compiler: /usr/bin/cc
+[4.424s] -- Check for working C compiler: /usr/bin/cc -- works
+[4.455s] -- Detecting C compiler ABI info
+[4.633s] -- Detecting C compiler ABI info - done
+[4.695s] -- Detecting C compile features
+[4.696s] -- Detecting C compile features - done
+[4.706s] -- Check for working CXX compiler: /usr/bin/c++
+[4.881s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[4.885s] -- Detecting CXX compiler ABI info
+[5.080s] -- Detecting CXX compiler ABI info - done
+[5.128s] -- Detecting CXX compile features
+[5.133s] -- Detecting CXX compile features - done
+[5.179s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[5.415s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") 
+[5.415s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.482s] -- Configuring done
+[6.602s] -- Generating done
+[6.608s] -- Build files have been written to: /home/gy/tmr_ros2/build/tmr_description
+[6.639s] Invoked command in '/home/gy/tmr_ros2/build/tmr_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake /home/gy/tmr_ros2/tmr_description -DCMAKE_INSTALL_PREFIX=/home/gy/tmr_ros2/install/tmr_description
+[6.646s] Invoking command in '/home/gy/tmr_ros2/build/tmr_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --build /home/gy/tmr_ros2/build/tmr_description -- -j3 -l3
+[6.753s] Invoked command in '/home/gy/tmr_ros2/build/tmr_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --build /home/gy/tmr_ros2/build/tmr_description -- -j3 -l3
+[6.833s] Invoking command in '/home/gy/tmr_ros2/build/tmr_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --install /home/gy/tmr_ros2/build/tmr_description
+[6.861s] -- Install configuration: ""
+[6.862s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/ament_index/resource_index/package_run_dependencies/tmr_description
+[6.862s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/ament_index/resource_index/parent_prefix_path/tmr_description
+[6.863s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/environment/ament_prefix_path.sh
+[6.863s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/environment/ament_prefix_path.dsv
+[6.863s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/environment/path.sh
+[6.865s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/environment/path.dsv
+[6.865s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/local_setup.bash
+[6.865s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/local_setup.sh
+[6.866s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/local_setup.zsh
+[6.866s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/local_setup.dsv
+[6.868s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/package.dsv
+[6.868s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/ament_index/resource_index/packages/tmr_description
+[6.868s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/cmake/tmr_descriptionConfig.cmake
+[6.868s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/cmake/tmr_descriptionConfig-version.cmake
+[6.868s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/package.xml
+[6.870s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes
+[6.870s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900
+[6.870s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual
+[6.871s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5-900_arm2.mtl
+[6.871s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_ee.obj
+[6.886s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5_base.obj
+[6.895s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_400w_01.stl
+[6.895s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5-900_arm2.obj
+[6.900s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5_base.mtl
+[6.900s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_100w_01.obj
+[6.908s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5-900_arm1.mtl
+[6.908s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_100w_02.obj
+[6.915s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5_base.stl
+[6.915s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_100w_01.mtl
+[6.916s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_400w_01.obj
+[6.932s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_100w_01.stl
+[6.936s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_ee.stl
+[6.943s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5-900_arm2.stl
+[6.944s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_400w_01.mtl
+[6.945s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_100w_02.stl
+[6.947s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5_base_old.obj
+[6.949s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5_base_old.mtl
+[6.950s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_ee.mtl
+[6.951s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5-900_arm1.stl
+[6.957s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_100w_02.mtl
+[6.957s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5-900_arm1.obj
+[6.975s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/collision
+[6.976s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/collision/tm5-900_arm2_c.stl
+[7.008s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/collision/tm5_base_c.stl
+[7.008s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/collision/tmr_ee_c.stl
+[7.008s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/collision/tmr_100w_01_c.stl
+[7.008s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/collision/tm5-900_arm1_c.stl
+[7.009s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/collision/tmr_400w_01_c.stl
+[7.009s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/meshes/tm5-900/collision/tmr_100w_02_c.stl
+[7.010s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/urdf
+[7.010s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/urdf/tm5-900.urdf
+[7.011s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/xacro
+[7.011s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/xacro/macro.inertial.xacro
+[7.011s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/xacro/tm5-900.urdf.xacro
+[7.012s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/xacro/macro.materials.xacro
+[7.012s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/xacro/macro.gazebo.xacro
+[7.012s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/xacro/macro.tm5-900.urdf.xacro
+[7.013s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/xacro/macro.transmission.xacro
+[7.013s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/xacro/gripper
+[7.013s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/xacro/gripper/robotiq_85_gripper.urdf.xacro
+[7.014s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/xacro/gripper/robotiq_85_gripper.xacro
+[7.014s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/xacro/gripper/robotiq_85_gripper_sim_base.urdf.xacro
+[7.014s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/xacro/gripper/robotiq_85_gripper.transmission.xacro
+[7.015s] -- Installing: /home/gy/tmr_ros2/install/tmr_description/share/tmr_description/xacro/gripper/robotiq_2f.urdf.xacro
+[7.042s] Invoked command in '/home/gy/tmr_ros2/build/tmr_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --install /home/gy/tmr_ros2/build/tmr_description
