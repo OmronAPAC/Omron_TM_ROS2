@@ -1,9 +1,5 @@
 import rclpy
-from rclpy.node import Node
-import sys
 import time
-from tm_msgs.msg import *
-from tm_msgs.srv import *
 
 import Transform
 import IO
@@ -14,7 +10,6 @@ import Waiter
 
 """
 TODO:
-    - Change all the class module names
     - Change the access level (private functions and attributes)
 """
 
@@ -35,7 +30,7 @@ def get_positions(cmd):
 
 
 if __name__ == '__main__':
-    rclpy.init(args=sys.argv)
+    rclpy.init()
 
     waiter = Waiter.WaiterClass()
     mover = Move.MoveClass()

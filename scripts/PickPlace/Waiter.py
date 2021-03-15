@@ -1,9 +1,6 @@
 import rclpy
-from rclpy.node import Node
-import sys
 import time
 from tm_msgs.msg import *
-from tm_msgs.srv import *
 
 """
     TODO:

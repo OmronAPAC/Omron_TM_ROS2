@@ -1,8 +1,6 @@
 import rclpy
-import sys
 from tm_msgs.msg import *
 from tm_msgs.srv import *
-import tf2_py
 
 class ScriptClass:
     def __init__(self):
