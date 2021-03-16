@@ -1,0 +1,447 @@
+// To add: what packages are needed
+
+= TM ROS 2 - Developer Guide
+:site-section: DeveloperGuide
+:toc:
+:toclevels: 3
+:toc-title: Table of Contents
+:toc-placement: preamble
+:icons: font
+:sectnums:
+:imagesDir: images
+:librariesDir: ../libraries
+:stylesDir: stylesheets
+:xrefstyle: full
+:experimental:
+:linkattrs:
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:warning-caption: :warning:
+endif::[]
+
+:url-repo: https://github.com/guanyewtan/Omron_TM_ROS2
+:url-ug: https://github.com/guanyewtan/Omron_TM_ROS2
+
+Last updated: `15 March 2021` By: `Tan Guan Yew`(link:https://github.com/guanyewtan[guanyewtan])
+
+
+== Getting Started
+[[prerequisites]]
+=== Prerequisites
+
+
+. **Ubuntu 20.04 LTS (Focal Fossa)**
++
+See link:https://ubuntu.com/download/desktop[Ubuntu] webpage for installation instructions (version 20.04 release).
++
+These packages were tested using Ubuntu Linux OS. Although ROS 2 is officially supported on multiple platforms including Windows OS (experimental), *Ubuntu Linux OS is preferred* since there is greater support for packages on Ubuntu platform. (These packages have not been tested on Windows OS)
+
+. **Robot Operating System 2 (ROS 2) Foxy Fitzroy Release**
++
+Download and installation instructions can be found link:https://docs.ros.org/en/foxy/Installation/Linux-Install-Debians.html[here].
++
+[NOTE]
+Installing via the Ubuntu terminal and debian packages is the most convenient way to install ROS 2.
++
+__Omron_TM_ROS2__ is currently supported on ROS 2 Foxy only.
+[[bookmark]]
++
+This guide assumes you know the basics of using the ROS 2 environment. If you are new to ROS 2, please follow their series of link:http://wiki.ros.org/ROS/Tutorials[tutorials] to get started with using ROS.
++
+~~You will need to complete the `Beginner Level` tutorials at the minimum. As well as the entries, `Running ROS across multiple machines` and `Defining Custom Messages` in the `Intermediate Level` tutorials.~~
+
+. **Python 3**
++
+The python scripts used to run the pick and place program are developed and written in python 3.
++
+[[bookmark]]
+. **TMflow v1.82.3400**
++
+The TM set up instructions here assumes you are using `TMflow v1.82.3400` to set up the listen node (as well as other nodes). The packages are also compatible with TMflow v1.80.5300. Other versions have not been tested.
+
+
+=== Hardware Requirements
+This package assumes a specific hardware configuration in order to work correctly.
+
+. **TM5-900**
++
+This will be the TM robot you will be controlling via this package.
+
+. **Host machine running ROS 2**
++
+This is the (preferably linux) machine that communicates with the TM, via ethernet connection. The ROS 2 packages are run on this machine.
++
+
+. **Robotiq IO Coupling**
++
+The packages were designed using the Robotiq IO coupling wrist attachment to control the gripper via digital IO. More information on the IO coupling can be found link:https://elearning.robotiq.com/course/view.php?id=3&section=5[here].
+
+==== Hardware Overview
+The diagram below gives an overview of how the communications will be configured:
+
+.Overview of communication [[bookmark]]
+image::HardwareConnection.png[]
+
+==== Hardware Connection
+The diagram below shows the port on the TM interface which the ethernet cable is connected to (from the host machine). 
+
+.TM5-900 Interface
+image::TM_Interface.png[]
+
+
+=== Set Up TM
+This package utilises the link:https://github.com/TechmanRobotInc/tmr_ros2[tmr_ros2] packages for the TM drivers to communicate with the robot.
+In order to use this package, your TM must be configured correctly to communicate with the host machine running this ROS 2 package. This configuration will be done via `TMflow`, thus this guide assumes you have basic knowledge on using the `TMflow` software. More information on the TMflow software can be found in Software Manual TMflow SW1.82, 19888-400 RevH.
+
+==== TM Listen/Vision Node Setup
+
+In TMflow, create a flow project, then choose the __Listen__ node, __Vision__ node, and the __Goto__ node
++
+.Project Flow
+image::ProjectFlow.png[]
+
+==== TM System/Network Setup
+. Go to the System/Network setting page and enter the network parameters of the robot
++
+.Network Parameters
+image::NetworkParameters.png[]
+
+. Go to Setting > Connection > Ethernet Slave
++
+Select the Data Table Setting button and check the following boxes (__make sure the Ethernet Slave is DISABLED or you will be unable to change the settings__):
++
+ - [x] Robot_Error
+ - [x] Project_Run
+ - [x] Project_Pause
+ - [x] Safeguard_A
+ - [x] ESTOP
+ - [x] Camera_Light
+ - [x] Error_Code
+ - [x] Joint_Angle
+ - [x] Coord_Robot_Flange
+ - [x] Coord_Robot_Tool
+ - [x] TCP_Force
+ - [x] TCP_Force3D
+ - [x] TCP_Speed
+ - [x] TCP_Speed3D
+ - [x] Joint_Speed
+ - [x] Joint_Torque
+ - [x] Project_Speed
+ - [x] MA_Mode
+ - [x] Robot Light
+ - [x] Ctrl_DO0~DO7
+ - [x] Ctrl_DI0~DI7
+ - [x] Ctrl_AO0
+ - [x] Ctrl_AI0~AI1
+ - [x] END_DO0~DO3
+ - [x] END_DI0~DI2
+ - [x] END_AI0
++
+
+. Set the Data Format to __BINARY__ and press save.
+
+==== TM ROS 2 Driver Setup/Usage
+
+. Enter your ROS 2 workspace and source the ROS2 environment:
++
+```
+source /opt/ros/foxy/setup.bash
+cd <workspace>
+source ./install/setup.bash
+```
+
+. Ensure that TM Robot's operating software (__TMflow__) system/network settings have been set and the __Listen node__ is running (run the project above)
+
+. Run the driver to maintain the connection with TM Robot:
++
+```
+ros2 run tm_driver tm_driver <robot_ip_address>
+```
++
+Example: `ros2 run tm_driver tm_driver 192.168.2.10`, if the <robot_ip_address> is 192.168.2.10
++
+Now, the user can use a __new terminal__ to run each ROS node or command, but don't forget to source the correct setup shell files afteras starting a new terminal!
+
+For more information on the TM Drivers, click link:https://github.com/TechmanRobotInc/tmr_ros2/blob/master/README.md[here].
+
+
+=== Set Up Host Machine
+
+The host machine is used to run the python scripts which use both the TM Drivers and the ROS 2 packages to communicate with the TM robot. Ensure that your machine meets the requirements in <<prerequisites>>.
+
+==== IP Address
+Ensure that the ip address of the host machine and the TM robot(<<TM System/Network Setup>>) have the same subnet. Instructions on how to change the static ip address in Ubuntu 20.04 can be found link:https://www.linuxtechi.com/assign-static-ip-address-ubuntu-20-04-lts/#:~:text=Assign%20Static%20IP%20Address%20on%20Ubuntu%2020.04%20LTS%20Desktop&text=Login%20to%20your%20desktop%20environment,and%20then%20choose%20wired%20settings.&text=In%20the%20next%20window%2C%20Choose,gateway%20and%20DNS%20Server%20IP.[here]
+
+
+==== Host Machine ROS 2 Package Set Up
+Once you have your network set up correctly, you need to set up our ROS 2 package to work correctly in your host machine.
+
+First, make sure you have installed ROS 2 as described in <<prerequisites>>.
+
+. Clone this repository to a directory of your choice with: 
++
+....
+cd <directory>
+git clone https://github.com/guanyewtan/Omron_TM_ROS2
+....
+. Enter the folder with:
++
+....
+cd Omron_TM_ROS2
+....
+. Build this package with:
++
+....
+colcon build
+....
++
+> Depending on your machine, this can take a while to build.
+If you receive a warning saying "no such command", follow the intructions link:https://docs.ros.org/en/foxy/Tutorials/Colcon-Tutorial.html#install-colcon[here].
+
+. After it has built successfully, ensure you source this workspace with:
++
+....
+source /devel/setup.bash
+....
+
+. Run the TM Driver in a __separate__ terminal (<<TM ROS 2 Driver Setup/Usage>>)
++
+....
+ros2 run tm_driver tm_driver <robot_ip_address>
+....
++
+
+. In the main terminal, navigate to the PickPlace directory, and run the script "pickplace_program.py"
++
+....
+cd scripts/PickPlace
+python3 pickplace_program.py
+....
+
+This will run the pick & place program.
+
+[[bookmark]]
+[NOTE] 
+This is a work in progress. As of 16-03-2021, the program can only do a pick and place at fixed locations relative to the vision base, and is tested on a 2 finger gripper that already has the TCP settings set in the TMflow settings. Use at your own risk, the chance of collision is currently __HIGH__.
+
+
+
+////
+== Software Design
+[[architecture]]
+=== Architecture
+An overview of this package architecture is summarised in the diagram below:
+
+.Overview of package
+image::overview.png[]
+
+External devices can communicate with the LD via the ARCL interface. The LD hosts an ARCL server that remote clients can communicate with. This is indicated by the blue `ARCL Server` block in the diagram.
+
+In this case, the host machine will communicate via this ARCL interface. The host machine has three python modules, `Socket Driver`, `Socket Listener` and `Socket Taskmaster`. Each module opens a socket connection to the ARCL server. There are three ROS nodes that the host machines will run, `ARCL API Server`, `LD States Publisher` and `Action Server`. Their relationship with the python modules are illustrated in the diagram. These nodes and sockets will run on the host machine that is directly connected to the LD. These are indicated by the red blocks in the diagram.
+
+`ARCL API Server` and `LD States Publisher` nodes are implemented in the `om_aiv_util` package. `Action Server` node is implemented in the `om_aiv_navigation` package.
+
+With the three ROS nodes, the host machine will provide a ROS interface to allow remote machines to retrieve information from, as well as controlling the LD.
+
+The remote machines are then able to leverage these nodes to communicate with the LD to retrieve information or to control it. These are indicated by the green blocks in the diagram. See <<ld-visualisation-package>> for how this can be implemented.
+
+=== LD States Publisher
+This ROS node is named `ld_states_publisher` during ROS runtime. The code can be found in `om_aiv_util/scripts/ld_states_publisher.py`.
+
+The purpose of this node is to listen for a few standard information that is published by the ARCL server about the LD. It then publishes these information on dedicated topics in the ROS environment.
+
+These information are summarised below:
+
+* `Status`: General message on robot's operations and actions.
+* `StateOfCharge`: Battery percentage
+* `Location`: XY coordinates of LD's position
+* `LocalizationScore`: The health of LD's localization accuracy.
+* `Temperature`: Operation temperature of LD.
+* `ExtendedStatusForHumans`: Additional message to `Status` message
+
+==== ARCL Commands Used
+The publishing of the information above is made possible by a set of ARCL commands. These commands are automatically executed by the ARCL server during operation. This is made possible by configuring the ARCL server to do this. See <<outgoing-arcl, Section 2.3.2, “Set Up ARCL">> on an example of how this can be done.
+
+The ARCL commands configured in ARCL server are:
+
+. Status
+. RangeDeviceGetCurrent
+. GetGoals
+. Odometer
+. ApplicationFaultQuery
+
+For information on what each of these commands do and how it works, please see the ARCL Reference Guide for detailed explanation.
+
+[NOTE]
+====
+__RangeDeviceGetCurrent__ is not documented in the ARCL Reference Guide. This command outputs the laser scan data of the specified laser device. 
+
+This command works in the following format: `RangeDeviceGetCurrent [laser-device-name]`
+
+Where you should substitute [laser-device-name] field, including the `[]`, with the idetifying name of the laser device you want the data from. The output data are pairs of X-Y coordinates that represents the scan points in the world coordinate frame of the LD.
+
+So an output with 5 laser points will look like this: `X1 Y1 X2 Y2 X3 Y3 X4 Y4 X5 Y5`
+
+For example in this package, __RangeDeviceGetCurrent Laser_1__ is used. The __Laser_1__ refers to the primary laser device used for mapping by LD. Specifying another laser device name will show the data for that device instead (eg. Laser_2).
+
+Use `MobilePlanner` software to see what laser devices are installed in the LD and what their names are.
+====
+
+=== ARCL API Server
+This ROS service node is named `arcl_api_server` during ROS runtime. The code can be found in `om_aiv_util/scripts/arcl_api_server.py`.
+
+The purpose of this service node is to allow other ROS nodes to requests for information of a ARCL command and waits for the response. Essentially this allows any ROS nodes to post a ARCL command to the ARCL server and retrieves the response via this service node without having to have access to LD directly.
+
+This service node supports every single ARCL commands.
+
+=== Action Server
+This is a ROS action node, named `action_servers` during ROS runtime.
+The code can be found in `om_aiv_navigation/scripts/action_servers.py`.
+
+The purpose of this action node is similar to `ARCL API Server`. However, the key difference here is that is supports the publishing of feedback during the execution of a ARCL command. This is useful in instances where you need to execute a ARCL command that will last for a significant duration. 
+
+For example, executing a `goto` ARCL command to move the LD to a specified location. The LD will take time to reach the goal. During this time ARCL server will continuously post messages regarding the status of this command. `Action Server` leverages this and informs callers of this action server about these status messages.
+
+[[ld-visualisation-package]]
+=== LD Visualisation Package
+The `LD Visualisation` package illustrates how a remote machine can communicate with the host machine's ROS master in order to talk to the LD to retrieve information from it or control it.
+
+`LD Visualisation` serves as an example as to how you can leverage the `ARCL API Server`, `LD States Publisher` and `Action Server` nodes to have basic interaction with the LD through ROS. 
+
+To understand how `LD Visualisation` is structured with the entire ROS package and communicates with LD, see <<architecture>>.
+
+`LD Visualisation` has four nodes, they are summarised as below:
+
+[cols="1,1a", options="header"]
+.LD Visualisation nodes
+|===
+|**Node name**
+|**Description**
+
+|joints_publisher
+|
+This node is responsible for subscribing to the topic that publishes current location of the LD.
+
+Using this information, it updates the position of LD shown on RVIZ.
+
+|goals_marker
+|
+This node is responsible for subscribing to the topic that publishes the name of goals that LD is tracking.
+
+Using these goal names, it then requests for the coordinates of these goal points using `ARCL API Server`. These coordinates are used to visualise these goals on RVIZ.
+
+|data_points_marker
+|
+This node is responsible for subscribing to the topic that publishes the coordinate of laser scan points.
+
+Using these information, it publishes marker points on RVIZ to visualise every single scanned points.
+
+Additionally, it also reads a `.map` created by the `MobilePlanner` software. This `.map` file contains all static map laser scan data points as well as forbidden areas. These information are all read by this node to be visualised on RVIZ. This is what makes the displaying of the map possible.
+
+**This map file should exist on the remote machine running `LD Visualisation`.**
+
+See <<map-loading-reading>> to understand how to load a map onto the remote machine.
+
+|goto_point
+|
+This node is responsible for subscribing to the topic that publishes the position of the `2D Estimate Pose` tool in RVIZ.
+
+Using this information, it sends an appropriate request to `Action Server` to request the LD to move to the specified position. During this motion, any feedback and result by the ARCL server is then published on the `Action Server` sub-topics.
+
+This node essentially allows users to move the LD using RVIZ to any valid location on the RVIZ map.
+
+|===
+
+== Implementation
+[[map-loading-reading]]
+=== Map Loading and Reading
+ARCL unfortunately does not provide an interface to retrieve every single map data point as well as other map objects information from the LD.
+
+These information are stored in the `.map` file when you use `MobilePlanner` to scan a new map environment. The `ld_visualisation` package leverages this `.map` file to read these information display on RVIZ accordingly.
+
+As it currently stands, a copy of the `.map` file must be retrieved from LD via `MobilePlanner`, placed in the `ld_visualisation/map` directory and renamed to `data.map`. This `.map` file is read by `data_points_marker` node during ROS runtime to display map information on RVIZ.
+
+Any other `.map` files in this directory will be ignored.
+
+The name of this `.map` file can be configured as a ROS param. `LD Visualisation` ROS params can be found in `ld_visualisation/param/vis_param.yaml`
+
+With this implementation it means that any changes to the `.map` file on LD can be reflected in RVIZ only by transferring the entire new `.map` file to our package and restarting the `LD Visualisation` nodes. **This is a hard restriction from LD software.** Additional support has to be provided by the LD software team before a more user friendly and convenient solution can be reached.
+
+=== Forbidden Areas Information Format
+This section concerns how the forbidden areas information are stored in the `.map` file. The format is not so straightforward and hence I feel the need to include this section.
+
+In the `.map` file, a forbidden area's information is encapsulated as a single line like so:
+
+....
+Cairn: ForbiddenArea 0 0 180.000000 "" ICON "FA1" -18561 -13725 -15055 -7739
+....
+
+* `ForbiddenArea` indicates that this line is information about a forbidden area.
+* `180.000000` indicates the heading of this forbidden area.
+* `FA1` indicates the name given to this forbidden area during creation.
+* All other fields except for the last 4 numbers are irrelevant (As far as I know, except maybe the description field).
+
+Now this is where it gets interesting.
+
+Intuitively, a rectangle can be represented with two sets of XY coordinates that are two opposing corners of the said rectangle. This is also how it works in `MobilePlanner`. You give the coordinates of two opposing corners when drawing in `MobilePlanner`.
+
+So, `-18561 -13725 -15055 -7739` must represent `X1 Y1 X2 Y2` which are the two opposing corners right?
+
+**Wrong!**
+
+In fact, if you compare the values here with the values you used to create the forbbiden area in `MobilePlanner`, they can be entirely different once you give a heading that is > 0.
+
+**Turns out, the coordinates in the `.map` file are the polar coordinates transformation from the actual forbidden area.**
+
+I'll illustrate with an example. Suppose you have an area defined with heading `90` degree and location denoted by two corners with the coordinates `6 0` and `4 2`, in the form of `X Y`. The centre of this area is thus `5 1`.
+
+The `.map` file (transformed area) is polar coordinate transformation of the above coordinates. That means that the centre of the transformed area (radial coordinate), joined to the pole, known as pole axis is rotated by `90` degrees in the counter clockwise direction. The centre of this new transformed area is thus `-1 5`
+
+As a result, the new coordinates of the respective corners will be `0 4` and `-2 6`. The line in `.map` file should be shown as:
+
+....
+Cairn: ForbiddenArea 0 0 90.000000 "" ICON "FA1" 0 4 -2 6
+....
+
+You may wish to experiment by drawing some simple forbidden areas on `MobilePlanner` and then drawing the coordinates on a 2D grid to understand what is going on here.
+
+I'm not exactly sure why the `MobilePlanner` software team decided to do this way instead of __using Cartesian coordinates throughout__. It could be for calculation optimisation or to work with some other areas of their code. I hope this is the case...
+
+== Examples
+=== ROS Action: goto Goal
+There are two example codes, `om_aiv_navigation/scripts/goto_goal2_action.py` and `om_aiv_navigation/scripts/goto_goal3_action.py`.
+
+These code files serves as an example as to how you can leverage the ROS Action servers that came with this package.
+
+The example code simply performs the `goto` ARCL command with `Goal2` and `Goal3` as the arguments. This is get the LD to move to `Goal2` and `Goal3` on the map respectively. During these operations, the feedback and result messages will be published in ROS topics.
+
+[NOTE]
+You need to have two goals named `Goal2` and `Goal3` in your LD map for these examples to work.
+
+. First, ensure your host machine, ROS master is up and running.
+. Run `ld_visualisation` package to see the movement of your LD. To do this:
++
+....
+roslaunch ld_visualisation display.launch
+....
+. In 2 separate terminal with the workspace sourced, run the following commands, each command in each terminal:
++
+....
+rostopic echo /action_servers/feedback
+rostopic echo /action_servers/result
+....
+This will show you the feedback message during the operation and the result message when the operation has completed.
+. In a separate terminal with the workspace sourced, run:
++
+....
+rosrun om_aiv_navigation goto_goal2_action.py 
+....
+This will move your LD to `Goal2` on your map. At the same time you should see the `/action_servers/feedback` topic containing messages about this operation. Once the operation has completed, you should see  the result message in `/action_servers/result` topic.
+. Next, try moving LD to `Goal3` with:
++
+.... 
+rosrun om_aiv_navigation goto_goal3_action.py 
+.... 
+You should see similar messages just like `Goal2`.
+////
