@@ -45,21 +45,24 @@ Download and installation instructions can be found link:https://docs.ros.org/en
 Installing via the Ubuntu terminal and debian packages is the most convenient way to install ROS 2.
 +
 __Omron_TM_ROS2__ is currently supported on ROS 2 Foxy only.
-[[bookmark]]
 +
-This guide assumes you know the basics of using the ROS 2 environment. If you are new to ROS 2, please follow their series of link:http://wiki.ros.org/ROS/Tutorials[tutorials] to get started with using ROS.
+This guide assumes you know the basics of using the ROS 2 environment. If you are new to ROS 2, please follow their series of link:https://docs.ros.org/en/foxy/Tutorials.html[tutorials] to get started with using ROS 2.
 +
-~~You will need to complete the `Beginner Level` tutorials at the minimum. As well as the entries, `Running ROS across multiple machines` and `Defining Custom Messages` in the `Intermediate Level` tutorials.~~
+You will need to complete at least the `Beginner Level` tutorials. 
 
 . **Python 3**
 +
-The python scripts used to run the pick and place program are developed and written in python 3.
+The python scripts and Classes used to run the pick and place program are developed and written in link:https://www.python.org/downloads/release/python-385/[Python 3.8.5].
 +
-[[bookmark]]
+Information on python Classes can be found link:https://docs.python.org/3/tutorial/classes.html[here].
+
 . **TMflow v1.82.3400**
 +
 The TM set up instructions here assumes you are using `TMflow v1.82.3400` to set up the listen node (as well as other nodes). The packages are also compatible with TMflow v1.80.5300. Other versions have not been tested.
 
+. **Pymodbus**
++
+Modbus communication is used alongside the TM drivers to obtain robot parameters (such as base coordinates), and is also capable of controlling many of the TM robot's features. Documenttion for Pymodbus can be found link:https://pymodbus.readthedocs.io/en/latest/readme.html[here].
 
 === Hardware Requirements
 This package assumes a specific hardware configuration in order to work correctly.
@@ -96,18 +99,17 @@ In order to use this package, your TM must be configured correctly to communicat
 
 ==== TM Listen/Vision Node Setup
 
-In TMflow, create a flow project, then choose the __Listen__ node, __Vision__ node, and the __Goto__ node
-+
+In TMflow, create a flow project, then choose the __Listen__ node, __Vision__ node, and the __Goto__ node.
+
 .Project Flow
 image::ProjectFlow.png[]
 
 ==== TM System/Network Setup
-. Go to the System/Network setting page and enter the network parameters of the robot
+. Go to System -> Network setting page and enter the network parameters of the robot
 +
 .Network Parameters
 image::NetworkParameters.png[]
-
-. Go to Setting > Connection > Ethernet Slave
+. Go to Setting -> Connection -> Ethernet Slave
 +
 Select the Data Table Setting button and check the following boxes (__make sure the Ethernet Slave is DISABLED or you will be unable to change the settings__):
 +
@@ -140,6 +142,14 @@ Select the Data Table Setting button and check the following boxes (__make sure 
 +
 
 . Set the Data Format to __BINARY__ and press save.
+
+==== TM Modbus Setup
+. Go to Setting -> Connection -> Modbus
++
+Ensure the TCP Modbus Slave is __ENABLED__
++
+.Modbus
+image::Modbus.png[]
 
 ==== TM ROS 2 Driver Setup/Usage
 

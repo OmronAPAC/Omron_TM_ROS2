@@ -4,12 +4,6 @@ from pymodbus.payload import BinaryPayloadDecoder
 import rclpy
 import time
 
-"""
-TO DO:
-    
-NOTE:
-    - rotz converted to +-180 degrees
-"""
 
 class ModbusClass:
     def __init__(self, ip = '192.168.2.10'):

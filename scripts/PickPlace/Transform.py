@@ -8,8 +8,7 @@ from math import radians
 TO DO:
     - Add ability to input pick and place coordinates
     - Change the private and public methods
-NOTE:
-    -x translate from vbase to pick/place is flipped
+    - Find libraries for the e2q and q2e
 """
 
 def euler_from_quaternion(x, y, z, rw, rx, ry, rz):
