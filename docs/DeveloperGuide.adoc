@@ -275,7 +275,7 @@ python3 pickplace_program.py
 This will run the pick & place program.
 +
 [[bookmark]]
-[NOTE] 
+[WARNING] 
 These packages are a work in progress. As of 17-03-2021, the program can only do a pick and place at fixed locations relative to the vision base, and is tested on a 2 finger gripper that already has the TCP settings set in the TMflow settings. Use at your own risk, the chance of collision is currently __HIGH__.
 
 ////
