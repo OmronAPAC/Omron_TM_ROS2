@@ -1,5 +1,6 @@
 // To add: what packages are needed
 
+
 = TM ROS 2 - Developer Guide
 :site-section: DeveloperGuide
 :toc:
@@ -108,7 +109,7 @@ image::ProjectFlow.png[]
 . Go to System -> Network setting page and enter the network parameters of the robot
 +
 .Network Parameters
-image::NetworkParameters.png[]
+image::NetworkSetup.png[]
 . Go to Setting -> Connection -> Ethernet Slave
 +
 Select the Data Table Setting button and check the following boxes (__make sure the Ethernet Slave is DISABLED or you will be unable to change the settings__):
@@ -151,29 +152,6 @@ Ensure the TCP Modbus Slave is __ENABLED__
 .Modbus
 image::Modbus.png[]
 
-==== TM ROS 2 Driver Setup/Usage
-
-. Enter your ROS 2 workspace and source the ROS2 environment:
-+
-```
-source /opt/ros/foxy/setup.bash
-cd <workspace>
-source ./install/setup.bash
-```
-
-. Ensure that TM Robot's operating software (__TMflow__) system/network settings have been set and the __Listen node__ is running (run the project above)
-
-. Run the driver to maintain the connection with TM Robot:
-+
-```
-ros2 run tm_driver tm_driver <robot_ip_address>
-```
-+
-Example: `ros2 run tm_driver tm_driver 192.168.2.10`, if the <robot_ip_address> is 192.168.2.10
-+
-Now, the user can use a __new terminal__ to run each ROS node or command, but don't forget to source the correct setup shell files afteras starting a new terminal!
-
-For more information on the TM Drivers, click link:https://github.com/TechmanRobotInc/tmr_ros2/blob/master/README.md[here].
 
 
 === Set Up Host Machine
@@ -209,13 +187,78 @@ colcon build
 > Depending on your machine, this can take a while to build.
 If you receive a warning saying "no such command", follow the intructions link:https://docs.ros.org/en/foxy/Tutorials/Colcon-Tutorial.html#install-colcon[here].
 
-. After it has built successfully, ensure you source this workspace with:
-+
-....
-source /devel/setup.bash
-....
+==== TM ROS 2 Driver Setup/Usage
 
-. Run the TM Driver in a __separate__ terminal (<<TM ROS 2 Driver Setup/Usage>>)
+. Enter your ROS 2 workspace and source the ROS2 environment:
++
+```
+source /opt/ros/foxy/setup.bash
+cd <workspace>
+source ./install/setup.bash
+```
+
+. Ensure that TM Robot's operating software (__TMflow__) system/network settings have been set and the __Listen node__ is running (run the project above)
+
+. Run the driver to maintain the connection with TM Robot:
++
+```
+ros2 run tm_driver tm_driver <robot_ip_address>
+```
++
+Example: `ros2 run tm_driver tm_driver 192.168.2.10`, if the <robot_ip_address> is 192.168.2.10
++
+Now, the user can use a __new terminal__ to run each ROS node or command, but don't forget to source the correct setup shell files afteras starting a new terminal!
++
+For more information on the TM Drivers, click link:https://github.com/TechmanRobotInc/tmr_ros2/blob/master/README.md[here].
+
+
+
+== Software Design
+[[architecture]]
+=== Architecture
+An overview of this package architecture is summarised in the diagram below:
+
+.Overview of package
+image::SoftwareOverview.png[]
+
+==== Socket TCPlistener
+Users can establish a socket TCPlistener in the listen node to connect to external device and communicate based on the packet format.
+
+All features available in TM ROBOT Function can be operated in the listen node. For more information on the listen node, please refer to page 181 of the TM Expression Editor and Listen Node Reference Guide.
+
+The TM Driver utilises TMSCT and TMSTA communication packages to send external scripts and obtain status or properties of the TM respectively. Below is an example of how the TM Driver uses these 2 communication packages to communicate through the Socket TCPlistener:
+
+. TM Driver sends a PTP (point-to-point) movement command via a ROS2 service client using TMSCT packages to the TM Robot. When the command has been successfully sent, an acknowledgement is sent back to the host machine.
+
+. A queue tag is sent via TMSCT communication packages and its status monitored using TMSTA, to check if a motion command has been completed.
+
+==== Modbus
+Users can use Modbus Client to read or write the parameters and save them in the robot register, such as position, posture and IO status. Users can program with the obtained parameters or monitor the status of robot. TM Robot provides two protocol versions of Modbus: Modbus TCP and Modbus RTU for users to get data from the external Modbus device or robot register, but TCP is being used for these packages.
+
+.Modbus Protocol
+image::ModbusProtocol.png[]
+
+There are limitations to the capabilities of the TM Drivers, which is why Modbus is being used to send and receive information unobtainable by the drivers, such as getting the coordinates of the current base in the project flow or starting the project from outside the listen node.
+
+The pymodbus libraries are used to communicate with the modbus servers.
+
+=== Class Diagram
+
+==== Move Class
+
+==== IO Class
+
+==== Transform Class
+
+==== Script Class
+
+==== Waiter Class
+
+==== Modbus Class
+
+
+=== Implementation Class
+. Run the TM Driver in a __separate__ terminal (<<TM ROS 2 Driver Setup/Usage>>) to set up communication between the host machine and the TM robot.
 +
 ....
 ros2 run tm_driver tm_driver <robot_ip_address>
@@ -228,24 +271,14 @@ ros2 run tm_driver tm_driver <robot_ip_address>
 cd scripts/PickPlace
 python3 pickplace_program.py
 ....
-
++
 This will run the pick & place program.
-
++
 [[bookmark]]
 [NOTE] 
-This is a work in progress. As of 16-03-2021, the program can only do a pick and place at fixed locations relative to the vision base, and is tested on a 2 finger gripper that already has the TCP settings set in the TMflow settings. Use at your own risk, the chance of collision is currently __HIGH__.
-
-
+These packages are a work in progress. As of 17-03-2021, the program can only do a pick and place at fixed locations relative to the vision base, and is tested on a 2 finger gripper that already has the TCP settings set in the TMflow settings. Use at your own risk, the chance of collision is currently __HIGH__.
 
 ////
-== Software Design
-[[architecture]]
-=== Architecture
-An overview of this package architecture is summarised in the diagram below:
-
-.Overview of package
-image::overview.png[]
-
 External devices can communicate with the LD via the ARCL interface. The LD hosts an ARCL server that remote clients can communicate with. This is indicated by the blue `ARCL Server` block in the diagram.
 
 In this case, the host machine will communicate via this ARCL interface. The host machine has three python modules, `Socket Driver`, `Socket Listener` and `Socket Taskmaster`. Each module opens a socket connection to the ARCL server. There are three ROS nodes that the host machines will run, `ARCL API Server`, `LD States Publisher` and `Action Server`. Their relationship with the python modules are illustrated in the diagram. These nodes and sockets will run on the host machine that is directly connected to the LD. These are indicated by the red blocks in the diagram.
