@@ -224,7 +224,7 @@ image::SoftwareOverview.png[]
 ==== Socket TCPlistener
 Users can establish a socket TCPlistener in the listen node to connect to external device and communicate based on the packet format.
 
-All features available in TM ROBOT Function can be operated in the listen node. For more information on the listen node, please refer to page 181 of the TM Expression Editor and Listen Node Reference Guide.
+All features available in TM ROBOT Function can be operated in the listen node. For more information on the listen node, please refer to page 181 of the __TM Expression Editor and Listen Node Reference Guide__.
 
 The TM Driver utilises TMSCT and TMSTA communication packages to send external scripts and obtain status or properties of the TM respectively. Below is an example of how the TM Driver uses these 2 communication packages to communicate through the Socket TCPlistener:
 

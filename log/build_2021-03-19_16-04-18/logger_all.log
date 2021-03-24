@@ -1,0 +1,1036 @@
+[1.943s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.943s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f1e35cc3160>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=3, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f1e35cc3160>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f1e35cc36a0>)
+[2.065s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.065s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.066s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.066s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.066s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.066s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.066s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/gy/Omron_TM_ROS2'
+[2.066s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.066s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.066s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.066s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.066s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.066s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.067s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.067s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.067s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.096s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.097s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.097s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.097s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.097s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.097s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.097s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.097s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.098s] Level 1:colcon.colcon_core.package_identification:_identify(custom_package) by extensions ['ignore', 'ignore_ament_install']
+[2.098s] Level 1:colcon.colcon_core.package_identification:_identify(custom_package) by extension 'ignore'
+[2.098s] Level 1:colcon.colcon_core.package_identification:_identify(custom_package) by extension 'ignore_ament_install'
+[2.098s] Level 1:colcon.colcon_core.package_identification:_identify(custom_package) by extensions ['colcon_pkg']
+[2.098s] Level 1:colcon.colcon_core.package_identification:_identify(custom_package) by extension 'colcon_pkg'
+[2.098s] Level 1:colcon.colcon_core.package_identification:_identify(custom_package) by extensions ['colcon_meta']
+[2.098s] Level 1:colcon.colcon_core.package_identification:_identify(custom_package) by extension 'colcon_meta'
+[2.098s] Level 1:colcon.colcon_core.package_identification:_identify(custom_package) by extensions ['ros']
+[2.098s] Level 1:colcon.colcon_core.package_identification:_identify(custom_package) by extension 'ros'
+[2.157s] DEBUG:colcon.colcon_core.package_identification:Package 'custom_package' with type 'ros.ament_cmake' and name 'custom_package'
+[2.157s] Level 1:colcon.colcon_core.package_identification:_identify(demo) by extensions ['ignore', 'ignore_ament_install']
+[2.157s] Level 1:colcon.colcon_core.package_identification:_identify(demo) by extension 'ignore'
+[2.157s] Level 1:colcon.colcon_core.package_identification:_identify(demo) by extension 'ignore_ament_install'
+[2.158s] Level 1:colcon.colcon_core.package_identification:_identify(demo) by extensions ['colcon_pkg']
+[2.158s] Level 1:colcon.colcon_core.package_identification:_identify(demo) by extension 'colcon_pkg'
+[2.158s] Level 1:colcon.colcon_core.package_identification:_identify(demo) by extensions ['colcon_meta']
+[2.158s] Level 1:colcon.colcon_core.package_identification:_identify(demo) by extension 'colcon_meta'
+[2.158s] Level 1:colcon.colcon_core.package_identification:_identify(demo) by extensions ['ros']
+[2.158s] Level 1:colcon.colcon_core.package_identification:_identify(demo) by extension 'ros'
+[2.160s] DEBUG:colcon.colcon_core.package_identification:Package 'demo' with type 'ros.ament_cmake' and name 'demo'
+[2.160s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ignore', 'ignore_ament_install']
+[2.160s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore'
+[2.160s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore_ament_install'
+[2.160s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_pkg']
+[2.161s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_pkg'
+[2.161s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_meta']
+[2.161s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_meta'
+[2.161s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ros']
+[2.161s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ros'
+[2.161s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['cmake', 'python']
+[2.161s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'cmake'
+[2.161s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python'
+[2.161s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['python_setup_py']
+[2.161s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python_setup_py'
+[2.161s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extensions ['ignore', 'ignore_ament_install']
+[2.162s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extension 'ignore'
+[2.162s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extension 'ignore_ament_install'
+[2.162s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extensions ['colcon_pkg']
+[2.162s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extension 'colcon_pkg'
+[2.162s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extensions ['colcon_meta']
+[2.162s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extension 'colcon_meta'
+[2.162s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extensions ['ros']
+[2.162s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extension 'ros'
+[2.162s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extensions ['cmake', 'python']
+[2.162s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extension 'cmake'
+[2.162s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extension 'python'
+[2.163s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extensions ['python_setup_py']
+[2.163s] Level 1:colcon.colcon_core.package_identification:_identify(docs/images) by extension 'python_setup_py'
+[2.163s] Level 1:colcon.colcon_core.package_identification:_identify(figures) by extensions ['ignore', 'ignore_ament_install']
+[2.163s] Level 1:colcon.colcon_core.package_identification:_identify(figures) by extension 'ignore'
+[2.163s] Level 1:colcon.colcon_core.package_identification:_identify(figures) by extension 'ignore_ament_install'
+[2.163s] Level 1:colcon.colcon_core.package_identification:_identify(figures) by extensions ['colcon_pkg']
+[2.163s] Level 1:colcon.colcon_core.package_identification:_identify(figures) by extension 'colcon_pkg'
+[2.163s] Level 1:colcon.colcon_core.package_identification:_identify(figures) by extensions ['colcon_meta']
+[2.163s] Level 1:colcon.colcon_core.package_identification:_identify(figures) by extension 'colcon_meta'
+[2.164s] Level 1:colcon.colcon_core.package_identification:_identify(figures) by extensions ['ros']
+[2.164s] Level 1:colcon.colcon_core.package_identification:_identify(figures) by extension 'ros'
+[2.164s] Level 1:colcon.colcon_core.package_identification:_identify(figures) by extensions ['cmake', 'python']
+[2.164s] Level 1:colcon.colcon_core.package_identification:_identify(figures) by extension 'cmake'
+[2.164s] Level 1:colcon.colcon_core.package_identification:_identify(figures) by extension 'python'
+[2.164s] Level 1:colcon.colcon_core.package_identification:_identify(figures) by extensions ['python_setup_py']
+[2.164s] Level 1:colcon.colcon_core.package_identification:_identify(figures) by extension 'python_setup_py'
+[2.164s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.164s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.164s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.165s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ignore', 'ignore_ament_install']
+[2.165s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore'
+[2.165s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ignore_ament_install'
+[2.165s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_pkg']
+[2.165s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_pkg'
+[2.165s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['colcon_meta']
+[2.165s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'colcon_meta'
+[2.165s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['ros']
+[2.165s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'ros'
+[2.165s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['cmake', 'python']
+[2.165s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'cmake'
+[2.166s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python'
+[2.166s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extensions ['python_setup_py']
+[2.166s] Level 1:colcon.colcon_core.package_identification:_identify(launch) by extension 'python_setup_py'
+[2.166s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.166s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.166s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.166s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['ignore', 'ignore_ament_install']
+[2.166s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'ignore'
+[2.167s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'ignore_ament_install'
+[2.167s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['colcon_pkg']
+[2.167s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'colcon_pkg'
+[2.167s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['colcon_meta']
+[2.167s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'colcon_meta'
+[2.167s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['ros']
+[2.167s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'ros'
+[2.167s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['cmake', 'python']
+[2.167s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'cmake'
+[2.167s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'python'
+[2.167s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['python_setup_py']
+[2.167s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'python_setup_py'
+[2.168s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/NotUsed) by extensions ['ignore', 'ignore_ament_install']
+[2.168s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/NotUsed) by extension 'ignore'
+[2.168s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/NotUsed) by extension 'ignore_ament_install'
+[2.168s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/NotUsed) by extensions ['colcon_pkg']
+[2.168s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/NotUsed) by extension 'colcon_pkg'
+[2.168s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/NotUsed) by extensions ['colcon_meta']
+[2.168s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/NotUsed) by extension 'colcon_meta'
+[2.168s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/NotUsed) by extensions ['ros']
+[2.168s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/NotUsed) by extension 'ros'
+[2.168s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/NotUsed) by extensions ['cmake', 'python']
+[2.169s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/NotUsed) by extension 'cmake'
+[2.169s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/NotUsed) by extension 'python'
+[2.169s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/NotUsed) by extensions ['python_setup_py']
+[2.169s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/NotUsed) by extension 'python_setup_py'
+[2.169s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace) by extensions ['ignore', 'ignore_ament_install']
+[2.169s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace) by extension 'ignore'
+[2.169s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace) by extension 'ignore_ament_install'
+[2.169s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace) by extensions ['colcon_pkg']
+[2.169s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace) by extension 'colcon_pkg'
+[2.169s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace) by extensions ['colcon_meta']
+[2.169s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace) by extension 'colcon_meta'
+[2.170s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace) by extensions ['ros']
+[2.170s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace) by extension 'ros'
+[2.170s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace) by extensions ['cmake', 'python']
+[2.170s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace) by extension 'cmake'
+[2.170s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace) by extension 'python'
+[2.170s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace) by extensions ['python_setup_py']
+[2.170s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace) by extension 'python_setup_py'
+[2.170s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[2.170s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/__pycache__) by extension 'ignore'
+[2.170s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/__pycache__) by extension 'ignore_ament_install'
+[2.171s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/__pycache__) by extensions ['colcon_pkg']
+[2.171s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/__pycache__) by extension 'colcon_pkg'
+[2.171s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/__pycache__) by extensions ['colcon_meta']
+[2.171s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/__pycache__) by extension 'colcon_meta'
+[2.171s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/__pycache__) by extensions ['ros']
+[2.171s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/__pycache__) by extension 'ros'
+[2.171s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/__pycache__) by extensions ['cmake', 'python']
+[2.171s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/__pycache__) by extension 'cmake'
+[2.171s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/__pycache__) by extension 'python'
+[2.171s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/__pycache__) by extensions ['python_setup_py']
+[2.171s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/__pycache__) by extension 'python_setup_py'
+[2.172s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries) by extensions ['ignore', 'ignore_ament_install']
+[2.172s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries) by extension 'ignore'
+[2.172s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries) by extension 'ignore_ament_install'
+[2.172s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries) by extensions ['colcon_pkg']
+[2.172s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries) by extension 'colcon_pkg'
+[2.172s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries) by extensions ['colcon_meta']
+[2.172s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries) by extension 'colcon_meta'
+[2.172s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries) by extensions ['ros']
+[2.172s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries) by extension 'ros'
+[2.173s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries) by extensions ['cmake', 'python']
+[2.173s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries) by extension 'cmake'
+[2.173s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries) by extension 'python'
+[2.173s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries) by extensions ['python_setup_py']
+[2.173s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries) by extension 'python_setup_py'
+[2.173s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[2.173s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries/__pycache__) by extension 'ignore'
+[2.173s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries/__pycache__) by extension 'ignore_ament_install'
+[2.173s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries/__pycache__) by extensions ['colcon_pkg']
+[2.173s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries/__pycache__) by extension 'colcon_pkg'
+[2.174s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries/__pycache__) by extensions ['colcon_meta']
+[2.174s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries/__pycache__) by extension 'colcon_meta'
+[2.174s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries/__pycache__) by extensions ['ros']
+[2.174s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries/__pycache__) by extension 'ros'
+[2.174s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries/__pycache__) by extensions ['cmake', 'python']
+[2.174s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries/__pycache__) by extension 'cmake'
+[2.174s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries/__pycache__) by extension 'python'
+[2.174s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries/__pycache__) by extensions ['python_setup_py']
+[2.174s] Level 1:colcon.colcon_core.package_identification:_identify(scripts/PickPlace/libraries/__pycache__) by extension 'python_setup_py'
+[2.174s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.174s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.175s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.175s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.175s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.175s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.175s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.175s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.175s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.175s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.175s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.175s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.175s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.175s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extensions ['ignore', 'ignore_ament_install']
+[2.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extension 'ignore'
+[2.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extension 'ignore_ament_install'
+[2.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extensions ['colcon_pkg']
+[2.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extension 'colcon_pkg'
+[2.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extensions ['colcon_meta']
+[2.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extension 'colcon_meta'
+[2.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extensions ['ros']
+[2.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extension 'ros'
+[2.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extensions ['cmake', 'python']
+[2.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extension 'cmake'
+[2.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extension 'python'
+[2.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extensions ['python_setup_py']
+[2.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/launch) by extension 'python_setup_py'
+[2.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/pickplace) by extensions ['ignore', 'ignore_ament_install']
+[2.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/pickplace) by extension 'ignore'
+[2.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/pickplace) by extension 'ignore_ament_install'
+[2.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/pickplace) by extensions ['colcon_pkg']
+[2.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/pickplace) by extension 'colcon_pkg'
+[2.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/pickplace) by extensions ['colcon_meta']
+[2.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/pickplace) by extension 'colcon_meta'
+[2.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/pickplace) by extensions ['ros']
+[2.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/pickplace) by extension 'ros'
+[2.179s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pickplace' with type 'ros.ament_python' and name 'pickplace'
+[2.179s] Level 1:colcon.colcon_core.package_identification:_identify(techman_robot_get_status) by extensions ['ignore', 'ignore_ament_install']
+[2.179s] Level 1:colcon.colcon_core.package_identification:_identify(techman_robot_get_status) by extension 'ignore'
+[2.180s] Level 1:colcon.colcon_core.package_identification:_identify(techman_robot_get_status) by extension 'ignore_ament_install'
+[2.180s] Level 1:colcon.colcon_core.package_identification:_identify(techman_robot_get_status) by extensions ['colcon_pkg']
+[2.180s] Level 1:colcon.colcon_core.package_identification:_identify(techman_robot_get_status) by extension 'colcon_pkg'
+[2.180s] Level 1:colcon.colcon_core.package_identification:_identify(techman_robot_get_status) by extensions ['colcon_meta']
+[2.180s] Level 1:colcon.colcon_core.package_identification:_identify(techman_robot_get_status) by extension 'colcon_meta'
+[2.180s] Level 1:colcon.colcon_core.package_identification:_identify(techman_robot_get_status) by extensions ['ros']
+[2.180s] Level 1:colcon.colcon_core.package_identification:_identify(techman_robot_get_status) by extension 'ros'
+[2.197s] DEBUG:colcon.colcon_core.package_identification:Package 'techman_robot_get_status' with type 'ros.ament_python' and name 'tm_get_status'
+[2.197s] Level 1:colcon.colcon_core.package_identification:_identify(techman_robot_msgs) by extensions ['ignore', 'ignore_ament_install']
+[2.197s] Level 1:colcon.colcon_core.package_identification:_identify(techman_robot_msgs) by extension 'ignore'
+[2.197s] Level 1:colcon.colcon_core.package_identification:_identify(techman_robot_msgs) by extension 'ignore_ament_install'
+[2.197s] Level 1:colcon.colcon_core.package_identification:_identify(techman_robot_msgs) by extensions ['colcon_pkg']
+[2.197s] Level 1:colcon.colcon_core.package_identification:_identify(techman_robot_msgs) by extension 'colcon_pkg'
+[2.197s] Level 1:colcon.colcon_core.package_identification:_identify(techman_robot_msgs) by extensions ['colcon_meta']
+[2.198s] Level 1:colcon.colcon_core.package_identification:_identify(techman_robot_msgs) by extension 'colcon_meta'
+[2.198s] Level 1:colcon.colcon_core.package_identification:_identify(techman_robot_msgs) by extensions ['ros']
+[2.198s] Level 1:colcon.colcon_core.package_identification:_identify(techman_robot_msgs) by extension 'ros'
+[2.204s] DEBUG:colcon.colcon_core.package_identification:Package 'techman_robot_msgs' with type 'ros.ament_cmake' and name 'techman_robot_msgs'
+[2.204s] Level 1:colcon.colcon_core.package_identification:_identify(tm_driver) by extensions ['ignore', 'ignore_ament_install']
+[2.204s] Level 1:colcon.colcon_core.package_identification:_identify(tm_driver) by extension 'ignore'
+[2.204s] Level 1:colcon.colcon_core.package_identification:_identify(tm_driver) by extension 'ignore_ament_install'
+[2.205s] Level 1:colcon.colcon_core.package_identification:_identify(tm_driver) by extensions ['colcon_pkg']
+[2.205s] Level 1:colcon.colcon_core.package_identification:_identify(tm_driver) by extension 'colcon_pkg'
+[2.205s] Level 1:colcon.colcon_core.package_identification:_identify(tm_driver) by extensions ['colcon_meta']
+[2.205s] Level 1:colcon.colcon_core.package_identification:_identify(tm_driver) by extension 'colcon_meta'
+[2.205s] Level 1:colcon.colcon_core.package_identification:_identify(tm_driver) by extensions ['ros']
+[2.205s] Level 1:colcon.colcon_core.package_identification:_identify(tm_driver) by extension 'ros'
+[2.220s] DEBUG:colcon.colcon_core.package_identification:Package 'tm_driver' with type 'ros.ament_cmake' and name 'tm_driver'
+[2.220s] Level 1:colcon.colcon_core.package_identification:_identify(tm_msgs) by extensions ['ignore', 'ignore_ament_install']
+[2.221s] Level 1:colcon.colcon_core.package_identification:_identify(tm_msgs) by extension 'ignore'
+[2.221s] Level 1:colcon.colcon_core.package_identification:_identify(tm_msgs) by extension 'ignore_ament_install'
+[2.221s] Level 1:colcon.colcon_core.package_identification:_identify(tm_msgs) by extensions ['colcon_pkg']
+[2.221s] Level 1:colcon.colcon_core.package_identification:_identify(tm_msgs) by extension 'colcon_pkg'
+[2.221s] Level 1:colcon.colcon_core.package_identification:_identify(tm_msgs) by extensions ['colcon_meta']
+[2.221s] Level 1:colcon.colcon_core.package_identification:_identify(tm_msgs) by extension 'colcon_meta'
+[2.221s] Level 1:colcon.colcon_core.package_identification:_identify(tm_msgs) by extensions ['ros']
+[2.221s] Level 1:colcon.colcon_core.package_identification:_identify(tm_msgs) by extension 'ros'
+[2.236s] DEBUG:colcon.colcon_core.package_identification:Package 'tm_msgs' with type 'ros.ament_cmake' and name 'tm_msgs'
+[2.236s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_description) by extensions ['ignore', 'ignore_ament_install']
+[2.236s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_description) by extension 'ignore'
+[2.237s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_description) by extension 'ignore_ament_install'
+[2.237s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_description) by extensions ['colcon_pkg']
+[2.237s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_description) by extension 'colcon_pkg'
+[2.237s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_description) by extensions ['colcon_meta']
+[2.237s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_description) by extension 'colcon_meta'
+[2.237s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_description) by extensions ['ros']
+[2.237s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_description) by extension 'ros'
+[2.244s] DEBUG:colcon.colcon_core.package_identification:Package 'tmr_description' with type 'ros.ament_cmake' and name 'tmr_description'
+[2.244s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_driver) by extensions ['ignore', 'ignore_ament_install']
+[2.244s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_driver) by extension 'ignore'
+[2.244s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_driver) by extension 'ignore_ament_install'
+[2.244s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_driver) by extensions ['colcon_pkg']
+[2.244s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_driver) by extension 'colcon_pkg'
+[2.244s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_driver) by extensions ['colcon_meta']
+[2.245s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_driver) by extension 'colcon_meta'
+[2.245s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_driver) by extensions ['ros']
+[2.245s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_driver) by extension 'ros'
+[2.258s] DEBUG:colcon.colcon_core.package_identification:Package 'tmr_driver' with type 'ros.ament_cmake' and name 'tmr_driver'
+[2.258s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_mod_urdf) by extensions ['ignore', 'ignore_ament_install']
+[2.259s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_mod_urdf) by extension 'ignore'
+[2.259s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_mod_urdf) by extension 'ignore_ament_install'
+[2.259s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_mod_urdf) by extensions ['colcon_pkg']
+[2.259s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_mod_urdf) by extension 'colcon_pkg'
+[2.259s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_mod_urdf) by extensions ['colcon_meta']
+[2.259s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_mod_urdf) by extension 'colcon_meta'
+[2.259s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_mod_urdf) by extensions ['ros']
+[2.259s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_mod_urdf) by extension 'ros'
+[2.273s] DEBUG:colcon.colcon_core.package_identification:Package 'tmr_mod_urdf' with type 'ros.ament_python' and name 'tmr_mod_urdf'
+[2.274s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_moveit_config_tm5-900) by extensions ['ignore', 'ignore_ament_install']
+[2.274s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_moveit_config_tm5-900) by extension 'ignore'
+[2.274s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_moveit_config_tm5-900) by extension 'ignore_ament_install'
+[2.274s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_moveit_config_tm5-900) by extensions ['colcon_pkg']
+[2.274s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_moveit_config_tm5-900) by extension 'colcon_pkg'
+[2.274s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_moveit_config_tm5-900) by extensions ['colcon_meta']
+[2.274s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_moveit_config_tm5-900) by extension 'colcon_meta'
+[2.274s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_moveit_config_tm5-900) by extensions ['ros']
+[2.274s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_moveit_config_tm5-900) by extension 'ros'
+[2.276s] DEBUG:colcon.colcon_core.package_identification:Package 'tmr_moveit_config_tm5-900' with type 'ros.ament_cmake' and name 'tmr_moveit_config_tm5-900'
+[2.277s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_moveit_cpp_demo) by extensions ['ignore', 'ignore_ament_install']
+[2.277s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_moveit_cpp_demo) by extension 'ignore'
+[2.277s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_moveit_cpp_demo) by extension 'ignore_ament_install'
+[2.277s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_moveit_cpp_demo) by extensions ['colcon_pkg']
+[2.277s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_moveit_cpp_demo) by extension 'colcon_pkg'
+[2.277s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_moveit_cpp_demo) by extensions ['colcon_meta']
+[2.277s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_moveit_cpp_demo) by extension 'colcon_meta'
+[2.277s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_moveit_cpp_demo) by extensions ['ros']
+[2.277s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_moveit_cpp_demo) by extension 'ros'
+[2.279s] DEBUG:colcon.colcon_core.package_identification:Package 'tmr_moveit_cpp_demo' with type 'ros.ament_cmake' and name 'tmr_moveit_cpp_demo'
+[2.279s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_msgs) by extensions ['ignore', 'ignore_ament_install']
+[2.279s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_msgs) by extension 'ignore'
+[2.280s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_msgs) by extension 'ignore_ament_install'
+[2.280s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_msgs) by extensions ['colcon_pkg']
+[2.280s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_msgs) by extension 'colcon_pkg'
+[2.280s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_msgs) by extensions ['colcon_meta']
+[2.280s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_msgs) by extension 'colcon_meta'
+[2.280s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_msgs) by extensions ['ros']
+[2.280s] Level 1:colcon.colcon_core.package_identification:_identify(tmr_msgs) by extension 'ros'
+[2.282s] DEBUG:colcon.colcon_core.package_identification:Package 'tmr_msgs' with type 'ros.ament_cmake' and name 'tmr_msgs'
+[2.282s] Level 1:colcon.colcon_core.package_identification:_identify(tmrlib) by extensions ['ignore', 'ignore_ament_install']
+[2.282s] Level 1:colcon.colcon_core.package_identification:_identify(tmrlib) by extension 'ignore'
+[2.282s] Level 1:colcon.colcon_core.package_identification:_identify(tmrlib) by extension 'ignore_ament_install'
+[2.283s] Level 1:colcon.colcon_core.package_identification:_identify(tmrlib) by extensions ['colcon_pkg']
+[2.283s] Level 1:colcon.colcon_core.package_identification:_identify(tmrlib) by extension 'colcon_pkg'
+[2.283s] Level 1:colcon.colcon_core.package_identification:_identify(tmrlib) by extensions ['colcon_meta']
+[2.283s] Level 1:colcon.colcon_core.package_identification:_identify(tmrlib) by extension 'colcon_meta'
+[2.283s] Level 1:colcon.colcon_core.package_identification:_identify(tmrlib) by extensions ['ros']
+[2.283s] Level 1:colcon.colcon_core.package_identification:_identify(tmrlib) by extension 'ros'
+[2.285s] DEBUG:colcon.colcon_core.package_identification:Package 'tmrlib' with type 'ros.ament_cmake' and name 'tmrlib'
+[2.285s] Level 1:colcon.colcon_core.package_identification:_identify(ui_for_debug_and_demo) by extensions ['ignore', 'ignore_ament_install']
+[2.285s] Level 1:colcon.colcon_core.package_identification:_identify(ui_for_debug_and_demo) by extension 'ignore'
+[2.286s] Level 1:colcon.colcon_core.package_identification:_identify(ui_for_debug_and_demo) by extension 'ignore_ament_install'
+[2.286s] Level 1:colcon.colcon_core.package_identification:_identify(ui_for_debug_and_demo) by extensions ['colcon_pkg']
+[2.286s] Level 1:colcon.colcon_core.package_identification:_identify(ui_for_debug_and_demo) by extension 'colcon_pkg'
+[2.286s] Level 1:colcon.colcon_core.package_identification:_identify(ui_for_debug_and_demo) by extensions ['colcon_meta']
+[2.286s] Level 1:colcon.colcon_core.package_identification:_identify(ui_for_debug_and_demo) by extension 'colcon_meta'
+[2.286s] Level 1:colcon.colcon_core.package_identification:_identify(ui_for_debug_and_demo) by extensions ['ros']
+[2.286s] Level 1:colcon.colcon_core.package_identification:_identify(ui_for_debug_and_demo) by extension 'ros'
+[2.288s] DEBUG:colcon.colcon_core.package_identification:Package 'ui_for_debug_and_demo' with type 'ros.ament_cmake' and name 'ui_for_debug_and_demo'
+[2.288s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.288s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.288s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.288s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.288s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.464s] Level 5:colcon.colcon_core.verb:set package 'pickplace' build argument 'cmake_args' from command line to 'None'
+[2.464s] Level 5:colcon.colcon_core.verb:set package 'pickplace' build argument 'cmake_target' from command line to 'None'
+[2.464s] Level 5:colcon.colcon_core.verb:set package 'pickplace' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.464s] Level 5:colcon.colcon_core.verb:set package 'pickplace' build argument 'cmake_clean_cache' from command line to 'False'
+[2.464s] Level 5:colcon.colcon_core.verb:set package 'pickplace' build argument 'cmake_clean_first' from command line to 'False'
+[2.464s] Level 5:colcon.colcon_core.verb:set package 'pickplace' build argument 'cmake_force_configure' from command line to 'False'
+[2.464s] Level 5:colcon.colcon_core.verb:set package 'pickplace' build argument 'ament_cmake_args' from command line to 'None'
+[2.464s] Level 5:colcon.colcon_core.verb:set package 'pickplace' build argument 'catkin_cmake_args' from command line to 'None'
+[2.465s] Level 5:colcon.colcon_core.verb:set package 'pickplace' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.465s] DEBUG:colcon.colcon_core.verb:Building package 'pickplace' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/gy/Omron_TM_ROS2/build/pickplace', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/gy/Omron_TM_ROS2/install/pickplace', 'merge_install': False, 'path': '/home/gy/Omron_TM_ROS2/src/pickplace', 'symlink_install': False, 'test_result_base': None}
+[2.470s] Level 5:colcon.colcon_core.verb:set package 'techman_robot_msgs' build argument 'cmake_args' from command line to 'None'
+[2.470s] Level 5:colcon.colcon_core.verb:set package 'techman_robot_msgs' build argument 'cmake_target' from command line to 'None'
+[2.470s] Level 5:colcon.colcon_core.verb:set package 'techman_robot_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.470s] Level 5:colcon.colcon_core.verb:set package 'techman_robot_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[2.470s] Level 5:colcon.colcon_core.verb:set package 'techman_robot_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[2.470s] Level 5:colcon.colcon_core.verb:set package 'techman_robot_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[2.470s] Level 5:colcon.colcon_core.verb:set package 'techman_robot_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[2.471s] Level 5:colcon.colcon_core.verb:set package 'techman_robot_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[2.471s] Level 5:colcon.colcon_core.verb:set package 'techman_robot_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.471s] DEBUG:colcon.colcon_core.verb:Building package 'techman_robot_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/gy/Omron_TM_ROS2/build/techman_robot_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs', 'merge_install': False, 'path': '/home/gy/Omron_TM_ROS2/techman_robot_msgs', 'symlink_install': False, 'test_result_base': None}
+[2.477s] Level 5:colcon.colcon_core.verb:set package 'tm_get_status' build argument 'cmake_args' from command line to 'None'
+[2.477s] Level 5:colcon.colcon_core.verb:set package 'tm_get_status' build argument 'cmake_target' from command line to 'None'
+[2.477s] Level 5:colcon.colcon_core.verb:set package 'tm_get_status' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.478s] Level 5:colcon.colcon_core.verb:set package 'tm_get_status' build argument 'cmake_clean_cache' from command line to 'False'
+[2.478s] Level 5:colcon.colcon_core.verb:set package 'tm_get_status' build argument 'cmake_clean_first' from command line to 'False'
+[2.478s] Level 5:colcon.colcon_core.verb:set package 'tm_get_status' build argument 'cmake_force_configure' from command line to 'False'
+[2.478s] Level 5:colcon.colcon_core.verb:set package 'tm_get_status' build argument 'ament_cmake_args' from command line to 'None'
+[2.478s] Level 5:colcon.colcon_core.verb:set package 'tm_get_status' build argument 'catkin_cmake_args' from command line to 'None'
+[2.478s] Level 5:colcon.colcon_core.verb:set package 'tm_get_status' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.478s] DEBUG:colcon.colcon_core.verb:Building package 'tm_get_status' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/gy/Omron_TM_ROS2/build/tm_get_status', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/gy/Omron_TM_ROS2/install/tm_get_status', 'merge_install': False, 'path': '/home/gy/Omron_TM_ROS2/techman_robot_get_status', 'symlink_install': False, 'test_result_base': None}
+[2.483s] Level 5:colcon.colcon_core.verb:set package 'tm_msgs' build argument 'cmake_args' from command line to 'None'
+[2.484s] Level 5:colcon.colcon_core.verb:set package 'tm_msgs' build argument 'cmake_target' from command line to 'None'
+[2.484s] Level 5:colcon.colcon_core.verb:set package 'tm_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.484s] Level 5:colcon.colcon_core.verb:set package 'tm_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[2.484s] Level 5:colcon.colcon_core.verb:set package 'tm_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[2.484s] Level 5:colcon.colcon_core.verb:set package 'tm_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[2.484s] Level 5:colcon.colcon_core.verb:set package 'tm_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[2.484s] Level 5:colcon.colcon_core.verb:set package 'tm_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[2.484s] Level 5:colcon.colcon_core.verb:set package 'tm_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.484s] DEBUG:colcon.colcon_core.verb:Building package 'tm_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/gy/Omron_TM_ROS2/build/tm_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/gy/Omron_TM_ROS2/install/tm_msgs', 'merge_install': False, 'path': '/home/gy/Omron_TM_ROS2/tm_msgs', 'symlink_install': False, 'test_result_base': None}
+[2.490s] Level 5:colcon.colcon_core.verb:set package 'tmr_description' build argument 'cmake_args' from command line to 'None'
+[2.490s] Level 5:colcon.colcon_core.verb:set package 'tmr_description' build argument 'cmake_target' from command line to 'None'
+[2.490s] Level 5:colcon.colcon_core.verb:set package 'tmr_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.490s] Level 5:colcon.colcon_core.verb:set package 'tmr_description' build argument 'cmake_clean_cache' from command line to 'False'
+[2.490s] Level 5:colcon.colcon_core.verb:set package 'tmr_description' build argument 'cmake_clean_first' from command line to 'False'
+[2.490s] Level 5:colcon.colcon_core.verb:set package 'tmr_description' build argument 'cmake_force_configure' from command line to 'False'
+[2.490s] Level 5:colcon.colcon_core.verb:set package 'tmr_description' build argument 'ament_cmake_args' from command line to 'None'
+[2.490s] Level 5:colcon.colcon_core.verb:set package 'tmr_description' build argument 'catkin_cmake_args' from command line to 'None'
+[2.490s] Level 5:colcon.colcon_core.verb:set package 'tmr_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.490s] DEBUG:colcon.colcon_core.verb:Building package 'tmr_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/gy/Omron_TM_ROS2/build/tmr_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/gy/Omron_TM_ROS2/install/tmr_description', 'merge_install': False, 'path': '/home/gy/Omron_TM_ROS2/tmr_description', 'symlink_install': False, 'test_result_base': None}
+[2.496s] Level 5:colcon.colcon_core.verb:set package 'tmr_mod_urdf' build argument 'cmake_args' from command line to 'None'
+[2.496s] Level 5:colcon.colcon_core.verb:set package 'tmr_mod_urdf' build argument 'cmake_target' from command line to 'None'
+[2.496s] Level 5:colcon.colcon_core.verb:set package 'tmr_mod_urdf' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.496s] Level 5:colcon.colcon_core.verb:set package 'tmr_mod_urdf' build argument 'cmake_clean_cache' from command line to 'False'
+[2.496s] Level 5:colcon.colcon_core.verb:set package 'tmr_mod_urdf' build argument 'cmake_clean_first' from command line to 'False'
+[2.496s] Level 5:colcon.colcon_core.verb:set package 'tmr_mod_urdf' build argument 'cmake_force_configure' from command line to 'False'
+[2.496s] Level 5:colcon.colcon_core.verb:set package 'tmr_mod_urdf' build argument 'ament_cmake_args' from command line to 'None'
+[2.496s] Level 5:colcon.colcon_core.verb:set package 'tmr_mod_urdf' build argument 'catkin_cmake_args' from command line to 'None'
+[2.497s] Level 5:colcon.colcon_core.verb:set package 'tmr_mod_urdf' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.497s] DEBUG:colcon.colcon_core.verb:Building package 'tmr_mod_urdf' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/gy/Omron_TM_ROS2/build/tmr_mod_urdf', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf', 'merge_install': False, 'path': '/home/gy/Omron_TM_ROS2/tmr_mod_urdf', 'symlink_install': False, 'test_result_base': None}
+[2.504s] Level 5:colcon.colcon_core.verb:set package 'tmr_moveit_cpp_demo' build argument 'cmake_args' from command line to 'None'
+[2.504s] Level 5:colcon.colcon_core.verb:set package 'tmr_moveit_cpp_demo' build argument 'cmake_target' from command line to 'None'
+[2.504s] Level 5:colcon.colcon_core.verb:set package 'tmr_moveit_cpp_demo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.505s] Level 5:colcon.colcon_core.verb:set package 'tmr_moveit_cpp_demo' build argument 'cmake_clean_cache' from command line to 'False'
+[2.505s] Level 5:colcon.colcon_core.verb:set package 'tmr_moveit_cpp_demo' build argument 'cmake_clean_first' from command line to 'False'
+[2.505s] Level 5:colcon.colcon_core.verb:set package 'tmr_moveit_cpp_demo' build argument 'cmake_force_configure' from command line to 'False'
+[2.505s] Level 5:colcon.colcon_core.verb:set package 'tmr_moveit_cpp_demo' build argument 'ament_cmake_args' from command line to 'None'
+[2.505s] Level 5:colcon.colcon_core.verb:set package 'tmr_moveit_cpp_demo' build argument 'catkin_cmake_args' from command line to 'None'
+[2.505s] Level 5:colcon.colcon_core.verb:set package 'tmr_moveit_cpp_demo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.505s] DEBUG:colcon.colcon_core.verb:Building package 'tmr_moveit_cpp_demo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo', 'merge_install': False, 'path': '/home/gy/Omron_TM_ROS2/tmr_moveit_cpp_demo', 'symlink_install': False, 'test_result_base': None}
+[2.511s] Level 5:colcon.colcon_core.verb:set package 'tmr_msgs' build argument 'cmake_args' from command line to 'None'
+[2.511s] Level 5:colcon.colcon_core.verb:set package 'tmr_msgs' build argument 'cmake_target' from command line to 'None'
+[2.511s] Level 5:colcon.colcon_core.verb:set package 'tmr_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.511s] Level 5:colcon.colcon_core.verb:set package 'tmr_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[2.511s] Level 5:colcon.colcon_core.verb:set package 'tmr_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[2.511s] Level 5:colcon.colcon_core.verb:set package 'tmr_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[2.511s] Level 5:colcon.colcon_core.verb:set package 'tmr_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[2.511s] Level 5:colcon.colcon_core.verb:set package 'tmr_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[2.511s] Level 5:colcon.colcon_core.verb:set package 'tmr_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.511s] DEBUG:colcon.colcon_core.verb:Building package 'tmr_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/gy/Omron_TM_ROS2/build/tmr_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/gy/Omron_TM_ROS2/install/tmr_msgs', 'merge_install': False, 'path': '/home/gy/Omron_TM_ROS2/tmr_msgs', 'symlink_install': False, 'test_result_base': None}
+[2.517s] Level 5:colcon.colcon_core.verb:set package 'tmrlib' build argument 'cmake_args' from command line to 'None'
+[2.517s] Level 5:colcon.colcon_core.verb:set package 'tmrlib' build argument 'cmake_target' from command line to 'None'
+[2.517s] Level 5:colcon.colcon_core.verb:set package 'tmrlib' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.517s] Level 5:colcon.colcon_core.verb:set package 'tmrlib' build argument 'cmake_clean_cache' from command line to 'False'
+[2.517s] Level 5:colcon.colcon_core.verb:set package 'tmrlib' build argument 'cmake_clean_first' from command line to 'False'
+[2.517s] Level 5:colcon.colcon_core.verb:set package 'tmrlib' build argument 'cmake_force_configure' from command line to 'False'
+[2.517s] Level 5:colcon.colcon_core.verb:set package 'tmrlib' build argument 'ament_cmake_args' from command line to 'None'
+[2.517s] Level 5:colcon.colcon_core.verb:set package 'tmrlib' build argument 'catkin_cmake_args' from command line to 'None'
+[2.517s] Level 5:colcon.colcon_core.verb:set package 'tmrlib' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.518s] DEBUG:colcon.colcon_core.verb:Building package 'tmrlib' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/gy/Omron_TM_ROS2/build/tmrlib', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/gy/Omron_TM_ROS2/install/tmrlib', 'merge_install': False, 'path': '/home/gy/Omron_TM_ROS2/tmrlib', 'symlink_install': False, 'test_result_base': None}
+[2.524s] Level 5:colcon.colcon_core.verb:set package 'custom_package' build argument 'cmake_args' from command line to 'None'
+[2.524s] Level 5:colcon.colcon_core.verb:set package 'custom_package' build argument 'cmake_target' from command line to 'None'
+[2.524s] Level 5:colcon.colcon_core.verb:set package 'custom_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.524s] Level 5:colcon.colcon_core.verb:set package 'custom_package' build argument 'cmake_clean_cache' from command line to 'False'
+[2.525s] Level 5:colcon.colcon_core.verb:set package 'custom_package' build argument 'cmake_clean_first' from command line to 'False'
+[2.525s] Level 5:colcon.colcon_core.verb:set package 'custom_package' build argument 'cmake_force_configure' from command line to 'False'
+[2.525s] Level 5:colcon.colcon_core.verb:set package 'custom_package' build argument 'ament_cmake_args' from command line to 'None'
+[2.525s] Level 5:colcon.colcon_core.verb:set package 'custom_package' build argument 'catkin_cmake_args' from command line to 'None'
+[2.525s] Level 5:colcon.colcon_core.verb:set package 'custom_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.525s] DEBUG:colcon.colcon_core.verb:Building package 'custom_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/gy/Omron_TM_ROS2/build/custom_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/gy/Omron_TM_ROS2/install/custom_package', 'merge_install': False, 'path': '/home/gy/Omron_TM_ROS2/custom_package', 'symlink_install': False, 'test_result_base': None}
+[2.531s] Level 5:colcon.colcon_core.verb:set package 'demo' build argument 'cmake_args' from command line to 'None'
+[2.531s] Level 5:colcon.colcon_core.verb:set package 'demo' build argument 'cmake_target' from command line to 'None'
+[2.531s] Level 5:colcon.colcon_core.verb:set package 'demo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.531s] Level 5:colcon.colcon_core.verb:set package 'demo' build argument 'cmake_clean_cache' from command line to 'False'
+[2.531s] Level 5:colcon.colcon_core.verb:set package 'demo' build argument 'cmake_clean_first' from command line to 'False'
+[2.531s] Level 5:colcon.colcon_core.verb:set package 'demo' build argument 'cmake_force_configure' from command line to 'False'
+[2.531s] Level 5:colcon.colcon_core.verb:set package 'demo' build argument 'ament_cmake_args' from command line to 'None'
+[2.531s] Level 5:colcon.colcon_core.verb:set package 'demo' build argument 'catkin_cmake_args' from command line to 'None'
+[2.531s] Level 5:colcon.colcon_core.verb:set package 'demo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.531s] DEBUG:colcon.colcon_core.verb:Building package 'demo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/gy/Omron_TM_ROS2/build/demo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/gy/Omron_TM_ROS2/install/demo', 'merge_install': False, 'path': '/home/gy/Omron_TM_ROS2/demo', 'symlink_install': False, 'test_result_base': None}
+[2.537s] Level 5:colcon.colcon_core.verb:set package 'tm_driver' build argument 'cmake_args' from command line to 'None'
+[2.538s] Level 5:colcon.colcon_core.verb:set package 'tm_driver' build argument 'cmake_target' from command line to 'None'
+[2.538s] Level 5:colcon.colcon_core.verb:set package 'tm_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.538s] Level 5:colcon.colcon_core.verb:set package 'tm_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[2.538s] Level 5:colcon.colcon_core.verb:set package 'tm_driver' build argument 'cmake_clean_first' from command line to 'False'
+[2.538s] Level 5:colcon.colcon_core.verb:set package 'tm_driver' build argument 'cmake_force_configure' from command line to 'False'
+[2.538s] Level 5:colcon.colcon_core.verb:set package 'tm_driver' build argument 'ament_cmake_args' from command line to 'None'
+[2.538s] Level 5:colcon.colcon_core.verb:set package 'tm_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[2.538s] Level 5:colcon.colcon_core.verb:set package 'tm_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.538s] DEBUG:colcon.colcon_core.verb:Building package 'tm_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/gy/Omron_TM_ROS2/build/tm_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/gy/Omron_TM_ROS2/install/tm_driver', 'merge_install': False, 'path': '/home/gy/Omron_TM_ROS2/tm_driver', 'symlink_install': False, 'test_result_base': None}
+[2.544s] Level 5:colcon.colcon_core.verb:set package 'tmr_driver' build argument 'cmake_args' from command line to 'None'
+[2.544s] Level 5:colcon.colcon_core.verb:set package 'tmr_driver' build argument 'cmake_target' from command line to 'None'
+[2.544s] Level 5:colcon.colcon_core.verb:set package 'tmr_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.544s] Level 5:colcon.colcon_core.verb:set package 'tmr_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[2.544s] Level 5:colcon.colcon_core.verb:set package 'tmr_driver' build argument 'cmake_clean_first' from command line to 'False'
+[2.544s] Level 5:colcon.colcon_core.verb:set package 'tmr_driver' build argument 'cmake_force_configure' from command line to 'False'
+[2.544s] Level 5:colcon.colcon_core.verb:set package 'tmr_driver' build argument 'ament_cmake_args' from command line to 'None'
+[2.544s] Level 5:colcon.colcon_core.verb:set package 'tmr_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[2.544s] Level 5:colcon.colcon_core.verb:set package 'tmr_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.544s] DEBUG:colcon.colcon_core.verb:Building package 'tmr_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/gy/Omron_TM_ROS2/build/tmr_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/gy/Omron_TM_ROS2/install/tmr_driver', 'merge_install': False, 'path': '/home/gy/Omron_TM_ROS2/tmr_driver', 'symlink_install': False, 'test_result_base': None}
+[2.550s] Level 5:colcon.colcon_core.verb:set package 'tmr_moveit_config_tm5-900' build argument 'cmake_args' from command line to 'None'
+[2.550s] Level 5:colcon.colcon_core.verb:set package 'tmr_moveit_config_tm5-900' build argument 'cmake_target' from command line to 'None'
+[2.550s] Level 5:colcon.colcon_core.verb:set package 'tmr_moveit_config_tm5-900' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.550s] Level 5:colcon.colcon_core.verb:set package 'tmr_moveit_config_tm5-900' build argument 'cmake_clean_cache' from command line to 'False'
+[2.550s] Level 5:colcon.colcon_core.verb:set package 'tmr_moveit_config_tm5-900' build argument 'cmake_clean_first' from command line to 'False'
+[2.550s] Level 5:colcon.colcon_core.verb:set package 'tmr_moveit_config_tm5-900' build argument 'cmake_force_configure' from command line to 'False'
+[2.551s] Level 5:colcon.colcon_core.verb:set package 'tmr_moveit_config_tm5-900' build argument 'ament_cmake_args' from command line to 'None'
+[2.551s] Level 5:colcon.colcon_core.verb:set package 'tmr_moveit_config_tm5-900' build argument 'catkin_cmake_args' from command line to 'None'
+[2.551s] Level 5:colcon.colcon_core.verb:set package 'tmr_moveit_config_tm5-900' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.551s] DEBUG:colcon.colcon_core.verb:Building package 'tmr_moveit_config_tm5-900' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/gy/Omron_TM_ROS2/build/tmr_moveit_config_tm5-900', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900', 'merge_install': False, 'path': '/home/gy/Omron_TM_ROS2/tmr_moveit_config_tm5-900', 'symlink_install': False, 'test_result_base': None}
+[2.556s] Level 5:colcon.colcon_core.verb:set package 'ui_for_debug_and_demo' build argument 'cmake_args' from command line to 'None'
+[2.557s] Level 5:colcon.colcon_core.verb:set package 'ui_for_debug_and_demo' build argument 'cmake_target' from command line to 'None'
+[2.557s] Level 5:colcon.colcon_core.verb:set package 'ui_for_debug_and_demo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.557s] Level 5:colcon.colcon_core.verb:set package 'ui_for_debug_and_demo' build argument 'cmake_clean_cache' from command line to 'False'
+[2.557s] Level 5:colcon.colcon_core.verb:set package 'ui_for_debug_and_demo' build argument 'cmake_clean_first' from command line to 'False'
+[2.557s] Level 5:colcon.colcon_core.verb:set package 'ui_for_debug_and_demo' build argument 'cmake_force_configure' from command line to 'False'
+[2.557s] Level 5:colcon.colcon_core.verb:set package 'ui_for_debug_and_demo' build argument 'ament_cmake_args' from command line to 'None'
+[2.557s] Level 5:colcon.colcon_core.verb:set package 'ui_for_debug_and_demo' build argument 'catkin_cmake_args' from command line to 'None'
+[2.557s] Level 5:colcon.colcon_core.verb:set package 'ui_for_debug_and_demo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.557s] DEBUG:colcon.colcon_core.verb:Building package 'ui_for_debug_and_demo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/gy/Omron_TM_ROS2/build/ui_for_debug_and_demo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/gy/Omron_TM_ROS2/install/ui_for_debug_and_demo', 'merge_install': False, 'path': '/home/gy/Omron_TM_ROS2/ui_for_debug_and_demo', 'symlink_install': False, 'test_result_base': None}
+[2.558s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.571s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.572s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/gy/Omron_TM_ROS2/tm_msgs' with build type 'ament_cmake'
+[2.572s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/gy/Omron_TM_ROS2/tm_msgs'
+[2.642s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.642s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.642s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.667s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[2.695s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/gy/Omron_TM_ROS2/techman_robot_msgs' with build type 'ament_cmake'
+[2.695s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/gy/Omron_TM_ROS2/techman_robot_msgs'
+[2.696s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.697s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.704s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[2.722s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/gy/Omron_TM_ROS2/tmr_description' with build type 'ament_cmake'
+[2.723s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/gy/Omron_TM_ROS2/tmr_description'
+[2.724s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.724s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.730s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[2.764s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gy/Omron_TM_ROS2/build/tm_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tm_msgs -- -j3 -l3
+[2.828s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gy/Omron_TM_ROS2/build/techman_robot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/techman_robot_msgs -- -j3 -l3
+[2.874s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gy/Omron_TM_ROS2/build/tmr_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tmr_description -- -j3 -l3
+[3.829s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gy/Omron_TM_ROS2/build/tmr_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tmr_description -- -j3 -l3
+[3.883s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gy/Omron_TM_ROS2/build/tmr_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tmr_description
+[4.202s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tmr_description)
+[4.204s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gy/Omron_TM_ROS2/build/tmr_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tmr_description
+[4.312s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_description' for CMake module files
+[4.313s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_description' for CMake config files
+[4.314s] Level 1:colcon.colcon_core.shell:create_environment_hook('tmr_description', 'cmake_prefix_path')
+[4.325s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/hook/cmake_prefix_path.ps1'
+[4.380s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/hook/cmake_prefix_path.dsv'
+[4.396s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/hook/cmake_prefix_path.sh'
+[4.400s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_description/bin'
+[4.400s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_description/lib/pkgconfig/tmr_description.pc'
+[4.400s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_description/lib/python3.8/site-packages'
+[4.402s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/package.ps1'
+[4.408s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/package.dsv'
+[4.413s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/package.sh'
+[4.418s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/package.bash'
+[4.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/package.zsh'
+[4.483s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gy/Omron_TM_ROS2/install/tmr_description/share/colcon-core/packages/tmr_description)
+[4.526s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tmr_description)
+[4.532s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_description' for CMake module files
+[4.534s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_description' for CMake config files
+[4.535s] Level 1:colcon.colcon_core.shell:create_environment_hook('tmr_description', 'cmake_prefix_path')
+[4.537s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/hook/cmake_prefix_path.ps1'
+[4.541s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/hook/cmake_prefix_path.dsv'
+[4.544s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/hook/cmake_prefix_path.sh'
+[4.551s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_description/bin'
+[4.551s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_description/lib/pkgconfig/tmr_description.pc'
+[4.551s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_description/lib/python3.8/site-packages'
+[4.553s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/package.ps1'
+[4.554s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/package.dsv'
+[4.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/package.sh'
+[4.555s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/package.bash'
+[4.565s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/package.zsh'
+[4.566s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gy/Omron_TM_ROS2/install/tmr_description/share/colcon-core/packages/tmr_description)
+[4.572s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/gy/Omron_TM_ROS2/tmr_msgs' with build type 'ament_cmake'
+[4.572s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/gy/Omron_TM_ROS2/tmr_msgs'
+[4.573s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.574s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.586s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[4.667s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gy/Omron_TM_ROS2/build/tmr_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tmr_msgs -- -j3 -l3
+[22.891s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gy/Omron_TM_ROS2/build/techman_robot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/techman_robot_msgs -- -j3 -l3
+[23.722s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gy/Omron_TM_ROS2/build/techman_robot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/techman_robot_msgs
+[24.241s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(techman_robot_msgs)
+[24.251s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs' for CMake module files
+[24.252s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gy/Omron_TM_ROS2/build/techman_robot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/techman_robot_msgs
+[24.255s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs' for CMake config files
+[24.256s] Level 1:colcon.colcon_core.shell:create_environment_hook('techman_robot_msgs', 'cmake_prefix_path')
+[24.258s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/hook/cmake_prefix_path.ps1'
+[24.292s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/hook/cmake_prefix_path.dsv'
+[24.296s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/hook/cmake_prefix_path.sh'
+[24.301s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/lib'
+[24.302s] Level 1:colcon.colcon_core.shell:create_environment_hook('techman_robot_msgs', 'ld_library_path_lib')
+[24.304s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/hook/ld_library_path_lib.ps1'
+[24.308s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/hook/ld_library_path_lib.dsv'
+[24.313s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/hook/ld_library_path_lib.sh'
+[24.320s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/bin'
+[24.321s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/lib/pkgconfig/techman_robot_msgs.pc'
+[24.322s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/lib/python3.8/site-packages'
+[24.323s] Level 1:colcon.colcon_core.shell:create_environment_hook('techman_robot_msgs', 'pythonpath')
+[24.325s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/hook/pythonpath.ps1'
+[24.333s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/hook/pythonpath.dsv'
+[24.336s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/hook/pythonpath.sh'
+[24.344s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/package.ps1'
+[24.345s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/package.dsv'
+[24.346s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/package.sh'
+[24.347s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/package.bash'
+[24.358s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/package.zsh'
+[24.362s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/colcon-core/packages/techman_robot_msgs)
+[24.758s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(techman_robot_msgs)
+[24.762s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs' for CMake module files
+[24.764s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs' for CMake config files
+[24.765s] Level 1:colcon.colcon_core.shell:create_environment_hook('techman_robot_msgs', 'cmake_prefix_path')
+[24.769s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/hook/cmake_prefix_path.ps1'
+[24.775s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/hook/cmake_prefix_path.dsv'
+[24.784s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/hook/cmake_prefix_path.sh'
+[24.791s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/lib'
+[24.802s] Level 1:colcon.colcon_core.shell:create_environment_hook('techman_robot_msgs', 'ld_library_path_lib')
+[24.803s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/hook/ld_library_path_lib.ps1'
+[24.804s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/hook/ld_library_path_lib.dsv'
+[24.805s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/hook/ld_library_path_lib.sh'
+[24.805s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/bin'
+[24.805s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/lib/pkgconfig/techman_robot_msgs.pc'
+[24.806s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/lib/python3.8/site-packages'
+[24.806s] Level 1:colcon.colcon_core.shell:create_environment_hook('techman_robot_msgs', 'pythonpath')
+[24.824s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/hook/pythonpath.ps1'
+[24.828s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/hook/pythonpath.dsv'
+[24.832s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/hook/pythonpath.sh'
+[24.837s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/package.ps1'
+[24.854s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/package.dsv'
+[24.855s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/package.sh'
+[24.856s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/package.bash'
+[24.867s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/techman_robot_msgs/package.zsh'
+[24.872s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/share/colcon-core/packages/techman_robot_msgs)
+[24.882s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/gy/Omron_TM_ROS2/tmrlib' with build type 'ament_cmake'
+[24.892s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/gy/Omron_TM_ROS2/tmrlib'
+[24.894s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[24.894s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[24.935s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[25.037s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gy/Omron_TM_ROS2/build/tmrlib': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tmrlib -- -j3 -l3
+[31.031s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gy/Omron_TM_ROS2/build/tmrlib' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tmrlib -- -j3 -l3
+[31.396s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gy/Omron_TM_ROS2/build/tmrlib': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tmrlib
+[31.537s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tmrlib)
+[31.540s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmrlib' for CMake module files
+[31.553s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmrlib' for CMake config files
+[31.553s] Level 1:colcon.colcon_core.shell:create_environment_hook('tmrlib', 'cmake_prefix_path')
+[31.554s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/hook/cmake_prefix_path.ps1'
+[31.550s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gy/Omron_TM_ROS2/build/tmrlib' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tmrlib
+[31.562s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/hook/cmake_prefix_path.dsv'
+[31.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/hook/cmake_prefix_path.sh'
+[31.569s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmrlib/lib'
+[31.573s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmrlib/bin'
+[31.573s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmrlib/lib/pkgconfig/tmrlib.pc'
+[31.573s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmrlib/lib/python3.8/site-packages'
+[31.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/package.ps1'
+[31.586s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/package.dsv'
+[31.592s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/package.sh'
+[31.599s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/package.bash'
+[31.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/package.zsh'
+[31.602s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gy/Omron_TM_ROS2/install/tmrlib/share/colcon-core/packages/tmrlib)
+[32.022s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tmrlib)
+[32.035s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmrlib' for CMake module files
+[32.037s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmrlib' for CMake config files
+[32.038s] Level 1:colcon.colcon_core.shell:create_environment_hook('tmrlib', 'cmake_prefix_path')
+[32.048s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/hook/cmake_prefix_path.ps1'
+[32.049s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/hook/cmake_prefix_path.dsv'
+[32.050s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/hook/cmake_prefix_path.sh'
+[32.051s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmrlib/lib'
+[32.051s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmrlib/bin'
+[32.051s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmrlib/lib/pkgconfig/tmrlib.pc'
+[32.051s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmrlib/lib/python3.8/site-packages'
+[32.053s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/package.ps1'
+[32.055s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/package.dsv'
+[32.059s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/package.sh'
+[32.064s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/package.bash'
+[32.067s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/package.zsh'
+[32.070s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gy/Omron_TM_ROS2/install/tmrlib/share/colcon-core/packages/tmrlib)
+[32.076s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/gy/Omron_TM_ROS2/src/pickplace' with build type 'ament_python'
+[32.077s] Level 1:colcon.colcon_core.shell:create_environment_hook('pickplace', 'ament_prefix_path')
+[32.082s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/pickplace/share/pickplace/hook/ament_prefix_path.ps1'
+[32.083s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/pickplace/share/pickplace/hook/ament_prefix_path.dsv'
+[32.084s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/pickplace/share/pickplace/hook/ament_prefix_path.sh'
+[32.086s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[32.096s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[32.137s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[33.407s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/gy/Omron_TM_ROS2/src/pickplace'
+[33.409s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[33.409s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[33.415s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[33.481s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gy/Omron_TM_ROS2/src/pickplace': PYTHONPATH=/home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pickplace build --build-base /home/gy/Omron_TM_ROS2/build/pickplace/build install --prefix /home/gy/Omron_TM_ROS2/install/pickplace --record /home/gy/Omron_TM_ROS2/build/pickplace/install.log --single-version-externally-managed
+[35.840s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/pickplace' for CMake module files
+[35.840s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/pickplace' for CMake config files
+[35.841s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/pickplace/lib'
+[35.841s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/pickplace/bin'
+[35.841s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/pickplace/lib/pkgconfig/pickplace.pc'
+[35.842s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages'
+[35.842s] Level 1:colcon.colcon_core.shell:create_environment_hook('pickplace', 'pythonpath')
+[35.843s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/pickplace/share/pickplace/hook/pythonpath.ps1'
+[35.849s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gy/Omron_TM_ROS2/src/pickplace' returned '0': PYTHONPATH=/home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pickplace build --build-base /home/gy/Omron_TM_ROS2/build/pickplace/build install --prefix /home/gy/Omron_TM_ROS2/install/pickplace --record /home/gy/Omron_TM_ROS2/build/pickplace/install.log --single-version-externally-managed
+[35.850s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/pickplace/share/pickplace/hook/pythonpath.dsv'
+[35.851s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/pickplace/share/pickplace/hook/pythonpath.sh'
+[35.851s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pickplace)
+[35.856s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/pickplace/share/pickplace/package.ps1'
+[35.860s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gy/Omron_TM_ROS2/install/pickplace/share/pickplace/package.dsv'
+[35.861s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/pickplace/share/pickplace/package.sh'
+[35.861s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/pickplace/share/pickplace/package.bash'
+[35.862s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/pickplace/share/pickplace/package.zsh'
+[35.863s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gy/Omron_TM_ROS2/install/pickplace/share/colcon-core/packages/pickplace)
+[35.863s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/gy/Omron_TM_ROS2/techman_robot_get_status' with build type 'ament_python'
+[35.864s] Level 1:colcon.colcon_core.shell:create_environment_hook('tm_get_status', 'ament_prefix_path')
+[35.865s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tm_get_status/share/tm_get_status/hook/ament_prefix_path.ps1'
+[35.884s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/tm_get_status/share/tm_get_status/hook/ament_prefix_path.dsv'
+[35.884s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tm_get_status/share/tm_get_status/hook/ament_prefix_path.sh'
+[35.886s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[35.886s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[35.909s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[36.452s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/gy/Omron_TM_ROS2/techman_robot_get_status'
+[36.455s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[36.456s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[36.462s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[36.485s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gy/Omron_TM_ROS2/techman_robot_get_status': PYTHONPATH=/home/gy/Omron_TM_ROS2/install/tm_get_status/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/tm_get_status build --build-base /home/gy/Omron_TM_ROS2/build/tm_get_status/build install --prefix /home/gy/Omron_TM_ROS2/install/tm_get_status --record /home/gy/Omron_TM_ROS2/build/tm_get_status/install.log --single-version-externally-managed
+[37.236s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tm_get_status' for CMake module files
+[37.237s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gy/Omron_TM_ROS2/techman_robot_get_status' returned '0': PYTHONPATH=/home/gy/Omron_TM_ROS2/install/tm_get_status/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/tm_get_status build --build-base /home/gy/Omron_TM_ROS2/build/tm_get_status/build install --prefix /home/gy/Omron_TM_ROS2/install/tm_get_status --record /home/gy/Omron_TM_ROS2/build/tm_get_status/install.log --single-version-externally-managed
+[37.242s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tm_get_status' for CMake config files
+[37.244s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tm_get_status/lib'
+[37.245s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tm_get_status/bin'
+[37.246s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tm_get_status/lib/pkgconfig/tm_get_status.pc'
+[37.247s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tm_get_status/lib/python3.8/site-packages'
+[37.248s] Level 1:colcon.colcon_core.shell:create_environment_hook('tm_get_status', 'pythonpath')
+[37.249s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tm_get_status/share/tm_get_status/hook/pythonpath.ps1'
+[37.260s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/tm_get_status/share/tm_get_status/hook/pythonpath.dsv'
+[37.261s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tm_get_status/share/tm_get_status/hook/pythonpath.sh'
+[37.261s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tm_get_status)
+[37.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tm_get_status/share/tm_get_status/package.ps1'
+[37.263s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gy/Omron_TM_ROS2/install/tm_get_status/share/tm_get_status/package.dsv'
+[37.264s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tm_get_status/share/tm_get_status/package.sh'
+[37.265s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tm_get_status/share/tm_get_status/package.bash'
+[37.267s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tm_get_status/share/tm_get_status/package.zsh'
+[37.268s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gy/Omron_TM_ROS2/install/tm_get_status/share/colcon-core/packages/tm_get_status)
+[37.269s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/gy/Omron_TM_ROS2/tmr_mod_urdf' with build type 'ament_python'
+[37.269s] Level 1:colcon.colcon_core.shell:create_environment_hook('tmr_mod_urdf', 'ament_prefix_path')
+[37.270s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/share/tmr_mod_urdf/hook/ament_prefix_path.ps1'
+[37.281s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/share/tmr_mod_urdf/hook/ament_prefix_path.dsv'
+[37.282s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/share/tmr_mod_urdf/hook/ament_prefix_path.sh'
+[37.283s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[37.283s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[37.289s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[37.843s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/gy/Omron_TM_ROS2/tmr_mod_urdf'
+[37.846s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[37.846s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[37.852s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[37.872s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gy/Omron_TM_ROS2/tmr_mod_urdf': PYTHONPATH=/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/tmr_mod_urdf build --build-base /home/gy/Omron_TM_ROS2/build/tmr_mod_urdf/build install --prefix /home/gy/Omron_TM_ROS2/install/tmr_mod_urdf --record /home/gy/Omron_TM_ROS2/build/tmr_mod_urdf/install.log --single-version-externally-managed
+[38.593s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf' for CMake module files
+[38.594s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf' for CMake config files
+[38.595s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/lib'
+[38.595s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/bin'
+[38.595s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/lib/pkgconfig/tmr_mod_urdf.pc'
+[38.595s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/lib/python3.8/site-packages'
+[38.596s] Level 1:colcon.colcon_core.shell:create_environment_hook('tmr_mod_urdf', 'pythonpath')
+[38.597s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/share/tmr_mod_urdf/hook/pythonpath.ps1'
+[38.597s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/share/tmr_mod_urdf/hook/pythonpath.dsv'
+[38.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/share/tmr_mod_urdf/hook/pythonpath.sh'
+[38.599s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tmr_mod_urdf)
+[38.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/share/tmr_mod_urdf/package.ps1'
+[38.602s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/share/tmr_mod_urdf/package.dsv'
+[38.603s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/share/tmr_mod_urdf/package.sh'
+[38.600s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gy/Omron_TM_ROS2/tmr_mod_urdf' returned '0': PYTHONPATH=/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/tmr_mod_urdf build --build-base /home/gy/Omron_TM_ROS2/build/tmr_mod_urdf/build install --prefix /home/gy/Omron_TM_ROS2/install/tmr_mod_urdf --record /home/gy/Omron_TM_ROS2/build/tmr_mod_urdf/install.log --single-version-externally-managed
+[38.604s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/share/tmr_mod_urdf/package.bash'
+[38.605s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/share/tmr_mod_urdf/package.zsh'
+[38.605s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/share/colcon-core/packages/tmr_mod_urdf)
+[38.616s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/gy/Omron_TM_ROS2/tmr_moveit_cpp_demo' with build type 'ament_cmake'
+[38.616s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/gy/Omron_TM_ROS2/tmr_moveit_cpp_demo'
+[38.618s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[38.618s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[38.623s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[38.658s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo -- -j3 -l3
+[40.254s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo -- -j3 -l3
+[40.294s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo
+[40.369s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tmr_moveit_cpp_demo)
+[40.373s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo' for CMake module files
+[40.375s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo' for CMake config files
+[40.375s] Level 1:colcon.colcon_core.shell:create_environment_hook('tmr_moveit_cpp_demo', 'cmake_prefix_path')
+[40.378s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/hook/cmake_prefix_path.ps1'
+[40.385s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/hook/cmake_prefix_path.dsv'
+[40.381s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo
+[40.391s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/hook/cmake_prefix_path.sh'
+[40.395s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/bin'
+[40.398s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/lib/pkgconfig/tmr_moveit_cpp_demo.pc'
+[40.400s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/lib/python3.8/site-packages'
+[40.405s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/package.ps1'
+[40.410s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/package.dsv'
+[40.415s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/package.sh'
+[40.428s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/package.bash'
+[40.435s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/package.zsh'
+[40.440s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/colcon-core/packages/tmr_moveit_cpp_demo)
+[40.489s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tmr_moveit_cpp_demo)
+[40.491s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo' for CMake module files
+[40.492s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo' for CMake config files
+[40.493s] Level 1:colcon.colcon_core.shell:create_environment_hook('tmr_moveit_cpp_demo', 'cmake_prefix_path')
+[40.494s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/hook/cmake_prefix_path.ps1'
+[40.495s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/hook/cmake_prefix_path.dsv'
+[40.495s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/hook/cmake_prefix_path.sh'
+[40.496s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/bin'
+[40.497s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/lib/pkgconfig/tmr_moveit_cpp_demo.pc'
+[40.497s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/lib/python3.8/site-packages'
+[40.498s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/package.ps1'
+[40.499s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/package.dsv'
+[40.500s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/package.sh'
+[40.501s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/package.bash'
+[40.501s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/package.zsh'
+[40.502s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/colcon-core/packages/tmr_moveit_cpp_demo)
+[40.503s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/gy/Omron_TM_ROS2/custom_package' with build type 'ament_cmake'
+[40.503s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/gy/Omron_TM_ROS2/custom_package'
+[40.504s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[40.504s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[40.511s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[40.623s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gy/Omron_TM_ROS2/build/custom_package': AMENT_PREFIX_PATH=/home/gy/tmr_ros2/install/techman_robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/techman_robot_msgs:/home/gy/tmdriver_ws/install/ui_for_debug_and_demo:/home/gy/tmdriver_ws/install/tmr_driver:/home/gy/tmdriver_ws/install/tmrlib:/home/gy/tmdriver_ws/install/tmr_msgs:/home/gy/tmdriver_ws/install/tmr_moveit_cpp_demo:/home/gy/tmdriver_ws/install/tmr_moveit_config_tm5-900:/home/gy/tmdriver_ws/install/tmr_description:/home/gy/tmdriver_ws/install/tm_driver:/home/gy/tmdriver_ws/install/demo:/home/gy/tmdriver_ws/install/tm_msgs:/home/gy/tmdriver_ws/install/custom_package:/home/gy/tmdriver_ws/install/techman_robot_msgs:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy LD_LIBRARY_PATH=/home/gy/tmr_ros2/install/techman_robot_msgs/lib:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/gy/tmr_ros2/install/techman_robot_msgs/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/custom_package -- -j3 -l3
+[44.038s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gy/Omron_TM_ROS2/build/custom_package' returned '0': AMENT_PREFIX_PATH=/home/gy/tmr_ros2/install/techman_robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/techman_robot_msgs:/home/gy/tmdriver_ws/install/ui_for_debug_and_demo:/home/gy/tmdriver_ws/install/tmr_driver:/home/gy/tmdriver_ws/install/tmrlib:/home/gy/tmdriver_ws/install/tmr_msgs:/home/gy/tmdriver_ws/install/tmr_moveit_cpp_demo:/home/gy/tmdriver_ws/install/tmr_moveit_config_tm5-900:/home/gy/tmdriver_ws/install/tmr_description:/home/gy/tmdriver_ws/install/tm_driver:/home/gy/tmdriver_ws/install/demo:/home/gy/tmdriver_ws/install/tm_msgs:/home/gy/tmdriver_ws/install/custom_package:/home/gy/tmdriver_ws/install/techman_robot_msgs:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy LD_LIBRARY_PATH=/home/gy/tmr_ros2/install/techman_robot_msgs/lib:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/gy/tmr_ros2/install/techman_robot_msgs/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/custom_package -- -j3 -l3
+[44.096s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gy/Omron_TM_ROS2/build/custom_package': AMENT_PREFIX_PATH=/home/gy/tmr_ros2/install/techman_robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/techman_robot_msgs:/home/gy/tmdriver_ws/install/ui_for_debug_and_demo:/home/gy/tmdriver_ws/install/tmr_driver:/home/gy/tmdriver_ws/install/tmrlib:/home/gy/tmdriver_ws/install/tmr_msgs:/home/gy/tmdriver_ws/install/tmr_moveit_cpp_demo:/home/gy/tmdriver_ws/install/tmr_moveit_config_tm5-900:/home/gy/tmdriver_ws/install/tmr_description:/home/gy/tmdriver_ws/install/tm_driver:/home/gy/tmdriver_ws/install/demo:/home/gy/tmdriver_ws/install/tm_msgs:/home/gy/tmdriver_ws/install/custom_package:/home/gy/tmdriver_ws/install/techman_robot_msgs:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy LD_LIBRARY_PATH=/home/gy/tmr_ros2/install/techman_robot_msgs/lib:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/gy/tmr_ros2/install/techman_robot_msgs/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/custom_package
+[44.209s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_package)
+[44.211s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/custom_package' for CMake module files
+[44.213s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gy/Omron_TM_ROS2/build/custom_package' returned '0': AMENT_PREFIX_PATH=/home/gy/tmr_ros2/install/techman_robot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/techman_robot_msgs:/home/gy/tmdriver_ws/install/ui_for_debug_and_demo:/home/gy/tmdriver_ws/install/tmr_driver:/home/gy/tmdriver_ws/install/tmrlib:/home/gy/tmdriver_ws/install/tmr_msgs:/home/gy/tmdriver_ws/install/tmr_moveit_cpp_demo:/home/gy/tmdriver_ws/install/tmr_moveit_config_tm5-900:/home/gy/tmdriver_ws/install/tmr_description:/home/gy/tmdriver_ws/install/tm_driver:/home/gy/tmdriver_ws/install/demo:/home/gy/tmdriver_ws/install/tm_msgs:/home/gy/tmdriver_ws/install/custom_package:/home/gy/tmdriver_ws/install/techman_robot_msgs:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy LD_LIBRARY_PATH=/home/gy/tmr_ros2/install/techman_robot_msgs/lib:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/gy/tmr_ros2/install/techman_robot_msgs/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/custom_package
+[44.219s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/custom_package' for CMake config files
+[44.219s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_package', 'cmake_prefix_path')
+[44.221s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/hook/cmake_prefix_path.ps1'
+[44.236s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/hook/cmake_prefix_path.dsv'
+[44.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/hook/cmake_prefix_path.sh'
+[44.238s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/custom_package/lib'
+[44.238s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/custom_package/bin'
+[44.238s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/custom_package/lib/pkgconfig/custom_package.pc'
+[44.238s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/custom_package/lib/python3.8/site-packages'
+[44.239s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/package.ps1'
+[44.240s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/package.dsv'
+[44.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/package.sh'
+[44.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/package.bash'
+[44.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/package.zsh'
+[44.243s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gy/Omron_TM_ROS2/install/custom_package/share/colcon-core/packages/custom_package)
+[44.304s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_package)
+[44.305s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/custom_package' for CMake module files
+[44.307s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/custom_package' for CMake config files
+[44.307s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_package', 'cmake_prefix_path')
+[44.308s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/hook/cmake_prefix_path.ps1'
+[44.309s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/hook/cmake_prefix_path.dsv'
+[44.310s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/hook/cmake_prefix_path.sh'
+[44.311s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/custom_package/lib'
+[44.311s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/custom_package/bin'
+[44.311s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/custom_package/lib/pkgconfig/custom_package.pc'
+[44.311s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/custom_package/lib/python3.8/site-packages'
+[44.313s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/package.ps1'
+[44.313s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/package.dsv'
+[44.314s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/package.sh'
+[44.315s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/package.bash'
+[44.315s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/package.zsh'
+[44.316s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gy/Omron_TM_ROS2/install/custom_package/share/colcon-core/packages/custom_package)
+[44.317s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/gy/Omron_TM_ROS2/tmr_moveit_config_tm5-900' with build type 'ament_cmake'
+[44.317s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/gy/Omron_TM_ROS2/tmr_moveit_config_tm5-900'
+[44.318s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[44.318s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[44.323s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[44.385s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gy/Omron_TM_ROS2/build/tmr_moveit_config_tm5-900': AMENT_PREFIX_PATH=/home/gy/tmr_ros2/install/tmr_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tmr_description:/home/gy/tmdriver_ws/install/ui_for_debug_and_demo:/home/gy/tmdriver_ws/install/tmr_driver:/home/gy/tmdriver_ws/install/tmrlib:/home/gy/tmdriver_ws/install/tmr_msgs:/home/gy/tmdriver_ws/install/tmr_moveit_cpp_demo:/home/gy/tmdriver_ws/install/tmr_moveit_config_tm5-900:/home/gy/tmdriver_ws/install/tmr_description:/home/gy/tmdriver_ws/install/tm_driver:/home/gy/tmdriver_ws/install/demo:/home/gy/tmdriver_ws/install/tm_msgs:/home/gy/tmdriver_ws/install/custom_package:/home/gy/tmdriver_ws/install/techman_robot_msgs:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tmr_moveit_config_tm5-900 -- -j3 -l3
+[44.606s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gy/Omron_TM_ROS2/build/tmr_moveit_config_tm5-900' returned '0': AMENT_PREFIX_PATH=/home/gy/tmr_ros2/install/tmr_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tmr_description:/home/gy/tmdriver_ws/install/ui_for_debug_and_demo:/home/gy/tmdriver_ws/install/tmr_driver:/home/gy/tmdriver_ws/install/tmrlib:/home/gy/tmdriver_ws/install/tmr_msgs:/home/gy/tmdriver_ws/install/tmr_moveit_cpp_demo:/home/gy/tmdriver_ws/install/tmr_moveit_config_tm5-900:/home/gy/tmdriver_ws/install/tmr_description:/home/gy/tmdriver_ws/install/tm_driver:/home/gy/tmdriver_ws/install/demo:/home/gy/tmdriver_ws/install/tm_msgs:/home/gy/tmdriver_ws/install/custom_package:/home/gy/tmdriver_ws/install/techman_robot_msgs:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tmr_moveit_config_tm5-900 -- -j3 -l3
+[44.648s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gy/Omron_TM_ROS2/build/tmr_moveit_config_tm5-900': AMENT_PREFIX_PATH=/home/gy/tmr_ros2/install/tmr_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tmr_description:/home/gy/tmdriver_ws/install/ui_for_debug_and_demo:/home/gy/tmdriver_ws/install/tmr_driver:/home/gy/tmdriver_ws/install/tmrlib:/home/gy/tmdriver_ws/install/tmr_msgs:/home/gy/tmdriver_ws/install/tmr_moveit_cpp_demo:/home/gy/tmdriver_ws/install/tmr_moveit_config_tm5-900:/home/gy/tmdriver_ws/install/tmr_description:/home/gy/tmdriver_ws/install/tm_driver:/home/gy/tmdriver_ws/install/demo:/home/gy/tmdriver_ws/install/tm_msgs:/home/gy/tmdriver_ws/install/custom_package:/home/gy/tmdriver_ws/install/techman_robot_msgs:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tmr_moveit_config_tm5-900
+[44.712s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tmr_moveit_config_tm5-900)
+[44.714s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900' for CMake module files
+[44.715s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900' for CMake config files
+[44.718s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gy/Omron_TM_ROS2/build/tmr_moveit_config_tm5-900' returned '0': AMENT_PREFIX_PATH=/home/gy/tmr_ros2/install/tmr_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tmr_description:/home/gy/tmdriver_ws/install/ui_for_debug_and_demo:/home/gy/tmdriver_ws/install/tmr_driver:/home/gy/tmdriver_ws/install/tmrlib:/home/gy/tmdriver_ws/install/tmr_msgs:/home/gy/tmdriver_ws/install/tmr_moveit_cpp_demo:/home/gy/tmdriver_ws/install/tmr_moveit_config_tm5-900:/home/gy/tmdriver_ws/install/tmr_description:/home/gy/tmdriver_ws/install/tm_driver:/home/gy/tmdriver_ws/install/demo:/home/gy/tmdriver_ws/install/tm_msgs:/home/gy/tmdriver_ws/install/custom_package:/home/gy/tmdriver_ws/install/techman_robot_msgs:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tmr_moveit_config_tm5-900
+[44.719s] Level 1:colcon.colcon_core.shell:create_environment_hook('tmr_moveit_config_tm5-900', 'cmake_prefix_path')
+[44.723s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/hook/cmake_prefix_path.ps1'
+[44.724s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/hook/cmake_prefix_path.dsv'
+[44.725s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/hook/cmake_prefix_path.sh'
+[44.730s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/bin'
+[44.730s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/lib/pkgconfig/tmr_moveit_config_tm5-900.pc'
+[44.731s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/lib/python3.8/site-packages'
+[44.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/package.ps1'
+[44.733s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/package.dsv'
+[44.734s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/package.sh'
+[44.735s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/package.bash'
+[44.745s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/package.zsh'
+[44.747s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/colcon-core/packages/tmr_moveit_config_tm5-900)
+[44.797s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tmr_moveit_config_tm5-900)
+[44.801s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900' for CMake module files
+[44.804s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900' for CMake config files
+[44.805s] Level 1:colcon.colcon_core.shell:create_environment_hook('tmr_moveit_config_tm5-900', 'cmake_prefix_path')
+[44.809s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/hook/cmake_prefix_path.ps1'
+[44.813s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/hook/cmake_prefix_path.dsv'
+[44.816s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/hook/cmake_prefix_path.sh'
+[44.822s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/bin'
+[44.824s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/lib/pkgconfig/tmr_moveit_config_tm5-900.pc'
+[44.825s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/lib/python3.8/site-packages'
+[44.827s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/package.ps1'
+[44.833s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/package.dsv'
+[44.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/package.sh'
+[44.836s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/package.bash'
+[44.837s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/package.zsh'
+[44.837s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/colcon-core/packages/tmr_moveit_config_tm5-900)
+[51.468s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gy/Omron_TM_ROS2/build/tm_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tm_msgs -- -j3 -l3
+[51.846s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gy/Omron_TM_ROS2/build/tm_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tm_msgs
+[52.127s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tm_msgs)
+[52.128s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gy/Omron_TM_ROS2/build/tm_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tm_msgs
+[52.130s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tm_msgs' for CMake module files
+[52.134s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tm_msgs' for CMake config files
+[52.135s] Level 1:colcon.colcon_core.shell:create_environment_hook('tm_msgs', 'cmake_prefix_path')
+[52.136s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/hook/cmake_prefix_path.ps1'
+[52.165s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/hook/cmake_prefix_path.dsv'
+[52.166s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/hook/cmake_prefix_path.sh'
+[52.168s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tm_msgs/lib'
+[52.168s] Level 1:colcon.colcon_core.shell:create_environment_hook('tm_msgs', 'ld_library_path_lib')
+[52.170s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/hook/ld_library_path_lib.ps1'
+[52.171s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/hook/ld_library_path_lib.dsv'
+[52.172s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/hook/ld_library_path_lib.sh'
+[52.173s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tm_msgs/bin'
+[52.173s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tm_msgs/lib/pkgconfig/tm_msgs.pc'
+[52.173s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tm_msgs/lib/python3.8/site-packages'
+[52.174s] Level 1:colcon.colcon_core.shell:create_environment_hook('tm_msgs', 'pythonpath')
+[52.175s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/hook/pythonpath.ps1'
+[52.176s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/hook/pythonpath.dsv'
+[52.177s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/hook/pythonpath.sh'
+[52.179s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/package.ps1'
+[52.182s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/package.dsv'
+[52.183s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/package.sh'
+[52.185s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/package.bash'
+[52.186s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/package.zsh'
+[52.186s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gy/Omron_TM_ROS2/install/tm_msgs/share/colcon-core/packages/tm_msgs)
+[52.207s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gy/Omron_TM_ROS2/build/tmr_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tmr_msgs -- -j3 -l3
+[52.556s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tm_msgs)
+[52.559s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tm_msgs' for CMake module files
+[52.562s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tm_msgs' for CMake config files
+[52.564s] Level 1:colcon.colcon_core.shell:create_environment_hook('tm_msgs', 'cmake_prefix_path')
+[52.567s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/hook/cmake_prefix_path.ps1'
+[52.571s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/hook/cmake_prefix_path.dsv'
+[52.575s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/hook/cmake_prefix_path.sh'
+[52.579s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tm_msgs/lib'
+[52.579s] Level 1:colcon.colcon_core.shell:create_environment_hook('tm_msgs', 'ld_library_path_lib')
+[52.580s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/hook/ld_library_path_lib.ps1'
+[52.581s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/hook/ld_library_path_lib.dsv'
+[52.581s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/hook/ld_library_path_lib.sh'
+[52.582s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tm_msgs/bin'
+[52.582s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tm_msgs/lib/pkgconfig/tm_msgs.pc'
+[52.582s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tm_msgs/lib/python3.8/site-packages'
+[52.582s] Level 1:colcon.colcon_core.shell:create_environment_hook('tm_msgs', 'pythonpath')
+[52.588s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/hook/pythonpath.ps1'
+[52.593s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/hook/pythonpath.dsv'
+[52.596s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/hook/pythonpath.sh'
+[52.598s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/package.ps1'
+[52.600s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/package.dsv'
+[52.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/package.sh'
+[52.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/package.bash'
+[52.603s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/package.zsh'
+[52.604s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gy/Omron_TM_ROS2/install/tm_msgs/share/colcon-core/packages/tm_msgs)
+[52.606s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/gy/Omron_TM_ROS2/demo' with build type 'ament_cmake'
+[52.606s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/gy/Omron_TM_ROS2/demo'
+[52.608s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[52.608s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[52.616s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[52.623s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/gy/Omron_TM_ROS2/tm_driver' with build type 'ament_cmake'
+[52.624s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/gy/Omron_TM_ROS2/tm_driver'
+[52.626s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[52.626s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[52.639s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[52.650s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gy/Omron_TM_ROS2/build/tmr_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tmr_msgs
+[52.803s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gy/Omron_TM_ROS2/build/tm_driver': AMENT_PREFIX_PATH=/home/gy/tmr_ros2/install/tm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tm_msgs:/home/gy/tmdriver_ws/install/ui_for_debug_and_demo:/home/gy/tmdriver_ws/install/tmr_driver:/home/gy/tmdriver_ws/install/tmrlib:/home/gy/tmdriver_ws/install/tmr_msgs:/home/gy/tmdriver_ws/install/tmr_moveit_cpp_demo:/home/gy/tmdriver_ws/install/tmr_moveit_config_tm5-900:/home/gy/tmdriver_ws/install/tmr_description:/home/gy/tmdriver_ws/install/tm_driver:/home/gy/tmdriver_ws/install/demo:/home/gy/tmdriver_ws/install/tm_msgs:/home/gy/tmdriver_ws/install/custom_package:/home/gy/tmdriver_ws/install/techman_robot_msgs:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy LD_LIBRARY_PATH=/home/gy/tmr_ros2/install/tm_msgs/lib:/home/gy/Omron_TM_ROS2/install/tm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/gy/tmr_ros2/install/tm_msgs/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/install/tm_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tm_driver -- -j3 -l3
+[52.886s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gy/Omron_TM_ROS2/build/demo': AMENT_PREFIX_PATH=/home/gy/tmr_ros2/install/tm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tm_msgs:/home/gy/tmdriver_ws/install/ui_for_debug_and_demo:/home/gy/tmdriver_ws/install/tmr_driver:/home/gy/tmdriver_ws/install/tmrlib:/home/gy/tmdriver_ws/install/tmr_msgs:/home/gy/tmdriver_ws/install/tmr_moveit_cpp_demo:/home/gy/tmdriver_ws/install/tmr_moveit_config_tm5-900:/home/gy/tmdriver_ws/install/tmr_description:/home/gy/tmdriver_ws/install/tm_driver:/home/gy/tmdriver_ws/install/demo:/home/gy/tmdriver_ws/install/tm_msgs:/home/gy/tmdriver_ws/install/custom_package:/home/gy/tmdriver_ws/install/techman_robot_msgs:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy LD_LIBRARY_PATH=/home/gy/tmr_ros2/install/tm_msgs/lib:/home/gy/Omron_TM_ROS2/install/tm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/gy/tmr_ros2/install/tm_msgs/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/install/tm_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/demo -- -j3 -l3
+[53.365s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tmr_msgs)
+[53.368s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_msgs' for CMake module files
+[53.369s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_msgs' for CMake config files
+[53.370s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gy/Omron_TM_ROS2/build/tmr_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tmr_msgs
+[53.372s] Level 1:colcon.colcon_core.shell:create_environment_hook('tmr_msgs', 'cmake_prefix_path')
+[53.373s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/hook/cmake_prefix_path.ps1'
+[53.376s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/hook/cmake_prefix_path.dsv'
+[53.377s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/hook/cmake_prefix_path.sh'
+[53.382s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_msgs/lib'
+[53.382s] Level 1:colcon.colcon_core.shell:create_environment_hook('tmr_msgs', 'ld_library_path_lib')
+[53.383s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/hook/ld_library_path_lib.ps1'
+[53.384s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/hook/ld_library_path_lib.dsv'
+[53.386s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/hook/ld_library_path_lib.sh'
+[53.387s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_msgs/bin'
+[53.388s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_msgs/lib/pkgconfig/tmr_msgs.pc'
+[53.388s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_msgs/lib/python3.8/site-packages'
+[53.388s] Level 1:colcon.colcon_core.shell:create_environment_hook('tmr_msgs', 'pythonpath')
+[53.391s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/hook/pythonpath.ps1'
+[53.392s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/hook/pythonpath.dsv'
+[53.395s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/hook/pythonpath.sh'
+[53.399s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/package.ps1'
+[53.408s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/package.dsv'
+[53.409s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/package.sh'
+[53.410s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/package.bash'
+[53.411s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/package.zsh'
+[53.412s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/colcon-core/packages/tmr_msgs)
+[53.791s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tmr_msgs)
+[53.794s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_msgs' for CMake module files
+[53.797s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_msgs' for CMake config files
+[53.799s] Level 1:colcon.colcon_core.shell:create_environment_hook('tmr_msgs', 'cmake_prefix_path')
+[53.802s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/hook/cmake_prefix_path.ps1'
+[53.806s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/hook/cmake_prefix_path.dsv'
+[53.810s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/hook/cmake_prefix_path.sh'
+[53.814s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_msgs/lib'
+[53.816s] Level 1:colcon.colcon_core.shell:create_environment_hook('tmr_msgs', 'ld_library_path_lib')
+[53.818s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/hook/ld_library_path_lib.ps1'
+[53.822s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/hook/ld_library_path_lib.dsv'
+[53.827s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/hook/ld_library_path_lib.sh'
+[53.830s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_msgs/bin'
+[53.830s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_msgs/lib/pkgconfig/tmr_msgs.pc'
+[53.830s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_msgs/lib/python3.8/site-packages'
+[53.830s] Level 1:colcon.colcon_core.shell:create_environment_hook('tmr_msgs', 'pythonpath')
+[53.831s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/hook/pythonpath.ps1'
+[53.840s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/hook/pythonpath.dsv'
+[53.841s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/hook/pythonpath.sh'
+[53.843s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/package.ps1'
+[53.852s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/package.dsv'
+[53.853s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/package.sh'
+[53.854s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/package.bash'
+[53.855s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/package.zsh'
+[53.864s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/colcon-core/packages/tmr_msgs)
+[53.873s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/gy/Omron_TM_ROS2/tmr_driver' with build type 'ament_cmake'
+[53.873s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/gy/Omron_TM_ROS2/tmr_driver'
+[53.874s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[53.874s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[53.890s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[54.009s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/gy/Omron_TM_ROS2/build/tmr_driver': AMENT_PREFIX_PATH=/home/gy/tmr_ros2/install/tmrlib:/home/gy/tmr_ros2/install/tmr_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tmrlib:/home/gy/Omron_TM_ROS2/install/tmr_msgs:/home/gy/tmdriver_ws/install/ui_for_debug_and_demo:/home/gy/tmdriver_ws/install/tmr_driver:/home/gy/tmdriver_ws/install/tmrlib:/home/gy/tmdriver_ws/install/tmr_msgs:/home/gy/tmdriver_ws/install/tmr_moveit_cpp_demo:/home/gy/tmdriver_ws/install/tmr_moveit_config_tm5-900:/home/gy/tmdriver_ws/install/tmr_description:/home/gy/tmdriver_ws/install/tm_driver:/home/gy/tmdriver_ws/install/demo:/home/gy/tmdriver_ws/install/tm_msgs:/home/gy/tmdriver_ws/install/custom_package:/home/gy/tmdriver_ws/install/techman_robot_msgs:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy LD_LIBRARY_PATH=/home/gy/tmr_ros2/install/tmrlib/lib:/home/gy/tmr_ros2/install/tmr_msgs/lib:/home/gy/Omron_TM_ROS2/install/tmr_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/gy/tmr_ros2/install/tmr_msgs/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/install/tmr_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/gy/Omron_TM_ROS2/tmr_driver -DCMAKE_INSTALL_PREFIX=/home/gy/Omron_TM_ROS2/install/tmr_driver
+[54.066s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/gy/Omron_TM_ROS2/build/tmr_driver' returned '1': AMENT_PREFIX_PATH=/home/gy/tmr_ros2/install/tmrlib:/home/gy/tmr_ros2/install/tmr_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tmrlib:/home/gy/Omron_TM_ROS2/install/tmr_msgs:/home/gy/tmdriver_ws/install/ui_for_debug_and_demo:/home/gy/tmdriver_ws/install/tmr_driver:/home/gy/tmdriver_ws/install/tmrlib:/home/gy/tmdriver_ws/install/tmr_msgs:/home/gy/tmdriver_ws/install/tmr_moveit_cpp_demo:/home/gy/tmdriver_ws/install/tmr_moveit_config_tm5-900:/home/gy/tmdriver_ws/install/tmr_description:/home/gy/tmdriver_ws/install/tm_driver:/home/gy/tmdriver_ws/install/demo:/home/gy/tmdriver_ws/install/tm_msgs:/home/gy/tmdriver_ws/install/custom_package:/home/gy/tmdriver_ws/install/techman_robot_msgs:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy LD_LIBRARY_PATH=/home/gy/tmr_ros2/install/tmrlib/lib:/home/gy/tmr_ros2/install/tmr_msgs/lib:/home/gy/Omron_TM_ROS2/install/tmr_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/gy/tmr_ros2/install/tmr_msgs/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/install/tmr_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/gy/Omron_TM_ROS2/tmr_driver -DCMAKE_INSTALL_PREFIX=/home/gy/Omron_TM_ROS2/install/tmr_driver
+[54.116s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tmr_driver)
+[54.118s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_driver' for CMake module files
+[54.119s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_driver' for CMake config files
+[54.120s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_driver/bin'
+[54.120s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_driver/lib/pkgconfig/tmr_driver.pc'
+[54.120s] Level 1:colcon.colcon_core.environment:checking '/home/gy/Omron_TM_ROS2/install/tmr_driver/lib/python3.8/site-packages'
+[54.121s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_driver/share/tmr_driver/package.ps1'
+[54.122s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/gy/Omron_TM_ROS2/install/tmr_driver/share/tmr_driver/package.dsv'
+[54.122s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_driver/share/tmr_driver/package.sh'
+[54.123s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_driver/share/tmr_driver/package.bash'
+[54.132s] INFO:colcon.colcon_core.shell:Creating package script '/home/gy/Omron_TM_ROS2/install/tmr_driver/share/tmr_driver/package.zsh'
+[54.133s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/gy/Omron_TM_ROS2/install/tmr_driver/share/colcon-core/packages/tmr_driver)
+[65.254s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[65.254s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[65.255s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[65.255s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[65.437s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[65.437s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[65.438s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[65.972s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[65.974s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/gy/Omron_TM_ROS2/install/local_setup.ps1'
+[65.998s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/gy/Omron_TM_ROS2/install/_local_setup_util_ps1.py'
+[66.015s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/gy/Omron_TM_ROS2/install/setup.ps1'
+[66.024s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/gy/Omron_TM_ROS2/install/local_setup.sh'
+[66.037s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/gy/Omron_TM_ROS2/install/_local_setup_util_sh.py'
+[66.038s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/gy/Omron_TM_ROS2/install/setup.sh'
+[66.049s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/gy/Omron_TM_ROS2/install/local_setup.bash'
+[66.067s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/gy/Omron_TM_ROS2/install/setup.bash'
+[66.083s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/gy/Omron_TM_ROS2/install/local_setup.zsh'
+[66.096s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/gy/Omron_TM_ROS2/install/setup.zsh'

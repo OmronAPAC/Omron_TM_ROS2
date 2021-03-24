@@ -1,0 +1,36 @@
+[0.103s] Invoking command in '/home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/Omron_TM_ROS2/src/install/pickplace:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/pickplace:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo -- -j3 -l3
+[0.122s] CMake Error: The current CMakeCache.txt directory /home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo/CMakeCache.txt is different than the directory /home/gy/tmr_ros2/build/tmr_moveit_cpp_demo where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+[0.201s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.273s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.782s] -- Found rosidl_default_runtime: 1.0.0 (/opt/ros/foxy/share/rosidl_default_runtime/cmake)
+[0.881s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.915s] -- Found rosidl_adapter: 1.2.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.209s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.621s] -- Configuring done
+[1.663s] -- Generating done
+[1.668s] -- Build files have been written to: /home/gy/tmr_ros2/build/tmr_moveit_cpp_demo
+[1.733s] Invoked command in '/home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/Omron_TM_ROS2/src/install/pickplace:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/pickplace:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo -- -j3 -l3
+[1.778s] Invoking command in '/home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/Omron_TM_ROS2/src/install/pickplace:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/pickplace:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo
+[1.791s] -- Install configuration: ""
+[1.792s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/launch
+[1.793s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/launch/run_moveit_cpp.rviz
+[1.793s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/launch/run_moveit_cpp.launch.py
+[1.793s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/config
+[1.793s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/config/moveit_cpp.yaml
+[1.793s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/config/controllers.yaml
+[1.793s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/ament_index/resource_index/package_run_dependencies/tmr_moveit_cpp_demo
+[1.794s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/ament_index/resource_index/parent_prefix_path/tmr_moveit_cpp_demo
+[1.795s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/environment/ament_prefix_path.sh
+[1.795s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/environment/ament_prefix_path.dsv
+[1.796s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/environment/path.sh
+[1.796s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/environment/path.dsv
+[1.796s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/local_setup.bash
+[1.797s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/local_setup.sh
+[1.798s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/local_setup.zsh
+[1.798s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/local_setup.dsv
+[1.798s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/package.dsv
+[1.799s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/ament_index/resource_index/packages/tmr_moveit_cpp_demo
+[1.799s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/cmake/tmr_moveit_cpp_demoConfig.cmake
+[1.799s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/cmake/tmr_moveit_cpp_demoConfig-version.cmake
+[1.799s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/package.xml
+[1.805s] Invoked command in '/home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/Omron_TM_ROS2/src/install/pickplace:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/pickplace:/home/gy/tmdriver_ws/install/tmr_mod_urdf:/home/gy/tmdriver_ws/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo

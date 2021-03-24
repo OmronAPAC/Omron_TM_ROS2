@@ -1,0 +1,32 @@
+CMake Error: The current CMakeCache.txt directory /home/gy/Omron_TM_ROS2/build/demo/CMakeCache.txt is different than the directory /home/gy/tmr_ros2/build/demo where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+-- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.3.0 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.2 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 2.0.3 (/opt/ros/foxy/share/sensor_msgs/cmake)
+-- Found tm_msgs: 1.0.0 (/home/gy/tmr_ros2/install/tm_msgs/share/tm_msgs/cmake)
+-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/gy/tmr_ros2/demo/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/gy/tmr_ros2/build/demo
+[35m[1mScanning dependencies of target demo_get_svr_response[0m
+[  3%] [32mBuilding CXX object CMakeFiles/demo_get_svr_response.dir/get_status_demo_src/demo_get_svr_response.cpp.o[0m
+Assembler messages:
+Fatal error: can't create CMakeFiles/demo_get_svr_response.dir/get_status_demo_src/demo_get_svr_response.cpp.o: No such file or directory
+make[2]: *** [CMakeFiles/demo_get_svr_response.dir/build.make:63: CMakeFiles/demo_get_svr_response.dir/get_status_demo_src/demo_get_svr_response.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:102: CMakeFiles/demo_get_svr_response.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

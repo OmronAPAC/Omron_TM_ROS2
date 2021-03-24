@@ -1,0 +1,21 @@
+[1.921s] Invoking command in '/home/gy/Omron_TM_ROS2/src/pickplace': PYTHONPATH=/home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pickplace build --build-base /home/gy/Omron_TM_ROS2/build/pickplace/build install --prefix /home/gy/Omron_TM_ROS2/install/pickplace --record /home/gy/Omron_TM_ROS2/build/pickplace/install.log --single-version-externally-managed
+[2.354s] running egg_info
+[2.356s] writing ../../build/pickplace/pickplace.egg-info/PKG-INFO
+[2.356s] writing dependency_links to ../../build/pickplace/pickplace.egg-info/dependency_links.txt
+[2.357s] writing entry points to ../../build/pickplace/pickplace.egg-info/entry_points.txt
+[2.358s] writing requirements to ../../build/pickplace/pickplace.egg-info/requires.txt
+[2.358s] writing top-level names to ../../build/pickplace/pickplace.egg-info/top_level.txt
+[2.437s] reading manifest file '../../build/pickplace/pickplace.egg-info/SOURCES.txt'
+[2.439s] writing manifest file '../../build/pickplace/pickplace.egg-info/SOURCES.txt'
+[2.440s] running build
+[2.440s] running build_py
+[2.440s] running install
+[2.442s] running install_lib
+[2.446s] running install_data
+[2.447s] running install_egg_info
+[2.450s] removing '/home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages/pickplace-0.0.0-py3.8.egg-info' (and everything under it)
+[2.451s] Copying ../../build/pickplace/pickplace.egg-info to /home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages/pickplace-0.0.0-py3.8.egg-info
+[2.453s] running install_scripts
+[2.485s] Installing param_talker script to /home/gy/Omron_TM_ROS2/install/pickplace/lib/pickplace
+[2.486s] writing list of installed files to '/home/gy/Omron_TM_ROS2/build/pickplace/install.log'
+[2.525s] Invoked command in '/home/gy/Omron_TM_ROS2/src/pickplace' returned '0': PYTHONPATH=/home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pickplace build --build-base /home/gy/Omron_TM_ROS2/build/pickplace/build install --prefix /home/gy/Omron_TM_ROS2/install/pickplace --record /home/gy/Omron_TM_ROS2/build/pickplace/install.log --single-version-externally-managed

@@ -1,0 +1,31 @@
+-- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rosidl_default_runtime: 1.0.0 (/opt/ros/foxy/share/rosidl_default_runtime/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/gy/tmr_ros2/build/tmr_moveit_cpp_demo
+-- Install configuration: ""
+-- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/launch
+-- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/launch/run_moveit_cpp.rviz
+-- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/launch/run_moveit_cpp.launch.py
+-- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/config
+-- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/config/moveit_cpp.yaml
+-- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/config/controllers.yaml
+-- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/ament_index/resource_index/package_run_dependencies/tmr_moveit_cpp_demo
+-- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/ament_index/resource_index/parent_prefix_path/tmr_moveit_cpp_demo
+-- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/environment/ament_prefix_path.sh
+-- Installing: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/environment/path.sh
+-- Installing: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/environment/path.dsv
+-- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/local_setup.bash
+-- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/local_setup.sh
+-- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/local_setup.zsh
+-- Installing: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/local_setup.dsv
+-- Installing: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/package.dsv
+-- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/ament_index/resource_index/packages/tmr_moveit_cpp_demo
+-- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/cmake/tmr_moveit_cpp_demoConfig.cmake
+-- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/cmake/tmr_moveit_cpp_demoConfig-version.cmake
+-- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/package.xml

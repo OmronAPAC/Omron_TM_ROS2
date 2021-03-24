@@ -1,0 +1,13 @@
+CMake Error: The current CMakeCache.txt directory /home/gy/Omron_TM_ROS2/build/tm_driver/CMakeCache.txt is different than the directory /home/gy/tmr_ros2/build/tm_driver where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+Assembler messages:
+Fatal error: can't create CMakeFiles/tm_driver.dir/src/tm_ros2_composition.cpp.o: No such file or directory
+Assembler messages:
+Fatal error: can't create CMakeFiles/tm_driver.dir/src/tm_ros2_sct.cpp.o: No such file or directory
+Assembler messages:
+Fatal error: can't create CMakeFiles/tm_driver.dir/src/tm_ros2_svr.cpp.o: No such file or directory
+make[2]: *** [CMakeFiles/tm_driver.dir/build.make:63: CMakeFiles/tm_driver.dir/src/tm_ros2_composition.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/tm_driver.dir/build.make:76: CMakeFiles/tm_driver.dir/src/tm_ros2_sct.cpp.o] Error 1
+make[2]: *** [CMakeFiles/tm_driver.dir/build.make:89: CMakeFiles/tm_driver.dir/src/tm_ros2_svr.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/tm_driver.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
