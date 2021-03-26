@@ -1,8 +1,8 @@
 import tf2_ros
-from geometry_msgs.msg import TransformStamped
 import rclpy.time
 import math
 from math import radians
+from geometry_msgs.msg import TransformStamped, Vector3, Quaternion
 
 """
 TO DO:
@@ -48,6 +48,7 @@ def quaternion_from_euler(obj):
     pitch = radians(obj[4])
     yaw = radians(obj[5])
     
+
     cy = math.cos(yaw * 0.5)
     sy = math.sin(yaw * 0.5)
     cp = math.cos(pitch * 0.5)
@@ -84,14 +85,10 @@ class TransformClass():
         base_to_home.header.frame_id = 'base'
         base_to_home.header.stamp = rclpy.time.Time().to_msg()
         base_to_home.child_frame_id = 'home'
-        base_to_home.transform.translation.x = 0.4
-        base_to_home.transform.translation.y = 0.0
-        base_to_home.transform.translation.z = 0.4
-        base_to_home.transform.rotation.w = 0.0
-        base_to_home.transform.rotation.x = 0.707
-        base_to_home.transform.rotation.y = -0.707
-        base_to_home.transform.rotation.z = 0.0
+        base_to_home.transform.translation = Vector3(x = 0.4, y = 0.0, z = 0.4)
+        base_to_home.transform.rotation = Quaternion(w = 0.0, x = 0.707, y = -0.707, z = 0.0)
 
+        """
         vbase_to_pick = TransformStamped()
         vbase_to_pick.header.frame_id = 'vbase'
         vbase_to_pick.header.stamp = rclpy.time.Time().to_msg()
@@ -103,6 +100,7 @@ class TransformClass():
         vbase_to_pick.transform.rotation.x = 0.0
         vbase_to_pick.transform.rotation.y = 0.0
         vbase_to_pick.transform.rotation.z = 1.0
+        
 
         vbase_to_place = TransformStamped()
         vbase_to_place.header.frame_id = 'vbase'
@@ -115,6 +113,7 @@ class TransformClass():
         vbase_to_place.transform.rotation.x = 0.0
         vbase_to_place.transform.rotation.y = 0.0
         vbase_to_place.transform.rotation.z = 1.0
+        """
 
         pick_to_safepick = TransformStamped()
         pick_to_safepick.header.frame_id = 'pick'
@@ -141,10 +140,60 @@ class TransformClass():
         place_to_safeplace.transform.rotation.z = 0.0
 
         self.tfBuffer.set_transform(base_to_home, "")
-        self.tfBuffer.set_transform(vbase_to_pick, "")
-        self.tfBuffer.set_transform(vbase_to_place, "")
         self.tfBuffer.set_transform(pick_to_safepick, "")
         self.tfBuffer.set_transform(place_to_safeplace, "")
+
+
+    def add_pick_and_place(self, pickeuler, placeeuler, vbaseeuler):
+        tempBuffer = tf2_ros.Buffer()
+        pickquat = quaternion_from_euler(pickeuler)
+        placequat = quaternion_from_euler(placeeuler)
+        vbasequat = quaternion_from_euler(vbaseeuler)
+
+        base_to_pick = TransformStamped()
+        base_to_pick.header.frame_id = 'base'
+        base_to_pick.header.stamp = rclpy.time.Time().to_msg()
+        base_to_pick.child_frame_id = 'pick'
+        base_to_pick.transform.translation = Vector3(x = pickquat[0], y = pickquat[1], z = pickquat[2])
+        base_to_pick.transform.rotation.w = pickquat[3]
+        base_to_pick.transform.rotation.x = pickquat[4]
+        base_to_pick.transform.rotation.y = pickquat[5]
+        base_to_pick.transform.rotation.z = pickquat[6]
+        
+        base_to_place = TransformStamped()
+        base_to_place.header.frame_id = 'base'
+        base_to_place.header.stamp = rclpy.time.Time().to_msg()
+        base_to_place.child_frame_id = 'place'
+        base_to_place.transform.translation = Vector3(x = placequat[0], y = placequat[1], z = placequat[2])
+        base_to_place.transform.rotation.w = placequat[3]
+        base_to_place.transform.rotation.x = placequat[4]
+        base_to_place.transform.rotation.y = placequat[5]
+        base_to_place.transform.rotation.z = placequat[6]
+
+        base_to_vbase = TransformStamped()
+        base_to_vbase.header.frame_id = 'base'
+        base_to_vbase.header.stamp = rclpy.time.Time().to_msg()
+        base_to_vbase.child_frame_id = 'vbase'
+        base_to_vbase.transform.translation = Vector3(x = vbasequat[0], y = vbasequat[1], z = vbasequat[2])
+        base_to_vbase.transform.rotation.w = vbasequat[3]
+        base_to_vbase.transform.rotation.x = vbasequat[4]
+        base_to_vbase.transform.rotation.y = vbasequat[5]
+        base_to_vbase.transform.rotation.z = vbasequat[6]
+        
+        tempBuffer.set_transform(base_to_pick, "")
+        tempBuffer.set_transform(base_to_place, "")
+        tempBuffer.set_transform(base_to_vbase, "")
+
+        vbase_to_pick = tempBuffer.lookup_transform('vbase', 'pick', rclpy.time.Time(seconds=0))
+        vbase_to_place = tempBuffer.lookup_transform('vbase', 'place', rclpy.time.Time(seconds=0))
+
+        #print(stamped_to_euler(self.vbase_to_pick))
+
+        self.tfBuffer.set_transform(vbase_to_pick, "")
+        self.tfBuffer.set_transform(vbase_to_place, "")
+
+
+
 
     def add_vbase(self, quat):
         base_to_vbase = TransformStamped()
@@ -161,8 +210,9 @@ class TransformClass():
         
         self.tfBuffer.set_transform(base_to_vbase, "")
 
+
     def get_home(self):
-        home_tstamped = self.tfBuffer.lookup_transform('home', 'base', rclpy.time.Time(seconds=0))
+        home_tstamped = self.tfBuffer.lookup_transform('base', 'home', rclpy.time.Time(seconds=0))
         home_euler = stamped_to_euler(home_tstamped)
         return home_euler
     
@@ -170,12 +220,10 @@ class TransformClass():
     def get_picks(self, vbase_euler):
         vbase_quaternion = quaternion_from_euler(vbase_euler)
         self.add_vbase(vbase_quaternion)
-
-        #print(stamped_to_euler(self.tfBuffer.lookup_transform('base', 'pick', rclpy.time.Time(seconds=0))))
-
         pick_tstamped = self.tfBuffer.lookup_transform('base', 'pick', rclpy.time.Time(seconds=0))
         safepick_tstamped = self.tfBuffer.lookup_transform('base', 'safepick', rclpy.time.Time(seconds=0))
         pick_euler = stamped_to_euler(pick_tstamped)
+        #print(pick_euler)
         safepick_euler = stamped_to_euler(safepick_tstamped)
         return pick_euler, safepick_euler
 
@@ -195,3 +243,4 @@ if __name__ == '__main__':
     test = Coords()
     print(test.get_places([1.0, 1.0, 1.0, 0.0, 0.0, 0.0]))
 """
+

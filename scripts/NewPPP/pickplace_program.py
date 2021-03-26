@@ -55,7 +55,7 @@ if __name__ == '__main__':
     tf = Transform.TransformClass()
 
 
-    home = [0.4, 0.0, 0.4, -3.14159, 0.0, 1.59]
+    home = [0.3, 0.0, 0.3, -3.14159, 0.0, 1.59]
     """
     pick = [0.52, -0.19, 0.0, -3.14159, 0.0, 1.59]
     place = [0.4, 0.3, 0.2, -3.14159, 0.0, 1.59]
@@ -65,24 +65,26 @@ if __name__ == '__main__':
 
     tf.add_pick_and_place(init_pick, init_place, get_positions("null", vbase_name))
 
-    pick, safepick = get_positions("pick", vbase_name)
+    while True:
+        pick, safepick = get_positions("pick", vbase_name)
 
-    mover.set_position(safepick)
-    io.open()
-    waiter.wait_for_complete("io") # CHANGE THIS
-    mover.set_position(pick)
-    io.close()
-    waiter.wait_for_complete("io") # CHANGE THIS
-    mover.set_position(safepick)
+        mover.set_position(safepick)
+        
+        io.open()
+        waiter.wait_for_complete("io") # CHANGE THIS
+        mover.set_position(pick)
+        io.close()
+        waiter.wait_for_complete("io") # CHANGE THIS
+        mover.set_position(safepick)
+        
+        place, safeplace = get_positions("place", vbase_name)
 
-    place, safeplace = get_positions("place", vbase_name)
-
-    mover.set_position(safeplace)
-    mover.set_position(place)
-    io.open()
-    waiter.wait_for_complete("io") # CHANGE THIS
-    mover.set_position(safeplace)
-
+        mover.set_position(safeplace)
+        mover.set_position(place)
+        io.open()
+        waiter.wait_for_complete("io") # CHANGE THIS
+        mover.set_position(safeplace)
+        
     mover.set_position(home)
     
 

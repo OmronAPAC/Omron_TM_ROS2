@@ -1,6 +1,6 @@
 import rclpy
 from tm_msgs.srv import *
-
+from libraries import Waiter
 
 """
 TO DO:
@@ -18,15 +18,15 @@ class IOClass:
         self.request.module = 1
         self.request.type = 1
         self.request.pin = 0
-
+        
     def open(self):
         self.request.state = 1.0
-        self.resp = self.set_io.call_async(self.request)
+        self.set_io.call_async(self.request)
         #print("Opening")
 
     def close(self):
         self.request.state = 0.0
-        self.resp = self.set_io.call_async(self.request)
+        self.set_io.call_async(self.request)
         #print("Closing")
 
 

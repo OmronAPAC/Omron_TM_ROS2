@@ -57,10 +57,10 @@ def quaternion_from_euler(obj):
     sr = math.sin(roll * 0.5)
 
     q = [0] * 4
-    q[0] = cy * cp * cr + sy * sp * sr
-    q[1] = cy * cp * sr - sy * sp * cr
-    q[2] = sy * cp * sr + cy * sp * cr
-    q[3] = sy * cp * cr - cy * sp * sr
+    q[0] = cy * cp * cr + sy * sp * sr #w
+    q[1] = cy * cp * sr - sy * sp * cr #x
+    q[2] = sy * cp * sr + cy * sp * cr #y
+    q[3] = sy * cp * cr - cy * sp * sr #z
 
     return ([x, y, z] + q)
 
@@ -88,57 +88,19 @@ class TransformClass():
         base_to_home.transform.translation = Vector3(x = 0.4, y = 0.0, z = 0.4)
         base_to_home.transform.rotation = Quaternion(w = 0.0, x = 0.707, y = -0.707, z = 0.0)
 
-        vbase_to_pick = TransformStamped()
-        vbase_to_pick.header.frame_id = 'vbase'
-        vbase_to_pick.header.stamp = rclpy.time.Time().to_msg()
-        vbase_to_pick.child_frame_id = 'pick'
-        """
-        vbase_to_pick.transform.translation.x = 0.2
-        vbase_to_pick.transform.translation.y = -0.19
-        vbase_to_pick.transform.translation.z = 0.0
-        vbase_to_pick.transform.rotation.w = 0.0
-        vbase_to_pick.transform.rotation.x = 0.0
-        vbase_to_pick.transform.rotation.y = 0.0
-        vbase_to_pick.transform.rotation.z = 1.0
-        """
-
-        vbase_to_place = TransformStamped()
-        vbase_to_place.header.frame_id = 'vbase'
-        vbase_to_place.header.stamp = rclpy.time.Time().to_msg()
-        vbase_to_place.child_frame_id = 'place'
-        """
-        vbase_to_place.transform.translation.x = -0.2
-        vbase_to_place.transform.translation.y = -0.19
-        vbase_to_place.transform.translation.z = 0.0
-        vbase_to_place.transform.rotation.w = 0.0
-        vbase_to_place.transform.rotation.x = 0.0
-        vbase_to_place.transform.rotation.y = 0.0
-        vbase_to_place.transform.rotation.z = 1.0
-        """
-
         pick_to_safepick = TransformStamped()
         pick_to_safepick.header.frame_id = 'pick'
         pick_to_safepick.header.stamp = rclpy.time.Time().to_msg()
         pick_to_safepick.child_frame_id = 'safepick'
-        pick_to_safepick.transform.translation.x = 0.0
-        pick_to_safepick.transform.translation.y = 0.0
-        pick_to_safepick.transform.translation.z = -0.15
-        pick_to_safepick.transform.rotation.w = 1.0
-        pick_to_safepick.transform.rotation.x = 0.0
-        pick_to_safepick.transform.rotation.y = 0.0
-        pick_to_safepick.transform.rotation.z = 0.0
+        pick_to_safepick.transform.translation = Vector3(x = 0.0, y = 0.0, z = -0.15)
+        pick_to_safepick.transform.rotation = Quaternion(w = 1.0, x = 0.0, y = 0.0, z = 0.0)
 
         place_to_safeplace = TransformStamped()
         place_to_safeplace.header.frame_id = 'place'
         place_to_safeplace.header.stamp = rclpy.time.Time().to_msg()
         place_to_safeplace.child_frame_id = 'safeplace'
-        place_to_safeplace.transform.translation.x = 0.0
-        place_to_safeplace.transform.translation.y = 0.0
-        place_to_safeplace.transform.translation.z = -0.15
-        place_to_safeplace.transform.rotation.w = 1.0
-        place_to_safeplace.transform.rotation.x = 0.0
-        place_to_safeplace.transform.rotation.y = 0.0
-        place_to_safeplace.transform.rotation.z = 0.0
+        place_to_safeplace.transform.translation = Vector3(x = 0.0, y = 0.0, z = -0.15)
+        place_to_safeplace.transform.rotation = Quaternion(w = 1.0, x = 0.0, y = 0.0, z = 0.0)
 
         self.tfBuffer.set_transform(base_to_home, "")
         self.tfBuffer.set_transform(pick_to_safepick, "")
@@ -156,58 +118,40 @@ class TransformClass():
         base_to_pick.header.stamp = rclpy.time.Time().to_msg()
         base_to_pick.child_frame_id = 'pick'
         base_to_pick.transform.translation = Vector3(x = pickquat[0], y = pickquat[1], z = pickquat[2])
-        base_to_pick.transform.rotation.w = pickquat[3]
-        base_to_pick.transform.rotation.x = pickquat[4]
-        base_to_pick.transform.rotation.y = pickquat[5]
-        base_to_pick.transform.rotation.z = pickquat[6]
+        base_to_pick.transform.rotation = Quaternion(w = pickquat[3], x = pickquat[4], y = pickquat[5], z = pickquat[6])
         
         base_to_place = TransformStamped()
         base_to_place.header.frame_id = 'base'
         base_to_place.header.stamp = rclpy.time.Time().to_msg()
         base_to_place.child_frame_id = 'place'
         base_to_place.transform.translation = Vector3(x = placequat[0], y = placequat[1], z = placequat[2])
-        base_to_place.transform.rotation.w = placequat[3]
-        base_to_place.transform.rotation.x = placequat[4]
-        base_to_place.transform.rotation.y = placequat[5]
-        base_to_place.transform.rotation.z = placequat[6]
+        base_to_place.transform.rotation = Quaternion(w = placequat[3], x = placequat[4], y = placequat[5], z = placequat[6])
 
         base_to_vbase = TransformStamped()
         base_to_vbase.header.frame_id = 'base'
         base_to_vbase.header.stamp = rclpy.time.Time().to_msg()
         base_to_vbase.child_frame_id = 'vbase'
         base_to_vbase.transform.translation = Vector3(x = vbasequat[0], y = vbasequat[1], z = vbasequat[2])
-        base_to_vbase.transform.rotation.w = vbasequat[3]
-        base_to_vbase.transform.rotation.x = vbasequat[4]
-        base_to_vbase.transform.rotation.y = vbasequat[5]
-        base_to_vbase.transform.rotation.z = vbasequat[6]
+        base_to_vbase.transform.rotation = Quaternion(w = vbasequat[3], x = vbasequat[4], y = vbasequat[5], z = vbasequat[6])
         
         tempBuffer.set_transform(base_to_pick, "")
         tempBuffer.set_transform(base_to_place, "")
         tempBuffer.set_transform(base_to_vbase, "")
 
-        self.vbase_to_pick = tempBuffer.lookup_transform('vbase', 'pick', rclpy.time.Time(seconds=0))
-        self.vbase_to_place = tempBuffer.lookup_transform('vbase', 'place', rclpy.time.Time(seconds=0))
+        vbase_to_pick = tempBuffer.lookup_transform('vbase', 'pick', rclpy.time.Time(seconds=0))
+        vbase_to_place = tempBuffer.lookup_transform('vbase', 'place', rclpy.time.Time(seconds=0))
 
-        print(self.vbase_to_pick)
-
-        self.tfBuffer.set_transform(self.vbase_to_pick, "")
-        self.tfBuffer.set_transform(self.vbase_to_place, "")
+        self.tfBuffer.set_transform(vbase_to_pick, "")
+        self.tfBuffer.set_transform(vbase_to_place, "")
 
 
-
-
-    def add_vbase(self, quat):
+    def add_vbase(self, vbasequat):
         base_to_vbase = TransformStamped()
         base_to_vbase.header.frame_id = 'base'
         base_to_vbase.header.stamp = rclpy.time.Time().to_msg()
         base_to_vbase.child_frame_id = 'vbase'
-        base_to_vbase.transform.translation.x = quat[0]
-        base_to_vbase.transform.translation.y = quat[1]
-        base_to_vbase.transform.translation.z = quat[2]
-        base_to_vbase.transform.rotation.w = quat[3]
-        base_to_vbase.transform.rotation.x = quat[4]
-        base_to_vbase.transform.rotation.y = quat[5]
-        base_to_vbase.transform.rotation.z = quat[6]
+        base_to_vbase.transform.translation = Vector3(x = vbasequat[0], y = vbasequat[1], z = vbasequat[2])
+        base_to_vbase.transform.rotation = Quaternion(w = vbasequat[3], x = vbasequat[4], y = vbasequat[5], z = vbasequat[6])
         
         self.tfBuffer.set_transform(base_to_vbase, "")
 
@@ -224,6 +168,7 @@ class TransformClass():
         pick_tstamped = self.tfBuffer.lookup_transform('base', 'pick', rclpy.time.Time(seconds=0))
         safepick_tstamped = self.tfBuffer.lookup_transform('base', 'safepick', rclpy.time.Time(seconds=0))
         pick_euler = stamped_to_euler(pick_tstamped)
+        #print(pick_euler)
         safepick_euler = stamped_to_euler(safepick_tstamped)
         return pick_euler, safepick_euler
 
@@ -243,3 +188,4 @@ if __name__ == '__main__':
     test = Coords()
     print(test.get_places([1.0, 1.0, 1.0, 0.0, 0.0, 0.0]))
 """
+
