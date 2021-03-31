@@ -41,10 +41,38 @@ class ModbusClass:
         curBaseReg = self.client.read_input_registers(8300, 12)
         return self.decode(curBaseReg)
 
-    #Cartesian coordinates and rotation w.r.t Robot base WITH tool
+    # Returns cartesian coordinates and rotation w.r.t Robot base WITH tool
     def get_pos(self):
         curPosReg = self.client.read_input_registers(7049, 12)
         return self.decode(curPosReg)
+
+    # Open IO using modbus
+    def open_io(self):
+        self.client.write_coil(800, 1)
+
+    # Close IO using modbus
+    def close_io(self):
+        self.client.write_coil(800, 0)
+
+    # Initialise the gripper via IO coupling
+    def init_io(self):
+        self.client.write_coil(800, 0)
+        self.client.write_coil(801, 0)
+        time.sleep(0.1)
+        self.client.write_coil(800, 1)
+        time.sleep(0.1)
+        self.client.write_coil(800, 0)
+        time.sleep(0.1)
+        self.client.write_coil(800, 1)
+        time.sleep(0.1)
+        self.client.write_coil(800, 0)
+
+
+    # Get IO status using modbus
+    def io_status(self):
+        stateReg = self.client.read_discrete_inputs(800, 1)
+        print(stateReg.bits[0])
+
 
 
 """

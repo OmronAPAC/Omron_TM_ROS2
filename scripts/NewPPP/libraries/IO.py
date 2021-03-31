@@ -5,6 +5,7 @@ from libraries import Waiter
 """
 TO DO:
     - Add end effector initialise sequence
+    - Do Modbus reading for IO
 """
 
 class IOClass:
@@ -30,6 +31,4 @@ class IOClass:
         #print("Closing")
 
 
-    
-    
 
