@@ -1,15 +1,16 @@
 import rclpy
 import time
 import sys
-sys.path.append("..")
-
-from libraries import Waiter
+sys.path.append("path")
+"""
 from libraries import Waiter
 from libraries import Move
 from libraries import IO
 from libraries import Modbus
 from libraries import Transform
 from libraries import Script
+"""
+from libraries.Waiter import *
 
 """
 TODO:
@@ -38,9 +39,9 @@ def get_positions(cmd):
 def main():
     rclpy.init()
     node = rclpy.create_node("PickPlaceNode")
-    node.declare_parameter('base_to_pick', [0.52, -0.19, 0.0, -3.14159, 0.0, 1.59])
+    node.declare_parameter('pick', [0.52, -0.19, 0.0, -3.14159, 0.0, 1.59])
 
-    my_param = node.get_parameter('base_to_pick').get_parameter_value().double_array_value
+    my_param = node.get_parameter('pick').get_parameter_value().double_array_value
     node.get_logger().info('Hello %s!' % list(my_param))
     
     waiter = Waiter.WaiterClass()

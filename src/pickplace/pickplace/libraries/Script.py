@@ -9,18 +9,18 @@ class ScriptClass:
         while not self.send_script.wait_for_service(timeout_sec=1.0):
             self.listen_node.get_logger().info('send_script service not available, waiting again...')
 
-        self.request = SendScript.Request()
+        self.script_request = SendScript.Request()
         
 
     def exit_script(self):
-        self.request.script = "ScriptExit()"
-        resp = self.send_script.call_async(self.request)
+        self.script_request.script = "ScriptExit()"
+        resp = self.send_script.call_async(self.script_request)
 
 
     def change_base(self, base):
-        self.request.script = "ChangeBase(\"" + base + "\")"
+        self.script_request.script = "ChangeBase(\"" + base + "\")"
         #print("ChangeBase(\"" + base + "\")")
-        resp = self.send_script.call_async(self.request)
+        resp = self.send_script.call_async(self.script_request)
   
 
 

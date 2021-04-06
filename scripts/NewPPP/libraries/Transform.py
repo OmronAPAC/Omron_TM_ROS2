@@ -11,70 +11,6 @@ TO DO:
     - Find libraries for the e2q and q2e
 """
 
-def euler_from_quaternion(x, y, z, rw, rx, ry, rz):
-    """
-    Convert a quaternion into euler angles (roll, pitch, yaw)
-    roll is rotation around x in radians (counterclockwise)
-    pitch is rotation around y in radians (counterclockwise)
-    yaw is rotation around z in radians (counterclockwise)
-    """
-    t0 = +2.0 * (rw * rx + ry * rz)
-    t1 = +1.0 - 2.0 * (rx * rx + ry * ry)
-    roll_x = round(math.atan2(t0, t1), 5)
-    
-    t2 = +2.0 * (rw * ry - rz * rx)
-    t2 = +1.0 if t2 > +1.0 else t2
-    t2 = -1.0 if t2 < -1.0 else t2
-    pitch_y = round(math.asin(t2), 5)
-    
-    t3 = +2.0 * (rw * rz + rx * ry)
-    t4 = +1.0 - 2.0 * (ry * ry + rz * rz)
-    yaw_z = round(math.atan2(t3, t4), 5)
-    
-    return ([x, y, z, roll_x, pitch_y, yaw_z]) # in meters and radians
-
-
-def quaternion_from_euler(obj):
-    """
-    IMPT: 
-        -INPUT IS IN mm AND deg, SO IT IS CONVERTED TO m AND rad HERE
-    Converts euler roll, pitch, yaw to quaternion
-    quat = [w, x, y, z]
-    """
-    x = obj[0]
-    y = obj[1]
-    z = obj[2]
-    roll = obj[3]
-    pitch = obj[4]
-    yaw = obj[5]
-
-    cy = math.cos(yaw * 0.5)
-    sy = math.sin(yaw * 0.5)
-    cp = math.cos(pitch * 0.5)
-    sp = math.sin(pitch * 0.5)
-    cr = math.cos(roll * 0.5)
-    sr = math.sin(roll * 0.5)
-
-    q = [0] * 4
-    q[0] = cy * cp * cr + sy * sp * sr #w
-    q[1] = cy * cp * sr - sy * sp * cr #x
-    q[2] = sy * cp * sr + cy * sp * cr #y
-    q[3] = sy * cp * cr - cy * sp * sr #z
-
-    return ([x, y, z] + q)
-
-
-def stamped_to_euler(obj):
-    x = obj.transform.translation.x
-    y = obj.transform.translation.y
-    z = obj.transform.translation.z
-    rw = obj.transform.rotation.w
-    rx = obj.transform.rotation.x
-    ry = obj.transform.rotation.y
-    rz = obj.transform.rotation.z
-    return (euler_from_quaternion(x, y, z, rw, rx, ry, rz))
-    
-
 
 class TransformClass():
     def __init__(self):
@@ -105,6 +41,71 @@ class TransformClass():
         self.tfBuffer.set_transform(pick_to_safepick, "")
         self.tfBuffer.set_transform(place_to_safeplace, "")
 
+
+    def euler_from_quaternion(self, x, y, z, rw, rx, ry, rz):
+        """
+        Convert a quaternion into euler angles (roll, pitch, yaw)
+        roll is rotation around x in radians (counterclockwise)
+        pitch is rotation around y in radians (counterclockwise)
+        yaw is rotation around z in radians (counterclockwise)
+        """
+        t0 = +2.0 * (rw * rx + ry * rz)
+        t1 = +1.0 - 2.0 * (rx * rx + ry * ry)
+        roll_x = round(math.atan2(t0, t1), 5)
+        
+        t2 = +2.0 * (rw * ry - rz * rx)
+        t2 = +1.0 if t2 > +1.0 else t2
+        t2 = -1.0 if t2 < -1.0 else t2
+        pitch_y = round(math.asin(t2), 5)
+        
+        t3 = +2.0 * (rw * rz + rx * ry)
+        t4 = +1.0 - 2.0 * (ry * ry + rz * rz)
+        yaw_z = round(math.atan2(t3, t4), 5)
+        
+        return ([x, y, z, roll_x, pitch_y, yaw_z]) # in meters and radians
+
+
+    def quaternion_from_euler(self, obj):
+        """
+        IMPT: 
+            -INPUT IS IN mm AND deg, SO IT IS CONVERTED TO m AND rad HERE
+        Converts euler roll, pitch, yaw to quaternion
+        quat = [w, x, y, z]
+        """
+        x = obj[0]
+        y = obj[1]
+        z = obj[2]
+        roll = obj[3]
+        pitch = obj[4]
+        yaw = obj[5]
+
+        cy = math.cos(yaw * 0.5)
+        sy = math.sin(yaw * 0.5)
+        cp = math.cos(pitch * 0.5)
+        sp = math.sin(pitch * 0.5)
+        cr = math.cos(roll * 0.5)
+        sr = math.sin(roll * 0.5)
+
+        q = [0] * 4
+        q[0] = cy * cp * cr + sy * sp * sr #w
+        q[1] = cy * cp * sr - sy * sp * cr #x
+        q[2] = sy * cp * sr + cy * sp * cr #y
+        q[3] = sy * cp * cr - cy * sp * sr #z
+
+        return ([x, y, z] + q)
+
+
+    def stamped_to_euler(self, obj):
+        x = obj.transform.translation.x
+        y = obj.transform.translation.y
+        z = obj.transform.translation.z
+        rw = obj.transform.rotation.w
+        rx = obj.transform.rotation.x
+        ry = obj.transform.rotation.y
+        rz = obj.transform.rotation.z
+        return (self.euler_from_quaternion(x, y, z, rw, rx, ry, rz))
+
+
     def convert_units(self, obj):
         x = obj[0] * 0.001
         y = obj[1] * 0.001
@@ -116,10 +117,10 @@ class TransformClass():
         return [x, y, z, roll, pitch, yaw]
 
 
-    def add_pp(self, pp_euler, vbase_pp_euler, pp_name, vbase_name):
+    def transform_pp(self, pp_euler, vbase_pp_euler, pp_name, vbase_name):
         tempBuffer = tf2_ros.Buffer()
-        ppquat = quaternion_from_euler(self.convert_units(pp_euler))
-        vbase_pp_quat = quaternion_from_euler(self.convert_units(vbase_pp_euler))
+        ppquat = self.quaternion_from_euler(self.convert_units(pp_euler))
+        vbase_pp_quat = self.quaternion_from_euler(self.convert_units(vbase_pp_euler))
 
         base_to_pp = TransformStamped()
         base_to_pp.header.frame_id = 'base'
@@ -140,15 +141,12 @@ class TransformClass():
 
         vbase_to_pp = tempBuffer.lookup_transform(vbase_name, pp_name, rclpy.time.Time(seconds=0))
 
-        return stamped_to_euler(vbase_to_pp)
+        return self.stamped_to_euler(vbase_to_pp)
 
-    def get_vbase(self, pp_euler, vbase_pp_euler, pp_name, vbase_name):
-        None
-        
 
     def add_vbases(self, vbase_pick, vbase_place):
-        vbase_pick = quaternion_from_euler(self.convert_units(vbase_pick))
-        vbase_place = quaternion_from_euler(self.convert_units(vbase_place))
+        vbase_pick = self.quaternion_from_euler(self.convert_units(vbase_pick))
+        vbase_place = self.quaternion_from_euler(self.convert_units(vbase_place))
 
         vbase_to_pick = TransformStamped()
         vbase_to_pick.header.frame_id = 'vbase_pick'
@@ -182,27 +180,27 @@ class TransformClass():
 
     def get_home(self):
         home_tstamped = self.tfBuffer.lookup_transform('base', 'home', rclpy.time.Time(seconds=0))
-        home_euler = stamped_to_euler(home_tstamped)
+        home_euler = self.stamped_to_euler(home_tstamped)
         return home_euler
     
 
     def get_picks(self, vbase_euler, vbase_name):
-        vbase_quaternion = quaternion_from_euler(self.convert_units(vbase_euler))
+        vbase_quaternion = self.quaternion_from_euler(self.convert_units(vbase_euler))
         self.update_vbase(vbase_quaternion, vbase_name)
         pick_tstamped = self.tfBuffer.lookup_transform('base', 'pick', rclpy.time.Time(seconds=0))
         safepick_tstamped = self.tfBuffer.lookup_transform('base', 'safepick', rclpy.time.Time(seconds=0))
-        pick_euler = stamped_to_euler(pick_tstamped)
-        safepick_euler = stamped_to_euler(safepick_tstamped)
+        pick_euler = self.stamped_to_euler(pick_tstamped)
+        safepick_euler = self.stamped_to_euler(safepick_tstamped)
         return pick_euler, safepick_euler
 
 
     def get_places(self, vbase_euler, vbase_name):
-        vbase_quaternion = quaternion_from_euler(self.convert_units(vbase_euler))
+        vbase_quaternion = self.quaternion_from_euler(self.convert_units(vbase_euler))
         self.update_vbase(vbase_quaternion, vbase_name)
         place_tstamped = self.tfBuffer.lookup_transform('base', 'place', rclpy.time.Time(seconds=0))
         safeplace_tstamped = self.tfBuffer.lookup_transform('base', 'safeplace', rclpy.time.Time(seconds=0))
-        place_euler = stamped_to_euler(place_tstamped)
-        safeplace_euler = stamped_to_euler(safeplace_tstamped)
+        place_euler = self.stamped_to_euler(place_tstamped)
+        safeplace_euler = self.stamped_to_euler(safeplace_tstamped)
         return place_euler, safeplace_euler
 
 

@@ -16,13 +16,13 @@ class ModbusClass:
     def start_program(self):
         print("Starting project...")
         status = self.client.write_coil(7104, True, unit=1)
-        time.sleep(5)
+        time.sleep(3)
 
     # Stop the TM project via Modbus
     def stop_program(self):
         print("Stopping project...")
         status = self.client.write_coil(7105, True, unit=1)
-        time.sleep(5)
+        time.sleep(3)
 
     # Decode the object obtained from reading the Modbus input registers
     def decode(self, input):
@@ -49,29 +49,36 @@ class ModbusClass:
     # Open IO using modbus
     def open_io(self):
         self.client.write_coil(800, 1)
+        time.sleep(0.1)
+        while (not self.io_status()):
+            time.sleep(0.1)
 
     # Close IO using modbus
     def close_io(self):
         self.client.write_coil(800, 0)
+        time.sleep(0.1)
+        while (not self.io_status()):
+            time.sleep(0.1)
 
     # Initialise the gripper via IO coupling
     def init_io(self):
         self.client.write_coil(800, 0)
         self.client.write_coil(801, 0)
-        time.sleep(0.1)
+        time.sleep(0.3)
         self.client.write_coil(800, 1)
-        time.sleep(0.1)
+        time.sleep(0.3)
         self.client.write_coil(800, 0)
-        time.sleep(0.1)
-        self.client.write_coil(800, 1)
-        time.sleep(0.1)
-        self.client.write_coil(800, 0)
+        time.sleep(0.3)
+        self.client.write_coil(801, 1)
+        time.sleep(0.3)
+        self.client.write_coil(801, 0)
 
 
     # Get IO status using modbus
     def io_status(self):
         stateReg = self.client.read_discrete_inputs(800, 1)
-        print(stateReg.bits[0])
+        #print(stateReg.bits[0])
+        return stateReg.bits[0]
 
 
 

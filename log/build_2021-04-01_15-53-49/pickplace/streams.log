@@ -1,0 +1,31 @@
+[0.552s] Invoking command in '/home/gy/Omron_TM_ROS2/src/pickplace': PYTHONPATH=/home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pickplace build --build-base /home/gy/Omron_TM_ROS2/build/pickplace/build install --prefix /home/gy/Omron_TM_ROS2/install/pickplace --record /home/gy/Omron_TM_ROS2/build/pickplace/install.log --single-version-externally-managed
+[1.050s] running egg_info
+[1.051s] writing ../../build/pickplace/pickplace.egg-info/PKG-INFO
+[1.052s] writing dependency_links to ../../build/pickplace/pickplace.egg-info/dependency_links.txt
+[1.052s] writing entry points to ../../build/pickplace/pickplace.egg-info/entry_points.txt
+[1.052s] writing requirements to ../../build/pickplace/pickplace.egg-info/requires.txt
+[1.052s] writing top-level names to ../../build/pickplace/pickplace.egg-info/top_level.txt
+[1.131s] reading manifest file '../../build/pickplace/pickplace.egg-info/SOURCES.txt'
+[1.133s] writing manifest file '../../build/pickplace/pickplace.egg-info/SOURCES.txt'
+[1.133s] running build
+[1.133s] running build_py
+[1.133s] copying pickplace/pickplace_program.py -> /home/gy/Omron_TM_ROS2/build/pickplace/build/lib/pickplace
+[1.134s] running install
+[1.136s] running install_lib
+[1.138s] copying /home/gy/Omron_TM_ROS2/build/pickplace/build/lib/pickplace/pickplace_program.py -> /home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages/pickplace
+[1.139s] byte-compiling /home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages/pickplace/pickplace_program.py to pickplace_program.cpython-38.pyc
+[1.141s]   File "/home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages/pickplace/pickplace_program.py", line 13
+[1.141s]     from libraries.* import *
+[1.141s]                    ^
+[1.141s] SyntaxError: invalid syntax
+[1.142s] 
+[1.142s] running install_data
+[1.142s] copying package.xml -> /home/gy/Omron_TM_ROS2/install/pickplace/share/pickplace
+[1.142s] running install_egg_info
+[1.145s] removing '/home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages/pickplace-0.0.0-py3.8.egg-info' (and everything under it)
+[1.146s] Copying ../../build/pickplace/pickplace.egg-info to /home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages/pickplace-0.0.0-py3.8.egg-info
+[1.147s] running install_scripts
+[1.181s] Installing initialise script to /home/gy/Omron_TM_ROS2/install/pickplace/lib/pickplace
+[1.182s] Installing pickplace script to /home/gy/Omron_TM_ROS2/install/pickplace/lib/pickplace
+[1.182s] writing list of installed files to '/home/gy/Omron_TM_ROS2/build/pickplace/install.log'
+[1.217s] Invoked command in '/home/gy/Omron_TM_ROS2/src/pickplace' returned '0': PYTHONPATH=/home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pickplace build --build-base /home/gy/Omron_TM_ROS2/build/pickplace/build install --prefix /home/gy/Omron_TM_ROS2/install/pickplace --record /home/gy/Omron_TM_ROS2/build/pickplace/install.log --single-version-externally-managed

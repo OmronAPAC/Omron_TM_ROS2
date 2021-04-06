@@ -104,8 +104,8 @@ def main():
     print("Initialising pickplace configuration...")
 
     # Obtain the pick and place coordinates w.r.t VISION base
-    vbase_pick = tf.add_pp(base_pick, pick_vision_base, 'pick', 'vbase_pick')
-    vbase_place = tf.add_pp(base_place, place_vision_base, 'place', 'vbase_place')
+    vbase_pick = tf.transform_pp(base_pick, pick_vision_base, 'pick', 'vbase_pick')
+    vbase_place = tf.transform_pp(base_place, place_vision_base, 'place', 'vbase_place')
 
     # Export variables to a txt file
     config = {
