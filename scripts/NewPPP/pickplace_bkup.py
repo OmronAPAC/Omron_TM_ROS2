@@ -3,7 +3,9 @@ import time
 import sys
 import json
 
+from libraries import Waiter
 from libraries import Move
+from libraries import IO
 from libraries import Modbus
 from libraries import Transform
 from libraries import Script
@@ -20,6 +22,7 @@ TODO:
 
 def get_positions(vbase_name, vjob_name):
     listener.exit_script()
+    waiter.wait_for_complete("vision")
     listener.change_base(vjob_name)
     time.sleep(0.1)
     new_vbase = modbus.get_base()
@@ -52,7 +55,11 @@ if __name__ == '__main__':
         vbase_place =  data['vbase_place']
     
     modbus = Modbus.ModbusClass()
+    #modbus.start_program()
+
+    waiter = Waiter.WaiterClass()
     mover = Move.MoveClass()
+    io = IO.IOClass()
     listener = Script.ScriptClass()
     tf = Transform.TransformClass()
 
@@ -75,18 +82,20 @@ if __name__ == '__main__':
         pick, safepick = get_positions("vbase_pick", vjob_name)
         mover.set_position(safepick)
         
-        modbus.open_io()
+        io.open()
+        waiter.wait_for_complete("io") # CHANGE THIS
         mover.set_position(pick)
-        modbus.close_io()
+        io.close()
+        waiter.wait_for_complete("io") # CHANGE THIS
         mover.set_position(safepick)
-
+        
         mover.set_position(view_place)
         place, safeplace = get_positions("vbase_place", vjob_name)
         mover.set_position(safeplace)
         mover.set_position(place)
-        modbus.open_io()
+        io.open()
+        waiter.wait_for_complete("io") # CHANGE THIS
         mover.set_position(safeplace)
-
         
     mover.set_position(home)
 
@@ -101,7 +110,6 @@ if __name__ == '__main__':
 [320.17999267578125, 4.130000114440918, 3.4000000953674316, -179.86000061035156, 0.5, -89.23999786376953]
 [320.17999267578125, 4.130000114440918, 3.4000000953674316, -179.86000061035156, 0.5, -89.23999786376953]
 [274.0, -51.59000015258789, 3.4100000858306885, -179.99000549316406, 0.3499999940395355, -77.5999984741211]
-
+"""
 [446.3699951171875, -138.80999755859375, 53.849998474121094, -166.94000244140625, 2.990000009536743, -98.88999938964844]
 [457.25, 139.61000061035156, 3.3399999141693115, -179.2899932861328, -0.18000000715255737, -94.80000305175781]
-"""

@@ -20,10 +20,6 @@ class WaiterClass():
         if (self.cmd == "vision"):
             if (msg.script == 'Listen1'):
                 self.isNotDone = False
-        elif (self.cmd == "io"):
-            if (msg.script == "OK;1"):
-                time.sleep(1)
-                self.isNotDone = False
 
     def wait_for_complete(self, cmd):
         #print("Waiting...")

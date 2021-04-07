@@ -11,10 +11,33 @@ class ScriptClass:
 
         self.script_request = SendScript.Request()
         
+        self.cmd = ""
+        self.isNotDone = True
+        self.subscription = self.listen_node.create_subscription(SctResponse, 'sct_response', self.listener_callback, 10)
+        self.subscription  # prevent unused variable warning
+
+    def listener_callback(self, msg):
+        #self.listen_node.get_logger().info('I heard: "%s"' % msg.script)
+        if (self.cmd == "vision"):
+            if (msg.script == 'Listen1'):
+                self.isNotDone = False
+
+
+    def wait_for_complete(self, cmd):
+        #print("Waiting...")
+        self.cmd = cmd
+        self.isNotDone = True
+        while (self.isNotDone):
+            rclpy.spin_once(self.listen_node)
+            print("Hi")
+
 
     def exit_script(self):
+        print("1")
         self.script_request.script = "ScriptExit()"
         resp = self.send_script.call_async(self.script_request)
+        
+        self.wait_for_complete()
 
 
     def change_base(self, base):

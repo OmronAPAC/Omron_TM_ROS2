@@ -5,9 +5,9 @@ import json
 from math import radians
 from math import degrees
 
-from libraries import Waiter
+#from libraries import Waiter
 from libraries import Move
-from libraries import IO
+#from libraries import IO
 from libraries import Modbus
 from libraries import Transform
 from libraries import Script
@@ -32,9 +32,8 @@ def start_tm():
         i -= 1
         time.sleep(1)
 
-def get_vbase(listener, waiter, vjob_name):
+def get_vbase(listener, vjob_name):
     listener.exit_script()
-    waiter.wait_for_complete("vision")
     listener.change_base(vjob_name)
     time.sleep(0.1)
     new_vbase = modbus.get_base()
@@ -77,8 +76,7 @@ def main():
     start_tm()
     print("debug")
     listener = Script.ScriptClass()
-    waiter = Waiter.WaiterClass()
-    pick_vision_base = get_vbase(listener, waiter, vjob_name)
+    pick_vision_base = get_vbase(listener, vjob_name)
     modbus.stop_program()
     modbus.open_io()
 
@@ -93,7 +91,7 @@ def main():
 
     # Run the TM program to get the vision base
     start_tm()
-    place_vision_base = get_vbase(listener, waiter, vjob_name)
+    place_vision_base = get_vbase(listener, vjob_name)
     modbus.stop_program()
 
     # Get the place coordinate w.r.t. robot base, then open the gripper

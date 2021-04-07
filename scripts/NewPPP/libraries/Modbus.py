@@ -49,14 +49,14 @@ class ModbusClass:
     # Open IO using modbus
     def open_io(self):
         self.client.write_coil(800, 1)
-        time.sleep(0.1)
+        time.sleep(0.2)
         while (not self.io_status()):
             time.sleep(0.1)
 
     # Close IO using modbus
     def close_io(self):
         self.client.write_coil(800, 0)
-        time.sleep(0.1)
+        time.sleep(0.2)
         while (not self.io_status()):
             time.sleep(0.1)
 
@@ -76,10 +76,11 @@ class ModbusClass:
 
     # Get IO status using modbus
     def io_status(self):
-        stateReg = self.client.read_discrete_inputs(800, 1)
+        stateReg = self.client.read_discrete_inputs(801, 1)
         #print(stateReg.bits[0])
         return stateReg.bits[0]
 
+    
 
 
 """

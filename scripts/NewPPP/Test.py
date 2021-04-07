@@ -35,9 +35,13 @@ def get_positions(vbase_name, vjob_name):
 
 
 if __name__ == '__main__':
-
+    rclpy.init()
+    move = Move.MoveClass()
     modbus = Modbus.ModbusClass()
+    #modbus.init_io()
+    move.set_position([0.52, -0.19, 0.1, -3.14159, 0.0, 1.59])
     modbus.open_io()
+    move.set_position([0.52, -0.19, 0.2, -3.14159, 0.0, 1.59])
     modbus.close_io()
 
     
