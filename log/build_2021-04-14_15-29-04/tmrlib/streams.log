@@ -1,0 +1,69 @@
+[0.042s] Invoking command in '/home/gy/Omron_TM_ROS2/build/tmrlib': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tmrlib -- -j3 -l3
+[0.062s] CMake Error: The current CMakeCache.txt directory /home/gy/Omron_TM_ROS2/build/tmrlib/CMakeCache.txt is different than the directory /home/gy/tmr_ros2/build/tmrlib where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+[0.258s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.334s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.902s] -- Found rclcpp: 2.3.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.150s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.164s] -- Found rosidl_adapter: 1.2.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.457s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.077s] -- Found rmw_implementation_cmake: 1.0.2 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.094s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.027s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[3.278s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.283s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.287s] -- Configured cppcheck include dirs: /home/gy/tmr_ros2/tmrlib/include
+[3.287s] -- Configured cppcheck exclude dirs and/or files: 
+[3.290s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.290s] -- Configured cpplint exclude dirs and/or files: 
+[3.296s] -- Added test 'lint_cmake' to check CMake code style
+[3.300s] -- Added test 'uncrustify' to check C / C++ code style
+[3.300s] -- Configured uncrustify additional arguments: 
+[3.302s] -- Added test 'xmllint' to check XML markup files
+[3.313s] -- Configuring done
+[3.358s] -- Generating done
+[3.362s] -- Build files have been written to: /home/gy/tmr_ros2/build/tmrlib
+[3.423s] [ 12%] [32mBuilding CXX object CMakeFiles/tmrdriver.dir/src/tmr_driver.cpp.o[0m
+[3.429s] [ 25%] [32mBuilding CXX object CMakeFiles/tmrdriver.dir/src/tmr_command.cpp.o[0m
+[3.444s] [ 37%] [32mBuilding CXX object CMakeFiles/tmrdriver.dir/src/tmr_tmsct_communication.cpp.o[0m
+[8.395s] [ 50%] [32mBuilding CXX object CMakeFiles/tmrdriver.dir/src/tmr_communication.cpp.o[0m
+[8.443s] [ 62%] [32mBuilding CXX object CMakeFiles/tmrdriver.dir/src/tmr_tmsvr_communication.cpp.o[0m
+[8.472s] [ 75%] [32mBuilding CXX object CMakeFiles/tmrdriver.dir/src/tmr_robot_state.cpp.o[0m
+[11.678s] [ 87%] [32mBuilding CXX object CMakeFiles/tmrdriver.dir/src/tmr_tmpacket.cpp.o[0m
+[13.262s] [100%] [32m[1mLinking CXX static library libtmrdriver.a[0m
+[13.735s] [100%] Built target tmrdriver
+[13.786s] Invoked command in '/home/gy/Omron_TM_ROS2/build/tmrlib' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tmrlib -- -j3 -l3
+[13.972s] Invoking command in '/home/gy/Omron_TM_ROS2/build/tmrlib': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tmrlib
+[14.020s] -- Install configuration: ""
+[14.021s] -- Up-to-date: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/environment/library_path.sh
+[14.021s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/environment/library_path.dsv
+[14.022s] -- Up-to-date: /home/gy/tmr_ros2/install/tmrlib/include
+[14.027s] -- Up-to-date: /home/gy/tmr_ros2/install/tmrlib/include/tmr
+[14.028s] -- Up-to-date: /home/gy/tmr_ros2/install/tmrlib/include/tmr/tmr_communication.h
+[14.028s] -- Up-to-date: /home/gy/tmr_ros2/install/tmrlib/include/tmr/tmr_tmpacket.h
+[14.028s] -- Up-to-date: /home/gy/tmr_ros2/install/tmrlib/include/tmr/tmr_print.h
+[14.029s] -- Up-to-date: /home/gy/tmr_ros2/install/tmrlib/include/tmr/tmr_robot_state.h
+[14.029s] -- Up-to-date: /home/gy/tmr_ros2/install/tmrlib/include/tmr/tmr_tmsct_communication.h
+[14.029s] -- Up-to-date: /home/gy/tmr_ros2/install/tmrlib/include/tmr/tmr_command.h
+[14.029s] -- Up-to-date: /home/gy/tmr_ros2/install/tmrlib/include/tmr/tmr_tmsvr_communication.h
+[14.030s] -- Up-to-date: /home/gy/tmr_ros2/install/tmrlib/include/tmr/tmr_data_table.h
+[14.030s] -- Up-to-date: /home/gy/tmr_ros2/install/tmrlib/include/tmr/tmr_driver.h
+[14.030s] -- Up-to-date: /home/gy/tmr_ros2/install/tmrlib/lib/libtmrdriver.a
+[14.031s] -- Up-to-date: /home/gy/tmr_ros2/install/tmrlib/share/ament_index/resource_index/package_run_dependencies/tmrlib
+[14.031s] -- Up-to-date: /home/gy/tmr_ros2/install/tmrlib/share/ament_index/resource_index/parent_prefix_path/tmrlib
+[14.032s] -- Up-to-date: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/environment/ament_prefix_path.sh
+[14.032s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/environment/ament_prefix_path.dsv
+[14.033s] -- Up-to-date: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/environment/path.sh
+[14.033s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/environment/path.dsv
+[14.033s] -- Up-to-date: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/local_setup.bash
+[14.034s] -- Up-to-date: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/local_setup.sh
+[14.035s] -- Up-to-date: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/local_setup.zsh
+[14.036s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/local_setup.dsv
+[14.037s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/package.dsv
+[14.039s] -- Up-to-date: /home/gy/tmr_ros2/install/tmrlib/share/ament_index/resource_index/packages/tmrlib
+[14.052s] -- Up-to-date: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/cmake/export_tmrdriverExport.cmake
+[14.053s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/cmake/export_tmrdriverExport-noconfig.cmake
+[14.054s] -- Up-to-date: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/cmake/ament_cmake_export_targets-extras.cmake
+[14.054s] -- Up-to-date: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/cmake/tmrlibConfig.cmake
+[14.054s] -- Up-to-date: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/cmake/tmrlibConfig-version.cmake
+[14.055s] -- Up-to-date: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/package.xml
+[14.071s] Invoked command in '/home/gy/Omron_TM_ROS2/build/tmrlib' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tmrlib

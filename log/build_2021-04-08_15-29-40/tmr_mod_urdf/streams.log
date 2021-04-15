@@ -1,0 +1,22 @@
+[0.551s] Invoking command in '/home/gy/tmr_ros2/tmr_mod_urdf': PYTHONPATH=/home/gy/tmr_ros2/install/tmr_mod_urdf/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/tmr_mod_urdf build --build-base /home/gy/tmr_ros2/build/tmr_mod_urdf/build install --prefix /home/gy/tmr_ros2/install/tmr_mod_urdf --record /home/gy/tmr_ros2/build/tmr_mod_urdf/install.log --single-version-externally-managed
+[1.087s] running egg_info
+[1.088s] writing ../build/tmr_mod_urdf/tmr_mod_urdf.egg-info/PKG-INFO
+[1.090s] writing dependency_links to ../build/tmr_mod_urdf/tmr_mod_urdf.egg-info/dependency_links.txt
+[1.090s] writing entry points to ../build/tmr_mod_urdf/tmr_mod_urdf.egg-info/entry_points.txt
+[1.090s] writing requirements to ../build/tmr_mod_urdf/tmr_mod_urdf.egg-info/requires.txt
+[1.090s] writing top-level names to ../build/tmr_mod_urdf/tmr_mod_urdf.egg-info/top_level.txt
+[1.187s] reading manifest file '../build/tmr_mod_urdf/tmr_mod_urdf.egg-info/SOURCES.txt'
+[1.191s] writing manifest file '../build/tmr_mod_urdf/tmr_mod_urdf.egg-info/SOURCES.txt'
+[1.191s] running build
+[1.192s] running build_py
+[1.194s] running install
+[1.196s] running install_lib
+[1.198s] running install_data
+[1.199s] running install_egg_info
+[1.205s] removing '/home/gy/tmr_ros2/install/tmr_mod_urdf/lib/python3.8/site-packages/tmr_mod_urdf-0.0.0-py3.8.egg-info' (and everything under it)
+[1.208s] Copying ../build/tmr_mod_urdf/tmr_mod_urdf.egg-info to /home/gy/tmr_ros2/install/tmr_mod_urdf/lib/python3.8/site-packages/tmr_mod_urdf-0.0.0-py3.8.egg-info
+[1.215s] running install_scripts
+[1.241s] Installing modify_urdf script to /home/gy/tmr_ros2/install/tmr_mod_urdf/lib/tmr_mod_urdf
+[1.242s] Installing modify_xacro script to /home/gy/tmr_ros2/install/tmr_mod_urdf/lib/tmr_mod_urdf
+[1.242s] writing list of installed files to '/home/gy/tmr_ros2/build/tmr_mod_urdf/install.log'
+[1.308s] Invoked command in '/home/gy/tmr_ros2/tmr_mod_urdf' returned '0': PYTHONPATH=/home/gy/tmr_ros2/install/tmr_mod_urdf/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/tmr_mod_urdf build --build-base /home/gy/tmr_ros2/build/tmr_mod_urdf/build install --prefix /home/gy/tmr_ros2/install/tmr_mod_urdf --record /home/gy/tmr_ros2/build/tmr_mod_urdf/install.log --single-version-externally-managed

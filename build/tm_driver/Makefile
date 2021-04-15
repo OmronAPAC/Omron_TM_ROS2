@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gy/tmr_ros2/tm_driver
+CMAKE_SOURCE_DIR = /home/gy/Omron_TM_ROS2/tm_driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gy/tmr_ros2/build/tm_driver
+CMAKE_BINARY_DIR = /home/gy/Omron_TM_ROS2/build/tm_driver
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gy/tmr_ros2/build/tm_driver/CMakeFiles /home/gy/tmr_ros2/build/tm_driver/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gy/Omron_TM_ROS2/build/tm_driver/CMakeFiles /home/gy/Omron_TM_ROS2/build/tm_driver/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gy/tmr_ros2/build/tm_driver/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gy/Omron_TM_ROS2/build/tm_driver/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

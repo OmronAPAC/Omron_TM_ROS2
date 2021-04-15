@@ -1,0 +1,92 @@
+-- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.3.0 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.2 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 2.0.3 (/opt/ros/foxy/share/sensor_msgs/cmake)
+-- Found tm_msgs: 1.0.0 (/home/gy/tmr_ros2/install/tm_msgs/share/tm_msgs/cmake)
+-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/gy/tmr_ros2/demo/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/gy/tmr_ros2/build/demo
+[  3%] [32mBuilding CXX object CMakeFiles/demo_get_svr_response.dir/get_status_demo_src/demo_get_svr_response.cpp.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/demo_set_positions.dir/src/demo_set_positions.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/demo_ask_item.dir/src/demo_ask_item.cpp.o[0m
+[ 15%] [32m[1mLinking CXX executable demo_ask_item[0m
+[ 15%] Built target demo_ask_item
+[ 19%] [32m[1mLinking CXX executable demo_set_positions[0m
+[ 19%] Built target demo_set_positions
+[ 23%] [32m[1mLinking CXX executable demo_get_svr_response[0m
+[ 23%] Built target demo_get_svr_response
+[ 26%] [32mBuilding CXX object CMakeFiles/demo_set_io.dir/src/demo_set_io.cpp.o[0m
+[ 30%] [32m[1mLinking CXX executable demo_set_io[0m
+[ 30%] Built target demo_set_io
+[ 34%] [32mBuilding CXX object CMakeFiles/demo_send_script.dir/src/demo_send_script.cpp.o[0m
+[ 38%] [32m[1mLinking CXX executable demo_send_script[0m
+[ 38%] Built target demo_send_script
+[ 42%] [32mBuilding CXX object CMakeFiles/demo_ask_sta.dir/src/demo_ask_sta.cpp.o[0m
+[ 46%] [32m[1mLinking CXX executable demo_ask_sta[0m
+[ 46%] Built target demo_ask_sta
+[ 50%] [32mBuilding CXX object CMakeFiles/demo_get_sct_response.dir/get_status_demo_src/demo_get_sct_response.cpp.o[0m
+[ 53%] [32m[1mLinking CXX executable demo_get_sct_response[0m
+[ 53%] Built target demo_get_sct_response
+[ 57%] [32mBuilding CXX object CMakeFiles/demo_set_event.dir/src/demo_set_event.cpp.o[0m
+[ 61%] [32m[1mLinking CXX executable demo_set_event[0m
+[ 61%] Built target demo_set_event
+[ 65%] [32mBuilding CXX object CMakeFiles/demo_connect_tm.dir/src/demo_connect_tm.cpp.o[0m
+[ 69%] [32m[1mLinking CXX executable demo_connect_tm[0m
+[ 69%] Built target demo_connect_tm
+[ 73%] [32mBuilding CXX object CMakeFiles/demo_get_feedback.dir/get_status_demo_src/demo_get_feedback.cpp.o[0m
+[ 76%] [32m[1mLinking CXX executable demo_get_feedback[0m
+[ 76%] Built target demo_get_feedback
+[ 80%] [32mBuilding CXX object CMakeFiles/demo_leave_listen_node.dir/src/demo_leave_listen_node.cpp.o[0m
+[ 84%] [32m[1mLinking CXX executable demo_leave_listen_node[0m
+[ 84%] Built target demo_leave_listen_node
+[ 88%] [32mBuilding CXX object CMakeFiles/demo_write_item.dir/src/demo_write_item.cpp.o[0m
+[ 92%] [32m[1mLinking CXX executable demo_write_item[0m
+[ 92%] Built target demo_write_item
+[ 96%] [32mBuilding CXX object CMakeFiles/demo_get_sta_response.dir/get_status_demo_src/demo_get_sta_response.cpp.o[0m
+[100%] [32m[1mLinking CXX executable demo_get_sta_response[0m
+[100%] Built target demo_get_sta_response
+-- Install configuration: ""
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/lib/demo/demo_send_script
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/lib/demo/demo_ask_sta
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/lib/demo/demo_connect_tm
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/lib/demo/demo_set_event
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/lib/demo/demo_set_io
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/lib/demo/demo_set_positions
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/lib/demo/demo_write_item
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/lib/demo/demo_ask_item
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/lib/demo/demo_get_feedback
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/lib/demo/demo_get_sct_response
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/lib/demo/demo_get_sta_response
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/lib/demo/demo_get_svr_response
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/lib/demo/demo_leave_listen_node
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/share/ament_index/resource_index/package_run_dependencies/demo
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/share/ament_index/resource_index/parent_prefix_path/demo
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/share/demo/environment/ament_prefix_path.sh
+-- Installing: /home/gy/tmr_ros2/install/demo/share/demo/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/share/demo/environment/path.sh
+-- Installing: /home/gy/tmr_ros2/install/demo/share/demo/environment/path.dsv
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/share/demo/local_setup.bash
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/share/demo/local_setup.sh
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/share/demo/local_setup.zsh
+-- Installing: /home/gy/tmr_ros2/install/demo/share/demo/local_setup.dsv
+-- Installing: /home/gy/tmr_ros2/install/demo/share/demo/package.dsv
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/share/ament_index/resource_index/packages/demo
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/share/demo/cmake/demoConfig.cmake
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/share/demo/cmake/demoConfig-version.cmake
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/share/demo/package.xml

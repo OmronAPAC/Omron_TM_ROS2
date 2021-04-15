@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/gy/tmr_ros2/custom_package/src/sub_img.cpp
+/home/gy/Omron_TM_ROS2/custom_package/src/sub_img.cpp
 cstdio
 -
 iostream
@@ -18,17 +18,17 @@ string
 vector
 -
 opencv2/highgui/highgui.hpp
-/home/gy/tmr_ros2/custom_package/src/opencv2/highgui/highgui.hpp
+/home/gy/Omron_TM_ROS2/custom_package/src/opencv2/highgui/highgui.hpp
 opencv2/imgproc/imgproc.hpp
-/home/gy/tmr_ros2/custom_package/src/opencv2/imgproc/imgproc.hpp
+/home/gy/Omron_TM_ROS2/custom_package/src/opencv2/imgproc/imgproc.hpp
 ament_index_cpp/get_package_share_directory.hpp
-/home/gy/tmr_ros2/custom_package/src/ament_index_cpp/get_package_share_directory.hpp
+/home/gy/Omron_TM_ROS2/custom_package/src/ament_index_cpp/get_package_share_directory.hpp
 rclcpp/rclcpp.hpp
-/home/gy/tmr_ros2/custom_package/src/rclcpp/rclcpp.hpp
+/home/gy/Omron_TM_ROS2/custom_package/src/rclcpp/rclcpp.hpp
 rclcpp_components/register_node_macro.hpp
-/home/gy/tmr_ros2/custom_package/src/rclcpp_components/register_node_macro.hpp
+/home/gy/Omron_TM_ROS2/custom_package/src/rclcpp_components/register_node_macro.hpp
 sensor_msgs/msg/image.hpp
-/home/gy/tmr_ros2/custom_package/src/sensor_msgs/msg/image.hpp
+/home/gy/Omron_TM_ROS2/custom_package/src/sensor_msgs/msg/image.hpp
 
 /opt/ros/foxy/include/ament_index_cpp/get_package_share_directory.hpp
 string

@@ -6,23 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/gy/tmr_ros2/build/techman_robot_msgs/rosidl_generator_py/techman_robot_msgs/srv/_techman_robot_command_s.c
+/home/gy/Omron_TM_ROS2/build/techman_robot_msgs/rosidl_generator_py/techman_robot_msgs/srv/_techman_robot_command_s.c
 Python.h
 -
 stdbool.h
 -
 numpy/ndarrayobject.h
-/home/gy/tmr_ros2/build/techman_robot_msgs/rosidl_generator_py/techman_robot_msgs/srv/numpy/ndarrayobject.h
+/home/gy/Omron_TM_ROS2/build/techman_robot_msgs/rosidl_generator_py/techman_robot_msgs/srv/numpy/ndarrayobject.h
 rosidl_runtime_c/visibility_control.h
-/home/gy/tmr_ros2/build/techman_robot_msgs/rosidl_generator_py/techman_robot_msgs/srv/rosidl_runtime_c/visibility_control.h
+/home/gy/Omron_TM_ROS2/build/techman_robot_msgs/rosidl_generator_py/techman_robot_msgs/srv/rosidl_runtime_c/visibility_control.h
 techman_robot_msgs/srv/detail/techman_robot_command__struct.h
-/home/gy/tmr_ros2/build/techman_robot_msgs/rosidl_generator_py/techman_robot_msgs/srv/techman_robot_msgs/srv/detail/techman_robot_command__struct.h
+/home/gy/Omron_TM_ROS2/build/techman_robot_msgs/rosidl_generator_py/techman_robot_msgs/srv/techman_robot_msgs/srv/detail/techman_robot_command__struct.h
 techman_robot_msgs/srv/detail/techman_robot_command__functions.h
-/home/gy/tmr_ros2/build/techman_robot_msgs/rosidl_generator_py/techman_robot_msgs/srv/techman_robot_msgs/srv/detail/techman_robot_command__functions.h
+/home/gy/Omron_TM_ROS2/build/techman_robot_msgs/rosidl_generator_py/techman_robot_msgs/srv/techman_robot_msgs/srv/detail/techman_robot_command__functions.h
 rosidl_runtime_c/string.h
-/home/gy/tmr_ros2/build/techman_robot_msgs/rosidl_generator_py/techman_robot_msgs/srv/rosidl_runtime_c/string.h
+/home/gy/Omron_TM_ROS2/build/techman_robot_msgs/rosidl_generator_py/techman_robot_msgs/srv/rosidl_runtime_c/string.h
 rosidl_runtime_c/string_functions.h
-/home/gy/tmr_ros2/build/techman_robot_msgs/rosidl_generator_py/techman_robot_msgs/srv/rosidl_runtime_c/string_functions.h
+/home/gy/Omron_TM_ROS2/build/techman_robot_msgs/rosidl_generator_py/techman_robot_msgs/srv/rosidl_runtime_c/string_functions.h
 
 /opt/ros/foxy/include/rosidl_runtime_c/primitives_sequence.h
 stdbool.h

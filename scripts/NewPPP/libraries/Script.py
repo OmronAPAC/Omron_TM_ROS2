@@ -31,7 +31,6 @@ class ScriptClass:
     def exit_script(self):
         self.script_request.script = "ScriptExit()"
         resp = self.send_script.call_async(self.script_request)
-        
         self.wait_for_complete()
 
 

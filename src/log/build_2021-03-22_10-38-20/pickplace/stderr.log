@@ -1,5 +1,0 @@
-  File "/home/gy/Omron_TM_ROS2/src/install/pickplace/lib/python3.8/site-packages/pickplace/pickplace_program.py", line 5
-    from ../../libraries import Waiter
-           ^
-SyntaxError: invalid syntax
-

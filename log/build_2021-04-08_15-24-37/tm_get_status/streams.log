@@ -1,0 +1,44 @@
+[0.683s] Invoking command in '/home/gy/tmr_ros2/techman_robot_get_status': PYTHONPATH=/home/gy/tmr_ros2/install/tm_get_status/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/tm_get_status build --build-base /home/gy/tmr_ros2/build/tm_get_status/build install --prefix /home/gy/tmr_ros2/install/tm_get_status --record /home/gy/tmr_ros2/build/tm_get_status/install.log --single-version-externally-managed
+[1.924s] running egg_info
+[1.925s] creating ../build/tm_get_status/tm_get_status.egg-info
+[1.926s] writing ../build/tm_get_status/tm_get_status.egg-info/PKG-INFO
+[1.926s] writing dependency_links to ../build/tm_get_status/tm_get_status.egg-info/dependency_links.txt
+[1.927s] writing entry points to ../build/tm_get_status/tm_get_status.egg-info/entry_points.txt
+[1.927s] writing requirements to ../build/tm_get_status/tm_get_status.egg-info/requires.txt
+[1.929s] writing top-level names to ../build/tm_get_status/tm_get_status.egg-info/top_level.txt
+[2.029s] writing manifest file '../build/tm_get_status/tm_get_status.egg-info/SOURCES.txt'
+[2.351s] reading manifest file '../build/tm_get_status/tm_get_status.egg-info/SOURCES.txt'
+[2.358s] writing manifest file '../build/tm_get_status/tm_get_status.egg-info/SOURCES.txt'
+[2.359s] running build
+[2.359s] running build_py
+[2.360s] creating /home/gy/tmr_ros2/build/tm_get_status/build
+[2.362s] creating /home/gy/tmr_ros2/build/tm_get_status/build/lib
+[2.362s] creating /home/gy/tmr_ros2/build/tm_get_status/build/lib/tm_get_status
+[2.363s] copying tm_get_status/image_pub.py -> /home/gy/tmr_ros2/build/tm_get_status/build/lib/tm_get_status
+[2.365s] copying tm_get_status/__init__.py -> /home/gy/tmr_ros2/build/tm_get_status/build/lib/tm_get_status
+[2.366s] copying tm_get_status/translate_jason_to_list.py -> /home/gy/tmr_ros2/build/tm_get_status/build/lib/tm_get_status
+[2.366s] copying tm_get_status/get_status.py -> /home/gy/tmr_ros2/build/tm_get_status/build/lib/tm_get_status
+[2.368s] running install
+[2.374s] running install_lib
+[2.403s] creating /home/gy/tmr_ros2/install/tm_get_status/lib/python3.8/site-packages/tm_get_status
+[2.404s] copying /home/gy/tmr_ros2/build/tm_get_status/build/lib/tm_get_status/image_pub.py -> /home/gy/tmr_ros2/install/tm_get_status/lib/python3.8/site-packages/tm_get_status
+[2.404s] copying /home/gy/tmr_ros2/build/tm_get_status/build/lib/tm_get_status/__init__.py -> /home/gy/tmr_ros2/install/tm_get_status/lib/python3.8/site-packages/tm_get_status
+[2.404s] copying /home/gy/tmr_ros2/build/tm_get_status/build/lib/tm_get_status/translate_jason_to_list.py -> /home/gy/tmr_ros2/install/tm_get_status/lib/python3.8/site-packages/tm_get_status
+[2.409s] copying /home/gy/tmr_ros2/build/tm_get_status/build/lib/tm_get_status/get_status.py -> /home/gy/tmr_ros2/install/tm_get_status/lib/python3.8/site-packages/tm_get_status
+[2.410s] byte-compiling /home/gy/tmr_ros2/install/tm_get_status/lib/python3.8/site-packages/tm_get_status/image_pub.py to image_pub.cpython-38.pyc
+[2.419s] byte-compiling /home/gy/tmr_ros2/install/tm_get_status/lib/python3.8/site-packages/tm_get_status/__init__.py to __init__.cpython-38.pyc
+[2.419s] byte-compiling /home/gy/tmr_ros2/install/tm_get_status/lib/python3.8/site-packages/tm_get_status/translate_jason_to_list.py to translate_jason_to_list.cpython-38.pyc
+[2.433s] byte-compiling /home/gy/tmr_ros2/install/tm_get_status/lib/python3.8/site-packages/tm_get_status/get_status.py to get_status.cpython-38.pyc
+[2.433s] running install_data
+[2.442s] creating /home/gy/tmr_ros2/install/tm_get_status/share/ament_index
+[2.442s] creating /home/gy/tmr_ros2/install/tm_get_status/share/ament_index/resource_index
+[2.442s] creating /home/gy/tmr_ros2/install/tm_get_status/share/ament_index/resource_index/packages
+[2.443s] copying resource/tm_get_status -> /home/gy/tmr_ros2/install/tm_get_status/share/ament_index/resource_index/packages
+[2.443s] copying package.xml -> /home/gy/tmr_ros2/install/tm_get_status/share/tm_get_status
+[2.443s] running install_egg_info
+[2.470s] Copying ../build/tm_get_status/tm_get_status.egg-info to /home/gy/tmr_ros2/install/tm_get_status/lib/python3.8/site-packages/tm_get_status-0.0.1-py3.8.egg-info
+[2.471s] running install_scripts
+[2.592s] Installing image_talker script to /home/gy/tmr_ros2/install/tm_get_status/lib/tm_get_status
+[2.592s] Installing status_talker script to /home/gy/tmr_ros2/install/tm_get_status/lib/tm_get_status
+[2.593s] writing list of installed files to '/home/gy/tmr_ros2/build/tm_get_status/install.log'
+[2.680s] Invoked command in '/home/gy/tmr_ros2/techman_robot_get_status' returned '0': PYTHONPATH=/home/gy/tmr_ros2/install/tm_get_status/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/tm_get_status build --build-base /home/gy/tmr_ros2/build/tm_get_status/build install --prefix /home/gy/tmr_ros2/install/tm_get_status --record /home/gy/tmr_ros2/build/tm_get_status/install.log --single-version-externally-managed

@@ -1,0 +1,66 @@
+-- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.3.0 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.2 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 2.0.3 (/opt/ros/foxy/share/sensor_msgs/cmake)
+-- Found tm_msgs: 1.0.0 (/home/gy/tmr_ros2/install/tm_msgs/share/tm_msgs/cmake)
+-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/gy/tmr_ros2/demo/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/gy/tmr_ros2/build/demo
+[  7%] Built target demo_get_svr_response
+[ 15%] Built target demo_ask_item
+[ 23%] Built target demo_set_positions
+[ 30%] Built target demo_get_sta_response
+[ 38%] Built target demo_set_io
+[ 46%] Built target demo_send_script
+[ 53%] Built target demo_ask_sta
+[ 61%] Built target demo_get_sct_response
+[ 69%] Built target demo_connect_tm
+[ 76%] Built target demo_get_feedback
+[ 84%] Built target demo_set_event
+[ 92%] Built target demo_leave_listen_node
+[100%] Built target demo_write_item
+-- Install configuration: ""
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/lib/demo/demo_send_script
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/lib/demo/demo_ask_sta
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/lib/demo/demo_connect_tm
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/lib/demo/demo_set_event
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/lib/demo/demo_set_io
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/lib/demo/demo_set_positions
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/lib/demo/demo_write_item
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/lib/demo/demo_ask_item
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/lib/demo/demo_get_feedback
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/lib/demo/demo_get_sct_response
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/lib/demo/demo_get_sta_response
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/lib/demo/demo_get_svr_response
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/lib/demo/demo_leave_listen_node
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/share/ament_index/resource_index/package_run_dependencies/demo
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/share/ament_index/resource_index/parent_prefix_path/demo
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/share/demo/environment/ament_prefix_path.sh
+-- Installing: /home/gy/tmr_ros2/install/demo/share/demo/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/share/demo/environment/path.sh
+-- Installing: /home/gy/tmr_ros2/install/demo/share/demo/environment/path.dsv
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/share/demo/local_setup.bash
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/share/demo/local_setup.sh
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/share/demo/local_setup.zsh
+-- Installing: /home/gy/tmr_ros2/install/demo/share/demo/local_setup.dsv
+-- Installing: /home/gy/tmr_ros2/install/demo/share/demo/package.dsv
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/share/ament_index/resource_index/packages/demo
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/share/demo/cmake/demoConfig.cmake
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/share/demo/cmake/demoConfig-version.cmake
+-- Up-to-date: /home/gy/tmr_ros2/install/demo/share/demo/package.xml

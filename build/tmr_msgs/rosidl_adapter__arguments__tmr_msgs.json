@@ -1,0 +1,17 @@
+{
+  "package_name": "tmr_msgs",
+  "non_idl_tuples": [
+    "/home/gy/Omron_TM_ROS2/tmr_msgs:msg/FeedbackState.msg",
+    "/home/gy/Omron_TM_ROS2/tmr_msgs:msg/SvrResponse.msg",
+    "/home/gy/Omron_TM_ROS2/tmr_msgs:msg/SctResponse.msg",
+    "/home/gy/Omron_TM_ROS2/tmr_msgs:msg/StaResponse.msg",
+    "/home/gy/Omron_TM_ROS2/tmr_msgs:srv/ConnectTM.srv",
+    "/home/gy/Omron_TM_ROS2/tmr_msgs:srv/WriteItem.srv",
+    "/home/gy/Omron_TM_ROS2/tmr_msgs:srv/AskItem.srv",
+    "/home/gy/Omron_TM_ROS2/tmr_msgs:srv/SendScript.srv",
+    "/home/gy/Omron_TM_ROS2/tmr_msgs:srv/SetEvent.srv",
+    "/home/gy/Omron_TM_ROS2/tmr_msgs:srv/SetIO.srv",
+    "/home/gy/Omron_TM_ROS2/tmr_msgs:srv/SetPositions.srv",
+    "/home/gy/Omron_TM_ROS2/tmr_msgs:srv/AskSta.srv"
+  ]
+}

@@ -1,0 +1,59 @@
+-- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.3.0 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.2 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 2.0.3 (/opt/ros/foxy/share/sensor_msgs/cmake)
+-- Found tm_msgs: 1.0.0 (/home/gy/tmr_ros2/install/tm_msgs/share/tm_msgs/cmake)
+-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/gy/tmr_ros2/tm_driver/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/gy/tmr_ros2/build/tm_driver
+[  8%] [32mBuilding CXX object CMakeFiles/tm_driver.dir/src/tm_ros2_composition.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/tm_driver.dir/src/tm_ros2_sct.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/tm_driver.dir/src/tm_ros2_svr.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/tm_driver.dir/src/tm_command.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/tm_driver.dir/src/tm_sct_communication.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/tm_driver.dir/src/tm_svr_communication.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/tm_driver.dir/src/tm_communication.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/tm_driver.dir/src/tm_robot_state.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/tm_driver.dir/src/tm_packet.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/tm_driver.dir/src/tm_print.cpp.o[0m
+[ 91%] [32mBuilding CXX object CMakeFiles/tm_driver.dir/src/tm_driver.cpp.o[0m
+[100%] [32m[1mLinking CXX executable tm_driver[0m
+[100%] Built target tm_driver
+-- Install configuration: ""
+-- Up-to-date: /home/gy/tmr_ros2/install/tm_driver/lib/tm_driver/tm_driver
+-- Up-to-date: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/launch
+-- Up-to-date: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/launch/tm_bringup.launch.py
+-- Up-to-date: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/launch/tm_bringup.py
+-- Up-to-date: /home/gy/tmr_ros2/install/tm_driver/share/ament_index/resource_index/package_run_dependencies/tm_driver
+-- Up-to-date: /home/gy/tmr_ros2/install/tm_driver/share/ament_index/resource_index/parent_prefix_path/tm_driver
+-- Up-to-date: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/environment/ament_prefix_path.sh
+-- Installing: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/environment/path.sh
+-- Installing: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/environment/path.dsv
+-- Up-to-date: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/local_setup.bash
+-- Up-to-date: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/local_setup.sh
+-- Up-to-date: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/local_setup.zsh
+-- Installing: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/local_setup.dsv
+-- Installing: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/package.dsv
+-- Up-to-date: /home/gy/tmr_ros2/install/tm_driver/share/ament_index/resource_index/packages/tm_driver
+-- Up-to-date: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/cmake/tm_driverConfig.cmake
+-- Up-to-date: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/cmake/tm_driverConfig-version.cmake
+-- Up-to-date: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/package.xml

@@ -1,0 +1,32 @@
+[0.051s] Invoking command in '/home/gy/tmr_ros2/build/tmr_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmr_ros2/install/tmr_mod_urdf:/home/gy/tmr_ros2/install/tm_get_status:/opt/ros/foxy LD_LIBRARY_PATH=/home/gy/tmr_ros2/install/tmr_msgs/lib:/home/gy/tmr_ros2/install/tmrlib/lib:/home/gy/tmr_ros2/install/tm_msgs/lib:/home/gy/tmr_ros2/install/techman_robot_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake /home/gy/tmr_ros2/tmr_driver -DCMAKE_INSTALL_PREFIX=/home/gy/tmr_ros2/install/tmr_driver
+[0.104s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.149s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.702s] -- Found rclcpp: 2.3.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.846s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.873s] -- Found rosidl_adapter: 1.2.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.334s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.550s] -- Found rmw_implementation_cmake: 1.0.2 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.551s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.158s] -- Found sensor_msgs: 2.0.3 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[2.532s] -- Found trajectory_msgs: 2.0.3 (/opt/ros/foxy/share/trajectory_msgs/cmake)
+[2.870s] CMake Error at CMakeLists.txt:28 (find_package):
+[2.870s]   By not providing "Findcontrol_msgs.cmake" in CMAKE_MODULE_PATH this project
+[2.870s]   has asked CMake to find a package configuration file provided by
+[2.870s]   "control_msgs", but CMake did not find one.
+[2.870s] 
+[2.871s]   Could not find a package configuration file provided by "control_msgs" with
+[2.871s]   any of the following names:
+[2.871s] 
+[2.871s]     control_msgsConfig.cmake
+[2.871s]     control_msgs-config.cmake
+[2.871s] 
+[2.871s]   Add the installation prefix of "control_msgs" to CMAKE_PREFIX_PATH or set
+[2.872s]   "control_msgs_DIR" to a directory containing one of the above files.  If
+[2.872s]   "control_msgs" provides a separate development package or SDK, be sure it
+[2.872s]   has been installed.
+[2.873s] 
+[2.873s] 
+[2.873s] -- Configuring incomplete, errors occurred!
+[2.873s] See also "/home/gy/tmr_ros2/build/tmr_driver/CMakeFiles/CMakeOutput.log".
+[2.873s] See also "/home/gy/tmr_ros2/build/tmr_driver/CMakeFiles/CMakeError.log".
+[2.879s] Invoked command in '/home/gy/tmr_ros2/build/tmr_driver' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmr_ros2/install/tmr_mod_urdf:/home/gy/tmr_ros2/install/tm_get_status:/opt/ros/foxy LD_LIBRARY_PATH=/home/gy/tmr_ros2/install/tmr_msgs/lib:/home/gy/tmr_ros2/install/tmrlib/lib:/home/gy/tmr_ros2/install/tm_msgs/lib:/home/gy/tmr_ros2/install/techman_robot_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake /home/gy/tmr_ros2/tmr_driver -DCMAKE_INSTALL_PREFIX=/home/gy/tmr_ros2/install/tmr_driver

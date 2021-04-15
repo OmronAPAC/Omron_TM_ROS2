@@ -1,0 +1,143 @@
+[0.121s] Invoking command in '/home/gy/Omron_TM_ROS2/build/techman_robot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/techman_robot_msgs -- -j3 -l3
+[1.385s] CMake Error: The current CMakeCache.txt directory /home/gy/Omron_TM_ROS2/build/techman_robot_msgs/CMakeCache.txt is different than the directory /home/gy/tmr_ros2/build/techman_robot_msgs where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+[1.962s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[2.176s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") 
+[2.176s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.352s] -- Found rosidl_default_generators: 1.0.0 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[3.649s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.753s] -- Found rosidl_adapter: 1.2.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[5.268s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.500s] -- Found action_msgs: 1.0.0 (/opt/ros/foxy/share/action_msgs/cmake)
+[5.775s] -- Found std_msgs: 2.0.3 (/opt/ros/foxy/share/std_msgs/cmake)
+[5.882s] -- Found geometry_msgs: 2.0.3 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[6.173s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.5") 
+[6.769s] -- Found ament_cmake_ros: 0.9.1 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[7.591s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.981s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.097s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3.5") 
+[8.113s] -- Found python_cmake_module: 0.8.0 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[8.280s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[8.281s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[8.281s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[8.683s] -- Configuring done
+[9.986s] -- Generating done
+[9.997s] -- Build files have been written to: /home/gy/tmr_ros2/build/techman_robot_msgs
+[10.141s] [  3%] Built target techman_robot_msgs__cpp
+[10.168s] [ 12%] Built target techman_robot_msgs__rosidl_generator_c
+[10.312s] [ 22%] Built target techman_robot_msgs__rosidl_typesupport_cpp
+[10.314s] [ 32%] Built target techman_robot_msgs__rosidl_typesupport_introspection_cpp
+[10.324s] [ 41%] Built target techman_robot_msgs__rosidl_typesupport_fastrtps_cpp
+[10.420s] [ 51%] Built target techman_robot_msgs__rosidl_typesupport_c
+[10.426s] [ 61%] Built target techman_robot_msgs__rosidl_typesupport_introspection_c
+[10.459s] [ 70%] Built target techman_robot_msgs__rosidl_typesupport_fastrtps_c
+[10.514s] [ 70%] Built target techman_robot_msgs
+[10.590s] [ 74%] Built target techman_robot_msgs__py
+[10.766s] [ 80%] Built target techman_robot_msgs__python
+[10.897s] [ 87%] Built target techman_robot_msgs__rosidl_typesupport_introspection_c__pyext
+[10.925s] [ 93%] Built target techman_robot_msgs__rosidl_typesupport_c__pyext
+[10.967s] [100%] Built target techman_robot_msgs__rosidl_typesupport_fastrtps_c__pyext
+[10.997s] Invoked command in '/home/gy/Omron_TM_ROS2/build/techman_robot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/techman_robot_msgs -- -j3 -l3
+[11.229s] Invoking command in '/home/gy/Omron_TM_ROS2/build/techman_robot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/techman_robot_msgs
+[11.261s] -- Install configuration: ""
+[11.277s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/ament_index/resource_index/rosidl_interfaces/techman_robot_msgs
+[11.285s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs
+[11.293s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv
+[11.298s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv/detail
+[11.304s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv/detail/techman_robot_command__type_support.h
+[11.305s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv/detail/techman_robot_command__functions.h
+[11.305s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv/detail/techman_robot_command__functions.c
+[11.305s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv/detail/techman_robot_command__struct.h
+[11.305s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv/techman_robot_command.h
+[11.305s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/msg
+[11.309s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/msg/rosidl_generator_c__visibility_control.h
+[11.332s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/environment/library_path.sh
+[11.333s] -- Installing: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/environment/library_path.dsv
+[11.367s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/lib/libtechman_robot_msgs__rosidl_generator_c.so
+[11.370s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs
+[11.370s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv
+[11.371s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv/detail
+[11.371s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv/detail/techman_robot_command__rosidl_typesupport_fastrtps_c.h
+[11.371s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/msg
+[11.372s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[11.400s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/lib/libtechman_robot_msgs__rosidl_typesupport_fastrtps_c.so
+[11.400s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs
+[11.401s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv
+[11.401s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv/detail
+[11.401s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv/detail/techman_robot_command__rosidl_typesupport_fastrtps_cpp.hpp
+[11.402s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv/detail/dds_fastrtps
+[11.402s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/msg
+[11.403s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[11.433s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/lib/libtechman_robot_msgs__rosidl_typesupport_fastrtps_cpp.so
+[11.433s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs
+[11.434s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv
+[11.435s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv/detail
+[11.436s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv/detail/techman_robot_command__rosidl_typesupport_introspection_c.h
+[11.436s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv/detail/techman_robot_command__type_support.c
+[11.438s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/msg
+[11.438s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[11.474s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/lib/libtechman_robot_msgs__rosidl_typesupport_introspection_c.so
+[11.492s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/lib/libtechman_robot_msgs__rosidl_typesupport_c.so
+[11.492s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs
+[11.493s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv
+[11.493s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv/detail
+[11.493s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv/detail/techman_robot_command__builder.hpp
+[11.493s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv/detail/techman_robot_command__traits.hpp
+[11.493s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv/detail/techman_robot_command__struct.hpp
+[11.493s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv/techman_robot_command.hpp
+[11.494s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs
+[11.494s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv
+[11.494s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv/detail
+[11.494s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv/detail/techman_robot_command__rosidl_typesupport_introspection_cpp.hpp
+[11.494s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/include/techman_robot_msgs/srv/detail/techman_robot_command__type_support.cpp
+[11.517s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/lib/libtechman_robot_msgs__rosidl_typesupport_introspection_cpp.so
+[11.538s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/lib/libtechman_robot_msgs__rosidl_typesupport_cpp.so
+[11.538s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/environment/pythonpath.sh
+[11.538s] -- Installing: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/environment/pythonpath.dsv
+[11.575s] -- Installing: /home/gy/tmr_ros2/install/techman_robot_msgs/lib/python3.8/site-packages/techman_robot_msgs/__init__.py
+[11.720s] Compiling '/home/gy/tmr_ros2/install/techman_robot_msgs/lib/python3.8/site-packages/techman_robot_msgs/__init__.py'...
+[11.740s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/lib/python3.8/site-packages/techman_robot_msgs/srv
+[11.740s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/lib/python3.8/site-packages/techman_robot_msgs/srv/__init__.py
+[11.741s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/lib/python3.8/site-packages/techman_robot_msgs/srv/_techman_robot_command_s.c
+[11.741s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/lib/python3.8/site-packages/techman_robot_msgs/srv/_techman_robot_command.py
+[11.745s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/lib/python3.8/site-packages/techman_robot_msgs/techman_robot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[11.748s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/lib/python3.8/site-packages/techman_robot_msgs/techman_robot_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[11.750s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/lib/python3.8/site-packages/techman_robot_msgs/techman_robot_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[11.755s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/lib/libtechman_robot_msgs__python.so
+[11.756s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/srv/TechmanRobotCommand.idl
+[11.756s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/srv/TechmanRobotCommand.srv
+[11.756s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/srv/TechmanRobotCommand_Request.msg
+[11.760s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/srv/TechmanRobotCommand_Response.msg
+[11.768s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/ament_index/resource_index/package_run_dependencies/techman_robot_msgs
+[11.782s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/ament_index/resource_index/parent_prefix_path/techman_robot_msgs
+[11.782s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/environment/ament_prefix_path.sh
+[11.782s] -- Installing: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/environment/ament_prefix_path.dsv
+[11.783s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/environment/path.sh
+[11.783s] -- Installing: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/environment/path.dsv
+[11.783s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/local_setup.bash
+[11.784s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/local_setup.sh
+[11.785s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/local_setup.zsh
+[11.785s] -- Installing: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/local_setup.dsv
+[11.788s] -- Installing: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/package.dsv
+[11.796s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/ament_index/resource_index/packages/techman_robot_msgs
+[11.833s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/cmake/techman_robot_msgs__rosidl_generator_cExport.cmake
+[11.834s] -- Installing: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/cmake/techman_robot_msgs__rosidl_generator_cExport-noconfig.cmake
+[11.853s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/cmake/techman_robot_msgs__rosidl_typesupport_introspection_cExport.cmake
+[11.853s] -- Installing: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/cmake/techman_robot_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[11.864s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/cmake/techman_robot_msgs__rosidl_typesupport_cExport.cmake
+[11.865s] -- Installing: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/cmake/techman_robot_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[11.869s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/cmake/techman_robot_msgs__rosidl_generator_cppExport.cmake
+[11.880s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/cmake/techman_robot_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[11.880s] -- Installing: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/cmake/techman_robot_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[11.881s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/cmake/techman_robot_msgs__rosidl_typesupport_cppExport.cmake
+[11.881s] -- Installing: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/cmake/techman_robot_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[11.881s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/cmake/rosidl_cmake-extras.cmake
+[11.881s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[11.881s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[11.881s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[11.882s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[11.882s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[11.882s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[11.882s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/cmake/techman_robot_msgsConfig.cmake
+[11.882s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/cmake/techman_robot_msgsConfig-version.cmake
+[11.882s] -- Up-to-date: /home/gy/tmr_ros2/install/techman_robot_msgs/share/techman_robot_msgs/package.xml
+[11.905s] Invoked command in '/home/gy/Omron_TM_ROS2/build/techman_robot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/techman_robot_msgs

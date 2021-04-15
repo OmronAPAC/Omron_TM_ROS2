@@ -1,8 +1,8 @@
-# Install script for directory: /home/gy/tmr_ros2/build/techman_robot_msgs/techman_robot_msgs__py
+# Install script for directory: /home/gy/Omron_TM_ROS2/build/techman_robot_msgs/techman_robot_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/gy/tmr_ros2/install/techman_robot_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/gy/Omron_TM_ROS2/install/techman_robot_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

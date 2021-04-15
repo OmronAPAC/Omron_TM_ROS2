@@ -1,0 +1,52 @@
+[0.632s] Invoking command in '/home/gy/Omron_TM_ROS2/build/tmr_moveit_config_tm5-900': CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tmr_description:/home/gy/Omron_TM_ROS2/install/ui_for_debug_and_demo:/home/gy/Omron_TM_ROS2/install/tmr_driver:/home/gy/Omron_TM_ROS2/install/tmrlib:/home/gy/Omron_TM_ROS2/install/tmr_msgs:/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo:/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900:/home/gy/Omron_TM_ROS2/install/tm_driver:/home/gy/Omron_TM_ROS2/install/demo:/home/gy/Omron_TM_ROS2/install/tm_msgs:/home/gy/Omron_TM_ROS2/install/custom_package:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy /usr/bin/cmake /home/gy/Omron_TM_ROS2/tmr_moveit_config_tm5-900 -DCMAKE_INSTALL_PREFIX=/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900
+[2.080s] -- The C compiler identification is GNU 9.3.0
+[2.348s] -- The CXX compiler identification is GNU 9.3.0
+[2.445s] -- Check for working C compiler: /usr/bin/cc
+[2.657s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.662s] -- Detecting C compiler ABI info
+[2.878s] -- Detecting C compiler ABI info - done
+[2.925s] -- Detecting C compile features
+[2.929s] -- Detecting C compile features - done
+[2.952s] -- Check for working CXX compiler: /usr/bin/c++
+[3.183s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.186s] -- Detecting CXX compiler ABI info
+[3.404s] -- Detecting CXX compiler ABI info - done
+[3.469s] -- Detecting CXX compile features
+[3.471s] -- Detecting CXX compile features - done
+[3.614s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[5.059s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") 
+[5.062s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[12.832s] -- Configuring done
+[12.836s] -- Generating done
+[12.838s] -- Build files have been written to: /home/gy/Omron_TM_ROS2/build/tmr_moveit_config_tm5-900
+[12.854s] Invoked command in '/home/gy/Omron_TM_ROS2/build/tmr_moveit_config_tm5-900' returned '0': CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tmr_description:/home/gy/Omron_TM_ROS2/install/ui_for_debug_and_demo:/home/gy/Omron_TM_ROS2/install/tmr_driver:/home/gy/Omron_TM_ROS2/install/tmrlib:/home/gy/Omron_TM_ROS2/install/tmr_msgs:/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo:/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900:/home/gy/Omron_TM_ROS2/install/tm_driver:/home/gy/Omron_TM_ROS2/install/demo:/home/gy/Omron_TM_ROS2/install/tm_msgs:/home/gy/Omron_TM_ROS2/install/custom_package:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy /usr/bin/cmake /home/gy/Omron_TM_ROS2/tmr_moveit_config_tm5-900 -DCMAKE_INSTALL_PREFIX=/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900
+[12.862s] Invoking command in '/home/gy/Omron_TM_ROS2/build/tmr_moveit_config_tm5-900': CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tmr_description:/home/gy/Omron_TM_ROS2/install/ui_for_debug_and_demo:/home/gy/Omron_TM_ROS2/install/tmr_driver:/home/gy/Omron_TM_ROS2/install/tmrlib:/home/gy/Omron_TM_ROS2/install/tmr_msgs:/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo:/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900:/home/gy/Omron_TM_ROS2/install/tm_driver:/home/gy/Omron_TM_ROS2/install/demo:/home/gy/Omron_TM_ROS2/install/tm_msgs:/home/gy/Omron_TM_ROS2/install/custom_package:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tmr_moveit_config_tm5-900 -- -j3 -l3
+[12.952s] Invoked command in '/home/gy/Omron_TM_ROS2/build/tmr_moveit_config_tm5-900' returned '0': CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tmr_description:/home/gy/Omron_TM_ROS2/install/ui_for_debug_and_demo:/home/gy/Omron_TM_ROS2/install/tmr_driver:/home/gy/Omron_TM_ROS2/install/tmrlib:/home/gy/Omron_TM_ROS2/install/tmr_msgs:/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo:/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900:/home/gy/Omron_TM_ROS2/install/tm_driver:/home/gy/Omron_TM_ROS2/install/demo:/home/gy/Omron_TM_ROS2/install/tm_msgs:/home/gy/Omron_TM_ROS2/install/custom_package:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tmr_moveit_config_tm5-900 -- -j3 -l3
+[12.995s] Invoking command in '/home/gy/Omron_TM_ROS2/build/tmr_moveit_config_tm5-900': CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tmr_description:/home/gy/Omron_TM_ROS2/install/ui_for_debug_and_demo:/home/gy/Omron_TM_ROS2/install/tmr_driver:/home/gy/Omron_TM_ROS2/install/tmrlib:/home/gy/Omron_TM_ROS2/install/tmr_msgs:/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo:/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900:/home/gy/Omron_TM_ROS2/install/tm_driver:/home/gy/Omron_TM_ROS2/install/demo:/home/gy/Omron_TM_ROS2/install/tm_msgs:/home/gy/Omron_TM_ROS2/install/custom_package:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tmr_moveit_config_tm5-900
+[13.006s] -- Install configuration: ""
+[13.023s] -- Installing: /home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/ament_index/resource_index/package_run_dependencies/tmr_moveit_config_tm5-900
+[13.080s] -- Installing: /home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/ament_index/resource_index/parent_prefix_path/tmr_moveit_config_tm5-900
+[13.082s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/environment/ament_prefix_path.sh
+[13.082s] -- Installing: /home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/environment/ament_prefix_path.dsv
+[13.082s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/environment/path.sh
+[13.082s] -- Installing: /home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/environment/path.dsv
+[13.083s] -- Installing: /home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/local_setup.bash
+[13.083s] -- Installing: /home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/local_setup.sh
+[13.083s] -- Installing: /home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/local_setup.zsh
+[13.083s] -- Installing: /home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/local_setup.dsv
+[13.083s] -- Installing: /home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/package.dsv
+[13.086s] -- Installing: /home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/ament_index/resource_index/packages/tmr_moveit_config_tm5-900
+[13.089s] -- Installing: /home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/cmake/tmr_moveit_config_tm5-900Config.cmake
+[13.090s] -- Installing: /home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/cmake/tmr_moveit_config_tm5-900Config-version.cmake
+[13.090s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/package.xml
+[13.090s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/config
+[13.110s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/config/kinematics.yaml
+[13.110s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/config/ros_controllers.yaml
+[13.110s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/config/stomp_planning.yaml
+[13.110s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/config/joint_limits.yaml
+[13.111s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/config/fake_controllers.yaml
+[13.111s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/config/ompl_planning.yaml
+[13.111s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/config/chomp_planning.yaml
+[13.111s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/config/tm5-900.srdf
+[13.111s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/config/sensors_3d.yaml
+[13.115s] Invoked command in '/home/gy/Omron_TM_ROS2/build/tmr_moveit_config_tm5-900' returned '0': CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tmr_description:/home/gy/Omron_TM_ROS2/install/ui_for_debug_and_demo:/home/gy/Omron_TM_ROS2/install/tmr_driver:/home/gy/Omron_TM_ROS2/install/tmrlib:/home/gy/Omron_TM_ROS2/install/tmr_msgs:/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo:/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900:/home/gy/Omron_TM_ROS2/install/tm_driver:/home/gy/Omron_TM_ROS2/install/demo:/home/gy/Omron_TM_ROS2/install/tm_msgs:/home/gy/Omron_TM_ROS2/install/custom_package:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tmr_moveit_config_tm5-900

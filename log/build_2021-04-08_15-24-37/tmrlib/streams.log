@@ -1,0 +1,97 @@
+[0.048s] Invoking command in '/home/gy/tmr_ros2/build/tmrlib': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/gy/tmr_ros2/tmrlib -DCMAKE_INSTALL_PREFIX=/home/gy/tmr_ros2/install/tmrlib
+[0.470s] -- The C compiler identification is GNU 9.3.0
+[0.928s] -- The CXX compiler identification is GNU 9.3.0
+[0.982s] -- Check for working C compiler: /usr/bin/cc
+[1.471s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.471s] -- Detecting C compiler ABI info
+[1.943s] -- Detecting C compiler ABI info - done
+[2.019s] -- Detecting C compile features
+[2.033s] -- Detecting C compile features - done
+[2.045s] -- Check for working CXX compiler: /usr/bin/c++
+[2.562s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.562s] -- Detecting CXX compiler ABI info
+[3.156s] -- Detecting CXX compiler ABI info - done
+[3.272s] -- Detecting CXX compile features
+[3.296s] -- Detecting CXX compile features - done
+[3.305s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[3.449s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") 
+[3.449s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.929s] -- Found rclcpp: 2.3.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[5.435s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.480s] -- Found rosidl_adapter: 1.2.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[5.975s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[6.067s] -- Found FastRTPS: /opt/ros/foxy/include  
+[6.485s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.033s] -- Found rmw_implementation_cmake: 1.0.2 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[7.058s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.094s] -- Looking for pthread.h
+[7.559s] -- Looking for pthread.h - found
+[7.559s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[8.082s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[8.083s] -- Looking for pthread_create in pthreads
+[8.569s] -- Looking for pthread_create in pthreads - not found
+[8.569s] -- Looking for pthread_create in pthread
+[9.010s] -- Looking for pthread_create in pthread - found
+[9.010s] -- Found Threads: TRUE  
+[10.641s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[11.178s] -- Added test 'copyright' to check source files copyright and LICENSE
+[11.188s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[11.200s] -- Configured cppcheck include dirs: /home/gy/tmr_ros2/tmrlib/include
+[11.200s] -- Configured cppcheck exclude dirs and/or files: 
+[11.207s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[11.207s] -- Configured cpplint exclude dirs and/or files: 
+[11.223s] -- Added test 'lint_cmake' to check CMake code style
+[11.234s] -- Added test 'uncrustify' to check C / C++ code style
+[11.235s] -- Configured uncrustify additional arguments: 
+[11.242s] -- Added test 'xmllint' to check XML markup files
+[11.257s] -- Configuring done
+[11.339s] -- Generating done
+[11.366s] -- Build files have been written to: /home/gy/tmr_ros2/build/tmrlib
+[11.408s] Invoked command in '/home/gy/tmr_ros2/build/tmrlib' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/gy/tmr_ros2/tmrlib -DCMAKE_INSTALL_PREFIX=/home/gy/tmr_ros2/install/tmrlib
+[11.413s] Invoking command in '/home/gy/tmr_ros2/build/tmrlib': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/gy/tmr_ros2/build/tmrlib -- -j3 -l3
+[11.604s] [35m[1mScanning dependencies of target tmrdriver[0m
+[11.719s] [ 12%] [32mBuilding CXX object CMakeFiles/tmrdriver.dir/src/tmr_driver.cpp.o[0m
+[16.295s] [ 25%] [32mBuilding CXX object CMakeFiles/tmrdriver.dir/src/tmr_tmsct_communication.cpp.o[0m
+[19.844s] [ 37%] [32mBuilding CXX object CMakeFiles/tmrdriver.dir/src/tmr_tmsvr_communication.cpp.o[0m
+[23.762s] [ 50%] [32mBuilding CXX object CMakeFiles/tmrdriver.dir/src/tmr_communication.cpp.o[0m
+[26.556s] [ 62%] [32mBuilding CXX object CMakeFiles/tmrdriver.dir/src/tmr_robot_state.cpp.o[0m
+[29.338s] [ 75%] [32mBuilding CXX object CMakeFiles/tmrdriver.dir/src/tmr_tmpacket.cpp.o[0m
+[30.886s] [ 87%] [32mBuilding CXX object CMakeFiles/tmrdriver.dir/src/tmr_command.cpp.o[0m
+[32.224s] [100%] [32m[1mLinking CXX static library libtmrdriver.a[0m
+[32.467s] [100%] Built target tmrdriver
+[32.496s] Invoked command in '/home/gy/tmr_ros2/build/tmrlib' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/gy/tmr_ros2/build/tmrlib -- -j3 -l3
+[32.609s] Invoking command in '/home/gy/tmr_ros2/build/tmrlib': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/gy/tmr_ros2/build/tmrlib
+[32.633s] -- Install configuration: ""
+[32.633s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/environment/library_path.sh
+[32.636s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/environment/library_path.dsv
+[32.636s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/include
+[32.636s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/include/tmr
+[32.636s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/include/tmr/tmr_communication.h
+[32.637s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/include/tmr/tmr_tmpacket.h
+[32.637s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/include/tmr/tmr_print.h
+[32.637s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/include/tmr/tmr_robot_state.h
+[32.637s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/include/tmr/tmr_tmsct_communication.h
+[32.637s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/include/tmr/tmr_command.h
+[32.638s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/include/tmr/tmr_tmsvr_communication.h
+[32.638s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/include/tmr/tmr_data_table.h
+[32.640s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/include/tmr/tmr_driver.h
+[32.640s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/lib/libtmrdriver.a
+[32.640s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/share/ament_index/resource_index/package_run_dependencies/tmrlib
+[32.641s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/share/ament_index/resource_index/parent_prefix_path/tmrlib
+[32.642s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/environment/ament_prefix_path.sh
+[32.642s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/environment/ament_prefix_path.dsv
+[32.642s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/environment/path.sh
+[32.643s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/environment/path.dsv
+[32.643s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/local_setup.bash
+[32.643s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/local_setup.sh
+[32.644s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/local_setup.zsh
+[32.644s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/local_setup.dsv
+[32.644s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/package.dsv
+[32.644s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/share/ament_index/resource_index/packages/tmrlib
+[32.645s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/cmake/export_tmrdriverExport.cmake
+[32.645s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/cmake/export_tmrdriverExport-noconfig.cmake
+[32.646s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/cmake/ament_cmake_export_targets-extras.cmake
+[32.646s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/cmake/tmrlibConfig.cmake
+[32.646s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/cmake/tmrlibConfig-version.cmake
+[32.647s] -- Installing: /home/gy/tmr_ros2/install/tmrlib/share/tmrlib/package.xml
+[32.651s] Invoked command in '/home/gy/tmr_ros2/build/tmrlib' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/gy/tmr_ros2/build/tmrlib

@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing rviz_tm.egg-info/PKG-INFO
+writing dependency_links to rviz_tm.egg-info/dependency_links.txt
+writing entry points to rviz_tm.egg-info/entry_points.txt
+writing requirements to rviz_tm.egg-info/requires.txt
+writing top-level names to rviz_tm.egg-info/top_level.txt
+reading manifest file 'rviz_tm.egg-info/SOURCES.txt'
+writing manifest file 'rviz_tm.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/gy/Omron_TM_ROS2/install/rviz_tm/lib/python3.8/site-packages/rviz-tm.egg-link (link to .)
+
+Installed /home/gy/Omron_TM_ROS2/build/rviz_tm
+running install_data
+copying launch/rviz_tm.launch.py -> /home/gy/Omron_TM_ROS2/install/rviz_tm/share/rviz_tm

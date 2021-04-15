@@ -1,0 +1,30 @@
+[1.414s] Invoking command in '/home/gy/tmr_ros2/build/tmr_moveit_config_tm5-900': CMAKE_PREFIX_PATH=/home/gy/tmr_ros2/install/tmr_description:/home/gy/tmr_ros2/install/tmrlib:/home/gy/tmr_ros2/install/tmr_msgs:/home/gy/tmr_ros2/install/tmr_moveit_cpp_demo:/home/gy/tmr_ros2/install/tm_msgs:/home/gy/tmr_ros2/install/custom_package:/home/gy/tmr_ros2/install/techman_robot_msgs:/home/gy/tmr_ros2/install/tmr_mod_urdf:/home/gy/tmr_ros2/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --build /home/gy/tmr_ros2/build/tmr_moveit_config_tm5-900 -- -j3 -l3
+[1.877s] Invoked command in '/home/gy/tmr_ros2/build/tmr_moveit_config_tm5-900' returned '0': CMAKE_PREFIX_PATH=/home/gy/tmr_ros2/install/tmr_description:/home/gy/tmr_ros2/install/tmrlib:/home/gy/tmr_ros2/install/tmr_msgs:/home/gy/tmr_ros2/install/tmr_moveit_cpp_demo:/home/gy/tmr_ros2/install/tm_msgs:/home/gy/tmr_ros2/install/custom_package:/home/gy/tmr_ros2/install/techman_robot_msgs:/home/gy/tmr_ros2/install/tmr_mod_urdf:/home/gy/tmr_ros2/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --build /home/gy/tmr_ros2/build/tmr_moveit_config_tm5-900 -- -j3 -l3
+[1.924s] Invoking command in '/home/gy/tmr_ros2/build/tmr_moveit_config_tm5-900': CMAKE_PREFIX_PATH=/home/gy/tmr_ros2/install/tmr_description:/home/gy/tmr_ros2/install/tmrlib:/home/gy/tmr_ros2/install/tmr_msgs:/home/gy/tmr_ros2/install/tmr_moveit_cpp_demo:/home/gy/tmr_ros2/install/tm_msgs:/home/gy/tmr_ros2/install/custom_package:/home/gy/tmr_ros2/install/techman_robot_msgs:/home/gy/tmr_ros2/install/tmr_mod_urdf:/home/gy/tmr_ros2/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --install /home/gy/tmr_ros2/build/tmr_moveit_config_tm5-900
+[1.967s] -- Install configuration: ""
+[2.113s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_config_tm5-900/share/ament_index/resource_index/package_run_dependencies/tmr_moveit_config_tm5-900
+[2.143s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_config_tm5-900/share/ament_index/resource_index/parent_prefix_path/tmr_moveit_config_tm5-900
+[2.333s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/environment/ament_prefix_path.sh
+[2.333s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/environment/ament_prefix_path.dsv
+[2.363s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/environment/path.sh
+[2.364s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/environment/path.dsv
+[2.364s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/local_setup.bash
+[2.371s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/local_setup.sh
+[2.419s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/local_setup.zsh
+[2.452s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/local_setup.dsv
+[2.460s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/package.dsv
+[2.468s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_config_tm5-900/share/ament_index/resource_index/packages/tmr_moveit_config_tm5-900
+[2.484s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/cmake/tmr_moveit_config_tm5-900Config.cmake
+[2.507s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/cmake/tmr_moveit_config_tm5-900Config-version.cmake
+[2.520s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/package.xml
+[2.565s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/config
+[2.614s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/config/kinematics.yaml
+[2.643s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/config/ros_controllers.yaml
+[2.720s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/config/stomp_planning.yaml
+[2.721s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/config/joint_limits.yaml
+[2.753s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/config/fake_controllers.yaml
+[2.809s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/config/ompl_planning.yaml
+[2.842s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/config/chomp_planning.yaml
+[2.875s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/config/tm5-900.srdf
+[2.909s] -- Installing: /home/gy/tmr_ros2/install/tmr_moveit_config_tm5-900/share/tmr_moveit_config_tm5-900/config/sensors_3d.yaml
+[2.915s] Invoked command in '/home/gy/tmr_ros2/build/tmr_moveit_config_tm5-900' returned '0': CMAKE_PREFIX_PATH=/home/gy/tmr_ros2/install/tmr_description:/home/gy/tmr_ros2/install/tmrlib:/home/gy/tmr_ros2/install/tmr_msgs:/home/gy/tmr_ros2/install/tmr_moveit_cpp_demo:/home/gy/tmr_ros2/install/tm_msgs:/home/gy/tmr_ros2/install/custom_package:/home/gy/tmr_ros2/install/techman_robot_msgs:/home/gy/tmr_ros2/install/tmr_mod_urdf:/home/gy/tmr_ros2/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --install /home/gy/tmr_ros2/build/tmr_moveit_config_tm5-900

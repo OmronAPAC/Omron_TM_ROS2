@@ -1,0 +1,6 @@
+Invoking command in '/home/gy/tmr_ros2/build/tmr_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/gy/tmr_ros2/tmr_description -DCMAKE_INSTALL_PREFIX=/home/gy/tmr_ros2/install/tmr_description
+Invoked command in '/home/gy/tmr_ros2/build/tmr_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/gy/tmr_ros2/tmr_description -DCMAKE_INSTALL_PREFIX=/home/gy/tmr_ros2/install/tmr_description
+Invoking command in '/home/gy/tmr_ros2/build/tmr_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/gy/tmr_ros2/build/tmr_description -- -j3 -l3
+Invoked command in '/home/gy/tmr_ros2/build/tmr_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/gy/tmr_ros2/build/tmr_description -- -j3 -l3
+Invoking command in '/home/gy/tmr_ros2/build/tmr_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/gy/tmr_ros2/build/tmr_description
+Invoked command in '/home/gy/tmr_ros2/build/tmr_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/gy/tmr_ros2/build/tmr_description

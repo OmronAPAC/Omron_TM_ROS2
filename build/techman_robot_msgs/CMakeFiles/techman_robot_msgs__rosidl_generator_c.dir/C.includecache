@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/gy/tmr_ros2/build/techman_robot_msgs/rosidl_generator_c/techman_robot_msgs/srv/detail/techman_robot_command__functions.c
+/home/gy/Omron_TM_ROS2/build/techman_robot_msgs/rosidl_generator_c/techman_robot_msgs/srv/detail/techman_robot_command__functions.c
 techman_robot_msgs/srv/detail/techman_robot_command__functions.h
-/home/gy/tmr_ros2/build/techman_robot_msgs/rosidl_generator_c/techman_robot_msgs/srv/detail/techman_robot_msgs/srv/detail/techman_robot_command__functions.h
+/home/gy/Omron_TM_ROS2/build/techman_robot_msgs/rosidl_generator_c/techman_robot_msgs/srv/detail/techman_robot_msgs/srv/detail/techman_robot_command__functions.h
 assert.h
 -
 stdbool.h
@@ -18,7 +18,7 @@ stdlib.h
 string.h
 -
 rosidl_runtime_c/string_functions.h
-/home/gy/tmr_ros2/build/techman_robot_msgs/rosidl_generator_c/techman_robot_msgs/srv/detail/rosidl_runtime_c/string_functions.h
+/home/gy/Omron_TM_ROS2/build/techman_robot_msgs/rosidl_generator_c/techman_robot_msgs/srv/detail/rosidl_runtime_c/string_functions.h
 
 /opt/ros/foxy/include/rosidl_runtime_c/primitives_sequence.h
 stdbool.h

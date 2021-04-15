@@ -1,0 +1,35 @@
+[35m[1mScanning dependencies of target tm_driver[0m
+[  8%] [32mBuilding CXX object CMakeFiles/tm_driver.dir/src/tm_ros2_svr.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/tm_driver.dir/src/tm_ros2_sct.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/tm_driver.dir/src/tm_ros2_composition.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/tm_driver.dir/src/tm_driver.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/tm_driver.dir/src/tm_sct_communication.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/tm_driver.dir/src/tm_svr_communication.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/tm_driver.dir/src/tm_communication.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/tm_driver.dir/src/tm_robot_state.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/tm_driver.dir/src/tm_packet.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/tm_driver.dir/src/tm_print.cpp.o[0m
+[ 91%] [32mBuilding CXX object CMakeFiles/tm_driver.dir/src/tm_command.cpp.o[0m
+[100%] [32m[1mLinking CXX executable tm_driver[0m
+[100%] Built target tm_driver
+-- Install configuration: ""
+-- Installing: /home/gy/tmr_ros2/install/tm_driver/lib/tm_driver/tm_driver
+-- Set runtime path of "/home/gy/tmr_ros2/install/tm_driver/lib/tm_driver/tm_driver" to ""
+-- Installing: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/launch
+-- Installing: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/launch/tm_bringup.launch.py
+-- Installing: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/launch/tm_bringup.py
+-- Installing: /home/gy/tmr_ros2/install/tm_driver/share/ament_index/resource_index/package_run_dependencies/tm_driver
+-- Installing: /home/gy/tmr_ros2/install/tm_driver/share/ament_index/resource_index/parent_prefix_path/tm_driver
+-- Installing: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/environment/ament_prefix_path.sh
+-- Installing: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/environment/ament_prefix_path.dsv
+-- Installing: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/environment/path.sh
+-- Installing: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/environment/path.dsv
+-- Installing: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/local_setup.bash
+-- Installing: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/local_setup.sh
+-- Installing: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/local_setup.zsh
+-- Installing: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/local_setup.dsv
+-- Installing: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/package.dsv
+-- Installing: /home/gy/tmr_ros2/install/tm_driver/share/ament_index/resource_index/packages/tm_driver
+-- Installing: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/cmake/tm_driverConfig.cmake
+-- Installing: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/cmake/tm_driverConfig-version.cmake
+-- Installing: /home/gy/tmr_ros2/install/tm_driver/share/tm_driver/package.xml

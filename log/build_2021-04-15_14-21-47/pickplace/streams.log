@@ -1,0 +1,19 @@
+[0.544s] Invoking command in '/home/gy/Omron_TM_ROS2/build/pickplace': PYTHONPATH=/home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/gy/Omron_TM_ROS2/install/pickplace --editable --build-directory /home/gy/Omron_TM_ROS2/build/pickplace/build --no-deps install_data --install-dir /home/gy/Omron_TM_ROS2/install/pickplace
+[1.019s] running develop
+[1.280s] running egg_info
+[1.280s] writing pickplace.egg-info/PKG-INFO
+[1.281s] writing dependency_links to pickplace.egg-info/dependency_links.txt
+[1.281s] writing entry points to pickplace.egg-info/entry_points.txt
+[1.281s] writing requirements to pickplace.egg-info/requires.txt
+[1.282s] writing top-level names to pickplace.egg-info/top_level.txt
+[1.356s] reading manifest file 'pickplace.egg-info/SOURCES.txt'
+[1.358s] writing manifest file 'pickplace.egg-info/SOURCES.txt'
+[1.439s] running build_ext
+[1.439s] Creating /home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages/pickplace.egg-link (link to .)
+[1.441s] Installing pickplace script to /home/gy/Omron_TM_ROS2/install/pickplace/lib/pickplace
+[1.442s] Installing teach_setup script to /home/gy/Omron_TM_ROS2/install/pickplace/lib/pickplace
+[1.442s] 
+[1.442s] Installed /home/gy/Omron_TM_ROS2/build/pickplace
+[1.442s] running install_data
+[1.443s] error: can't copy 'launch/teach_setup.launch.py': doesn't exist or not a regular file
+[1.490s] Invoked command in '/home/gy/Omron_TM_ROS2/build/pickplace' returned '1': PYTHONPATH=/home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/gy/Omron_TM_ROS2/install/pickplace --editable --build-directory /home/gy/Omron_TM_ROS2/build/pickplace/build --no-deps install_data --install-dir /home/gy/Omron_TM_ROS2/install/pickplace

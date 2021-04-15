@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wall -Wextra -Wpedantic -std=gnu++14
 
 CXX_DEFINES = -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DROS2_BUILD -DSPDLOG_COMPILED_LIB
 
-CXX_INCLUDES = -I/home/gy/tmr_ros2/tm_driver/include -I/home/gy/tmr_ros2/tm_driver -isystem /home/gy/tmr_ros2/install/tm_msgs/include -isystem /opt/ros/foxy/include 
+CXX_INCLUDES = -I/home/gy/Omron_TM_ROS2/tm_driver/include -I/home/gy/Omron_TM_ROS2/tm_driver -isystem /home/gy/Omron_TM_ROS2/install/tm_msgs/include -isystem /opt/ros/foxy/include 
 

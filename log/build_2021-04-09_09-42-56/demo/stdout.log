@@ -1,0 +1,94 @@
+[35m[1mScanning dependencies of target demo_ask_item[0m
+[35m[1mScanning dependencies of target demo_set_positions[0m
+[35m[1mScanning dependencies of target demo_get_svr_response[0m
+[  7%] [32mBuilding CXX object CMakeFiles/demo_ask_item.dir/src/demo_ask_item.cpp.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/demo_get_svr_response.dir/get_status_demo_src/demo_get_svr_response.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/demo_set_positions.dir/src/demo_set_positions.cpp.o[0m
+[ 19%] [32m[1mLinking CXX executable demo_ask_item[0m
+[ 19%] [32m[1mLinking CXX executable demo_set_positions[0m
+[ 23%] [32m[1mLinking CXX executable demo_get_svr_response[0m
+[ 23%] Built target demo_set_positions
+[ 23%] Built target demo_ask_item
+[ 23%] Built target demo_get_svr_response
+[35m[1mScanning dependencies of target demo_set_io[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/demo_set_io.dir/src/demo_set_io.cpp.o[0m
+[ 30%] [32m[1mLinking CXX executable demo_set_io[0m
+[ 30%] Built target demo_set_io
+[35m[1mScanning dependencies of target demo_send_script[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/demo_send_script.dir/src/demo_send_script.cpp.o[0m
+[ 38%] [32m[1mLinking CXX executable demo_send_script[0m
+[ 38%] Built target demo_send_script
+[35m[1mScanning dependencies of target demo_ask_sta[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/demo_ask_sta.dir/src/demo_ask_sta.cpp.o[0m
+[ 46%] [32m[1mLinking CXX executable demo_ask_sta[0m
+[ 46%] Built target demo_ask_sta
+[35m[1mScanning dependencies of target demo_get_sct_response[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/demo_get_sct_response.dir/get_status_demo_src/demo_get_sct_response.cpp.o[0m
+[ 53%] [32m[1mLinking CXX executable demo_get_sct_response[0m
+[ 53%] Built target demo_get_sct_response
+[35m[1mScanning dependencies of target demo_set_event[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/demo_set_event.dir/src/demo_set_event.cpp.o[0m
+[ 61%] [32m[1mLinking CXX executable demo_set_event[0m
+[ 61%] Built target demo_set_event
+[35m[1mScanning dependencies of target demo_connect_tm[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/demo_connect_tm.dir/src/demo_connect_tm.cpp.o[0m
+[ 69%] [32m[1mLinking CXX executable demo_connect_tm[0m
+[ 69%] Built target demo_connect_tm
+[35m[1mScanning dependencies of target demo_get_feedback[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/demo_get_feedback.dir/get_status_demo_src/demo_get_feedback.cpp.o[0m
+[ 76%] [32m[1mLinking CXX executable demo_get_feedback[0m
+[ 76%] Built target demo_get_feedback
+[35m[1mScanning dependencies of target demo_leave_listen_node[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/demo_leave_listen_node.dir/src/demo_leave_listen_node.cpp.o[0m
+[ 84%] [32m[1mLinking CXX executable demo_leave_listen_node[0m
+[ 84%] Built target demo_leave_listen_node
+[35m[1mScanning dependencies of target demo_write_item[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/demo_write_item.dir/src/demo_write_item.cpp.o[0m
+[ 92%] [32m[1mLinking CXX executable demo_write_item[0m
+[ 92%] Built target demo_write_item
+[35m[1mScanning dependencies of target demo_get_sta_response[0m
+[ 96%] [32mBuilding CXX object CMakeFiles/demo_get_sta_response.dir/get_status_demo_src/demo_get_sta_response.cpp.o[0m
+[100%] [32m[1mLinking CXX executable demo_get_sta_response[0m
+[100%] Built target demo_get_sta_response
+-- Install configuration: ""
+-- Installing: /home/gy/tmr_ros2/install/demo/lib/demo/demo_send_script
+-- Set runtime path of "/home/gy/tmr_ros2/install/demo/lib/demo/demo_send_script" to ""
+-- Installing: /home/gy/tmr_ros2/install/demo/lib/demo/demo_ask_sta
+-- Set runtime path of "/home/gy/tmr_ros2/install/demo/lib/demo/demo_ask_sta" to ""
+-- Installing: /home/gy/tmr_ros2/install/demo/lib/demo/demo_connect_tm
+-- Set runtime path of "/home/gy/tmr_ros2/install/demo/lib/demo/demo_connect_tm" to ""
+-- Installing: /home/gy/tmr_ros2/install/demo/lib/demo/demo_set_event
+-- Set runtime path of "/home/gy/tmr_ros2/install/demo/lib/demo/demo_set_event" to ""
+-- Installing: /home/gy/tmr_ros2/install/demo/lib/demo/demo_set_io
+-- Set runtime path of "/home/gy/tmr_ros2/install/demo/lib/demo/demo_set_io" to ""
+-- Installing: /home/gy/tmr_ros2/install/demo/lib/demo/demo_set_positions
+-- Set runtime path of "/home/gy/tmr_ros2/install/demo/lib/demo/demo_set_positions" to ""
+-- Installing: /home/gy/tmr_ros2/install/demo/lib/demo/demo_write_item
+-- Set runtime path of "/home/gy/tmr_ros2/install/demo/lib/demo/demo_write_item" to ""
+-- Installing: /home/gy/tmr_ros2/install/demo/lib/demo/demo_ask_item
+-- Set runtime path of "/home/gy/tmr_ros2/install/demo/lib/demo/demo_ask_item" to ""
+-- Installing: /home/gy/tmr_ros2/install/demo/lib/demo/demo_get_feedback
+-- Set runtime path of "/home/gy/tmr_ros2/install/demo/lib/demo/demo_get_feedback" to ""
+-- Installing: /home/gy/tmr_ros2/install/demo/lib/demo/demo_get_sct_response
+-- Set runtime path of "/home/gy/tmr_ros2/install/demo/lib/demo/demo_get_sct_response" to ""
+-- Installing: /home/gy/tmr_ros2/install/demo/lib/demo/demo_get_sta_response
+-- Set runtime path of "/home/gy/tmr_ros2/install/demo/lib/demo/demo_get_sta_response" to ""
+-- Installing: /home/gy/tmr_ros2/install/demo/lib/demo/demo_get_svr_response
+-- Set runtime path of "/home/gy/tmr_ros2/install/demo/lib/demo/demo_get_svr_response" to ""
+-- Installing: /home/gy/tmr_ros2/install/demo/lib/demo/demo_leave_listen_node
+-- Set runtime path of "/home/gy/tmr_ros2/install/demo/lib/demo/demo_leave_listen_node" to ""
+-- Installing: /home/gy/tmr_ros2/install/demo/share/ament_index/resource_index/package_run_dependencies/demo
+-- Installing: /home/gy/tmr_ros2/install/demo/share/ament_index/resource_index/parent_prefix_path/demo
+-- Installing: /home/gy/tmr_ros2/install/demo/share/demo/environment/ament_prefix_path.sh
+-- Installing: /home/gy/tmr_ros2/install/demo/share/demo/environment/ament_prefix_path.dsv
+-- Installing: /home/gy/tmr_ros2/install/demo/share/demo/environment/path.sh
+-- Installing: /home/gy/tmr_ros2/install/demo/share/demo/environment/path.dsv
+-- Installing: /home/gy/tmr_ros2/install/demo/share/demo/local_setup.bash
+-- Installing: /home/gy/tmr_ros2/install/demo/share/demo/local_setup.sh
+-- Installing: /home/gy/tmr_ros2/install/demo/share/demo/local_setup.zsh
+-- Installing: /home/gy/tmr_ros2/install/demo/share/demo/local_setup.dsv
+-- Installing: /home/gy/tmr_ros2/install/demo/share/demo/package.dsv
+-- Installing: /home/gy/tmr_ros2/install/demo/share/ament_index/resource_index/packages/demo
+-- Installing: /home/gy/tmr_ros2/install/demo/share/demo/cmake/demoConfig.cmake
+-- Installing: /home/gy/tmr_ros2/install/demo/share/demo/cmake/demoConfig-version.cmake
+-- Installing: /home/gy/tmr_ros2/install/demo/share/demo/package.xml

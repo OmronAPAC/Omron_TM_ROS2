@@ -1,0 +1,29 @@
+[35m[1mScanning dependencies of target sub_img[0m
+[35m[1mScanning dependencies of target tm_send_command[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/tm_send_command.dir/src/send_command.cpp.o[0m
+[ 50%] [32m[1mLinking CXX executable sub_img[0m
+[ 75%] Built target sub_img
+[100%] [32m[1mLinking CXX executable tm_send_command[0m
+[100%] Built target tm_send_command
+-- Install configuration: ""
+-- Installing: /home/gy/Omron_TM_ROS2/install/custom_package/lib/custom_package/tm_send_command
+-- Set runtime path of "/home/gy/Omron_TM_ROS2/install/custom_package/lib/custom_package/tm_send_command" to ""
+-- Installing: /home/gy/Omron_TM_ROS2/install/custom_package/lib/custom_package/sub_img
+-- Set runtime path of "/home/gy/Omron_TM_ROS2/install/custom_package/lib/custom_package/sub_img" to ""
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/image
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/image/techman_robot.jpg
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/ament_index/resource_index/package_run_dependencies/custom_package
+-- Installing: /home/gy/Omron_TM_ROS2/install/custom_package/share/ament_index/resource_index/parent_prefix_path/custom_package
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/environment/ament_prefix_path.sh
+-- Installing: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/environment/path.sh
+-- Installing: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/environment/path.dsv
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/local_setup.bash
+-- Installing: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/local_setup.sh
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/local_setup.zsh
+-- Installing: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/local_setup.dsv
+-- Installing: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/package.dsv
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/ament_index/resource_index/packages/custom_package
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/cmake/custom_packageConfig.cmake
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/cmake/custom_packageConfig-version.cmake
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/package.xml

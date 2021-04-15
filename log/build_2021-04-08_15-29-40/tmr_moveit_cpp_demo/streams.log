@@ -1,0 +1,26 @@
+[0.517s] Invoking command in '/home/gy/tmr_ros2/build/tmr_moveit_cpp_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmr_ros2/install/tmr_mod_urdf:/home/gy/tmr_ros2/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --build /home/gy/tmr_ros2/build/tmr_moveit_cpp_demo -- -j3 -l3
+[0.666s] Invoked command in '/home/gy/tmr_ros2/build/tmr_moveit_cpp_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmr_ros2/install/tmr_mod_urdf:/home/gy/tmr_ros2/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --build /home/gy/tmr_ros2/build/tmr_moveit_cpp_demo -- -j3 -l3
+[0.739s] Invoking command in '/home/gy/tmr_ros2/build/tmr_moveit_cpp_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmr_ros2/install/tmr_mod_urdf:/home/gy/tmr_ros2/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --install /home/gy/tmr_ros2/build/tmr_moveit_cpp_demo
+[0.759s] -- Install configuration: ""
+[0.774s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/launch
+[0.774s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/launch/run_moveit_cpp.rviz
+[0.774s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/launch/run_moveit_cpp.launch.py
+[0.775s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/config
+[0.775s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/config/moveit_cpp.yaml
+[0.776s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/config/controllers.yaml
+[0.776s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/ament_index/resource_index/package_run_dependencies/tmr_moveit_cpp_demo
+[0.777s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/ament_index/resource_index/parent_prefix_path/tmr_moveit_cpp_demo
+[0.778s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/environment/ament_prefix_path.sh
+[0.779s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/environment/ament_prefix_path.dsv
+[0.779s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/environment/path.sh
+[0.780s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/environment/path.dsv
+[0.780s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/local_setup.bash
+[0.780s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/local_setup.sh
+[0.781s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/local_setup.zsh
+[0.781s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/local_setup.dsv
+[0.782s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/package.dsv
+[0.782s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/ament_index/resource_index/packages/tmr_moveit_cpp_demo
+[0.783s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/cmake/tmr_moveit_cpp_demoConfig.cmake
+[0.783s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/cmake/tmr_moveit_cpp_demoConfig-version.cmake
+[0.783s] -- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/package.xml
+[0.817s] Invoked command in '/home/gy/tmr_ros2/build/tmr_moveit_cpp_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/tmr_ros2/install/tmr_mod_urdf:/home/gy/tmr_ros2/install/tm_get_status:/opt/ros/foxy /usr/bin/cmake --install /home/gy/tmr_ros2/build/tmr_moveit_cpp_demo

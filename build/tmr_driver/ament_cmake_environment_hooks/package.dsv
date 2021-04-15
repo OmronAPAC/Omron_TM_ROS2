@@ -1,0 +1,4 @@
+source;share/tmr_driver/local_setup.bash
+source;share/tmr_driver/local_setup.dsv
+source;share/tmr_driver/local_setup.sh
+source;share/tmr_driver/local_setup.zsh

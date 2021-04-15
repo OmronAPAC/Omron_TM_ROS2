@@ -1,0 +1,9 @@
+[0.520s] Invoking command in '/home/gy/Omron_TM_ROS2/src/pickplace': PYTHONPATH=/home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pickplace build --build-base /home/gy/Omron_TM_ROS2/build/pickplace/build install --prefix /home/gy/Omron_TM_ROS2/install/pickplace --record /home/gy/Omron_TM_ROS2/build/pickplace/install.log --single-version-externally-managed
+[1.009s] running egg_info
+[1.010s] writing ../../build/pickplace/pickplace.egg-info/PKG-INFO
+[1.011s] writing dependency_links to ../../build/pickplace/pickplace.egg-info/dependency_links.txt
+[1.011s] writing entry points to ../../build/pickplace/pickplace.egg-info/entry_points.txt
+[1.011s] writing requirements to ../../build/pickplace/pickplace.egg-info/requires.txt
+[1.016s] writing top-level names to ../../build/pickplace/pickplace.egg-info/top_level.txt
+[1.093s] error: package directory 'src/pickplace' does not exist
+[1.123s] Invoked command in '/home/gy/Omron_TM_ROS2/src/pickplace' returned '1': PYTHONPATH=/home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pickplace build --build-base /home/gy/Omron_TM_ROS2/build/pickplace/build install --prefix /home/gy/Omron_TM_ROS2/install/pickplace --record /home/gy/Omron_TM_ROS2/build/pickplace/install.log --single-version-externally-managed

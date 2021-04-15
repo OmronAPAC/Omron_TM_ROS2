@@ -1,4 +1,0 @@
-[console_scripts]
-initialise = pickplace.initialise:main
-pickplace = pickplace.pickplace_program:main
-

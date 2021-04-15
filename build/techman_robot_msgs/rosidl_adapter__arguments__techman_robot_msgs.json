@@ -1,0 +1,6 @@
+{
+  "package_name": "techman_robot_msgs",
+  "non_idl_tuples": [
+    "/home/gy/Omron_TM_ROS2/techman_robot_msgs:srv/TechmanRobotCommand.srv"
+  ]
+}

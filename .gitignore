@@ -1,8 +1,0 @@
-*.bin
-*.ipch
-*.json
-*.pyc
-*.cpython-37.pyc
-*.pyc
-*.bak
-.vscode/

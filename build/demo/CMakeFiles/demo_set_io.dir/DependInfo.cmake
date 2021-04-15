@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/gy/tmr_ros2/demo/src/demo_set_io.cpp" "/home/gy/tmr_ros2/build/demo/CMakeFiles/demo_set_io.dir/src/demo_set_io.cpp.o"
+  "/home/gy/Omron_TM_ROS2/demo/src/demo_set_io.cpp" "/home/gy/Omron_TM_ROS2/build/demo/CMakeFiles/demo_set_io.dir/src/demo_set_io.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -18,9 +18,9 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/gy/tmr_ros2/demo/include"
-  "/home/gy/tmr_ros2/demo"
-  "/home/gy/tmr_ros2/install/tm_msgs/include"
+  "/home/gy/Omron_TM_ROS2/demo/include"
+  "/home/gy/Omron_TM_ROS2/demo"
+  "/home/gy/Omron_TM_ROS2/install/tm_msgs/include"
   "/opt/ros/foxy/include"
   )
 

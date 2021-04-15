@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/gy/tmr_ros2/custom_package/src/send_command.cpp" "/home/gy/tmr_ros2/build/custom_package/CMakeFiles/tm_send_command.dir/src/send_command.cpp.o"
+  "/home/gy/Omron_TM_ROS2/custom_package/src/send_command.cpp" "/home/gy/Omron_TM_ROS2/build/custom_package/CMakeFiles/tm_send_command.dir/src/send_command.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,7 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/gy/tmr_ros2/install/techman_robot_msgs/include"
+  "/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/include"
   "/opt/ros/foxy/include"
   )
 

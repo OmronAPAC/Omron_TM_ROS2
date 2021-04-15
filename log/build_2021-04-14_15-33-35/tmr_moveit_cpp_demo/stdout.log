@@ -1,0 +1,14 @@
+-- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rosidl_default_runtime: 1.0.0 (/opt/ros/foxy/share/rosidl_default_runtime/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/gy/tmr_ros2/build/tmr_moveit_cpp_demo
+-- Install configuration: ""
+-- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/launch
+-- Up-to-date: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/config
+-- Installing: /home/gy/tmr_ros2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/package.dsv

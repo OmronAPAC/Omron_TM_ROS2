@@ -1,0 +1,46 @@
+CMake Error: The current CMakeCache.txt directory /home/gy/Omron_TM_ROS2/build/techman_robot_msgs/CMakeCache.txt is different than the directory /home/gy/tmr_ros2/build/techman_robot_msgs where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+[  3%] Built target techman_robot_msgs__cpp
+[ 12%] Built target techman_robot_msgs__rosidl_generator_c
+[ 22%] Built target techman_robot_msgs__rosidl_typesupport_introspection_cpp
+[ 32%] Built target techman_robot_msgs__rosidl_typesupport_cpp
+[ 41%] Built target techman_robot_msgs__rosidl_typesupport_fastrtps_cpp
+[ 51%] Built target techman_robot_msgs__rosidl_typesupport_introspection_c
+[ 61%] Built target techman_robot_msgs__rosidl_typesupport_c
+[ 70%] Built target techman_robot_msgs__rosidl_typesupport_fastrtps_c
+[ 70%] Built target techman_robot_msgs
+[ 74%] Built target techman_robot_msgs__py
+[ 80%] Built target techman_robot_msgs__python
+[ 87%] Built target techman_robot_msgs__rosidl_typesupport_c__pyext
+[ 93%] Built target techman_robot_msgs__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target techman_robot_msgs__rosidl_typesupport_introspection_c__pyext
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_parallel_executor/executor/parallel.py", line 67, in execute
+    loop.run_until_complete(future)
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 603, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 570, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 1823, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/usr/lib/python3.8/selectors.py", line 468, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__
+    rc = await self.task(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__
+    return await task_method(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_cmake/build.py", line 59, in build
+    rc = await extension.build(
+  File "/usr/lib/python3/dist-packages/colcon_cmake/task/cmake/build.py", line 110, in build
+    if await has_target(args.build_base, 'install'):
+  File "/usr/lib/python3/dist-packages/colcon_cmake/task/cmake/__init__.py", line 57, in has_target
+    return target in await get_makefile_targets(path)
+  File "/usr/lib/python3/dist-packages/colcon_cmake/task/cmake/__init__.py", line 77, in get_makefile_targets
+    output = await check_output([
+  File "/usr/lib/python3/dist-packages/colcon_core/subprocess.py", line 109, in check_output
+    assert not rc, \
+AssertionError: Expected ['/usr/bin/cmake', '--build', '/home/gy/Omron_TM_ROS2/build/techman_robot_msgs', '--target', 'help'] to pass: 
