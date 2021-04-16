@@ -55,6 +55,7 @@ def generate_launch_description():
         package='robot_state_publisher',
         executable='robot_state_publisher',
         name='robot_state_publisher',
+        output='log',
         parameters=[robot_description]
     )
 
@@ -63,7 +64,7 @@ def generate_launch_description():
         package='tmr_driver',
         executable='tmr_driver',
         #name='tmr_driver',
-        output='screen',
+        output='log',
         arguments=args
     )
 

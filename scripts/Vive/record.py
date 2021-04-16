@@ -49,10 +49,12 @@ if __name__ == '__main__':
     ready_up()
     positions = record_modbus()
     print(len(positions))
-    print(positions)
+    #print(positions)
 
-    modbus.start_program()
+    
     print("Start TM Driver now!")
+    time.sleep(1)
+    modbus.start_program()
     time.sleep(3)
     move = Move.MoveClass()
 

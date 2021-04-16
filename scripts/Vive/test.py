@@ -46,15 +46,7 @@ if __name__ == '__main__':
     rclpy.init()
     modbus = Modbus.ModbusClass()
 
-    modbus.start_program()
-    print("Start TM Driver now!")
-    time.sleep(3)
-    move = Move.MoveClass()
-
-    move.set_position([0.25, -0.35, 0.30, 2.57, 0.0, 0.41])
-    move.set_position([0.25, -0.35, 0.25, 2.61, 0.0, 0.369])
-    move.set_position([0.30, -0.35, 0.25, 2.67, 0.0, 0.333])
-
+    modbus.open_io()
     
 
 """

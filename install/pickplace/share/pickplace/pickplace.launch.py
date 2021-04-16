@@ -25,57 +25,14 @@ def generate_launch_description():
             args.append(sys.argv[i])
             i = i + 1
 
-    # Component yaml files are grouped in separate namespaces
-    robot_description_config = load_file('tmr_description', 'urdf/tm5-900.urdf')
-    robot_description = {'robot_description' : robot_description_config}
-
-    # RViz
-    rviz_config_file = get_package_share_directory('rviz_tm') + "/rviz_tm.rviz"
-    rviz_node = Node(
-        package='rviz2',
-        executable='rviz2',
-        name='rviz2',
-        output='log',
-        arguments=['-d', rviz_config_file],
-        parameters=[robot_description]
-        )
-
-    # Static TF
-    static_tf = Node(
-        package='tf2_ros',
-        executable='static_transform_publisher',
-        name='static_transform_publisher',
-        output='log',
-        arguments=['0.0', '0.0', '0.0', '0.0', '0.0', '0.0', 'world', 'base']
-    )
-
-    # Publish TF
-    robot_state_publisher = Node(
-        package='robot_state_publisher',
-        executable='robot_state_publisher',
-        name='robot_state_publisher',
-        output='none',
-        parameters=[robot_description]
-    )
-
-    # TMR Driver (joint driver)
-    tmr_driver_node = Node(
-        package='tmr_driver',
-        executable='tmr_driver',
-        #name='tmr_driver',
-        output='log',
-        arguments=args
-    )
-
     # TM Driver
     tm_driver_node = Node(
         package='tm_driver',
         executable='tm_driver',
         #name='tm_driver',
         output='screen',
-        #arguments=args
-        arguments=[str(args)[12:-2]]
-        #arguments=[str(args[0]).split('=')[1]]
+        arguments=[str(args)[12:-2]],
+        prefix="bash -c 'sleep 5.0; $0 $@'"
     )
 
     # Pickplace Program
@@ -86,5 +43,3 @@ def generate_launch_description():
     )
 
     return LaunchDescription([ tm_driver_node, pickplace_node ])
-    #return LaunchDescription([ tm_driver_node, tmr_driver_node, static_tf, robot_state_publisher ])
-    #return LaunchDescription([ tm_driver_node, tmr_driver_node, static_tf, robot_state_publisher, pickplace_node, rviz_node ])
