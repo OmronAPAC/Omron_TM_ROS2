@@ -1,0 +1,8 @@
+[01m[K/home/gy/Omron_TM_ROS2/tm_driver/src/tm_ros2_svr.cpp:[m[K In member function ‘[01m[Kvoid TmSvrRos2::publish_fbs()[m[K’:
+[01m[K/home/gy/Omron_TM_ROS2/tm_driver/src/tm_ros2_svr.cpp:89:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kjns[m[K’ was not declared in this scope; did you mean ‘[01m[Kjnl[m[K’?
+   89 |     [01;31m[Kjns[m[K.clear();
+      |     [01;31m[K^~~[m[K
+      |     [32m[Kjnl[m[K
+make[2]: *** [CMakeFiles/tm_driver.dir/build.make:89: CMakeFiles/tm_driver.dir/src/tm_ros2_svr.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/tm_driver.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

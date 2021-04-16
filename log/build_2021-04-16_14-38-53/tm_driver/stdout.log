@@ -1,0 +1,24 @@
+[35m[1mScanning dependencies of target tm_driver[0m
+[  8%] [32mBuilding CXX object CMakeFiles/tm_driver.dir/src/tm_ros2_svr.cpp.o[0m
+[ 16%] [32m[1mLinking CXX executable tm_driver[0m
+[100%] Built target tm_driver
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/lib/tm_driver/tm_driver
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/launch/tm_bringup.launch.py
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/launch/tm_bringup.py
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/ament_index/resource_index/package_run_dependencies/tm_driver
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/ament_index/resource_index/parent_prefix_path/tm_driver
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/environment/ament_prefix_path.sh
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/environment/ament_prefix_path.dsv
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/environment/path.sh
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/environment/path.dsv
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/local_setup.bash
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/local_setup.sh
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/local_setup.zsh
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/local_setup.dsv
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/package.dsv
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/ament_index/resource_index/packages/tm_driver
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/cmake/tm_driverConfig.cmake
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/cmake/tm_driverConfig-version.cmake
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/package.xml

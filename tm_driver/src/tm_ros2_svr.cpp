@@ -86,6 +86,16 @@ void TmSvrRos2::publish_fbs()
     pm.fbs_pub->publish(pm.fbs_msg);
 
     // Publish joint state
+    std::vector<std::string> jns;
+    jns.clear();
+    jns.push_back("joint_1");
+    jns.push_back("joint_2");
+    jns.push_back("joint_3");
+    jns.push_back("joint_4");
+    jns.push_back("joint_5");
+    jns.push_back("joint_6");
+
+    pm.joint_msg.name = jns;
     pm.joint_msg.header.stamp = pm.fbs_msg.header.stamp;
     pm.joint_msg.position = pm.fbs_msg.joint_pos;
     pm.joint_msg.velocity = pm.fbs_msg.joint_vel;

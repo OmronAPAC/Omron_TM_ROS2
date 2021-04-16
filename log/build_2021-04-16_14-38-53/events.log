@@ -1,0 +1,195 @@
+[0.000000] (-) TimerEvent: {}
+[0.009390] (-) JobUnselected: {'identifier': 'custom_package'}
+[0.010310] (-) JobUnselected: {'identifier': 'demo'}
+[0.010367] (-) JobUnselected: {'identifier': 'pickplace'}
+[0.010405] (-) JobUnselected: {'identifier': 'rviz_tm'}
+[0.010441] (-) JobUnselected: {'identifier': 'techman_robot_msgs'}
+[0.010477] (-) JobUnselected: {'identifier': 'tm_get_status'}
+[0.010512] (-) JobUnselected: {'identifier': 'tm_msgs'}
+[0.010547] (-) JobUnselected: {'identifier': 'tmr_description'}
+[0.010582] (-) JobUnselected: {'identifier': 'tmr_driver'}
+[0.010617] (-) JobUnselected: {'identifier': 'tmr_mod_urdf'}
+[0.010652] (-) JobUnselected: {'identifier': 'tmr_moveit_config_tm5-900'}
+[0.010687] (-) JobUnselected: {'identifier': 'tmr_moveit_cpp_demo'}
+[0.010721] (-) JobUnselected: {'identifier': 'tmr_msgs'}
+[0.010756] (-) JobUnselected: {'identifier': 'tmrlib'}
+[0.010791] (-) JobUnselected: {'identifier': 'ui_for_debug_and_demo'}
+[0.010831] (tm_driver) JobQueued: {'identifier': 'tm_driver', 'dependencies': OrderedDict([('tm_msgs', '/home/gy/Omron_TM_ROS2/install/tm_msgs')])}
+[0.010874] (tm_driver) JobStarted: {'identifier': 'tm_driver'}
+[0.062195] (tm_driver) JobProgress: {'identifier': 'tm_driver', 'progress': 'cmake'}
+[0.063808] (tm_driver) JobProgress: {'identifier': 'tm_driver', 'progress': 'build'}
+[0.070778] (tm_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/gy/Omron_TM_ROS2/build/tm_driver', '--', '-j3', '-l3'], 'cwd': '/home/gy/Omron_TM_ROS2/build/tm_driver', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_SG:en'), ('USER', 'gy'), ('SSH_AGENT_PID', '1229'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/62/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/gy/Omron_TM_ROS2/install/tm_msgs/lib:/home/gy/Omron_TM_ROS2/install/tmrlib/lib:/home/gy/Omron_TM_ROS2/install/tmr_msgs/lib:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/gy'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.55.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', 'true'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/62/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/62/usr/share/code/code'), ('MANAGERPID', '1000'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2266'), ('_colcon_cd_root', '/home/gy/ros2_install'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/gy/Omron_TM_ROS2/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'gy'), ('JOURNAL_STREAM', '8:28511'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'gy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/gy/.local/bin:/opt/ros/foxy/bin:/home/gy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/gy:@/tmp/.ICE-unix/1300,unix/gy:/tmp/.ICE-unix/1300'), ('INVOCATION_ID', '274037ace77a4b87a637eea23d6abe5f'), ('XDG_MENU_PREFIX', 'gnome-'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_SG.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-698718a35f.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/snap/code/62/usr/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/gy/Omron_TM_ROS2/install/ui_for_debug_and_demo:/home/gy/Omron_TM_ROS2/install/tmr_driver:/home/gy/Omron_TM_ROS2/install/tmrlib:/home/gy/Omron_TM_ROS2/install/tmr_msgs:/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo:/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tmr_description:/home/gy/Omron_TM_ROS2/install/tm_driver:/home/gy/Omron_TM_ROS2/install/demo:/home/gy/Omron_TM_ROS2/install/tm_msgs:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/custom_package:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('DISABLE_WAYLAND', '1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/gy/Omron_TM_ROS2/build/tm_driver'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/gy/Omron_TM_ROS2/install/tm_msgs/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/install/tmr_msgs/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/install/tm_get_status/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/install/rviz_tm/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/build/pickplace:/home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/gy/Omron_TM_ROS2/install/tm_msgs:/home/gy/Omron_TM_ROS2/install/ui_for_debug_and_demo:/home/gy/Omron_TM_ROS2/install/tmr_driver:/home/gy/Omron_TM_ROS2/install/tmrlib:/home/gy/Omron_TM_ROS2/install/tmr_msgs:/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo:/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900:/home/gy/Omron_TM_ROS2/install/tmr_description:/home/gy/Omron_TM_ROS2/install/tm_driver:/home/gy/Omron_TM_ROS2/install/demo:/home/gy/Omron_TM_ROS2/install/custom_package:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy')]), 'shell': False}
+[0.098925] (-) TimerEvent: {}
+[0.153974] (tm_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target tm_driver\x1b[0m\n'}
+[0.199504] (-) TimerEvent: {}
+[0.241735] (tm_driver) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/tm_driver.dir/src/tm_ros2_svr.cpp.o\x1b[0m\n'}
+[0.299584] (-) TimerEvent: {}
+[0.400274] (-) TimerEvent: {}
+[0.500854] (-) TimerEvent: {}
+[0.601177] (-) TimerEvent: {}
+[0.701723] (-) TimerEvent: {}
+[0.803509] (-) TimerEvent: {}
+[0.904144] (-) TimerEvent: {}
+[1.004455] (-) TimerEvent: {}
+[1.105570] (-) TimerEvent: {}
+[1.206281] (-) TimerEvent: {}
+[1.306924] (-) TimerEvent: {}
+[1.408540] (-) TimerEvent: {}
+[1.509447] (-) TimerEvent: {}
+[1.610815] (-) TimerEvent: {}
+[1.711695] (-) TimerEvent: {}
+[1.814849] (-) TimerEvent: {}
+[1.915981] (-) TimerEvent: {}
+[2.016496] (-) TimerEvent: {}
+[2.117893] (-) TimerEvent: {}
+[2.219453] (-) TimerEvent: {}
+[2.320632] (-) TimerEvent: {}
+[2.421571] (-) TimerEvent: {}
+[2.525199] (-) TimerEvent: {}
+[2.627414] (-) TimerEvent: {}
+[2.728615] (-) TimerEvent: {}
+[2.829889] (-) TimerEvent: {}
+[2.930727] (-) TimerEvent: {}
+[3.031742] (-) TimerEvent: {}
+[3.132159] (-) TimerEvent: {}
+[3.232811] (-) TimerEvent: {}
+[3.334634] (-) TimerEvent: {}
+[3.435702] (-) TimerEvent: {}
+[3.536367] (-) TimerEvent: {}
+[3.638384] (-) TimerEvent: {}
+[3.739636] (-) TimerEvent: {}
+[3.840672] (-) TimerEvent: {}
+[3.941412] (-) TimerEvent: {}
+[4.042732] (-) TimerEvent: {}
+[4.143357] (-) TimerEvent: {}
+[4.244380] (-) TimerEvent: {}
+[4.345686] (-) TimerEvent: {}
+[4.446658] (-) TimerEvent: {}
+[4.547431] (-) TimerEvent: {}
+[4.648354] (-) TimerEvent: {}
+[4.749678] (-) TimerEvent: {}
+[4.851542] (-) TimerEvent: {}
+[4.952485] (-) TimerEvent: {}
+[5.053353] (-) TimerEvent: {}
+[5.154447] (-) TimerEvent: {}
+[5.257612] (-) TimerEvent: {}
+[5.358540] (-) TimerEvent: {}
+[5.460431] (-) TimerEvent: {}
+[5.561390] (-) TimerEvent: {}
+[5.662582] (-) TimerEvent: {}
+[5.763343] (-) TimerEvent: {}
+[5.864425] (-) TimerEvent: {}
+[5.966599] (-) TimerEvent: {}
+[6.067463] (-) TimerEvent: {}
+[6.170711] (-) TimerEvent: {}
+[6.271153] (-) TimerEvent: {}
+[6.371465] (-) TimerEvent: {}
+[6.471831] (-) TimerEvent: {}
+[6.572533] (-) TimerEvent: {}
+[6.673368] (-) TimerEvent: {}
+[6.773940] (-) TimerEvent: {}
+[6.874716] (-) TimerEvent: {}
+[6.975229] (-) TimerEvent: {}
+[7.075569] (-) TimerEvent: {}
+[7.176013] (-) TimerEvent: {}
+[7.276646] (-) TimerEvent: {}
+[7.377362] (-) TimerEvent: {}
+[7.478125] (-) TimerEvent: {}
+[7.578606] (-) TimerEvent: {}
+[7.679002] (-) TimerEvent: {}
+[7.779877] (-) TimerEvent: {}
+[7.880660] (-) TimerEvent: {}
+[7.981550] (-) TimerEvent: {}
+[8.081911] (-) TimerEvent: {}
+[8.183420] (-) TimerEvent: {}
+[8.284839] (-) TimerEvent: {}
+[8.385416] (-) TimerEvent: {}
+[8.485827] (-) TimerEvent: {}
+[8.586179] (-) TimerEvent: {}
+[8.686971] (-) TimerEvent: {}
+[8.787664] (-) TimerEvent: {}
+[8.888421] (-) TimerEvent: {}
+[8.989520] (-) TimerEvent: {}
+[9.090143] (-) TimerEvent: {}
+[9.190864] (-) TimerEvent: {}
+[9.292048] (-) TimerEvent: {}
+[9.393265] (-) TimerEvent: {}
+[9.504102] (-) TimerEvent: {}
+[9.604412] (-) TimerEvent: {}
+[9.705019] (-) TimerEvent: {}
+[9.806655] (-) TimerEvent: {}
+[9.907435] (-) TimerEvent: {}
+[10.008680] (-) TimerEvent: {}
+[10.112410] (-) TimerEvent: {}
+[10.218343] (-) TimerEvent: {}
+[10.322539] (-) TimerEvent: {}
+[10.423091] (-) TimerEvent: {}
+[10.523667] (-) TimerEvent: {}
+[10.624210] (-) TimerEvent: {}
+[10.725173] (-) TimerEvent: {}
+[10.828939] (-) TimerEvent: {}
+[10.929743] (-) TimerEvent: {}
+[11.030861] (-) TimerEvent: {}
+[11.131589] (-) TimerEvent: {}
+[11.233117] (-) TimerEvent: {}
+[11.333549] (-) TimerEvent: {}
+[11.434727] (-) TimerEvent: {}
+[11.535371] (-) TimerEvent: {}
+[11.636695] (-) TimerEvent: {}
+[11.657647] (tm_driver) StdoutLine: {'line': b'[ 16%] \x1b[32m\x1b[1mLinking CXX executable tm_driver\x1b[0m\n'}
+[11.736767] (-) TimerEvent: {}
+[11.838179] (-) TimerEvent: {}
+[11.939325] (-) TimerEvent: {}
+[12.040097] (-) TimerEvent: {}
+[12.140414] (-) TimerEvent: {}
+[12.241462] (-) TimerEvent: {}
+[12.342325] (-) TimerEvent: {}
+[12.443321] (-) TimerEvent: {}
+[12.543723] (-) TimerEvent: {}
+[12.645040] (-) TimerEvent: {}
+[12.745688] (-) TimerEvent: {}
+[12.850604] (-) TimerEvent: {}
+[12.951497] (-) TimerEvent: {}
+[13.052789] (-) TimerEvent: {}
+[13.154697] (-) TimerEvent: {}
+[13.255585] (-) TimerEvent: {}
+[13.356354] (-) TimerEvent: {}
+[13.456807] (-) TimerEvent: {}
+[13.561832] (-) TimerEvent: {}
+[13.663361] (-) TimerEvent: {}
+[13.764386] (-) TimerEvent: {}
+[13.865498] (-) TimerEvent: {}
+[13.904804] (tm_driver) StdoutLine: {'line': b'[100%] Built target tm_driver\n'}
+[13.920221] (tm_driver) CommandEnded: {'returncode': 0}
+[13.965630] (-) TimerEvent: {}
+[14.057444] (tm_driver) JobProgress: {'identifier': 'tm_driver', 'progress': 'install'}
+[14.066456] (-) TimerEvent: {}
+[14.075395] (tm_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/gy/Omron_TM_ROS2/build/tm_driver'], 'cwd': '/home/gy/Omron_TM_ROS2/build/tm_driver', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_SG:en'), ('USER', 'gy'), ('SSH_AGENT_PID', '1229'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/62/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/gy/Omron_TM_ROS2/install/tm_msgs/lib:/home/gy/Omron_TM_ROS2/install/tmrlib/lib:/home/gy/Omron_TM_ROS2/install/tmr_msgs/lib:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/gy'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.55.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', 'true'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/62/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/62/usr/share/code/code'), ('MANAGERPID', '1000'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2266'), ('_colcon_cd_root', '/home/gy/ros2_install'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/gy/Omron_TM_ROS2/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'gy'), ('JOURNAL_STREAM', '8:28511'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'gy'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/gy/.local/bin:/opt/ros/foxy/bin:/home/gy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/gy:@/tmp/.ICE-unix/1300,unix/gy:/tmp/.ICE-unix/1300'), ('INVOCATION_ID', '274037ace77a4b87a637eea23d6abe5f'), ('XDG_MENU_PREFIX', 'gnome-'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_SG.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-698718a35f.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/snap/code/62/usr/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/gy/Omron_TM_ROS2/install/ui_for_debug_and_demo:/home/gy/Omron_TM_ROS2/install/tmr_driver:/home/gy/Omron_TM_ROS2/install/tmrlib:/home/gy/Omron_TM_ROS2/install/tmr_msgs:/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo:/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tmr_description:/home/gy/Omron_TM_ROS2/install/tm_driver:/home/gy/Omron_TM_ROS2/install/demo:/home/gy/Omron_TM_ROS2/install/tm_msgs:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/custom_package:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('DISABLE_WAYLAND', '1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/gy/Omron_TM_ROS2/build/tm_driver'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/gy/Omron_TM_ROS2/install/tm_msgs/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/install/tmr_msgs/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/install/tm_get_status/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/install/rviz_tm/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/build/pickplace:/home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/gy/Omron_TM_ROS2/install/tm_msgs:/home/gy/Omron_TM_ROS2/install/ui_for_debug_and_demo:/home/gy/Omron_TM_ROS2/install/tmr_driver:/home/gy/Omron_TM_ROS2/install/tmrlib:/home/gy/Omron_TM_ROS2/install/tmr_msgs:/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo:/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900:/home/gy/Omron_TM_ROS2/install/tmr_description:/home/gy/Omron_TM_ROS2/install/tm_driver:/home/gy/Omron_TM_ROS2/install/demo:/home/gy/Omron_TM_ROS2/install/custom_package:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy')]), 'shell': False}
+[14.126126] (tm_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.152078] (tm_driver) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[14.153745] (tm_driver) StdoutLine: {'line': b'-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/lib/tm_driver/tm_driver\n'}
+[14.166604] (-) TimerEvent: {}
+[14.186580] (tm_driver) StdoutLine: {'line': b'-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/launch/tm_bringup.launch.py\n'}
+[14.208520] (tm_driver) StdoutLine: {'line': b'-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/launch/tm_bringup.py\n'}
+[14.219828] (tm_driver) StdoutLine: {'line': b'-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/ament_index/resource_index/package_run_dependencies/tm_driver\n'}
+[14.252045] (tm_driver) StdoutLine: {'line': b'-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/ament_index/resource_index/parent_prefix_path/tm_driver\n'}
+[14.268066] (-) TimerEvent: {}
+[14.273167] (tm_driver) StdoutLine: {'line': b'-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/environment/ament_prefix_path.sh\n'}
+[14.292015] (tm_driver) StdoutLine: {'line': b'-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/environment/ament_prefix_path.dsv\n'}
+[14.303867] (tm_driver) StdoutLine: {'line': b'-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/environment/path.sh\n'}
+[14.319653] (tm_driver) StdoutLine: {'line': b'-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/environment/path.dsv\n'}
+[14.331836] (tm_driver) StdoutLine: {'line': b'-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/local_setup.bash\n'}
+[14.343683] (tm_driver) StdoutLine: {'line': b'-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/local_setup.sh\n'}
+[14.361027] (tm_driver) StdoutLine: {'line': b'-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/local_setup.zsh\n'}
+[14.368240] (-) TimerEvent: {}
+[14.374445] (tm_driver) StdoutLine: {'line': b'-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/local_setup.dsv\n'}
+[14.386459] (tm_driver) StdoutLine: {'line': b'-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/package.dsv\n'}
+[14.399102] (tm_driver) StdoutLine: {'line': b'-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/ament_index/resource_index/packages/tm_driver\n'}
+[14.415025] (tm_driver) StdoutLine: {'line': b'-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/cmake/tm_driverConfig.cmake\n'}
+[14.435937] (tm_driver) StdoutLine: {'line': b'-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/cmake/tm_driverConfig-version.cmake\n'}
+[14.450677] (tm_driver) StdoutLine: {'line': b'-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_driver/share/tm_driver/package.xml\n'}
+[14.467035] (tm_driver) CommandEnded: {'returncode': 0}
+[14.469061] (-) TimerEvent: {}
+[14.569468] (-) TimerEvent: {}
+[14.589133] (tm_driver) JobEnded: {'identifier': 'tm_driver', 'rc': 0}
+[14.590536] (-) EventReactorShutdown: {}

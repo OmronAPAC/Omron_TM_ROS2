@@ -16,7 +16,6 @@ def load_file(package_name, file_path):
         return None
 
 
-
 def generate_launch_description():
     args = []
     length = len(sys.argv)
@@ -38,7 +37,8 @@ def generate_launch_description():
         name='rviz2',
         output='log',
         arguments=['-d', rviz_config_file],
-        parameters=[robot_description]
+        parameters=[robot_description],
+        #prefix="bash -c 'sleep 5.0; $0 $@'"
         )
 
     # Static TF
@@ -56,16 +56,25 @@ def generate_launch_description():
         executable='robot_state_publisher',
         name='robot_state_publisher',
         output='log',
-        parameters=[robot_description]
+        parameters=[robot_description],
+        #prefix="bash -c 'sleep 5.0; $0 $@'"
     )
 
-    # joint driver
-    tmr_driver_node = Node(
-        package='tmr_driver',
-        executable='tmr_driver',
-        #name='tmr_driver',
-        output='log',
-        arguments=args
+    # TM Driver
+    tm_driver_node = Node(
+        package='tm_driver',
+        executable='tm_driver',
+        #name='tm_driver',
+        output='screen',
+        arguments=[str(args)[12:-2]],
+        #prefix="bash -c 'sleep 4.0; $0 $@' "
     )
 
-    return LaunchDescription([ tmr_driver_node, static_tf, robot_state_publisher, rviz_node ])
+    # Pickplace Program
+    pickplace_node = Node(
+        package='pickplace',
+        executable='pickplace',
+        output='screen'
+    )
+
+    return LaunchDescription([ tm_driver_node, robot_state_publisher, static_tf, rviz_node ])

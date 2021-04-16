@@ -9,7 +9,7 @@ class MoveClass:
         
         self.move_request = SetPositions.Request()
         self.move_request.motion_type = 2 #SetPositions.Request.PTP_T
-        self.move_request.velocity = 3.0
+        self.move_request.velocity = 3.14
         self.move_request.acc_time = 0.1
         self.move_request.blend_percentage = 10
         self.move_request.fine_goal = False
@@ -26,7 +26,7 @@ class MoveClass:
         while not self.ask_sta.wait_for_service(timeout_sec=5.0):
             self.move_node.get_logger().info('ask_sta service not available, waiting again...')
         self.sta_request = AskSta.Request() #Can be made more specific?
-        self.sta_request.wait_time = 5.0
+        self.sta_request.wait_time = 100.0
         
 
     def set_position(self, position):
@@ -42,31 +42,3 @@ class MoveClass:
         #print(resp.result())
 
 
-
-"""
-[TM_INFO] $TMSCT,90,PTPT,PTP("CPP",520.00000,-190.00000,100.00000,-179.99985,0.00000,91.10029,95,100,10,false),*34
-
-[TM_INFO] $TMSCT,2,,2,*5d
-
-[TM_INFO] TM_ROS: (TM_SCT): res: (PTPT): OK
-[TM_INFO] TM_ROS: (TM_SCT): res: (0): OK
-[TM_INFO] $TMSCT,90,PTPT,PTP("CPP",520.00000,-190.00000,200.00000,-179.99985,0.00000,91.10029,95,100,10,false),*37
-
-[TM_INFO] $TMSCT,2,,2,*5d
-
-[TM_INFO] TM_ROS: (TM_SCT): res: (PTPT): OK
-[TM_INFO] TM_ROS: (TM_SCT): res: (0): OK
-[TM_INFO] $TMSCT,90,PTPT,PTP("CPP",520.00000,-190.00000,100.00000,-179.99985,0.00000,91.10029,95,100,10,false),*34
-
-[TM_INFO] $TMSCT,2,,2,*5d
-
-[TM_INFO] TM_ROS: (TM_SCT): res: (PTPT): OK
-[TM_INFO] TM_ROS: (TM_SCT): res: (0): OK
-[TM_INFO] $TMSCT,90,PTPT,PTP("CPP",520.00000,-190.00000,200.00000,-179.99985,0.00000,91.10029,95,100,10,false),*37
-
-[TM_INFO] $TMSCT,2,,2,*5d
-
-[TM_INFO] TM_ROS: (TM_SCT): res: (PTPT): OK
-[TM_INFO] TM_ROS: (TM_SCT): res: (0): OK
-
-"""

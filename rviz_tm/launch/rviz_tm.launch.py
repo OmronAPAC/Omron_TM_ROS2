@@ -68,4 +68,4 @@ def generate_launch_description():
         arguments=args
     )
 
-    return LaunchDescription([ tmr_driver_node, static_tf, robot_state_publisher, rviz_node ])
+    return LaunchDescription([ static_tf, robot_state_publisher, rviz_node ])
