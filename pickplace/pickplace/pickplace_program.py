@@ -4,9 +4,9 @@ import sys
 import json
 from ament_index_python.packages import get_package_share_directory
 pp_share = get_package_share_directory('pickplace')
-pp_library =  pp_share + '/pickplace/pp_library'
+pp_library_path =  pp_share + '/pp_library'
 
-from pp_library import Modbus, Transform, Script, Move
+from pp_library_path import Modbus, Transform, Script, Move
 
 """
 TODO:

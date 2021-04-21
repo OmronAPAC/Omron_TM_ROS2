@@ -1,0 +1,6 @@
+Invoking command in '/home/gy/Omron_TM_ROS2/build/tm_description': /usr/bin/cmake /home/gy/Omron_TM_ROS2/tm_models -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/gy/Omron_TM_ROS2/install/tm_description
+Invoked command in '/home/gy/Omron_TM_ROS2/build/tm_description' returned '0': /usr/bin/cmake /home/gy/Omron_TM_ROS2/tm_models -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/gy/Omron_TM_ROS2/install/tm_description
+Invoking command in '/home/gy/Omron_TM_ROS2/build/tm_description': /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tm_description -- -j3 -l3
+Invoked command in '/home/gy/Omron_TM_ROS2/build/tm_description' returned '0': /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tm_description -- -j3 -l3
+Invoking command in '/home/gy/Omron_TM_ROS2/build/tm_description': /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tm_description
+Invoked command in '/home/gy/Omron_TM_ROS2/build/tm_description' returned '0': /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tm_description

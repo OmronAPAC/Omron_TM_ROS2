@@ -1,0 +1,26 @@
+[0.896s] Invoking command in '/home/gy/Omron_TM_ROS2/build/tmr_mod_urdf': PYTHONPATH=/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/gy/Omron_TM_ROS2/install/tmr_mod_urdf --editable --build-directory /home/gy/Omron_TM_ROS2/build/tmr_mod_urdf/build --no-deps install_data --install-dir /home/gy/Omron_TM_ROS2/install/tmr_mod_urdf
+[1.805s] running develop
+[2.179s] running egg_info
+[2.183s] creating tmr_mod_urdf.egg-info
+[2.184s] writing tmr_mod_urdf.egg-info/PKG-INFO
+[2.184s] writing dependency_links to tmr_mod_urdf.egg-info/dependency_links.txt
+[2.184s] writing entry points to tmr_mod_urdf.egg-info/entry_points.txt
+[2.184s] writing requirements to tmr_mod_urdf.egg-info/requires.txt
+[2.186s] writing top-level names to tmr_mod_urdf.egg-info/top_level.txt
+[2.193s] writing manifest file 'tmr_mod_urdf.egg-info/SOURCES.txt'
+[2.354s] reading manifest file 'tmr_mod_urdf.egg-info/SOURCES.txt'
+[2.366s] writing manifest file 'tmr_mod_urdf.egg-info/SOURCES.txt'
+[2.565s] running build_ext
+[2.565s] Creating /home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/lib/python3.8/site-packages/site.py
+[2.588s] Creating /home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/lib/python3.8/site-packages/tmr-mod-urdf.egg-link (link to .)
+[2.588s] Installing modify_urdf script to /home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/lib/tmr_mod_urdf
+[2.588s] Installing modify_xacro script to /home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/lib/tmr_mod_urdf
+[2.589s] 
+[2.589s] Installed /home/gy/Omron_TM_ROS2/build/tmr_mod_urdf
+[2.589s] running install_data
+[2.589s] creating /home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/share/ament_index
+[2.589s] creating /home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/share/ament_index/resource_index
+[2.589s] creating /home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/share/ament_index/resource_index/packages
+[2.589s] copying resource/tmr_mod_urdf -> /home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/share/ament_index/resource_index/packages
+[2.589s] copying package.xml -> /home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/share/tmr_mod_urdf
+[2.732s] Invoked command in '/home/gy/Omron_TM_ROS2/build/tmr_mod_urdf' returned '0': PYTHONPATH=/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/gy/Omron_TM_ROS2/install/tmr_mod_urdf --editable --build-directory /home/gy/Omron_TM_ROS2/build/tmr_mod_urdf/build --no-deps install_data --install-dir /home/gy/Omron_TM_ROS2/install/tmr_mod_urdf

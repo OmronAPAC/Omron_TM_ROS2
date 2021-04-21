@@ -1,0 +1,16 @@
+[0.807s] Invoking command in '/home/gy/Omron_TM_ROS2/build/rviz_tm': PYTHONPATH=/home/gy/Omron_TM_ROS2/install/rviz_tm/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/gy/Omron_TM_ROS2/install/rviz_tm --editable --build-directory /home/gy/Omron_TM_ROS2/build/rviz_tm/build --no-deps install_data --install-dir /home/gy/Omron_TM_ROS2/install/rviz_tm
+[1.399s] running develop
+[1.734s] running egg_info
+[1.734s] writing rviz_tm.egg-info/PKG-INFO
+[1.736s] writing dependency_links to rviz_tm.egg-info/dependency_links.txt
+[1.736s] writing entry points to rviz_tm.egg-info/entry_points.txt
+[1.737s] writing requirements to rviz_tm.egg-info/requires.txt
+[1.737s] writing top-level names to rviz_tm.egg-info/top_level.txt
+[1.817s] reading manifest file 'rviz_tm.egg-info/SOURCES.txt'
+[1.821s] writing manifest file 'rviz_tm.egg-info/SOURCES.txt'
+[1.929s] running build_ext
+[1.929s] Creating /home/gy/Omron_TM_ROS2/install/rviz_tm/lib/python3.8/site-packages/rviz-tm.egg-link (link to .)
+[1.929s] 
+[1.929s] Installed /home/gy/Omron_TM_ROS2/build/rviz_tm
+[1.929s] running install_data
+[2.220s] Invoked command in '/home/gy/Omron_TM_ROS2/build/rviz_tm' returned '0': PYTHONPATH=/home/gy/Omron_TM_ROS2/install/rviz_tm/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/gy/Omron_TM_ROS2/install/rviz_tm --editable --build-directory /home/gy/Omron_TM_ROS2/build/rviz_tm/build --no-deps install_data --install-dir /home/gy/Omron_TM_ROS2/install/rviz_tm

@@ -1,0 +1,38 @@
+[0.011s] Invoking command in '/home/gy/Omron_TM_ROS2/build/tmrlib': CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/ui_for_debug_and_demo:/home/gy/Omron_TM_ROS2/install/tmr_driver:/home/gy/Omron_TM_ROS2/install/tmrlib:/home/gy/Omron_TM_ROS2/install/tmr_msgs:/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo:/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900:/home/gy/Omron_TM_ROS2/install/tmr_description:/home/gy/Omron_TM_ROS2/install/tm_driver:/home/gy/Omron_TM_ROS2/install/demo:/home/gy/Omron_TM_ROS2/install/tm_msgs:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy:/home/gy/Omron_TM_ROS2/install/tm_models:/home/gy/Omron_TM_ROS2/install/custom_package:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tmrlib -- -j3 -l3
+[0.136s] [100%] Built target tmrdriver
+[0.164s] Invoked command in '/home/gy/Omron_TM_ROS2/build/tmrlib' returned '0': CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/ui_for_debug_and_demo:/home/gy/Omron_TM_ROS2/install/tmr_driver:/home/gy/Omron_TM_ROS2/install/tmrlib:/home/gy/Omron_TM_ROS2/install/tmr_msgs:/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo:/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900:/home/gy/Omron_TM_ROS2/install/tmr_description:/home/gy/Omron_TM_ROS2/install/tm_driver:/home/gy/Omron_TM_ROS2/install/demo:/home/gy/Omron_TM_ROS2/install/tm_msgs:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy:/home/gy/Omron_TM_ROS2/install/tm_models:/home/gy/Omron_TM_ROS2/install/custom_package:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tmrlib -- -j3 -l3
+[0.313s] Invoking command in '/home/gy/Omron_TM_ROS2/build/tmrlib': CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/ui_for_debug_and_demo:/home/gy/Omron_TM_ROS2/install/tmr_driver:/home/gy/Omron_TM_ROS2/install/tmrlib:/home/gy/Omron_TM_ROS2/install/tmr_msgs:/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo:/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900:/home/gy/Omron_TM_ROS2/install/tmr_description:/home/gy/Omron_TM_ROS2/install/tm_driver:/home/gy/Omron_TM_ROS2/install/demo:/home/gy/Omron_TM_ROS2/install/tm_msgs:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy:/home/gy/Omron_TM_ROS2/install/tm_models:/home/gy/Omron_TM_ROS2/install/custom_package:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tmrlib
+[0.352s] -- Install configuration: ""
+[0.352s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/environment/library_path.sh
+[0.352s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/environment/library_path.dsv
+[0.352s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/include
+[0.353s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/include/tmr
+[0.353s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/include/tmr/tmr_communication.h
+[0.353s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/include/tmr/tmr_tmpacket.h
+[0.353s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/include/tmr/tmr_print.h
+[0.353s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/include/tmr/tmr_robot_state.h
+[0.353s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/include/tmr/tmr_tmsct_communication.h
+[0.353s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/include/tmr/tmr_command.h
+[0.353s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/include/tmr/tmr_tmsvr_communication.h
+[0.354s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/include/tmr/tmr_data_table.h
+[0.354s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/include/tmr/tmr_driver.h
+[0.354s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/lib/libtmrdriver.a
+[0.354s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/share/ament_index/resource_index/package_run_dependencies/tmrlib
+[0.354s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/share/ament_index/resource_index/parent_prefix_path/tmrlib
+[0.354s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/environment/ament_prefix_path.sh
+[0.354s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/environment/ament_prefix_path.dsv
+[0.355s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/environment/path.sh
+[0.355s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/environment/path.dsv
+[0.355s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/local_setup.bash
+[0.355s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/local_setup.sh
+[0.355s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/local_setup.zsh
+[0.355s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/local_setup.dsv
+[0.355s] -- Installing: /home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/package.dsv
+[0.356s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/share/ament_index/resource_index/packages/tmrlib
+[0.359s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/cmake/export_tmrdriverExport.cmake
+[0.359s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/cmake/export_tmrdriverExport-noconfig.cmake
+[0.359s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/cmake/ament_cmake_export_targets-extras.cmake
+[0.359s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/cmake/tmrlibConfig.cmake
+[0.360s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/cmake/tmrlibConfig-version.cmake
+[0.360s] -- Up-to-date: /home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/package.xml
+[0.368s] Invoked command in '/home/gy/Omron_TM_ROS2/build/tmrlib' returned '0': CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/ui_for_debug_and_demo:/home/gy/Omron_TM_ROS2/install/tmr_driver:/home/gy/Omron_TM_ROS2/install/tmrlib:/home/gy/Omron_TM_ROS2/install/tmr_msgs:/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo:/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900:/home/gy/Omron_TM_ROS2/install/tmr_description:/home/gy/Omron_TM_ROS2/install/tm_driver:/home/gy/Omron_TM_ROS2/install/demo:/home/gy/Omron_TM_ROS2/install/tm_msgs:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy:/home/gy/Omron_TM_ROS2/install/tm_models:/home/gy/Omron_TM_ROS2/install/custom_package:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tmrlib

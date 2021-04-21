@@ -1,0 +1,30 @@
+[0.028s] Invoking command in '/home/gy/Omron_TM_ROS2/build/tm_description': /usr/bin/cmake /home/gy/Omron_TM_ROS2/tm_models -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/gy/Omron_TM_ROS2/install/tm_description
+[0.277s] -- The C compiler identification is GNU 9.3.0
+[0.484s] -- The CXX compiler identification is GNU 9.3.0
+[0.510s] -- Check for working C compiler: /usr/bin/cc
+[0.751s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.753s] -- Detecting C compiler ABI info
+[0.971s] -- Detecting C compiler ABI info - done
+[1.013s] -- Detecting C compile features
+[1.014s] -- Detecting C compile features - done
+[1.029s] -- Check for working CXX compiler: /usr/bin/c++
+[1.391s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.392s] -- Detecting CXX compiler ABI info
+[1.649s] -- Detecting CXX compiler ABI info - done
+[1.681s] -- Detecting CXX compile features
+[1.683s] -- Detecting CXX compile features - done
+[1.689s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.794s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") 
+[1.799s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.570s] CMake Error at /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:53 (message):
+[2.570s]   ament_package_xml() package name 'tm_description' in '/package.xml' does
+[2.571s]   not match current PROJECT_NAME 'tm_models'.  You must call project() with
+[2.571s]   the same package name before.
+[2.571s] Call Stack (most recent call first):
+[2.571s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+[2.571s]   CMakeLists.txt:6 (ament_package)
+[2.571s] 
+[2.571s] 
+[2.571s] -- Configuring incomplete, errors occurred!
+[2.572s] See also "/home/gy/Omron_TM_ROS2/build/tm_description/CMakeFiles/CMakeOutput.log".
+[2.582s] Invoked command in '/home/gy/Omron_TM_ROS2/build/tm_description' returned '1': /usr/bin/cmake /home/gy/Omron_TM_ROS2/tm_models -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/gy/Omron_TM_ROS2/install/tm_description

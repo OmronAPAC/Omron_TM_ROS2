@@ -1,1 +1,1 @@
-prepend-non-duplicate;LD_LIBRARY_PATH;lib
+/home/gy/Omron_TM_ROS2/build/techman_robot_msgs/ament_cmake_environment_hooks/library_path.dsv

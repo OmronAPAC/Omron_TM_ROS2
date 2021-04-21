@@ -4,3 +4,6 @@ source;share/tm_get_status/hook/pythonpath.sh
 source;share/tm_get_status/hook/ament_prefix_path.ps1
 source;share/tm_get_status/hook/ament_prefix_path.dsv
 source;share/tm_get_status/hook/ament_prefix_path.sh
+source;../../build/tm_get_status/share/tm_get_status/hook/pythonpath_develop.ps1
+source;../../build/tm_get_status/share/tm_get_status/hook/pythonpath_develop.dsv
+source;../../build/tm_get_status/share/tm_get_status/hook/pythonpath_develop.sh

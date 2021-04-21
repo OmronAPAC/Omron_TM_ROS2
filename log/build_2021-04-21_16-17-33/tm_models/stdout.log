@@ -1,0 +1,144 @@
+-- The C compiler identification is GNU 9.3.0
+-- The CXX compiler identification is GNU 9.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/gy/Omron_TM_ROS2/build/tm_models
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/ament_index/resource_index/package_run_dependencies/tm_models
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/ament_index/resource_index/parent_prefix_path/tm_models
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/environment/ament_prefix_path.sh
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/environment/ament_prefix_path.dsv
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/environment/path.sh
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/environment/path.dsv
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/local_setup.bash
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/local_setup.sh
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/local_setup.zsh
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/local_setup.dsv
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/package.dsv
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/ament_index/resource_index/packages/tm_models
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/cmake/tm_modelsConfig.cmake
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/cmake/tm_modelsConfig-version.cmake
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/package.xml
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/launch/tm12_upload.launch
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/launch/view_robot.rviz
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/launch/view_tm12.launch
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/build/.built_by
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/build/COLCON_IGNORE
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/common.gazebo.xacro
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/install/.colcon_install_layout
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/install/COLCON_IGNORE
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/install/_local_setup_util_ps1.py
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/install/_local_setup_util_sh.py
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/install/local_setup.bash
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/install/local_setup.ps1
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/install/local_setup.sh
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/install/local_setup.zsh
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/install/setup.bash
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/install/setup.ps1
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/install/setup.sh
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/install/setup.zsh
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/log/COLCON_IGNORE
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/log/build_2021-04-20_09-21-56/events.log
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/log/build_2021-04-20_09-21-56/logger_all.log
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/log/build_2021-04-20_14-45-09/events.log
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/log/build_2021-04-20_14-45-09/logger_all.log
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/log/build_2021-04-20_16-49-20/events.log
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/log/build_2021-04-20_16-49-20/logger_all.log
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/log/latest/events.log
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/log/latest/logger_all.log
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/log/latest_build/events.log
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/log/latest_build/logger_all.log
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/tm.gazebo.xacro
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/tm.transmission.xacro
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/tm12.urdf
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/tm12.urdf.xacro
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/tm12_robot.urdf.xacro
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/tm5_700.urdf.xacro
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/tm5_700_robot.urdf.xacro
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/tm5_900.urdf.xacro
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/tm5_900_robot.urdf.xacro
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/tm5_900_simple.urdf
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/collision/tm12_arm1_c.STL
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/collision/tm12_arm2_c.STL
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/collision/tm12_base_c.STL
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/collision/tm_100w_01_c.STL
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/collision/tm_100w_02_c.STL
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/collision/tm_100w_02_c.stl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/collision/tm_400w_01_c.STL
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/collision/tm_750w_01_c.STL
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/collision/tm_ee_c.stl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm12_arm1.mtl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm12_arm1.obj
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm12_arm1.stl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm12_arm2.mtl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm12_arm2.obj
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm12_arm2.stl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm12_base.mtl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm12_base.obj
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm12_base.stl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm_100w_01.mtl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm_100w_01.obj
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm_100w_01.stl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm_100w_02.mtl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm_100w_02.obj
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm_100w_02.stl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm_750w_01.mtl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm_750w_01.obj
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm_750w_01.stl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm_ee.mtl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm_ee.obj
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm_ee.stl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_700/collision/tm5_700_arm1_c.STL
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_700/collision/tm5_700_arm2_c.STL
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_700/visual/tm5_700_arm1.mtl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_700/visual/tm5_700_arm1.obj
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_700/visual/tm5_700_arm1.stl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_700/visual/tm5_700_arm2.mtl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_700/visual/tm5_700_arm2.obj
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_700/visual/tm5_700_arm2.stl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/collision/tm5_900_arm1_c.STL
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/collision/tm5_900_arm2_c.STL
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/collision/tm5_base_c.STL
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/collision/tm_100w_01_c.STL
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/collision/tm_100w_02_c.STL
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/collision/tm_100w_02_c.stl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/collision/tm_400w_01_c.STL
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/collision/tm_ee_c.stl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm5_900_arm1.mtl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm5_900_arm1.obj
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm5_900_arm1.stl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm5_900_arm2.mtl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm5_900_arm2.obj
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm5_900_arm2.stl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm5_base.mtl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm5_base.obj
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm5_base.stl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm_100w_01.mtl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm_100w_01.obj
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm_100w_01.stl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm_100w_02.mtl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm_100w_02.obj
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm_100w_02.stl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm_400w_01.mtl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm_400w_01.obj
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm_400w_01.stl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm_ee.mtl
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm_ee.obj
+-- Symlinking: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm_ee.stl

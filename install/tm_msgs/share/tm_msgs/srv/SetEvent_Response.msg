@@ -1,4 +1,1 @@
-
-#ok == complete status
-bool ok
-# int8 rv
+/home/gy/Omron_TM_ROS2/build/tm_msgs/rosidl_cmake/srv/SetEvent_Response.msg

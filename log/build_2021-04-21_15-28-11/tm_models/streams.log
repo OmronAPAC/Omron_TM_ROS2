@@ -1,0 +1,164 @@
+[0.039s] Invoking command in '/home/gy/Omron_TM_ROS2/build/tm_models': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy /usr/bin/cmake /home/gy/Omron_TM_ROS2/tm_models -DCMAKE_INSTALL_PREFIX=/home/gy/Omron_TM_ROS2/install/tm_models
+[0.305s] -- The C compiler identification is GNU 9.3.0
+[0.474s] -- The CXX compiler identification is GNU 9.3.0
+[0.500s] -- Check for working C compiler: /usr/bin/cc
+[0.766s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.770s] -- Detecting C compiler ABI info
+[1.070s] -- Detecting C compiler ABI info - done
+[1.140s] -- Detecting C compile features
+[1.141s] -- Detecting C compile features - done
+[1.154s] -- Check for working CXX compiler: /usr/bin/c++
+[1.424s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.425s] -- Detecting CXX compiler ABI info
+[1.656s] -- Detecting CXX compiler ABI info - done
+[1.718s] -- Detecting CXX compile features
+[1.721s] -- Detecting CXX compile features - done
+[1.726s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.801s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") 
+[1.802s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.726s] -- Configuring done
+[2.734s] -- Generating done
+[2.734s] -- Build files have been written to: /home/gy/Omron_TM_ROS2/build/tm_models
+[2.747s] Invoked command in '/home/gy/Omron_TM_ROS2/build/tm_models' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy /usr/bin/cmake /home/gy/Omron_TM_ROS2/tm_models -DCMAKE_INSTALL_PREFIX=/home/gy/Omron_TM_ROS2/install/tm_models
+[2.752s] Invoking command in '/home/gy/Omron_TM_ROS2/build/tm_models': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tm_models -- -j3 -l3
+[2.856s] Invoked command in '/home/gy/Omron_TM_ROS2/build/tm_models' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tm_models -- -j3 -l3
+[2.960s] Invoking command in '/home/gy/Omron_TM_ROS2/build/tm_models': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tm_models
+[2.996s] -- Install configuration: ""
+[3.004s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/ament_index/resource_index/package_run_dependencies/tm_models
+[3.004s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/ament_index/resource_index/parent_prefix_path/tm_models
+[3.004s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/environment/ament_prefix_path.sh
+[3.005s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/environment/ament_prefix_path.dsv
+[3.005s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/environment/path.sh
+[3.005s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/environment/path.dsv
+[3.005s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/local_setup.bash
+[3.014s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/local_setup.sh
+[3.015s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/local_setup.zsh
+[3.016s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/local_setup.dsv
+[3.016s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/package.dsv
+[3.016s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/ament_index/resource_index/packages/tm_models
+[3.017s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/cmake/tm_modelsConfig.cmake
+[3.017s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/cmake/tm_modelsConfig-version.cmake
+[3.017s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/package.xml
+[3.017s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/launch
+[3.017s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/launch/view_robot.rviz
+[3.017s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/launch/view_tm12.launch
+[3.017s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/launch/tm12_upload.launch
+[3.017s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf
+[3.017s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/log
+[3.018s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/log/build_2021-04-20_14-45-09
+[3.018s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/log/build_2021-04-20_14-45-09/events.log
+[3.018s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/log/build_2021-04-20_14-45-09/logger_all.log
+[3.021s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/log/build_2021-04-20_09-21-56
+[3.026s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/log/build_2021-04-20_09-21-56/events.log
+[3.026s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/log/build_2021-04-20_09-21-56/logger_all.log
+[3.026s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/log/COLCON_IGNORE
+[3.027s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/log/build_2021-04-20_16-49-20
+[3.027s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/log/build_2021-04-20_16-49-20/events.log
+[3.027s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/log/build_2021-04-20_16-49-20/logger_all.log
+[3.027s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/log/latest
+[3.027s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/log/latest_build
+[3.027s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/tm5_700_robot.urdf.xacro
+[3.028s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/tm.transmission.xacro
+[3.028s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/tm12.urdf.xacro
+[3.040s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/common.gazebo.xacro
+[3.041s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/tm5_900_simple.urdf
+[3.041s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/tm5_700.urdf.xacro
+[3.041s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/tm12_robot.urdf.xacro
+[3.042s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/install
+[3.042s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/install/local_setup.bash
+[3.048s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/install/setup.zsh
+[3.050s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/install/setup.ps1
+[3.050s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/install/.colcon_install_layout
+[3.050s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/install/_local_setup_util_sh.py
+[3.051s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/install/_local_setup_util_ps1.py
+[3.051s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/install/local_setup.ps1
+[3.051s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/install/local_setup.sh
+[3.051s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/install/COLCON_IGNORE
+[3.051s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/install/setup.sh
+[3.051s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/install/setup.bash
+[3.051s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/install/local_setup.zsh
+[3.051s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/tm5_900.urdf.xacro
+[3.052s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/tm.gazebo.xacro
+[3.052s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/build
+[3.052s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/build/.built_by
+[3.052s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/build/COLCON_IGNORE
+[3.053s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/tm12.urdf
+[3.053s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/urdf/tm5_900_robot.urdf.xacro
+[3.054s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes
+[3.054s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300
+[3.054s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual
+[3.054s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm12_arm2.obj
+[3.062s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm12_base.stl
+[3.063s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm_100w_02.mtl
+[3.063s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm12_arm2.stl
+[3.063s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm_100w_01.mtl
+[3.063s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm_750w_01.stl
+[3.067s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm_100w_02.stl
+[3.067s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm12_arm1.mtl
+[3.068s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm12_arm2.mtl
+[3.068s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm_100w_01.obj
+[3.086s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm_100w_02.obj
+[3.098s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm_ee.stl
+[3.101s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm_750w_01.obj
+[3.114s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm_ee.mtl
+[3.114s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm_750w_01.mtl
+[3.114s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm_100w_01.stl
+[3.114s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm12_base.obj
+[3.118s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm_ee.obj
+[3.126s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm12_base.mtl
+[3.127s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm12_arm1.stl
+[3.134s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/visual/tm12_arm1.obj
+[3.150s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/collision
+[3.150s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/collision/tm_100w_02_c.STL
+[3.150s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/collision/tm_400w_01_c.STL
+[3.150s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/collision/tm12_arm1_c.STL
+[3.150s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/collision/tm_100w_02_c.stl
+[3.151s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/collision/tm_750w_01_c.STL
+[3.151s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/collision/tm_100w_01_c.STL
+[3.151s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/collision/tm_ee_c.stl
+[3.151s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/collision/tm12_arm2_c.STL
+[3.151s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm12_1300/collision/tm12_base_c.STL
+[3.151s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_700
+[3.151s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_700/visual
+[3.151s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_700/visual/tm5_700_arm1.obj
+[3.154s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_700/visual/tm5_700_arm1.mtl
+[3.155s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_700/visual/tm5_700_arm2.obj
+[3.165s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_700/visual/tm5_700_arm2.mtl
+[3.165s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_700/visual/tm5_700_arm1.stl
+[3.172s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_700/visual/tm5_700_arm2.stl
+[3.175s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_700/collision
+[3.175s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_700/collision/tm5_700_arm1_c.STL
+[3.176s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_700/collision/tm5_700_arm2_c.STL
+[3.176s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900
+[3.176s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual
+[3.176s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm5_900_arm1.obj
+[3.191s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm_100w_02.mtl
+[3.191s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm5_base.obj
+[3.191s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm_100w_01.mtl
+[3.191s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm_100w_02.stl
+[3.202s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm5_900_arm1.mtl
+[3.202s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm5_900_arm2.obj
+[3.203s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm5_900_arm2.stl
+[3.217s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm_100w_01.obj
+[3.217s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm5_base.mtl
+[3.217s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm5_base.stl
+[3.222s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm5_900_arm1.stl
+[3.231s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm_100w_02.obj
+[3.246s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm_ee.stl
+[3.250s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm_400w_01.stl
+[3.263s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm_400w_01.obj
+[3.274s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm_400w_01.mtl
+[3.274s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm_ee.mtl
+[3.274s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm_100w_01.stl
+[3.276s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm_ee.obj
+[3.299s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/visual/tm5_900_arm2.mtl
+[3.300s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/collision
+[3.300s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/collision/tm_100w_02_c.STL
+[3.300s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/collision/tm_400w_01_c.STL
+[3.300s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/collision/tm_100w_02_c.stl
+[3.307s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/collision/tm_100w_01_c.STL
+[3.307s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/collision/tm5_900_arm2_c.STL
+[3.308s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/collision/tm_ee_c.stl
+[3.314s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/collision/tm5_900_arm1_c.STL
+[3.314s] -- Installing: /home/gy/Omron_TM_ROS2/install/tm_models/share/tm_models/meshes/tm5_900/collision/tm5_base_c.STL
+[3.329s] Invoked command in '/home/gy/Omron_TM_ROS2/build/tm_models' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tm_models

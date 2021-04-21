@@ -1,16 +1,1 @@
-
-int8 TAG = 1
-int8 WAIT_TAG = 2
-int8 STOP = 11
-int8 PAUSE = 12
-int8 RESUME = 13
-
-int8 EXIT = -1
-
-# request fields
-
-int8 func
-
-int8 arg0
-int8 arg1
-
+/home/gy/Omron_TM_ROS2/build/tmr_msgs/rosidl_cmake/srv/SetEvent_Request.msg

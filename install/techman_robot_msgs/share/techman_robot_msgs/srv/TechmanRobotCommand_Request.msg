@@ -1,2 +1,1 @@
-string command
-string command_parameter_string
+/home/gy/Omron_TM_ROS2/build/techman_robot_msgs/rosidl_cmake/srv/TechmanRobotCommand_Request.msg

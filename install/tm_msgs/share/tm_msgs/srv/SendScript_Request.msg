@@ -1,5 +1,1 @@
-# request fields
-# More details please refer to the TM_Robot_Expression.pdf(version 1.76_6300) Chapter 7.4 TMSCT
-
-string id
-string script
+/home/gy/Omron_TM_ROS2/build/tm_msgs/rosidl_cmake/srv/SendScript_Request.msg

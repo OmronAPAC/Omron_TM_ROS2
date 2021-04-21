@@ -1,0 +1,20 @@
+[0.707s] Invoking command in '/home/gy/Omron_TM_ROS2/rviz_tm': PYTHONPATH=/home/gy/Omron_TM_ROS2/install/rviz_tm/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/rviz_tm build --build-base /home/gy/Omron_TM_ROS2/build/rviz_tm/build install --prefix /home/gy/Omron_TM_ROS2/install/rviz_tm --record /home/gy/Omron_TM_ROS2/build/rviz_tm/install.log --single-version-externally-managed
+[1.530s] running egg_info
+[1.532s] writing ../build/rviz_tm/rviz_tm.egg-info/PKG-INFO
+[1.534s] writing dependency_links to ../build/rviz_tm/rviz_tm.egg-info/dependency_links.txt
+[1.535s] writing entry points to ../build/rviz_tm/rviz_tm.egg-info/entry_points.txt
+[1.536s] writing requirements to ../build/rviz_tm/rviz_tm.egg-info/requires.txt
+[1.537s] writing top-level names to ../build/rviz_tm/rviz_tm.egg-info/top_level.txt
+[1.675s] reading manifest file '../build/rviz_tm/rviz_tm.egg-info/SOURCES.txt'
+[1.678s] writing manifest file '../build/rviz_tm/rviz_tm.egg-info/SOURCES.txt'
+[1.679s] running build
+[1.679s] running build_py
+[1.681s] running install
+[1.693s] running install_lib
+[1.696s] running install_data
+[1.701s] running install_egg_info
+[1.710s] removing '/home/gy/Omron_TM_ROS2/install/rviz_tm/lib/python3.8/site-packages/rviz_tm-0.0.0-py3.8.egg-info' (and everything under it)
+[1.716s] Copying ../build/rviz_tm/rviz_tm.egg-info to /home/gy/Omron_TM_ROS2/install/rviz_tm/lib/python3.8/site-packages/rviz_tm-0.0.0-py3.8.egg-info
+[1.717s] running install_scripts
+[1.760s] writing list of installed files to '/home/gy/Omron_TM_ROS2/build/rviz_tm/install.log'
+[1.838s] Invoked command in '/home/gy/Omron_TM_ROS2/rviz_tm' returned '0': PYTHONPATH=/home/gy/Omron_TM_ROS2/install/rviz_tm/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/rviz_tm build --build-base /home/gy/Omron_TM_ROS2/build/rviz_tm/build install --prefix /home/gy/Omron_TM_ROS2/install/rviz_tm --record /home/gy/Omron_TM_ROS2/build/rviz_tm/install.log --single-version-externally-managed

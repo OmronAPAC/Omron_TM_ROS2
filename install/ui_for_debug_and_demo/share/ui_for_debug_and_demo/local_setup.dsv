@@ -1,2 +1,1 @@
-source;share/ui_for_debug_and_demo/environment/ament_prefix_path.sh
-source;share/ui_for_debug_and_demo/environment/path.sh
+/home/gy/Omron_TM_ROS2/build/ui_for_debug_and_demo/ament_cmake_environment_hooks/local_setup.dsv

@@ -1,5 +1,1 @@
-
-bool ok
-
-string subcmd
-string subdata
+/home/gy/Omron_TM_ROS2/build/tmr_msgs/rosidl_cmake/srv/AskSta_Response.msg

@@ -1,6 +1,7 @@
 import os
 import sys
 import yaml
+import json
 from launch import LaunchDescription
 from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
@@ -45,9 +46,32 @@ def generate_launch_description():
     static_tf = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
-        name='static_transform_publisher',
+        name='world_publisher',
         output='log',
         arguments=['0.0', '0.0', '0.0', '0.0', '0.0', '0.0', 'world', 'base']
+    )
+
+    pp_share = get_package_share_directory('pickplace') + '/config.txt'
+    view_pick = []
+    view_place = []
+    with open(pp_share) as json_file:
+        data = json.load(json_file)
+        view_pick =  data['view_pick']
+        view_place =  data['view_place']
+
+    static_tf = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='viewpick_publisher',
+        output='log',
+        arguments= view_pick + ['base', 'view_pick']
+    )
+    static_tf = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='viewplace_publisher',
+        output='log',
+        arguments= view_place + ['base', 'view_place']
     )
 
     # Publish TF

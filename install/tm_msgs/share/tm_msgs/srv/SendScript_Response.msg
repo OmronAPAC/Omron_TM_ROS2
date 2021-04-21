@@ -1,3 +1,1 @@
-
-#ok =   Correctness of the script.
-bool ok
+/home/gy/Omron_TM_ROS2/build/tm_msgs/rosidl_cmake/srv/SendScript_Response.msg

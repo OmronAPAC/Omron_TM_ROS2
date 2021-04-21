@@ -1,8 +1,1 @@
-
-# ok        : read status 
-bool ok
-
-# id        : The discribtion you want to name.
-# value     : The value of asked item.
-string id
-string value
+/home/gy/Omron_TM_ROS2/build/tm_msgs/rosidl_cmake/srv/AskItem_Response.msg

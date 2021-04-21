@@ -1,6 +1,1 @@
-# 'Write'
-
-string id
-string item
-string value
-
+/home/gy/Omron_TM_ROS2/build/tmr_msgs/rosidl_cmake/srv/WriteItem_Request.msg

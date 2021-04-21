@@ -1,12 +1,1 @@
-# Ask: request 'Read'
-
-string id
-string item
-
-float64 wait_time
-
----
-bool ok
-
-string id
-string value
+/home/gy/Omron_TM_ROS2/tmr_msgs/srv/AskItem.srv

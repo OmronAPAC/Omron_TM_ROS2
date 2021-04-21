@@ -1,6 +1,1 @@
-# For SendScript, SetXXX service
-
-std_msgs/Header header
-
-string id
-string script
+/home/gy/Omron_TM_ROS2/tmr_msgs/msg/SctResponse.msg

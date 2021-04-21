@@ -1,2 +1,1 @@
-
-bool ok
+/home/gy/Omron_TM_ROS2/build/tmr_msgs/rosidl_cmake/srv/SendScript_Response.msg

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/gy/Omron_TM_ROS2/build/custom_package/tm_send_command" "/home/gy/Omron_TM_ROS2/build/custom_package/sub_img" "TARGETS" "tm_send_command" "sub_img" "DESTINATION" "lib/custom_package")

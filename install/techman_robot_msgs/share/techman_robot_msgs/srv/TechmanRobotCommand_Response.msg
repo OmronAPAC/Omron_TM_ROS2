@@ -1,2 +1,1 @@
-
-bool is_success
+/home/gy/Omron_TM_ROS2/build/techman_robot_msgs/rosidl_cmake/srv/TechmanRobotCommand_Response.msg

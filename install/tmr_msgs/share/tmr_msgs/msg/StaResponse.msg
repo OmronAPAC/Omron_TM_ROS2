@@ -1,6 +1,1 @@
-# For SetEvent TAG, AskSta service
-
-std_msgs/Header header
-
-string subcmd
-string subdata
+/home/gy/Omron_TM_ROS2/tmr_msgs/msg/StaResponse.msg

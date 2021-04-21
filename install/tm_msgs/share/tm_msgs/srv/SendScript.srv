@@ -1,8 +1,1 @@
-# request fields
-# More details please refer to the TM_Robot_Expression.pdf(version 1.76_6300) Chapter 7.4 TMSCT
-
-string id
-string script
----
-#ok =   Correctness of the script.
-bool ok
+/home/gy/Omron_TM_ROS2/tm_msgs/srv/SendScript.srv

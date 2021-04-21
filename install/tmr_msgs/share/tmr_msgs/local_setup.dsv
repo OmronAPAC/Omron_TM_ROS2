@@ -1,4 +1,1 @@
-source;share/tmr_msgs/environment/ament_prefix_path.sh
-source;share/tmr_msgs/environment/library_path.sh
-source;share/tmr_msgs/environment/path.sh
-source;share/tmr_msgs/environment/pythonpath.sh
+/home/gy/Omron_TM_ROS2/build/tmr_msgs/ament_cmake_environment_hooks/local_setup.dsv

@@ -1,0 +1,42 @@
+running egg_info
+creating ../build/tm_get_status/tm_get_status.egg-info
+writing ../build/tm_get_status/tm_get_status.egg-info/PKG-INFO
+writing dependency_links to ../build/tm_get_status/tm_get_status.egg-info/dependency_links.txt
+writing entry points to ../build/tm_get_status/tm_get_status.egg-info/entry_points.txt
+writing requirements to ../build/tm_get_status/tm_get_status.egg-info/requires.txt
+writing top-level names to ../build/tm_get_status/tm_get_status.egg-info/top_level.txt
+writing manifest file '../build/tm_get_status/tm_get_status.egg-info/SOURCES.txt'
+reading manifest file '../build/tm_get_status/tm_get_status.egg-info/SOURCES.txt'
+writing manifest file '../build/tm_get_status/tm_get_status.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/gy/Omron_TM_ROS2/build/tm_get_status/build
+creating /home/gy/Omron_TM_ROS2/build/tm_get_status/build/lib
+creating /home/gy/Omron_TM_ROS2/build/tm_get_status/build/lib/tm_get_status
+copying tm_get_status/image_pub.py -> /home/gy/Omron_TM_ROS2/build/tm_get_status/build/lib/tm_get_status
+copying tm_get_status/__init__.py -> /home/gy/Omron_TM_ROS2/build/tm_get_status/build/lib/tm_get_status
+copying tm_get_status/translate_jason_to_list.py -> /home/gy/Omron_TM_ROS2/build/tm_get_status/build/lib/tm_get_status
+copying tm_get_status/get_status.py -> /home/gy/Omron_TM_ROS2/build/tm_get_status/build/lib/tm_get_status
+running install
+running install_lib
+creating /home/gy/Omron_TM_ROS2/install/tm_get_status/lib/python3.8/site-packages/tm_get_status
+copying /home/gy/Omron_TM_ROS2/build/tm_get_status/build/lib/tm_get_status/image_pub.py -> /home/gy/Omron_TM_ROS2/install/tm_get_status/lib/python3.8/site-packages/tm_get_status
+copying /home/gy/Omron_TM_ROS2/build/tm_get_status/build/lib/tm_get_status/__init__.py -> /home/gy/Omron_TM_ROS2/install/tm_get_status/lib/python3.8/site-packages/tm_get_status
+copying /home/gy/Omron_TM_ROS2/build/tm_get_status/build/lib/tm_get_status/translate_jason_to_list.py -> /home/gy/Omron_TM_ROS2/install/tm_get_status/lib/python3.8/site-packages/tm_get_status
+copying /home/gy/Omron_TM_ROS2/build/tm_get_status/build/lib/tm_get_status/get_status.py -> /home/gy/Omron_TM_ROS2/install/tm_get_status/lib/python3.8/site-packages/tm_get_status
+byte-compiling /home/gy/Omron_TM_ROS2/install/tm_get_status/lib/python3.8/site-packages/tm_get_status/image_pub.py to image_pub.cpython-38.pyc
+byte-compiling /home/gy/Omron_TM_ROS2/install/tm_get_status/lib/python3.8/site-packages/tm_get_status/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/gy/Omron_TM_ROS2/install/tm_get_status/lib/python3.8/site-packages/tm_get_status/translate_jason_to_list.py to translate_jason_to_list.cpython-38.pyc
+byte-compiling /home/gy/Omron_TM_ROS2/install/tm_get_status/lib/python3.8/site-packages/tm_get_status/get_status.py to get_status.cpython-38.pyc
+running install_data
+creating /home/gy/Omron_TM_ROS2/install/tm_get_status/share/ament_index
+creating /home/gy/Omron_TM_ROS2/install/tm_get_status/share/ament_index/resource_index
+creating /home/gy/Omron_TM_ROS2/install/tm_get_status/share/ament_index/resource_index/packages
+copying resource/tm_get_status -> /home/gy/Omron_TM_ROS2/install/tm_get_status/share/ament_index/resource_index/packages
+copying package.xml -> /home/gy/Omron_TM_ROS2/install/tm_get_status/share/tm_get_status
+running install_egg_info
+Copying ../build/tm_get_status/tm_get_status.egg-info to /home/gy/Omron_TM_ROS2/install/tm_get_status/lib/python3.8/site-packages/tm_get_status-0.0.1-py3.8.egg-info
+running install_scripts
+Installing image_talker script to /home/gy/Omron_TM_ROS2/install/tm_get_status/lib/tm_get_status
+Installing status_talker script to /home/gy/Omron_TM_ROS2/install/tm_get_status/lib/tm_get_status
+writing list of installed files to '/home/gy/Omron_TM_ROS2/build/tm_get_status/install.log'

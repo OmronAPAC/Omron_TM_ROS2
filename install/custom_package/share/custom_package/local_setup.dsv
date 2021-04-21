@@ -1,2 +1,1 @@
-source;share/custom_package/environment/ament_prefix_path.sh
-source;share/custom_package/environment/path.sh
+/home/gy/Omron_TM_ROS2/build/custom_package/ament_cmake_environment_hooks/local_setup.dsv

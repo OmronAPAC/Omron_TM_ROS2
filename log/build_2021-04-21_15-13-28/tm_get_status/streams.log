@@ -1,0 +1,22 @@
+[0.694s] Invoking command in '/home/gy/Omron_TM_ROS2/techman_robot_get_status': PYTHONPATH=/home/gy/Omron_TM_ROS2/install/tm_get_status/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/tm_get_status build --build-base /home/gy/Omron_TM_ROS2/build/tm_get_status/build install --prefix /home/gy/Omron_TM_ROS2/install/tm_get_status --record /home/gy/Omron_TM_ROS2/build/tm_get_status/install.log --single-version-externally-managed
+[1.543s] running egg_info
+[1.544s] writing ../build/tm_get_status/tm_get_status.egg-info/PKG-INFO
+[1.545s] writing dependency_links to ../build/tm_get_status/tm_get_status.egg-info/dependency_links.txt
+[1.546s] writing entry points to ../build/tm_get_status/tm_get_status.egg-info/entry_points.txt
+[1.546s] writing requirements to ../build/tm_get_status/tm_get_status.egg-info/requires.txt
+[1.547s] writing top-level names to ../build/tm_get_status/tm_get_status.egg-info/top_level.txt
+[1.619s] reading manifest file '../build/tm_get_status/tm_get_status.egg-info/SOURCES.txt'
+[1.621s] writing manifest file '../build/tm_get_status/tm_get_status.egg-info/SOURCES.txt'
+[1.622s] running build
+[1.622s] running build_py
+[1.623s] running install
+[1.625s] running install_lib
+[1.629s] running install_data
+[1.630s] running install_egg_info
+[1.632s] removing '/home/gy/Omron_TM_ROS2/install/tm_get_status/lib/python3.8/site-packages/tm_get_status-0.0.1-py3.8.egg-info' (and everything under it)
+[1.633s] Copying ../build/tm_get_status/tm_get_status.egg-info to /home/gy/Omron_TM_ROS2/install/tm_get_status/lib/python3.8/site-packages/tm_get_status-0.0.1-py3.8.egg-info
+[1.641s] running install_scripts
+[1.670s] Installing image_talker script to /home/gy/Omron_TM_ROS2/install/tm_get_status/lib/tm_get_status
+[1.671s] Installing status_talker script to /home/gy/Omron_TM_ROS2/install/tm_get_status/lib/tm_get_status
+[1.672s] writing list of installed files to '/home/gy/Omron_TM_ROS2/build/tm_get_status/install.log'
+[1.954s] Invoked command in '/home/gy/Omron_TM_ROS2/techman_robot_get_status' returned '0': PYTHONPATH=/home/gy/Omron_TM_ROS2/install/tm_get_status/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/tm_get_status build --build-base /home/gy/Omron_TM_ROS2/build/tm_get_status/build install --prefix /home/gy/Omron_TM_ROS2/install/tm_get_status --record /home/gy/Omron_TM_ROS2/build/tm_get_status/install.log --single-version-externally-managed

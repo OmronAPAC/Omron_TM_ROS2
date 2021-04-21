@@ -1,0 +1,89 @@
+[0.037s] Invoking command in '/home/gy/Omron_TM_ROS2/build/tmr_driver': CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tmrlib:/home/gy/Omron_TM_ROS2/install/tmr_msgs:/home/gy/Omron_TM_ROS2/install/ui_for_debug_and_demo:/home/gy/Omron_TM_ROS2/install/tmr_driver:/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo:/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900:/home/gy/Omron_TM_ROS2/install/tmr_description:/home/gy/Omron_TM_ROS2/install/tm_driver:/home/gy/Omron_TM_ROS2/install/demo:/home/gy/Omron_TM_ROS2/install/tm_msgs:/home/gy/Omron_TM_ROS2/install/tm_models:/home/gy/Omron_TM_ROS2/install/custom_package:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy LD_LIBRARY_PATH=/home/gy/Omron_TM_ROS2/install/tmr_msgs/lib:/home/gy/Omron_TM_ROS2/install/tmrlib/lib:/home/gy/Omron_TM_ROS2/install/tm_msgs/lib:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake /home/gy/Omron_TM_ROS2/tmr_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/gy/Omron_TM_ROS2/install/tmr_driver
+[0.170s] -- The C compiler identification is GNU 9.3.0
+[0.284s] -- The CXX compiler identification is GNU 9.3.0
+[0.299s] -- Check for working C compiler: /usr/bin/cc
+[0.462s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.465s] -- Detecting C compiler ABI info
+[0.677s] -- Detecting C compiler ABI info - done
+[0.745s] -- Detecting C compile features
+[0.746s] -- Detecting C compile features - done
+[0.760s] -- Check for working CXX compiler: /usr/bin/c++
+[1.046s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.053s] -- Detecting CXX compiler ABI info
+[1.250s] -- Detecting CXX compiler ABI info - done
+[1.311s] -- Detecting CXX compile features
+[1.313s] -- Detecting CXX compile features - done
+[1.324s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.457s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") 
+[1.457s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.115s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.207s] -- Found rclcpp: 2.3.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[2.323s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.346s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.564s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[2.660s] -- Found FastRTPS: /opt/ros/foxy/include  
+[2.933s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.097s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[3.102s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.105s] -- Looking for pthread.h
+[3.343s] -- Looking for pthread.h - found
+[3.343s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.530s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[3.532s] -- Looking for pthread_create in pthreads
+[3.708s] -- Looking for pthread_create in pthreads - not found
+[3.708s] -- Looking for pthread_create in pthread
+[3.872s] -- Looking for pthread_create in pthread - found
+[3.876s] -- Found Threads: TRUE  
+[4.480s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[4.843s] -- Found trajectory_msgs: 2.0.4 (/opt/ros/foxy/share/trajectory_msgs/cmake)
+[5.104s] -- Found control_msgs: 2.5.0 (/opt/ros/foxy/share/control_msgs/cmake)
+[6.006s] -- Found rclcpp_action: 2.3.1 (/opt/ros/foxy/share/rclcpp_action/cmake)
+[6.132s] -- Found tmr_msgs: 1.0.0 (/home/gy/Omron_TM_ROS2/install/tmr_msgs/share/tmr_msgs/cmake)
+[6.227s] -- Found tmrlib: 1.0.0 (/home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/cmake)
+[6.233s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[6.441s] -- Added test 'copyright' to check source files copyright and LICENSE
+[6.445s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.445s] -- Configured cppcheck include dirs: /home/gy/Omron_TM_ROS2/tmr_driver/include
+[6.445s] -- Configured cppcheck exclude dirs and/or files: 
+[6.449s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[6.449s] -- Configured cpplint exclude dirs and/or files: 
+[6.449s] -- Added test 'flake8' to check Python code syntax and style conventions
+[6.454s] -- Added test 'lint_cmake' to check CMake code style
+[6.455s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[6.457s] -- Added test 'uncrustify' to check C / C++ code style
+[6.457s] -- Configured uncrustify additional arguments: 
+[6.459s] -- Added test 'xmllint' to check XML markup files
+[6.467s] -- Configuring done
+[6.499s] -- Generating done
+[6.514s] -- Build files have been written to: /home/gy/Omron_TM_ROS2/build/tmr_driver
+[6.572s] Invoked command in '/home/gy/Omron_TM_ROS2/build/tmr_driver' returned '0': CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tmrlib:/home/gy/Omron_TM_ROS2/install/tmr_msgs:/home/gy/Omron_TM_ROS2/install/ui_for_debug_and_demo:/home/gy/Omron_TM_ROS2/install/tmr_driver:/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo:/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900:/home/gy/Omron_TM_ROS2/install/tmr_description:/home/gy/Omron_TM_ROS2/install/tm_driver:/home/gy/Omron_TM_ROS2/install/demo:/home/gy/Omron_TM_ROS2/install/tm_msgs:/home/gy/Omron_TM_ROS2/install/tm_models:/home/gy/Omron_TM_ROS2/install/custom_package:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy LD_LIBRARY_PATH=/home/gy/Omron_TM_ROS2/install/tmr_msgs/lib:/home/gy/Omron_TM_ROS2/install/tmrlib/lib:/home/gy/Omron_TM_ROS2/install/tm_msgs/lib:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake /home/gy/Omron_TM_ROS2/tmr_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/gy/Omron_TM_ROS2/install/tmr_driver
+[6.574s] Invoking command in '/home/gy/Omron_TM_ROS2/build/tmr_driver': CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tmrlib:/home/gy/Omron_TM_ROS2/install/tmr_msgs:/home/gy/Omron_TM_ROS2/install/ui_for_debug_and_demo:/home/gy/Omron_TM_ROS2/install/tmr_driver:/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo:/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900:/home/gy/Omron_TM_ROS2/install/tmr_description:/home/gy/Omron_TM_ROS2/install/tm_driver:/home/gy/Omron_TM_ROS2/install/demo:/home/gy/Omron_TM_ROS2/install/tm_msgs:/home/gy/Omron_TM_ROS2/install/tm_models:/home/gy/Omron_TM_ROS2/install/custom_package:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy LD_LIBRARY_PATH=/home/gy/Omron_TM_ROS2/install/tmr_msgs/lib:/home/gy/Omron_TM_ROS2/install/tmrlib/lib:/home/gy/Omron_TM_ROS2/install/tm_msgs/lib:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tmr_driver -- -j3 -l3
+[6.692s] [35m[1mScanning dependencies of target tmr_driver[0m
+[6.956s] [ 25%] [32mBuilding CXX object CMakeFiles/tmr_driver.dir/src/tmr_ros2_composition.cpp.o[0m
+[14.328s] [ 50%] [32mBuilding CXX object CMakeFiles/tmr_driver.dir/src/tmr_ros2_svr.cpp.o[0m
+[29.632s] [ 75%] [32mBuilding CXX object CMakeFiles/tmr_driver.dir/src/tmr_ros2_sct.cpp.o[0m
+[47.844s] [100%] [32m[1mLinking CXX executable tmr_driver[0m
+[49.455s] [100%] Built target tmr_driver
+[49.489s] Invoked command in '/home/gy/Omron_TM_ROS2/build/tmr_driver' returned '0': CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tmrlib:/home/gy/Omron_TM_ROS2/install/tmr_msgs:/home/gy/Omron_TM_ROS2/install/ui_for_debug_and_demo:/home/gy/Omron_TM_ROS2/install/tmr_driver:/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo:/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900:/home/gy/Omron_TM_ROS2/install/tmr_description:/home/gy/Omron_TM_ROS2/install/tm_driver:/home/gy/Omron_TM_ROS2/install/demo:/home/gy/Omron_TM_ROS2/install/tm_msgs:/home/gy/Omron_TM_ROS2/install/tm_models:/home/gy/Omron_TM_ROS2/install/custom_package:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy LD_LIBRARY_PATH=/home/gy/Omron_TM_ROS2/install/tmr_msgs/lib:/home/gy/Omron_TM_ROS2/install/tmrlib/lib:/home/gy/Omron_TM_ROS2/install/tm_msgs/lib:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tmr_driver -- -j3 -l3
+[49.784s] Invoking command in '/home/gy/Omron_TM_ROS2/build/tmr_driver': CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tmrlib:/home/gy/Omron_TM_ROS2/install/tmr_msgs:/home/gy/Omron_TM_ROS2/install/ui_for_debug_and_demo:/home/gy/Omron_TM_ROS2/install/tmr_driver:/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo:/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900:/home/gy/Omron_TM_ROS2/install/tmr_description:/home/gy/Omron_TM_ROS2/install/tm_driver:/home/gy/Omron_TM_ROS2/install/demo:/home/gy/Omron_TM_ROS2/install/tm_msgs:/home/gy/Omron_TM_ROS2/install/tm_models:/home/gy/Omron_TM_ROS2/install/custom_package:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy LD_LIBRARY_PATH=/home/gy/Omron_TM_ROS2/install/tmr_msgs/lib:/home/gy/Omron_TM_ROS2/install/tmrlib/lib:/home/gy/Omron_TM_ROS2/install/tm_msgs/lib:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tmr_driver
+[49.813s] -- Install configuration: ""
+[49.818s] -- Execute custom install script
+[49.873s] -- Symlinking: /home/gy/Omron_TM_ROS2/install/tmr_driver/lib/tmr_driver/tmr_driver
+[49.894s] -- Symlinking: /home/gy/Omron_TM_ROS2/install/tmr_driver/share/tmr_driver/launch/tmr_bringup.launch.py
+[49.930s] -- Symlinking: /home/gy/Omron_TM_ROS2/install/tmr_driver/share/tmr_driver/launch/tmr_bringup.py
+[49.954s] -- Symlinking: /home/gy/Omron_TM_ROS2/install/tmr_driver/share/ament_index/resource_index/package_run_dependencies/tmr_driver
+[49.984s] -- Symlinking: /home/gy/Omron_TM_ROS2/install/tmr_driver/share/ament_index/resource_index/parent_prefix_path/tmr_driver
+[50.009s] -- Symlinking: /home/gy/Omron_TM_ROS2/install/tmr_driver/share/tmr_driver/environment/ament_prefix_path.sh
+[50.042s] -- Symlinking: /home/gy/Omron_TM_ROS2/install/tmr_driver/share/tmr_driver/environment/ament_prefix_path.dsv
+[50.060s] -- Symlinking: /home/gy/Omron_TM_ROS2/install/tmr_driver/share/tmr_driver/environment/path.sh
+[50.095s] -- Symlinking: /home/gy/Omron_TM_ROS2/install/tmr_driver/share/tmr_driver/environment/path.dsv
+[50.117s] -- Symlinking: /home/gy/Omron_TM_ROS2/install/tmr_driver/share/tmr_driver/local_setup.bash
+[50.137s] -- Symlinking: /home/gy/Omron_TM_ROS2/install/tmr_driver/share/tmr_driver/local_setup.sh
+[50.165s] -- Symlinking: /home/gy/Omron_TM_ROS2/install/tmr_driver/share/tmr_driver/local_setup.zsh
+[50.192s] -- Symlinking: /home/gy/Omron_TM_ROS2/install/tmr_driver/share/tmr_driver/local_setup.dsv
+[50.224s] -- Symlinking: /home/gy/Omron_TM_ROS2/install/tmr_driver/share/tmr_driver/package.dsv
+[50.253s] -- Symlinking: /home/gy/Omron_TM_ROS2/install/tmr_driver/share/ament_index/resource_index/packages/tmr_driver
+[50.280s] -- Symlinking: /home/gy/Omron_TM_ROS2/install/tmr_driver/share/tmr_driver/cmake/tmr_driverConfig.cmake
+[50.311s] -- Symlinking: /home/gy/Omron_TM_ROS2/install/tmr_driver/share/tmr_driver/cmake/tmr_driverConfig-version.cmake
+[50.358s] -- Symlinking: /home/gy/Omron_TM_ROS2/install/tmr_driver/share/tmr_driver/package.xml
+[50.395s] Invoked command in '/home/gy/Omron_TM_ROS2/build/tmr_driver' returned '0': CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tmrlib:/home/gy/Omron_TM_ROS2/install/tmr_msgs:/home/gy/Omron_TM_ROS2/install/ui_for_debug_and_demo:/home/gy/Omron_TM_ROS2/install/tmr_driver:/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo:/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900:/home/gy/Omron_TM_ROS2/install/tmr_description:/home/gy/Omron_TM_ROS2/install/tm_driver:/home/gy/Omron_TM_ROS2/install/demo:/home/gy/Omron_TM_ROS2/install/tm_msgs:/home/gy/Omron_TM_ROS2/install/tm_models:/home/gy/Omron_TM_ROS2/install/custom_package:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy LD_LIBRARY_PATH=/home/gy/Omron_TM_ROS2/install/tmr_msgs/lib:/home/gy/Omron_TM_ROS2/install/tmrlib/lib:/home/gy/Omron_TM_ROS2/install/tm_msgs/lib:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tmr_driver

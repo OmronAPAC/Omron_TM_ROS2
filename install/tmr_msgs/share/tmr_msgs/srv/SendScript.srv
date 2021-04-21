@@ -1,6 +1,1 @@
-
-string id
-string script
-
----
-bool ok
+/home/gy/Omron_TM_ROS2/tmr_msgs/srv/SendScript.srv

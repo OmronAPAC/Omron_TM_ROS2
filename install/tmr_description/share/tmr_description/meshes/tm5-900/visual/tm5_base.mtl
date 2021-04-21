@@ -1,6 +1,1 @@
-﻿newmtl DEFAULT_MTL
-Kd 0.695 0.743 0.790
-
-newmtl MTL0 
-Kd 0.720 0.740 0.770
-
+/home/gy/Omron_TM_ROS2/tmr_description/meshes/tm5-900/visual/tm5_base.mtl

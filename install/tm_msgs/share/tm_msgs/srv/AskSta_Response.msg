@@ -1,6 +1,1 @@
-
-# ok        : read status 
-bool ok
-
-string subcmd
-string subdata
+/home/gy/Omron_TM_ROS2/build/tm_msgs/rosidl_cmake/srv/AskSta_Response.msg

@@ -1,8 +1,1 @@
-# For WriteItem, AskItem service
-
-std_msgs/Header header
-
-string id
-int8 mode
-string content
-int8 error_code
+/home/gy/Omron_TM_ROS2/tmr_msgs/msg/SvrResponse.msg

@@ -1,0 +1,22 @@
+[ 50%] Built target tm_send_command
+[100%] Built target sub_img
+-- Install configuration: ""
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/lib/custom_package/tm_send_command
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/lib/custom_package/sub_img
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/image
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/image/techman_robot.jpg
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/ament_index/resource_index/package_run_dependencies/custom_package
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/ament_index/resource_index/parent_prefix_path/custom_package
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/environment/ament_prefix_path.sh
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/environment/path.sh
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/environment/path.dsv
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/local_setup.bash
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/local_setup.sh
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/local_setup.zsh
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/local_setup.dsv
+-- Installing: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/package.dsv
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/ament_index/resource_index/packages/custom_package
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/cmake/custom_packageConfig.cmake
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/cmake/custom_packageConfig-version.cmake
+-- Up-to-date: /home/gy/Omron_TM_ROS2/install/custom_package/share/custom_package/package.xml

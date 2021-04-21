@@ -221,7 +221,7 @@ An overview of this package architecture is summarised in the diagram below:
 .Overview of package
 image::SoftwareOverview.png[]
 
-==== Socket TCPlistener
+=== Socket TCPlistener
 Users can establish a socket TCPlistener in the listen node to connect to external device and communicate based on the packet format.
 
 All features available in TM ROBOT Function can be operated in the listen node. For more information on the listen node, please refer to page 181 of the __TM Expression Editor and Listen Node Reference Guide__.
@@ -232,7 +232,7 @@ The TM Driver utilises TMSCT and TMSTA communication packages to send external s
 
 . A queue tag is sent via TMSCT communication packages and its status monitored using TMSTA, to check if a motion command has been completed.
 
-==== Modbus
+=== Modbus
 Users can use Modbus Client to read or write the parameters and save them in the robot register, such as position, posture and IO status. Users can program with the obtained parameters or monitor the status of robot. TM Robot provides two protocol versions of Modbus: Modbus TCP and Modbus RTU for users to get data from the external Modbus device or robot register, but TCP is being used for these packages.
 
 .Modbus Protocol
@@ -242,22 +242,67 @@ There are limitations to the capabilities of the TM Drivers, which is why Modbus
 
 The pymodbus libraries are used to communicate with the modbus servers.
 
+
+=== RViz Visualisation
+The `RViz` package allows a 3D model TM robot to be displayed in a separate window for real time visualisation.
+
+This package uses the joint states generated from the TM driver as well as the robot description publisher to generate the model and display it in its current position.
+
+To understand how `RViz Visualisation` is structured with the entire ROS package and communicates with LD, see <<architecture>>.
+
+`RViz Visualisation` has three nodes, they are summarised as below:
+
+[cols="1,1a", options="header"]
+.LD Visualisation nodes
+|===
+|**Node name**
+|**Description**
+
+|tm_driver
+|
+This node is responsible for publishing the joint states that the RViz program subscribes to.
+
+Using this information, it updates the position of the TM shown on RVIZ.
+
+|robot_description
+|
+This node is responsible for pubishing the .urdf information that the RViz program uses to display the model of the robot, as well as know the transform of each component of the robot relative the another point.
+
+|static_transform_publisher
+|
+This node is responsible for publishing a transform which sets the base of the 3D model to the zero coordinate.
+
+|===
+
+
 === Class Diagram
 
 ==== Move Class
 
-==== IO Class
+image::moveclass.png[]
 
 ==== Transform Class
 
+image::transformclass1.png[]
+image::transformclass2.png[]
+
 ==== Script Class
 
-==== Waiter Class
+image::scriptclass.png[]
 
 ==== Modbus Class
 
+image::modbusclass.png[]
 
-=== Implementation Class
+=== Pickplace Program
+
+The pickplace package allows the user to easily create a pick and place program, requiring only a one time setup. The pickplace program will then continuously run a vision guided pick and place operation.
+
+There are 2 stages to the program: a setup phase, where the user sets the location of TM to view the pick and place landmarks as well as the pick and place locations, and an execution phase, where the pick and place operation will run based on the coordinates set in the setup phase.
+
+==== Setup
+
+==== Execution
 . Run the TM Driver in a __separate__ terminal (<<TM ROS 2 Driver Setup/Usage>>) to set up communication between the host machine and the TM robot.
 +
 ....

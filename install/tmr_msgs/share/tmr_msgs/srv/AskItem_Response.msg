@@ -1,5 +1,1 @@
-
-bool ok
-
-string id
-string value
+/home/gy/Omron_TM_ROS2/build/tmr_msgs/rosidl_cmake/srv/AskItem_Response.msg

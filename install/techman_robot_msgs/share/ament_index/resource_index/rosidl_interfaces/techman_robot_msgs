@@ -1,4 +1,1 @@
-srv/TechmanRobotCommand.idl
-srv/TechmanRobotCommand.srv
-srv/TechmanRobotCommand_Request.msg
-srv/TechmanRobotCommand_Response.msg
+/home/gy/Omron_TM_ROS2/build/techman_robot_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/techman_robot_msgs

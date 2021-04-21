@@ -1,7 +1,1 @@
-# 'Write'
-# id        : name
-# item/value: More details please refer to the TM_Robot_Expression.pdf Chapter(1.76.6300) 9.3 svr_write
-
-string id
-string item
-string value
+/home/gy/Omron_TM_ROS2/build/tm_msgs/rosidl_cmake/srv/WriteItem_Request.msg

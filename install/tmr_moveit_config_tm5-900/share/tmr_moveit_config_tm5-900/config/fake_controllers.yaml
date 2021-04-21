@@ -1,12 +1,1 @@
-controller_list:
-  - name: fake_tmr_arm_controller
-    joints:
-      - joint_1
-      - joint_2
-      - joint_3
-      - joint_4
-      - joint_5
-      - joint_6
-initial:  # Define initial robot poses.
-  - group: tmr_arm
-    pose: home
+/home/gy/Omron_TM_ROS2/tmr_moveit_config_tm5-900/config/fake_controllers.yaml

@@ -1,7 +1,1 @@
-# Ask: request 'Read' sta
-
-string subcmd
-string subdata
-
-float64 wait_time
-
+/home/gy/Omron_TM_ROS2/build/tmr_msgs/rosidl_cmake/srv/AskSta_Request.msg

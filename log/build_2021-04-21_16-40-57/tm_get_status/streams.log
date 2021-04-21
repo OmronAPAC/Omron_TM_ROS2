@@ -1,0 +1,18 @@
+[0.737s] Invoking command in '/home/gy/Omron_TM_ROS2/build/tm_get_status': PYTHONPATH=/home/gy/Omron_TM_ROS2/install/tm_get_status/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/gy/Omron_TM_ROS2/install/tm_get_status --editable --build-directory /home/gy/Omron_TM_ROS2/build/tm_get_status/build --no-deps install_data --install-dir /home/gy/Omron_TM_ROS2/install/tm_get_status
+[1.376s] running develop
+[1.708s] running egg_info
+[1.712s] writing tm_get_status.egg-info/PKG-INFO
+[1.713s] writing dependency_links to tm_get_status.egg-info/dependency_links.txt
+[1.713s] writing entry points to tm_get_status.egg-info/entry_points.txt
+[1.713s] writing requirements to tm_get_status.egg-info/requires.txt
+[1.713s] writing top-level names to tm_get_status.egg-info/top_level.txt
+[1.787s] reading manifest file 'tm_get_status.egg-info/SOURCES.txt'
+[1.788s] writing manifest file 'tm_get_status.egg-info/SOURCES.txt'
+[1.880s] running build_ext
+[1.882s] Creating /home/gy/Omron_TM_ROS2/install/tm_get_status/lib/python3.8/site-packages/tm-get-status.egg-link (link to .)
+[1.884s] Installing image_talker script to /home/gy/Omron_TM_ROS2/install/tm_get_status/lib/tm_get_status
+[1.884s] Installing status_talker script to /home/gy/Omron_TM_ROS2/install/tm_get_status/lib/tm_get_status
+[1.884s] 
+[1.885s] Installed /home/gy/Omron_TM_ROS2/build/tm_get_status
+[1.885s] running install_data
+[1.977s] Invoked command in '/home/gy/Omron_TM_ROS2/build/tm_get_status' returned '0': PYTHONPATH=/home/gy/Omron_TM_ROS2/install/tm_get_status/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/gy/Omron_TM_ROS2/install/tm_get_status --editable --build-directory /home/gy/Omron_TM_ROS2/build/tm_get_status/build --no-deps install_data --install-dir /home/gy/Omron_TM_ROS2/install/tm_get_status
