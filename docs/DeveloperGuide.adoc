@@ -153,7 +153,6 @@ Ensure the TCP Modbus Slave is __ENABLED__
 image::Modbus.png[]
 
 
-
 === Set Up Host Machine
 
 The host machine is used to run the python scripts which use both the TM Drivers and the ROS 2 packages to communicate with the TM robot. Ensure that your machine meets the requirements in <<prerequisites>>.
@@ -291,10 +290,10 @@ The teach_setup.py script runs through a sequence of instructions for the user t
 .Pickplace setup flow
 image::teachsetup.png[]
 
-. Run the program to teach the setup, replacing `ip_address` with the ip address of the TM robot.
+. Run the program to teach the setup, replacing `robot_ip_address` with the ip address of the TM robot.
 +
 ....
-ros2 run pickplace teach_setup <ip_address>
+ros2 run pickplace teach_setup <robot_ip_address>
 ....
 +
 . Enter the name of the vision job done in the TMflow program by the vison node.
@@ -335,10 +334,10 @@ The pickplace_program.py script takes the coordinates obtained from the setup st
 .Pickplace execution flow
 image::pickplaceflow.png[]
 
-. . Run the launch file to execute the program, replacing `ip_address` with the ip address of the TM robot.
+. . Run the launch file to execute the program, replacing `robot_ip_address` with the ip address of the TM robot.
 +
 ....
-ros2 launch pickplace pickplace.launch.py robot_ip:=<ip_address>
+ros2 launch pickplace pickplace.launch.py robot_ip:=<robot_ip_address>
 ....
 +
 This will run the pick & place program as well as the RViz window for the 3D model visualisation.
