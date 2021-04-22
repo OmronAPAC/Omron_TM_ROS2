@@ -279,7 +279,9 @@ This node is responsible for publishing a transform which sets the base of the 3
 === Pickplace Program
 The pickplace package allows the user to easily create a pick and place program, requiring only a one time setup. The pickplace program will then continuously run a vision guided pick and place operation.
 
-This implementation was designed using the TM Landmark.
+This implementation was designed using TM Landmark attached to the object to be picked, and another TM landmark to find the place location. 
+
+These 2 landmarks act as the vision base for the pick and place, and the vision job takes into account the tilt and rotation of the TM landmark (so long as it can be seen clearly by the camera)
 
 There are 2 stages to the program: a setup phase, where the user sets the location of TM to view the pick and place landmarks as well as the pick and place locations, and an execution phase, where the pick and place operation will run based on the coordinates set in the setup phase.
 
@@ -311,6 +313,9 @@ image::viewpick.gif[]
 +
 image::pick.gif[]
 +
+[WARNING]
+Ensure that the object remains in the SAME POSITION as it was during the vision job.
++
 . Hit kbd:[ENTER] to close the grippers and record the position, then move the TM arm to the landmark viewing position for placing the object.
 +
 image::viewplace.gif[]
@@ -321,7 +326,7 @@ image::viewplace.gif[]
 +
 image::place.gif[]
 +
-. The setup is complete!
+. A JSON file will be generated containing the coordinates of the landmark viewing positions, the pick and lace positions as well as the name of the vision job, to be used in the execution stage.
 
 ==== Execution
 
@@ -367,220 +372,15 @@ image::scriptclass.png[]
 
 The Script class uses the external scripts function of the TM Driver to run external commands.
 
+[NOTE]
+The script class is capable of sending instructions to run TM movement commands, however the TM SetPosition service client is preferred as the format of the parameters are more intuitive than a script implementation.
+
 ==== Modbus Class
 
 image::modbusclass.png[]
 
-[WARNING] 
-These packages are a work in progress. As of 17-03-2021, the program can only do a pick and place at fixed locations relative to the vision base, and is tested on a 2 finger gripper that already has the TCP settings set in the TMflow settings. Use at your own risk, the chance of collision is currently __HIGH__.
-
-////
-External devices can communicate with the LD via the ARCL interface. The LD hosts an ARCL server that remote clients can communicate with. This is indicated by the blue `ARCL Server` block in the diagram.
-
-In this case, the host machine will communicate via this ARCL interface. The host machine has three python modules, `Socket Driver`, `Socket Listener` and `Socket Taskmaster`. Each module opens a socket connection to the ARCL server. There are three ROS nodes that the host machines will run, `ARCL API Server`, `LD States Publisher` and `Action Server`. Their relationship with the python modules are illustrated in the diagram. These nodes and sockets will run on the host machine that is directly connected to the LD. These are indicated by the red blocks in the diagram.
-
-`ARCL API Server` and `LD States Publisher` nodes are implemented in the `om_aiv_util` package. `Action Server` node is implemented in the `om_aiv_navigation` package.
-
-With the three ROS nodes, the host machine will provide a ROS interface to allow remote machines to retrieve information from, as well as controlling the LD.
-
-The remote machines are then able to leverage these nodes to communicate with the LD to retrieve information or to control it. These are indicated by the green blocks in the diagram. See <<ld-visualisation-package>> for how this can be implemented.
-
-=== LD States Publisher
-This ROS node is named `ld_states_publisher` during ROS runtime. The code can be found in `om_aiv_util/scripts/ld_states_publisher.py`.
-
-The purpose of this node is to listen for a few standard information that is published by the ARCL server about the LD. It then publishes these information on dedicated topics in the ROS environment.
-
-These information are summarised below:
-
-* `Status`: General message on robot's operations and actions.
-* `StateOfCharge`: Battery percentage
-* `Location`: XY coordinates of LD's position
-* `LocalizationScore`: The health of LD's localization accuracy.
-* `Temperature`: Operation temperature of LD.
-* `ExtendedStatusForHumans`: Additional message to `Status` message
-
-==== ARCL Commands Used
-The publishing of the information above is made possible by a set of ARCL commands. These commands are automatically executed by the ARCL server during operation. This is made possible by configuring the ARCL server to do this. See <<outgoing-arcl, Section 2.3.2, “Set Up ARCL">> on an example of how this can be done.
-
-The ARCL commands configured in ARCL server are:
-
-. Status
-. RangeDeviceGetCurrent
-. GetGoals
-. Odometer
-. ApplicationFaultQuery
-
-For information on what each of these commands do and how it works, please see the ARCL Reference Guide for detailed explanation.
+The modbus class handles modbus communication between the client (TM machine) and server (user's computer). It allows for asynchronous control of many features of the TM robot.
 
 [NOTE]
-====
-__RangeDeviceGetCurrent__ is not documented in the ARCL Reference Guide. This command outputs the laser scan data of the specified laser device. 
+The TM Driver provides services to open and close the IO gripper. Howeveer, modbus control of the IO is preferred as it does not require the TM Driver to be running concurrently with the program, as running the TM Driver to control the IO would require the TMflow program to be in the listen node, which prevents the TM robot from being able to be manually moved to the setup locations during the setup stage.
 
-This command works in the following format: `RangeDeviceGetCurrent [laser-device-name]`
-
-Where you should substitute [laser-device-name] field, including the `[]`, with the idetifying name of the laser device you want the data from. The output data are pairs of X-Y coordinates that represents the scan points in the world coordinate frame of the LD.
-
-So an output with 5 laser points will look like this: `X1 Y1 X2 Y2 X3 Y3 X4 Y4 X5 Y5`
-
-For example in this package, __RangeDeviceGetCurrent Laser_1__ is used. The __Laser_1__ refers to the primary laser device used for mapping by LD. Specifying another laser device name will show the data for that device instead (eg. Laser_2).
-
-Use `MobilePlanner` software to see what laser devices are installed in the LD and what their names are.
-====
-
-=== ARCL API Server
-This ROS service node is named `arcl_api_server` during ROS runtime. The code can be found in `om_aiv_util/scripts/arcl_api_server.py`.
-
-The purpose of this service node is to allow other ROS nodes to requests for information of a ARCL command and waits for the response. Essentially this allows any ROS nodes to post a ARCL command to the ARCL server and retrieves the response via this service node without having to have access to LD directly.
-
-This service node supports every single ARCL commands.
-
-=== Action Server
-This is a ROS action node, named `action_servers` during ROS runtime.
-The code can be found in `om_aiv_navigation/scripts/action_servers.py`.
-
-The purpose of this action node is similar to `ARCL API Server`. However, the key difference here is that is supports the publishing of feedback during the execution of a ARCL command. This is useful in instances where you need to execute a ARCL command that will last for a significant duration. 
-
-For example, executing a `goto` ARCL command to move the LD to a specified location. The LD will take time to reach the goal. During this time ARCL server will continuously post messages regarding the status of this command. `Action Server` leverages this and informs callers of this action server about these status messages.
-
-[[ld-visualisation-package]]
-=== LD Visualisation Package
-The `LD Visualisation` package illustrates how a remote machine can communicate with the host machine's ROS master in order to talk to the LD to retrieve information from it or control it.
-
-`LD Visualisation` serves as an example as to how you can leverage the `ARCL API Server`, `LD States Publisher` and `Action Server` nodes to have basic interaction with the LD through ROS. 
-
-To understand how `LD Visualisation` is structured with the entire ROS package and communicates with LD, see <<architecture>>.
-
-`LD Visualisation` has four nodes, they are summarised as below:
-
-[cols="1,1a", options="header"]
-.LD Visualisation nodes
-|===
-|**Node name**
-|**Description**
-
-|joints_publisher
-|
-This node is responsible for subscribing to the topic that publishes current location of the LD.
-
-Using this information, it updates the position of LD shown on RVIZ.
-
-|goals_marker
-|
-This node is responsible for subscribing to the topic that publishes the name of goals that LD is tracking.
-
-Using these goal names, it then requests for the coordinates of these goal points using `ARCL API Server`. These coordinates are used to visualise these goals on RVIZ.
-
-|data_points_marker
-|
-This node is responsible for subscribing to the topic that publishes the coordinate of laser scan points.
-
-Using these information, it publishes marker points on RVIZ to visualise every single scanned points.
-
-Additionally, it also reads a `.map` created by the `MobilePlanner` software. This `.map` file contains all static map laser scan data points as well as forbidden areas. These information are all read by this node to be visualised on RVIZ. This is what makes the displaying of the map possible.
-
-**This map file should exist on the remote machine running `LD Visualisation`.**
-
-See <<map-loading-reading>> to understand how to load a map onto the remote machine.
-
-|goto_point
-|
-This node is responsible for subscribing to the topic that publishes the position of the `2D Estimate Pose` tool in RVIZ.
-
-Using this information, it sends an appropriate request to `Action Server` to request the LD to move to the specified position. During this motion, any feedback and result by the ARCL server is then published on the `Action Server` sub-topics.
-
-This node essentially allows users to move the LD using RVIZ to any valid location on the RVIZ map.
-
-|===
-
-== Implementation
-[[map-loading-reading]]
-=== Map Loading and Reading
-ARCL unfortunately does not provide an interface to retrieve every single map data point as well as other map objects information from the LD.
-
-These information are stored in the `.map` file when you use `MobilePlanner` to scan a new map environment. The `ld_visualisation` package leverages this `.map` file to read these information display on RVIZ accordingly.
-
-As it currently stands, a copy of the `.map` file must be retrieved from LD via `MobilePlanner`, placed in the `ld_visualisation/map` directory and renamed to `data.map`. This `.map` file is read by `data_points_marker` node during ROS runtime to display map information on RVIZ.
-
-Any other `.map` files in this directory will be ignored.
-
-The name of this `.map` file can be configured as a ROS param. `LD Visualisation` ROS params can be found in `ld_visualisation/param/vis_param.yaml`
-
-With this implementation it means that any changes to the `.map` file on LD can be reflected in RVIZ only by transferring the entire new `.map` file to our package and restarting the `LD Visualisation` nodes. **This is a hard restriction from LD software.** Additional support has to be provided by the LD software team before a more user friendly and convenient solution can be reached.
-
-=== Forbidden Areas Information Format
-This section concerns how the forbidden areas information are stored in the `.map` file. The format is not so straightforward and hence I feel the need to include this section.
-
-In the `.map` file, a forbidden area's information is encapsulated as a single line like so:
-
-....
-Cairn: ForbiddenArea 0 0 180.000000 "" ICON "FA1" -18561 -13725 -15055 -7739
-....
-
-* `ForbiddenArea` indicates that this line is information about a forbidden area.
-* `180.000000` indicates the heading of this forbidden area.
-* `FA1` indicates the name given to this forbidden area during creation.
-* All other fields except for the last 4 numbers are irrelevant (As far as I know, except maybe the description field).
-
-Now this is where it gets interesting.
-
-Intuitively, a rectangle can be represented with two sets of XY coordinates that are two opposing corners of the said rectangle. This is also how it works in `MobilePlanner`. You give the coordinates of two opposing corners when drawing in `MobilePlanner`.
-
-So, `-18561 -13725 -15055 -7739` must represent `X1 Y1 X2 Y2` which are the two opposing corners right?
-
-**Wrong!**
-
-In fact, if you compare the values here with the values you used to create the forbbiden area in `MobilePlanner`, they can be entirely different once you give a heading that is > 0.
-
-**Turns out, the coordinates in the `.map` file are the polar coordinates transformation from the actual forbidden area.**
-
-I'll illustrate with an example. Suppose you have an area defined with heading `90` degree and location denoted by two corners with the coordinates `6 0` and `4 2`, in the form of `X Y`. The centre of this area is thus `5 1`.
-
-The `.map` file (transformed area) is polar coordinate transformation of the above coordinates. That means that the centre of the transformed area (radial coordinate), joined to the pole, known as pole axis is rotated by `90` degrees in the counter clockwise direction. The centre of this new transformed area is thus `-1 5`
-
-As a result, the new coordinates of the respective corners will be `0 4` and `-2 6`. The line in `.map` file should be shown as:
-
-....
-Cairn: ForbiddenArea 0 0 90.000000 "" ICON "FA1" 0 4 -2 6
-....
-
-You may wish to experiment by drawing some simple forbidden areas on `MobilePlanner` and then drawing the coordinates on a 2D grid to understand what is going on here.
-
-I'm not exactly sure why the `MobilePlanner` software team decided to do this way instead of __using Cartesian coordinates throughout__. It could be for calculation optimisation or to work with some other areas of their code. I hope this is the case...
-
-== Examples
-=== ROS Action: goto Goal
-There are two example codes, `om_aiv_navigation/scripts/goto_goal2_action.py` and `om_aiv_navigation/scripts/goto_goal3_action.py`.
-
-These code files serves as an example as to how you can leverage the ROS Action servers that came with this package.
-
-The example code simply performs the `goto` ARCL command with `Goal2` and `Goal3` as the arguments. This is get the LD to move to `Goal2` and `Goal3` on the map respectively. During these operations, the feedback and result messages will be published in ROS topics.
-
-[NOTE]
-You need to have two goals named `Goal2` and `Goal3` in your LD map for these examples to work.
-
-. First, ensure your host machine, ROS master is up and running.
-. Run `ld_visualisation` package to see the movement of your LD. To do this:
-+
-....
-roslaunch ld_visualisation display.launch
-....
-. In 2 separate terminal with the workspace sourced, run the following commands, each command in each terminal:
-+
-....
-rostopic echo /action_servers/feedback
-rostopic echo /action_servers/result
-....
-This will show you the feedback message during the operation and the result message when the operation has completed.
-. In a separate terminal with the workspace sourced, run:
-+
-....
-rosrun om_aiv_navigation goto_goal2_action.py 
-....
-This will move your LD to `Goal2` on your map. At the same time you should see the `/action_servers/feedback` topic containing messages about this operation. Once the operation has completed, you should see  the result message in `/action_servers/result` topic.
-. Next, try moving LD to `Goal3` with:
-+
-.... 
-rosrun om_aiv_navigation goto_goal3_action.py 
-.... 
-You should see similar messages just like `Goal2`.
-////
