@@ -95,8 +95,9 @@ def generate_launch_description():
         #name='tm_driver',
         output='screen',
         arguments=[str(args)[12:-2]],
-        #prefix="bash -c 'sleep 4.0; $0 $@' "
+        prefix=["bash -c 'sleep 6.0; $0 $@' "]
     )
+        
 
     # Pickplace Program
     pickplace_node = Node(
