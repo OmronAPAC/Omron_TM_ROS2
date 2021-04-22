@@ -275,25 +275,6 @@ This node is responsible for publishing a transform which sets the base of the 3
 |===
 
 
-=== Class Diagram
-
-==== Move Class
-
-image::moveclass.png[]
-
-==== Transform Class
-
-image::transformclass1.png[]
-image::transformclass2.png[]
-
-==== Script Class
-
-image::scriptclass.png[]
-
-==== Modbus Class
-
-image::modbusclass.png[]
-
 == Implementation
 === Pickplace Program
 The pickplace package allows the user to easily create a pick and place program, requiring only a one time setup. The pickplace program will then continuously run a vision guided pick and place operation.
@@ -308,10 +289,10 @@ The teach_setup.py script runs through a sequence of instructions for the user t
 .Pickplace setup flow
 image::teachsetup.png[]
 
-. Run the program to teach the setup, replacing `robot_ip` with the ip address of the TM robot.
+. Run the program to teach the setup, replacing `ip_address` with the ip address of the TM robot.
 +
 ....
-ros2 run pickplace teach_setup <robot_ip>
+ros2 run pickplace teach_setup <ip_address>
 ....
 +
 . Enter the name of the vision job done in the TMflow program by the vison node.
@@ -323,29 +304,73 @@ ros2 run pickplace teach_setup <robot_ip>
 . Move the TM arm to the landmark viewing position for picking the object.
 +
 image::viewpick.gif[]
++
+. Hit kbd:[ENTER] and wait for the vision job to complete.
++
+. Move the TM arm to the pick position.
++
+image::pick.gif[]
++
+. Hit kbd:[ENTER] to close the grippers and record the position, then move the TM arm to the landmark viewing position for placing the object.
++
+image::viewplace.gif[]
++
+. Hit the kbd:[ENTER] button and wait for the vision job to complete.
++
+. Move the TM arm to the pick position and hit kbd:[ENTER], which releases the grippers and records the position.
++
+image::place.gif[]
++
+. The setup is complete!
 
 ==== Execution
+
+The pickplace_program.py script takes the coordinates obtained from the setup stage and implements a continuous pick and place program, with an RViz terminal showing the real time pose of a 3D model of the TM robot. The flow of the program is shown below:
 
 .Pickplace execution flow
 image::pickplaceflow.png[]
 
-. Run the TM Driver in a __separate__ terminal (<<TM ROS 2 Driver Setup/Usage>>) to set up communication between the host machine and the TM robot.
+. . Run the launch file to execute the program, replacing `ip_address` with the ip address of the TM robot.
 +
 ....
-ros2 run tm_driver tm_driver <robot_ip_address>
+ros2 launch pickplace pickplace.launch.py robot_ip:=<ip_address>
 ....
 +
+This will run the pick & place program as well as the RViz window for the 3D model visualisation.
++
+image::pickplace.gif[]
 
-. In the main terminal, navigate to the PickPlace directory, and run the script "pickplace_program.py"
-+
-....
-cd scripts/PickPlace
-python3 pickplace_program.py
-....
-+
-This will run the pick & place program.
-+
-[[bookmark]]
+
+=== Class Diagram
+==== Move Class
+
+image::moveclass.png[]
+
+The movement of the TM arm is controlled by the Move class. The `set_position` method takes in x, y, z, roll, pitch and yaw, and sends it to the listen node in the TMflow program via a service client from the TM Driver. 
+
+[NOTE]
+Queue tags and status queries were also used to ensure that no other command executes simultaneously until the motion is complete. For more information, please refer to section 8.1 of the __TM Expression Editor and Listen Node Reference Guide__ under Robot Motion Functions.
+
+==== Transform Class
+
+image::transformclass1.png[]
+image::transformclass2.png[]
+
+This class handles all the transforms between different frames (e.g. coordinates of the pick position relative to the robot base or vision base). The TF tree is shown below:
+
+.TF Tree of pickplace program
+image::tftree.png[]
+
+==== Script Class
+
+image::scriptclass.png[]
+
+The Script class uses the external scripts function of the TM Driver to run external commands.
+
+==== Modbus Class
+
+image::modbusclass.png[]
+
 [WARNING] 
 These packages are a work in progress. As of 17-03-2021, the program can only do a pick and place at fixed locations relative to the vision base, and is tested on a 2 finger gripper that already has the TCP settings set in the TMflow settings. Use at your own risk, the chance of collision is currently __HIGH__.
 
