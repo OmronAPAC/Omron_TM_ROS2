@@ -294,15 +294,31 @@ image::scriptclass.png[]
 
 image::modbusclass.png[]
 
+== Implementation
 === Pickplace Program
-
 The pickplace package allows the user to easily create a pick and place program, requiring only a one time setup. The pickplace program will then continuously run a vision guided pick and place operation.
+
+This implementation was designed using the TM Landmark.
 
 There are 2 stages to the program: a setup phase, where the user sets the location of TM to view the pick and place landmarks as well as the pick and place locations, and an execution phase, where the pick and place operation will run based on the coordinates set in the setup phase.
 
 ==== Setup
+The teach_setup.py script runs through a sequence of instructions for the user to record the pick and place positions of an object, as well as the positions to view their respective landmarks. The following diagram shows the flow of the setup program:
 
+.Pickplace setup flow
+image::teachsetup.png[]
+
+. Run the program to teach the setup, replacing `robot_ip` with the ip address of the TM robot.
++
+....
+ros2 run pickplace teach_setup <robot_ip>
+....
++
 ==== Execution
+
+.Pickplace execution flow
+image::pickplaceflow.png[]
+
 . Run the TM Driver in a __separate__ terminal (<<TM ROS 2 Driver Setup/Usage>>) to set up communication between the host machine and the TM robot.
 +
 ....

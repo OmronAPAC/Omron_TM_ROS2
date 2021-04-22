@@ -30,6 +30,17 @@ def generate_launch_description():
     robot_description_config = load_file('tmr_description', 'urdf/tm5-900.urdf')
     robot_description = {'robot_description' : robot_description_config}
 
+    pp_config = get_package_share_directory('pickplace') + '/config.txt'
+    view_pick = []
+    view_place = []
+    with open(pp_config) as json_file:
+        data = json.load(json_file)
+        view_pick =  data['view_pick']
+        view_place =  data['view_place']
+    view_pick = [str(i) for i in view_pick] + ['base', 'view_pick']
+    view_place = [str(i) for i in view_place] + ['base', 'view_place']
+  
+
     # RViz
     rviz_config_file = get_package_share_directory('rviz_tm') + "/rviz_tm.rviz"
     rviz_node = Node(
@@ -43,7 +54,7 @@ def generate_launch_description():
         )
 
     # Static TF
-    static_tf = Node(
+    static_world = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
         name='world_publisher',
@@ -51,27 +62,20 @@ def generate_launch_description():
         arguments=['0.0', '0.0', '0.0', '0.0', '0.0', '0.0', 'world', 'base']
     )
 
-    pp_share = get_package_share_directory('pickplace') + '/config.txt'
-    view_pick = []
-    view_place = []
-    with open(pp_share) as json_file:
-        data = json.load(json_file)
-        view_pick =  data['view_pick']
-        view_place =  data['view_place']
-
-    static_tf = Node(
+    static_viewpick = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
         name='viewpick_publisher',
         output='log',
-        arguments= view_pick + ['base', 'view_pick']
+        arguments= view_pick
     )
-    static_tf = Node(
+    
+    static_viewplace = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
         name='viewplace_publisher',
         output='log',
-        arguments= view_place + ['base', 'view_place']
+        arguments= view_place
     )
 
     # Publish TF
@@ -101,4 +105,4 @@ def generate_launch_description():
         output='screen'
     )
 
-    return LaunchDescription([ tm_driver_node, pickplace_node, robot_state_publisher, static_tf, rviz_node ])
+    return LaunchDescription([ tm_driver_node, pickplace_node, robot_state_publisher, static_world, static_viewpick, static_viewplace, rviz_node ])

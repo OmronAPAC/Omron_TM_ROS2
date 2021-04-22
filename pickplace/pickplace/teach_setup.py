@@ -1,6 +1,7 @@
 import rclpy
 import time
 import json
+import sys
 import os, signal
 from ament_index_python.packages import get_package_share_directory
 pp_share = get_package_share_directory('pickplace')
@@ -24,11 +25,11 @@ TODO:
     - Make variable ip address
 """
 
-def run_vision(listener, modbus, vjob_name):
+def run_vision(listener, modbus, vjob_name, robot_ip):
     modbus.start_program()
     print("Starting TM Program......")
     time.sleep(1)
-    driver = Popen(['ros2', 'run', 'tm_driver', 'tm_driver', '192.168.2.10'], preexec_fn=os.setsid)
+    driver = Popen(['ros2', 'run', 'tm_driver', 'tm_driver', robot_ip], preexec_fn=os.setsid)
     time.sleep(2)
     vision_base = get_vbase(listener, modbus, vjob_name)
     os.killpg(os.getpgid(driver.pid), signal.SIGTERM)
@@ -65,29 +66,27 @@ def convert_deg(obj):
     return [x, y, z, roll, pitch, yaw]
 
 def main():
+    robot_ip = ''
+    if (len(sys.argv) >= 1):
+        robot_ip = sys.argv[1]
     print("Starting setup...")
     rclpy.init()
-    print('Rclpy initialised!')
     node = rclpy.create_node("init")
-    print('Node created!')
     modbus = Modbus.ModbusClass()
-    print('Modbus done!')
     tf = Transform.TransformClass()
-    print('Transform done!')
     listener = Script.ScriptClass()
-    print('Listener done!')
 
     modbus.init_io()
     
     # Get the vision base name
     vjob_name = input("Please enter the vision base name: ")
-
+    
     # Get the landmark viewing coordinates for pick w.r.t robot base
     input("Set LANDMARK position for PICK, then press Enter to continue...")
     view_pick = convert_rad(modbus.get_pos())
     
     # Run the TM program to get the vision base
-    pick_vision_base = run_vision(listener, modbus, vjob_name)
+    pick_vision_base = run_vision(listener, modbus, vjob_name, robot_ip)
 
     # Get the pick coordinate w.r.t. robot base, then close the gripper
     modbus.open_io()
@@ -100,7 +99,7 @@ def main():
     view_place = convert_rad(modbus.get_pos())
 
     # Run the TM program to get the vision base
-    place_vision_base = run_vision(listener, modbus, vjob_name)
+    place_vision_base = run_vision(listener, modbus, vjob_name, robot_ip)
 
     # Get the place coordinate w.r.t. robot base, then open the gripper
     input("Set PLACE position, then press Enter to continue...")
