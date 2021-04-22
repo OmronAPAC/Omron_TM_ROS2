@@ -322,8 +322,7 @@ ros2 run pickplace teach_setup <robot_ip>
 +
 . Move the TM arm to the landmark viewing position for picking the object.
 +
-video::viewpick.gif[]
-+
+image::viewpick.gif[]
 
 ==== Execution
 
