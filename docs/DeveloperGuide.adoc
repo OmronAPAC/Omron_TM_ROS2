@@ -314,6 +314,17 @@ image::teachsetup.png[]
 ros2 run pickplace teach_setup <robot_ip>
 ....
 +
+. Enter the name of the vision job done in the TMflow program by the vison node.
++
+....
+<vision_job_name>
+....
++
+. Move the TM arm to the landmark viewing position for picking the object.
++
+video::viewpick.gif[]
++
+
 ==== Execution
 
 .Pickplace execution flow
