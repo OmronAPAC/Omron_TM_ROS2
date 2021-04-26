@@ -207,6 +207,9 @@ class TransformClass():
         safeplace_euler = self.stamped_to_euler(safeplace_tstamped)
         return place_euler, safeplace_euler
 
+    def rpy_to_ypr(self, obj):
+        return [obj[0], obj[1], obj[2], obj[5], obj[4], obj[3]]
+
 
 
 """

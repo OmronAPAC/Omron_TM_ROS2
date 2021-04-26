@@ -6,6 +6,11 @@ from launch import LaunchDescription
 from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
 
+pp_share = get_package_share_directory('pickplace')
+pp_library =  pp_share + '/pickplace/pp_library'
+
+from pp_library import Transform
+
 def load_file(package_name, file_path):
     package_path = get_package_share_directory(package_name)
     absolute_file_path = os.path.join(package_path, file_path)
@@ -26,6 +31,8 @@ def generate_launch_description():
             args.append(sys.argv[i])
             i = i + 1
 
+    tf = Transform.TransformClass()
+
     # Component yaml files are grouped in separate namespaces
     robot_description_config = load_file('tmr_description', 'urdf/tm5-900.urdf')
     robot_description = {'robot_description' : robot_description_config}
@@ -37,6 +44,8 @@ def generate_launch_description():
         data = json.load(json_file)
         view_pick =  data['view_pick']
         view_place =  data['view_place']
+    view_pick = tf.rpy_to_ypr(view_pick)
+    view_place = tf.rpy_to_ypr(view_place)
     view_pick = [str(i) for i in view_pick] + ['base', 'view_pick']
     view_place = [str(i) for i in view_place] + ['base', 'view_place']
   
