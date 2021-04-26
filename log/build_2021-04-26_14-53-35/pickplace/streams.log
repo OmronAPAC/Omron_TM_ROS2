@@ -1,0 +1,21 @@
+[0.680s] Invoking command in '/home/gy/Omron_TM_ROS2/build/pickplace': PYTHONPATH=/home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/gy/Omron_TM_ROS2/install/pickplace --editable --build-directory /home/gy/Omron_TM_ROS2/build/pickplace/build --no-deps install_data --install-dir /home/gy/Omron_TM_ROS2/install/pickplace
+[1.410s] running develop
+[1.764s] running egg_info
+[1.764s] writing pickplace.egg-info/PKG-INFO
+[1.764s] writing dependency_links to pickplace.egg-info/dependency_links.txt
+[1.765s] writing entry points to pickplace.egg-info/entry_points.txt
+[1.765s] writing requirements to pickplace.egg-info/requires.txt
+[1.766s] writing top-level names to pickplace.egg-info/top_level.txt
+[2.051s] reading manifest file 'pickplace.egg-info/SOURCES.txt'
+[2.067s] writing manifest file 'pickplace.egg-info/SOURCES.txt'
+[2.442s] running build_ext
+[2.459s] Creating /home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages/pickplace.egg-link (link to .)
+[2.461s] Installing object_publisher script to /home/gy/Omron_TM_ROS2/install/pickplace/lib/pickplace
+[2.462s] Installing pickplace script to /home/gy/Omron_TM_ROS2/install/pickplace/lib/pickplace
+[2.462s] Installing teach_setup script to /home/gy/Omron_TM_ROS2/install/pickplace/lib/pickplace
+[2.462s] Installing test script to /home/gy/Omron_TM_ROS2/install/pickplace/lib/pickplace
+[2.462s] 
+[2.463s] Installed /home/gy/Omron_TM_ROS2/build/pickplace
+[2.463s] running install_data
+[2.463s] copying pp_library/Transform.py -> /home/gy/Omron_TM_ROS2/install/pickplace/share/pickplace/pp_library
+[2.507s] Invoked command in '/home/gy/Omron_TM_ROS2/build/pickplace' returned '0': PYTHONPATH=/home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/gy/Omron_TM_ROS2/install/pickplace --editable --build-directory /home/gy/Omron_TM_ROS2/build/pickplace/build --no-deps install_data --install-dir /home/gy/Omron_TM_ROS2/install/pickplace

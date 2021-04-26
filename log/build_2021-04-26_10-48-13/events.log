@@ -1,0 +1,57 @@
+[0.000000] (-) TimerEvent: {}
+[0.001747] (-) JobUnselected: {'identifier': 'custom_package'}
+[0.001808] (-) JobUnselected: {'identifier': 'demo'}
+[0.001851] (-) JobUnselected: {'identifier': 'rviz_tm'}
+[0.001907] (-) JobUnselected: {'identifier': 'techman_robot_msgs'}
+[0.001948] (-) JobUnselected: {'identifier': 'tm_driver'}
+[0.001988] (-) JobUnselected: {'identifier': 'tm_get_status'}
+[0.002029] (-) JobUnselected: {'identifier': 'tm_models'}
+[0.002069] (-) JobUnselected: {'identifier': 'tm_msgs'}
+[0.002109] (-) JobUnselected: {'identifier': 'tmr_description'}
+[0.002188] (-) JobUnselected: {'identifier': 'tmr_driver'}
+[0.002244] (-) JobUnselected: {'identifier': 'tmr_mod_urdf'}
+[0.002286] (-) JobUnselected: {'identifier': 'tmr_moveit_config_tm5-900'}
+[0.002327] (-) JobUnselected: {'identifier': 'tmr_moveit_cpp_demo'}
+[0.002367] (-) JobUnselected: {'identifier': 'tmr_msgs'}
+[0.002408] (-) JobUnselected: {'identifier': 'tmrlib'}
+[0.002448] (-) JobUnselected: {'identifier': 'ui_for_debug_and_demo'}
+[0.002492] (pickplace) JobQueued: {'identifier': 'pickplace', 'dependencies': OrderedDict()}
+[0.002563] (pickplace) JobStarted: {'identifier': 'pickplace'}
+[0.105135] (-) TimerEvent: {}
+[0.206753] (-) TimerEvent: {}
+[0.307965] (-) TimerEvent: {}
+[0.408322] (-) TimerEvent: {}
+[0.510041] (-) TimerEvent: {}
+[0.557166] (pickplace) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--prefix', '/home/gy/Omron_TM_ROS2/install/pickplace', '--editable', '--build-directory', '/home/gy/Omron_TM_ROS2/build/pickplace/build', '--no-deps', 'install_data', '--install-dir', '/home/gy/Omron_TM_ROS2/install/pickplace'], 'cwd': '/home/gy/Omron_TM_ROS2/build/pickplace', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_SG:en', 'USER': 'gy', 'SSH_AGENT_PID': '1229', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/snap/code/62/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/gy/Omron_TM_ROS2/install/tmrlib/lib:/home/gy/Omron_TM_ROS2/install/tmr_msgs/lib:/home/gy/Omron_TM_ROS2/install/tm_msgs/lib:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/gy', 'CHROME_DESKTOP': 'code-url-handler.desktop', 'TERM_PROGRAM_VERSION': '1.55.2', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/var/lib/snapd/desktop/applications/code_code.desktop', 'APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL': 'true', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/62/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/62/usr/share/code/code', 'MANAGERPID': '1000', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '218148', '_colcon_cd_root': '/home/gy/ros2_install', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/gy/Omron_TM_ROS2/install:/home/gy/Omron_TM_ROS2/tm_models/urdf/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'gy', 'JOURNAL_STREAM': '8:30238', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'gy', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/gy/.local/bin:/opt/ros/foxy/bin:/home/gy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/gy:@/tmp/.ICE-unix/1301,unix/gy:/tmp/.ICE-unix/1301', 'INVOCATION_ID': '96f03fd19c1a4671b77f565cf83fbe6b', 'XDG_MENU_PREFIX': 'gnome-', 'BAMF_DESKTOP_FILE_HINT': '/var/lib/snapd/desktop/applications/code_code.desktop', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_SG.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-698718a35f.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/snap/code/62/usr/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/home/gy/Omron_TM_ROS2/install/ui_for_debug_and_demo:/home/gy/Omron_TM_ROS2/install/tmr_driver:/home/gy/Omron_TM_ROS2/install/tmrlib:/home/gy/Omron_TM_ROS2/install/tmr_msgs:/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo:/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tmr_description:/home/gy/Omron_TM_ROS2/install/tm_driver:/home/gy/Omron_TM_ROS2/install/demo:/home/gy/Omron_TM_ROS2/install/tm_msgs:/home/gy/Omron_TM_ROS2/install/tm_models:/home/gy/Omron_TM_ROS2/install/tm_get_status:/home/gy/Omron_TM_ROS2/install/custom_package:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs:/home/gy/Omron_TM_ROS2/install/rviz_tm:/home/gy/Omron_TM_ROS2/install/pickplace:/opt/ros/foxy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'DISABLE_WAYLAND': '1', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/gy/Omron_TM_ROS2/build/pickplace', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/install/tmr_msgs/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/build/tmr_mod_urdf:/home/gy/Omron_TM_ROS2/install/tmr_mod_urdf/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/install/tm_msgs/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/build/tm_get_status:/home/gy/Omron_TM_ROS2/install/tm_get_status/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/build/rviz_tm:/home/gy/Omron_TM_ROS2/install/rviz_tm/lib/python3.8/site-packages:/home/gy/Omron_TM_ROS2/build/pickplace:/home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/gy/Omron_TM_ROS2/install/ui_for_debug_and_demo:/home/gy/Omron_TM_ROS2/install/tmr_driver:/home/gy/Omron_TM_ROS2/install/tmrlib:/home/gy/Omron_TM_ROS2/install/tmr_msgs:/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo:/home/gy/Omron_TM_ROS2/install/tmr_moveit_config_tm5-900:/home/gy/Omron_TM_ROS2/install/tmr_description:/home/gy/Omron_TM_ROS2/install/tm_driver:/home/gy/Omron_TM_ROS2/install/demo:/home/gy/Omron_TM_ROS2/install/tm_msgs:/home/gy/Omron_TM_ROS2/install/tm_models:/home/gy/Omron_TM_ROS2/install/custom_package:/home/gy/Omron_TM_ROS2/install/techman_robot_msgs'}, 'shell': False}
+[0.610186] (-) TimerEvent: {}
+[0.710905] (-) TimerEvent: {}
+[0.811533] (-) TimerEvent: {}
+[0.912329] (-) TimerEvent: {}
+[1.013081] (-) TimerEvent: {}
+[1.051519] (pickplace) StdoutLine: {'line': b'running develop\n'}
+[1.113826] (-) TimerEvent: {}
+[1.214732] (-) TimerEvent: {}
+[1.298471] (pickplace) StdoutLine: {'line': b'running egg_info\n'}
+[1.299920] (pickplace) StdoutLine: {'line': b'writing pickplace.egg-info/PKG-INFO\n'}
+[1.301474] (pickplace) StdoutLine: {'line': b'writing dependency_links to pickplace.egg-info/dependency_links.txt\n'}
+[1.302467] (pickplace) StdoutLine: {'line': b'writing entry points to pickplace.egg-info/entry_points.txt\n'}
+[1.303580] (pickplace) StdoutLine: {'line': b'writing requirements to pickplace.egg-info/requires.txt\n'}
+[1.304280] (pickplace) StdoutLine: {'line': b'writing top-level names to pickplace.egg-info/top_level.txt\n'}
+[1.315120] (-) TimerEvent: {}
+[1.382499] (pickplace) StdoutLine: {'line': b"reading manifest file 'pickplace.egg-info/SOURCES.txt'\n"}
+[1.385635] (pickplace) StdoutLine: {'line': b"writing manifest file 'pickplace.egg-info/SOURCES.txt'\n"}
+[1.415239] (-) TimerEvent: {}
+[1.466993] (pickplace) StdoutLine: {'line': b'running build_ext\n'}
+[1.468318] (pickplace) StdoutLine: {'line': b'Creating /home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages/pickplace.egg-link (link to .)\n'}
+[1.471448] (pickplace) StdoutLine: {'line': b'Installing object_publisher script to /home/gy/Omron_TM_ROS2/install/pickplace/lib/pickplace\n'}
+[1.472109] (pickplace) StdoutLine: {'line': b'Installing pickplace script to /home/gy/Omron_TM_ROS2/install/pickplace/lib/pickplace\n'}
+[1.473056] (pickplace) StdoutLine: {'line': b'Installing teach_setup script to /home/gy/Omron_TM_ROS2/install/pickplace/lib/pickplace\n'}
+[1.473826] (pickplace) StdoutLine: {'line': b'Installing test script to /home/gy/Omron_TM_ROS2/install/pickplace/lib/pickplace\n'}
+[1.474513] (pickplace) StdoutLine: {'line': b'\n'}
+[1.474932] (pickplace) StdoutLine: {'line': b'Installed /home/gy/Omron_TM_ROS2/build/pickplace\n'}
+[1.475363] (pickplace) StdoutLine: {'line': b'running install_data\n'}
+[1.476783] (pickplace) StdoutLine: {'line': b'copying launch/test.launch.py -> /home/gy/Omron_TM_ROS2/install/pickplace/share/pickplace\n'}
+[1.515829] (-) TimerEvent: {}
+[1.522607] (pickplace) CommandEnded: {'returncode': 0}
+[1.547099] (pickplace) JobEnded: {'identifier': 'pickplace', 'rc': 0}
+[1.547748] (-) EventReactorShutdown: {}

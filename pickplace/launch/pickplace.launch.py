@@ -106,4 +106,12 @@ def generate_launch_description():
         output='screen'
     )
 
-    return LaunchDescription([ tm_driver_node, pickplace_node, robot_state_publisher, static_world, static_viewpick, static_viewplace, rviz_node ])
+    # Destination Publisher
+    destination_publisher_node = Node(
+        package='pickplace',
+        executable='destination_publisher',
+        output='screen'
+    )
+
+    return LaunchDescription([ tm_driver_node, pickplace_node, robot_state_publisher, 
+        static_world, static_viewpick, static_viewplace, rviz_node, destination_publisher_node ])

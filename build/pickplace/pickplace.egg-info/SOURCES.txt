@@ -3,9 +3,12 @@ setup.cfg
 setup.py
 launch/pickplace.launch.py
 launch/rviz.launch.py
+launch/test.launch.py
 pickplace/__init__.py
+pickplace/destination_publisher.py
 pickplace/pickplace_program.py
 pickplace/teach_setup.py
+pickplace/test.py
 pickplace.egg-info/PKG-INFO
 pickplace.egg-info/SOURCES.txt
 pickplace.egg-info/dependency_links.txt
@@ -19,4 +22,5 @@ pp_library/Move.py
 pp_library/Script.py
 pp_library/Transform.py
 pp_library/Waiter.py
+pp_library/testform.py
 resource/pickplace
