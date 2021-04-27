@@ -123,4 +123,4 @@ def generate_launch_description():
     )
 
     return LaunchDescription([ tm_driver_node, pickplace_node, robot_state_publisher, 
-        static_world, static_viewpick, static_viewplace, rviz_node, destination_publisher_node ])
+        static_world, rviz_node, destination_publisher_node ])

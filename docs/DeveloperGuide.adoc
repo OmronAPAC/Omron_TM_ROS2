@@ -90,9 +90,8 @@ image::HardwareConnection.png[]
 ==== Hardware Connection
 The diagram below shows the port on the TM interface which the ethernet cable is connected to (from the host machine). 
 
-.TM5-900 Interface
+.TM Controller
 image::TM_Interface.png[]
-
 
 === Set Up TM
 This package utilises the link:https://github.com/TechmanRobotInc/tmr_ros2[tmr_ros2] packages for the TM drivers to communicate with the robot.
@@ -177,10 +176,10 @@ git clone https://github.com/guanyewtan/Omron_TM_ROS2
 ....
 cd Omron_TM_ROS2
 ....
-. Build this package with:
+. Build all package with:
 +
 ....
-colcon build
+colcon --symlink-install build
 ....
 +
 > Depending on your machine, this can take a while to build.
@@ -207,6 +206,8 @@ ros2 run tm_driver tm_driver <robot_ip_address>
 Example: `ros2 run tm_driver tm_driver 192.168.2.10`, if the <robot_ip_address> is 192.168.2.10
 +
 Now, the user can use a __new terminal__ to run each ROS node or command, but don't forget to source the correct setup shell files afteras starting a new terminal!
++
+The TM driver is required to be running so long as a connection to the listen node of the TMflow program is required.
 +
 For more information on the TM Drivers, click link:https://github.com/TechmanRobotInc/tmr_ros2/blob/master/README.md[here].
 
@@ -278,7 +279,8 @@ This node is responsible for publishing a transform which sets the base of the 3
 === Pickplace Program
 The pickplace package allows the user to easily create a pick and place program, requiring only a one time setup. The pickplace program will then continuously run a vision guided pick and place operation.
 
-This implementation was designed using TM Landmark attached to the object to be picked, and another TM landmark to find the place location. 
+[NOTE]
+This implementation was designed using a TM Landmark attached to the object to be picked, and another TM landmark to find the place location. However, it is possible for the TM vision to locate other visual features on objects.
 
 These 2 landmarks act as the vision base for the pick and place, and the vision job takes into account the tilt and rotation of the TM landmark (so long as it can be seen clearly by the camera)
 
@@ -296,19 +298,24 @@ image::teachsetup.png[]
 ros2 run pickplace teach_setup <robot_ip_address>
 ....
 +
-. Enter the name of the vision job done in the TMflow program by the vison node.
+. Enter the name of the vision base that will be created in the TMflow program by the vison job.
 +
-....
-<vision_job_name>
-....
+image::prompt1.png[]
++
+image::visionjobname.png[]
+
+[NOTE]
+The vision base name is the name of the vision job with `vision_` appended to the front. For example, if the vision job name is `myvisionjob`, the vision base name will be `vision_myvisionjob`.
 +
 . Move the TM arm to the landmark viewing position for picking the object.
 +
 image::viewpick.gif[]
 +
-. Hit kbd:[ENTER] and wait for the vision job to complete.
+. Hit kbd:[ENTER] to start the vision job. You should hear the robot beep 3 times to signal the start of the TMflow program.
 +
-. Move the TM arm to the pick position.
+image::prompt2.png[]
++
+. Wait for the vision job to complete (the TMflow program will stop), then move the TM arm to the pick position.
 +
 image::pick.gif[]
 +
@@ -317,11 +324,17 @@ Ensure that the object remains in the SAME POSITION as it was during the vision 
 +
 . Hit kbd:[ENTER] to close the grippers and record the position, then move the TM arm to the landmark viewing position for placing the object.
 +
+image::prompt3.png[]
++
 image::viewplace.gif[]
 +
-. Hit the kbd:[ENTER] button and wait for the vision job to complete.
+. Hit kbd:[ENTER] to start the vision job.
 +
-. Move the TM arm to the pick position and hit kbd:[ENTER], which releases the grippers and records the position.
+image::prompt4.png[]
++
+. Move the TM arm to the place position and hit kbd:[ENTER], which releases the grippers and records the position.
++
+image::prompt5.png[]
 +
 image::place.gif[]
 +
@@ -343,7 +356,7 @@ ros2 launch pickplace pickplace.launch.py robot_ip:=<robot_ip_address>
 This will run the pick & place program as well as the RViz window for the 3D model visualisation.
 +
 image::pickplace.gif[]
-
+image::rviz.png[]
 
 === Class Diagram
 ==== Move Class
@@ -364,6 +377,9 @@ This class handles all the transforms between different frames (e.g. coordinates
 
 .TF Tree of pickplace program
 image::tftree.png[]
+
+[NOTE]
+safe_pick and safe_place transforms are the coordinates of the pick and place point with a -0.1m offset in the z-axis
 
 ==== Script Class
 
