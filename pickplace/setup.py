@@ -27,7 +27,6 @@ setup(
         'console_scripts': [
             'pickplace = pickplace.pickplace_program:main',
             'teach_setup = pickplace.teach_setup:main',
-            'test = pickplace.test:main',
             'destination_publisher = pickplace.destination_publisher:main'
         ],
     },

@@ -29,6 +29,7 @@ def run_vision(listener, modbus, vjob_name, robot_ip):
     modbus.start_program()
     print("Starting TM Program......")
     time.sleep(1)
+    # Launch the TM_Driver using subprocess, to enable the vision job to execute
     driver = Popen(['ros2', 'run', 'tm_driver', 'tm_driver', robot_ip], preexec_fn=os.setsid)
     time.sleep(2)
     vision_base = get_vbase(listener, modbus, vjob_name)
@@ -84,7 +85,7 @@ def main():
     # Get the landmark viewing coordinates for pick w.r.t robot base
     input("Set LANDMARK position for PICK, then press Enter to continue...")
     view_pick = convert_rad(modbus.get_pos())
-    
+
     # Run the TM program to get the vision base
     pick_vision_base = run_vision(listener, modbus, vjob_name, robot_ip)
 

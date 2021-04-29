@@ -306,7 +306,7 @@ image::visionjobname.png[]
 
 [NOTE]
 The vision base name is the name of the vision job with `vision_` appended to the front. For example, if the vision job name is `myvisionjob`, the vision base name will be `vision_myvisionjob`.
-+
+
 . Move the TM arm to the landmark viewing position for picking the object.
 +
 image::viewpick.gif[]
@@ -359,6 +359,12 @@ image::pickplace.gif[]
 image::rviz.png[]
 
 === Class Diagram
+
+image::classrelation.png[]
+
+[CAUTION]
+The `Script` class is not the pickplace program's python script, it is a class that handles the scripts to be sent to the TCP socket listener in the TM machine via the TM driver.
+
 ==== Move Class
 
 image::moveclass.png[]
