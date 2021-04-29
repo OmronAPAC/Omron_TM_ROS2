@@ -10,12 +10,7 @@ from pp_library import Modbus, Transform, Script, Move
 from rcl_interfaces.srv import SetParameters
 from rcl_interfaces.msg import Parameter, ParameterValue, ParameterType
 
-"""
-TODO:
-    - Change the access level (private functions and attributes)
-    - Create launch file
-"""
-
+# Get the new pick or place positions w.r.t the new vision base
 def get_positions(listener, modbus, tf, vbase_name, vjob_name):
     listener.exit_script()
     listener.change_base(vjob_name)
@@ -31,13 +26,14 @@ def get_positions(listener, modbus, tf, vbase_name, vjob_name):
     else:
         return new_vbase
 
+
+# Sets the coordinates of the destination (pick/place) to a parameter in a 
+# publisher, to be displayed in RViz
 def call_set_parameters(node, coordinates):
-    # create client
     client = node.create_client(
         SetParameters,
         'destination_node/set_parameters'.format_map(locals()))
   
-    # call as soon as ready
     ready = client.wait_for_service(timeout_sec=5.0)
     if not ready:
         raise RuntimeError('Wait for service timed out')
@@ -48,7 +44,6 @@ def call_set_parameters(node, coordinates):
     future = client.call_async(request)
     rclpy.spin_until_future_complete(node, future) 
 
-    # handle response
     response = future.result()
     if response is None:
         e = future.exception()
@@ -56,6 +51,8 @@ def call_set_parameters(node, coordinates):
             'Exception while calling service of node '
             "'{args.node_name}': {e}".format_map(locals()))
     return response
+
+
 
 def main():
     rclpy.init()

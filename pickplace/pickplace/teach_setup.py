@@ -119,12 +119,10 @@ def main():
         "view_pick": view_pick,
         "view_place": view_place,
         "vbase_pick": convert_deg(vbase_pick),
-        "vbase_place": convert_deg(vbase_place),
-        #"base_pick": convert_rad(base_pick),
-        #"base_place": convert_rad(base_place)
-        
+        "vbase_place": convert_deg(vbase_place)
     }
 
+    # Output the results in a json file
     with open(pp_share + '/config.txt', 'w') as output:
         json.dump(config, output, indent = 3)
 

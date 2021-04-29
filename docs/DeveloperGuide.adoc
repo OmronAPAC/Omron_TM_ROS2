@@ -363,7 +363,7 @@ image::rviz.png[]
 image::classrelation.png[]
 
 [CAUTION]
-The `Script` class is not the pickplace program's python script, it is a class that handles the scripts to be sent to the TCP socket listener in the TM machine via the TM driver.
+The `Script` class is *not* the pickplace program's python script, it is a class that handles the scripts to be sent to the TCP socket listener in the TM machine via the TM driver.
 
 ==== Move Class
 
