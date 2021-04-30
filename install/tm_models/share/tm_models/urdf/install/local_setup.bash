@@ -1,1 +1,0 @@
-/home/gy/Omron_TM_ROS2/tm_models/urdf/install/local_setup.bash

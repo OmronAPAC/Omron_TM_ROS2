@@ -1,1 +1,0 @@
-/home/gy/Omron_TM_ROS2/build/tmr_driver/ament_cmake_core/tmr_driverConfig.cmake

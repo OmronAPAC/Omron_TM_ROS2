@@ -1,1 +1,0 @@
-/home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo/ament_cmake_core/tmr_moveit_cpp_demoConfig-version.cmake

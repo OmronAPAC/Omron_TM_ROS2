@@ -1,1 +1,0 @@
-/home/gy/Omron_TM_ROS2/build/custom_package/ament_cmake_environment_hooks/local_setup.bash

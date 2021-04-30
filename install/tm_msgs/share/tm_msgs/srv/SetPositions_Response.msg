@@ -1,1 +1,0 @@
-/home/gy/Omron_TM_ROS2/build/tm_msgs/rosidl_cmake/srv/SetPositions_Response.msg

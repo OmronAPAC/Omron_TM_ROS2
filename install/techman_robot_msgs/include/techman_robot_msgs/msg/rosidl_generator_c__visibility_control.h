@@ -1,1 +1,0 @@
-/home/gy/Omron_TM_ROS2/build/techman_robot_msgs/rosidl_generator_c/techman_robot_msgs/msg/rosidl_generator_c__visibility_control.h

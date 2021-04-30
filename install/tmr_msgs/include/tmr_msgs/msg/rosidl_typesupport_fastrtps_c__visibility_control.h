@@ -1,1 +1,0 @@
-/home/gy/Omron_TM_ROS2/build/tmr_msgs/rosidl_typesupport_fastrtps_c/tmr_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h

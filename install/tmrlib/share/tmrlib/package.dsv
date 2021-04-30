@@ -1,8 +1,0 @@
-source;share/tmrlib/hook/cmake_prefix_path.ps1
-source;share/tmrlib/hook/cmake_prefix_path.dsv
-source;share/tmrlib/hook/cmake_prefix_path.sh
-source;share/tmrlib/local_setup.bash
-source;share/tmrlib/local_setup.dsv
-source;share/tmrlib/local_setup.ps1
-source;share/tmrlib/local_setup.sh
-source;share/tmrlib/local_setup.zsh

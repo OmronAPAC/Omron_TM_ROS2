@@ -1,1 +1,0 @@
-/home/gy/Omron_TM_ROS2/build/ui_for_debug_and_demo/ament_cmake_core/ui_for_debug_and_demoConfig.cmake

@@ -1,1 +1,0 @@
-/home/gy/Omron_TM_ROS2/build/tmr_description/ament_cmake_core/tmr_descriptionConfig.cmake

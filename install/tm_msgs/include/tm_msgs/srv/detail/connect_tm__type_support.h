@@ -1,1 +1,0 @@
-/home/gy/Omron_TM_ROS2/build/tm_msgs/rosidl_generator_c/tm_msgs/srv/detail/connect_tm__type_support.h

@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/gy/Omron_TM_ROS2/build/tm_msgs/rosidl_generator_py/tm_msgs/libtm_msgs__python.so" "TARGETS" "tm_msgs__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

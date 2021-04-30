@@ -1,1 +1,0 @@
-/home/gy/Omron_TM_ROS2/build/tm_msgs/rosidl_typesupport_fastrtps_cpp/tm_msgs/msg/detail/feedback_state__rosidl_typesupport_fastrtps_cpp.hpp

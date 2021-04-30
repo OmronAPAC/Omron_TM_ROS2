@@ -1,1 +1,0 @@
-/home/gy/Omron_TM_ROS2/build/tmr_msgs/rosidl_generator_c/tmr_msgs/srv/detail/connect_tm__functions.h

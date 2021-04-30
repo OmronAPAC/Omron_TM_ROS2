@@ -1,1 +1,0 @@
-/home/gy/Omron_TM_ROS2/tmr_driver/launch/tmr_bringup.launch.py

@@ -1,1 +1,0 @@
-/home/gy/Omron_TM_ROS2/tm_msgs/msg/FeedbackState.msg

@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/gy/Omron_TM_ROS2/build/techman_robot_msgs/rosidl_generator_py/techman_robot_msgs/libtechman_robot_msgs__python.so" "TARGETS" "techman_robot_msgs__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

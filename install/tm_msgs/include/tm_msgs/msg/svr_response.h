@@ -1,1 +1,0 @@
-/home/gy/Omron_TM_ROS2/build/tm_msgs/rosidl_generator_c/tm_msgs/msg/svr_response.h

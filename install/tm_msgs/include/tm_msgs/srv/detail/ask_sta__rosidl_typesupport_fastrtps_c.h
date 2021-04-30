@@ -1,1 +1,0 @@
-/home/gy/Omron_TM_ROS2/build/tm_msgs/rosidl_typesupport_fastrtps_c/tm_msgs/srv/detail/ask_sta__rosidl_typesupport_fastrtps_c.h

@@ -1,3 +1,0 @@
-/home/gy/Omron_TM_ROS2/install/tmrlib/lib/libtmrdriver.a
-/home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/cmake/export_tmrdriverExport.cmake
-/home/gy/Omron_TM_ROS2/install/tmrlib/share/tmrlib/cmake/export_tmrdriverExport-noconfig.cmake

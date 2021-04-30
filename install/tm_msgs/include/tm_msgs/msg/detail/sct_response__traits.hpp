@@ -1,1 +1,0 @@
-/home/gy/Omron_TM_ROS2/build/tm_msgs/rosidl_generator_cpp/tm_msgs/msg/detail/sct_response__traits.hpp

@@ -1,1 +1,0 @@
-/home/gy/Omron_TM_ROS2/build/tmr_msgs/rosidl_typesupport_introspection_cpp/tmr_msgs/msg/detail/sct_response__rosidl_typesupport_introspection_cpp.hpp

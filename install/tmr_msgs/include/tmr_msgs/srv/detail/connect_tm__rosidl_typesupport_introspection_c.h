@@ -1,1 +1,0 @@
-/home/gy/Omron_TM_ROS2/build/tmr_msgs/rosidl_typesupport_introspection_c/tmr_msgs/srv/detail/connect_tm__rosidl_typesupport_introspection_c.h

@@ -1,1 +1,0 @@
-/home/gy/Omron_TM_ROS2/build/tm_driver/ament_cmake_environment_hooks/local_setup.zsh

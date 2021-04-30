@@ -1,1 +1,0 @@
-/home/gy/Omron_TM_ROS2/build/tmr_msgs/rosidl_generator_c/tmr_msgs/srv/detail/ask_item__type_support.h

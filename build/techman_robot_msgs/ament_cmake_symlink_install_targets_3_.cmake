@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/gy/Omron_TM_ROS2/build/techman_robot_msgs/rosidl_generator_py/techman_robot_msgs/techman_robot_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" "TARGETS" "techman_robot_msgs__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "lib/python3.8/site-packages/techman_robot_msgs")

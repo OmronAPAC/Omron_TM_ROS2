@@ -1,1 +1,0 @@
-/home/gy/Omron_TM_ROS2/build/techman_robot_msgs/rosidl_generator_c/techman_robot_msgs/srv/detail/techman_robot_command__type_support.h
