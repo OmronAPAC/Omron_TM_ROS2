@@ -66,12 +66,6 @@ class TransformClass():
 
 
     def quaternion_from_euler(self, obj):
-        """
-        IMPT: 
-            -INPUT IS IN mm AND deg, SO IT IS CONVERTED TO m AND rad HERE
-        Converts euler roll, pitch, yaw to quaternion
-        quat = [w, x, y, z]
-        """
         x = obj[0]
         y = obj[1]
         z = obj[2]
@@ -105,6 +99,16 @@ class TransformClass():
         rz = obj.transform.rotation.z
         return (self.euler_from_quaternion(x, y, z, rw, rx, ry, rz))
 
+
+    def euler_to_stamped(self, headerframe, childframe, obj):
+        tfs = TransformStamped()
+        tfs.header.frame_id = headerframe
+        tfs.header.stamp = rclpy.time.Time().to_msg()
+        tfs.child_frame_id = childframe
+        objquart = self.quaternion_from_euler(obj)
+        tfs.transform.translation = Vector3(x = objquart[0], y = objquart[1], z = objquart[2])
+        tfs.transform.rotation = Quaternion(w = objquart[3], x = objquart[4], y = objquart[5], z = objquart[6])
+        return tfs
 
     def convert_units(self, obj):
         x = obj[0] * 0.001
@@ -202,6 +206,10 @@ class TransformClass():
         place_euler = self.stamped_to_euler(place_tstamped)
         safeplace_euler = self.stamped_to_euler(safeplace_tstamped)
         return place_euler, safeplace_euler
+
+    def rpy_to_ypr(self, obj):
+        return [obj[0], obj[1], obj[2], obj[5], obj[4], obj[3]]
+
 
 
 """

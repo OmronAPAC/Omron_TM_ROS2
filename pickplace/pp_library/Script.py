@@ -15,16 +15,15 @@ class ScriptClass:
         self.subscription = self.listen_node.create_subscription(SctResponse, 'sct_response', self.listener_callback, 10)
         self.subscription  # prevent unused variable warning
 
+
     def listener_callback(self, msg):
-        #self.listen_node.get_logger().info('I heard: "%s"' % msg.script)
         if (msg.script == 'Listen1'):
             self.isNotDone = False
         if (msg.script == 'OK'):
             self.isNotConnected = False
 
-
+    # Wait for the vision job to complete and the TM program to re-enter the Listen Node
     def wait_for_complete(self):
-        #print("Waiting...")
         self.isNotDone = True
         while (self.isNotDone):
             rclpy.spin_once(self.listen_node)
@@ -37,6 +36,7 @@ class ScriptClass:
             resp = self.send_script.call_async(self.script_request)
             rclpy.spin_once(self.listen_node)
             time.sleep(1)
+
 
     def exit_script(self):
         self.script_request.script = "ScriptExit()"
@@ -53,7 +53,11 @@ class ScriptClass:
         resp = self.send_script.call_async(self.script_request)
   
 
-
+    def stop_and_clear(self):
+        self.script_request.script = "StopAndClearBuffer()"
+        while not self.send_script.wait_for_service(timeout_sec=1.0):
+            self.listen_node.get_logger().info('send_script service not available, waiting again...')
+        resp = self.send_script.call_async(self.script_request)
 
 
 

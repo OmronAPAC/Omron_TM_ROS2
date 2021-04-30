@@ -16,7 +16,7 @@ class MovePublisher(Node):
 
         #self.home = [0.3, 0.1, 0.3, -3.14159, 0.0, 1.59]
         self.publisher_ = self.create_publisher(Float32MultiArray, 'vive_coordinates', 10)
-        timer_period = 0.1  # seconds
+        timer_period = 0.2  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
 
     def timer_callback(self):
@@ -35,9 +35,6 @@ def main(args=None):
 
     rclpy.spin(move_publisher)
 
-    # Destroy the node explicitly
-    # (optional - otherwise it will be done automatically
-    # when the garbage collector destroys the node object)
     move_publisher.destroy_node()
     rclpy.shutdown()
 

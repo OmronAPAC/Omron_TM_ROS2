@@ -14,58 +14,10 @@ class MoveClass:
         self.move_request.acc_time = 0.01
         self.move_request.blend_percentage = 100
         self.move_request.fine_goal = False
-        """
-        self.set_event = self.move_node.create_client(SetEvent, "set_event")
-        while not self.set_event.wait_for_service(timeout_sec=5.0):
-            self.move_node.get_logger().info('set_event service not available, waiting again...')
-        self.event_request = SetEvent.Request()
-        self.event_request.func = 1 # TAG mode
-        self.event_request.arg0 = 3 # queuetag number
-        self.event_request.arg1 = 1 # 1 = wait, 0 = no wait
-        
-        self.ask_sta = self.move_node.create_client(AskSta, "ask_sta")
-        while not self.ask_sta.wait_for_service(timeout_sec=5.0):
-            self.move_node.get_logger().info('ask_sta service not available, waiting again...')
-        self.sta_request = AskSta.Request()
-        self.sta_request.wait_time = 5.0
-        """
-
+  
     def set_position(self, position):
         self.move_request.positions = position
         resp = self.set_pos.call_async(self.move_request)
-        #time.sleep(0.1) # IMPORTANT or the order of requests sent will be wrong
-        #self.set_event.call_async(self.event_request)
-        #time.sleep(0.1)
-        #resp = self.ask_sta.call_async(self.sta_request)
         rclpy.spin_until_future_complete(self.move_node, resp)
-        #print(resp.result())
 
 
-
-"""
-[TM_INFO] $TMSCT,90,PTPT,PTP("CPP",520.00000,-190.00000,100.00000,-179.99985,0.00000,91.10029,95,100,10,false),*34
-
-[TM_INFO] $TMSCT,2,,2,*5d
-
-[TM_INFO] TM_ROS: (TM_SCT): res: (PTPT): OK
-[TM_INFO] TM_ROS: (TM_SCT): res: (0): OK
-[TM_INFO] $TMSCT,90,PTPT,PTP("CPP",520.00000,-190.00000,200.00000,-179.99985,0.00000,91.10029,95,100,10,false),*37
-
-[TM_INFO] $TMSCT,2,,2,*5d
-
-[TM_INFO] TM_ROS: (TM_SCT): res: (PTPT): OK
-[TM_INFO] TM_ROS: (TM_SCT): res: (0): OK
-[TM_INFO] $TMSCT,90,PTPT,PTP("CPP",520.00000,-190.00000,100.00000,-179.99985,0.00000,91.10029,95,100,10,false),*34
-
-[TM_INFO] $TMSCT,2,,2,*5d
-
-[TM_INFO] TM_ROS: (TM_SCT): res: (PTPT): OK
-[TM_INFO] TM_ROS: (TM_SCT): res: (0): OK
-[TM_INFO] $TMSCT,90,PTPT,PTP("CPP",520.00000,-190.00000,200.00000,-179.99985,0.00000,91.10029,95,100,10,false),*37
-
-[TM_INFO] $TMSCT,2,,2,*5d
-
-[TM_INFO] TM_ROS: (TM_SCT): res: (PTPT): OK
-[TM_INFO] TM_ROS: (TM_SCT): res: (0): OK
-
-"""
