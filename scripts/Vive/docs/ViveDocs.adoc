@@ -151,3 +151,7 @@ The publisher, `movepublisher.py`, runs on the Lenovo laptop. It continuously cy
 The listener, `movesubscriber.py`, runs on the Intel NUC8i5BEH. It subscribes to the topic `/vive_coordinates` and sends the coordinates to the TM arm using the set_positions method found in the `Move` class.
 
 The TM driver should be running together with this script and connected to the TM arm.
+
+== Video Demonstration
+
+video::vive_demo.mp4[]
