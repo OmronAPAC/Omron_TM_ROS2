@@ -1,0 +1,113 @@
+[0.062s] Invoking command in '/home/gy/Omron_TM_ROS2/build/demo': AMENT_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tm_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/gy/Omron_TM_ROS2/install/tm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/gy/Omron_TM_ROS2/install/tm_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/gy/Omron_TM_ROS2/demo -DCMAKE_INSTALL_PREFIX=/home/gy/Omron_TM_ROS2/install/demo
+[0.089s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.129s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.361s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.371s] -- Found rclcpp: 2.3.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.409s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.413s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.532s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.594s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.595s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.778s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.926s] -- Found tm_msgs: 1.0.0 (/home/gy/Omron_TM_ROS2/install/tm_msgs/share/tm_msgs/cmake)
+[0.994s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.113s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.113s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.113s] -- Configured cppcheck include dirs: /home/gy/Omron_TM_ROS2/demo/include
+[1.113s] -- Configured cppcheck exclude dirs and/or files: 
+[1.113s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.113s] -- Configured cpplint exclude dirs and/or files: 
+[1.119s] -- Added test 'lint_cmake' to check CMake code style
+[1.122s] -- Added test 'uncrustify' to check C / C++ code style
+[1.122s] -- Configured uncrustify additional arguments: 
+[1.122s] -- Added test 'xmllint' to check XML markup files
+[1.128s] -- Configuring done
+[1.216s] -- Generating done
+[1.222s] -- Build files have been written to: /home/gy/Omron_TM_ROS2/build/demo
+[1.229s] Invoked command in '/home/gy/Omron_TM_ROS2/build/demo' returned '0': AMENT_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tm_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/gy/Omron_TM_ROS2/install/tm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/gy/Omron_TM_ROS2/install/tm_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/gy/Omron_TM_ROS2/demo -DCMAKE_INSTALL_PREFIX=/home/gy/Omron_TM_ROS2/install/demo
+[1.230s] Invoking command in '/home/gy/Omron_TM_ROS2/build/demo': AMENT_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tm_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/gy/Omron_TM_ROS2/install/tm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/gy/Omron_TM_ROS2/install/tm_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/demo -- -j4 -l4
+[1.289s] [35m[1mScanning dependencies of target demo_get_svr_response[0m
+[1.325s] [  3%] [32mBuilding CXX object CMakeFiles/demo_get_svr_response.dir/get_status_demo_src/demo_get_svr_response.cpp.o[0m
+[7.021s] [  7%] [32m[1mLinking CXX executable demo_get_svr_response[0m
+[7.350s] [  7%] Built target demo_get_svr_response
+[7.383s] [35m[1mScanning dependencies of target demo_get_sta_response[0m
+[7.456s] [ 11%] [32mBuilding CXX object CMakeFiles/demo_get_sta_response.dir/get_status_demo_src/demo_get_sta_response.cpp.o[0m
+[13.382s] [ 15%] [32m[1mLinking CXX executable demo_get_sta_response[0m
+[13.761s] [ 15%] Built target demo_get_sta_response
+[13.784s] [35m[1mScanning dependencies of target demo_set_io[0m
+[13.863s] [ 19%] [32mBuilding CXX object CMakeFiles/demo_set_io.dir/src/demo_set_io.cpp.o[0m
+[16.830s] [ 23%] [32m[1mLinking CXX executable demo_set_io[0m
+[17.081s] [ 23%] Built target demo_set_io
+[17.133s] [35m[1mScanning dependencies of target demo_send_script[0m
+[17.206s] [ 26%] [32mBuilding CXX object CMakeFiles/demo_send_script.dir/src/demo_send_script.cpp.o[0m
+[20.552s] [ 30%] [32m[1mLinking CXX executable demo_send_script[0m
+[20.796s] [ 30%] Built target demo_send_script
+[20.817s] [35m[1mScanning dependencies of target demo_ask_sta[0m
+[20.889s] [ 34%] [32mBuilding CXX object CMakeFiles/demo_ask_sta.dir/src/demo_ask_sta.cpp.o[0m
+[23.897s] [ 38%] [32m[1mLinking CXX executable demo_ask_sta[0m
+[24.118s] [ 38%] Built target demo_ask_sta
+[24.166s] [35m[1mScanning dependencies of target demo_get_sct_response[0m
+[24.225s] [ 42%] [32mBuilding CXX object CMakeFiles/demo_get_sct_response.dir/get_status_demo_src/demo_get_sct_response.cpp.o[0m
+[29.650s] [ 46%] [32m[1mLinking CXX executable demo_get_sct_response[0m
+[29.943s] [ 46%] Built target demo_get_sct_response
+[29.960s] [35m[1mScanning dependencies of target demo_set_event[0m
+[29.991s] [ 50%] [32mBuilding CXX object CMakeFiles/demo_set_event.dir/src/demo_set_event.cpp.o[0m
+[32.502s] [ 53%] [32m[1mLinking CXX executable demo_set_event[0m
+[32.691s] [ 53%] Built target demo_set_event
+[32.729s] [35m[1mScanning dependencies of target demo_connect_tm[0m
+[32.762s] [ 57%] [32mBuilding CXX object CMakeFiles/demo_connect_tm.dir/src/demo_connect_tm.cpp.o[0m
+[35.257s] [ 61%] [32m[1mLinking CXX executable demo_connect_tm[0m
+[35.435s] [ 61%] Built target demo_connect_tm
+[35.449s] [35m[1mScanning dependencies of target demo_get_feedback[0m
+[35.496s] [ 65%] [32mBuilding CXX object CMakeFiles/demo_get_feedback.dir/get_status_demo_src/demo_get_feedback.cpp.o[0m
+[40.607s] [ 69%] [32m[1mLinking CXX executable demo_get_feedback[0m
+[40.897s] [ 69%] Built target demo_get_feedback
+[40.911s] [35m[1mScanning dependencies of target demo_leave_listen_node[0m
+[40.943s] [ 73%] [32mBuilding CXX object CMakeFiles/demo_leave_listen_node.dir/src/demo_leave_listen_node.cpp.o[0m
+[43.355s] [ 76%] [32m[1mLinking CXX executable demo_leave_listen_node[0m
+[43.520s] [ 76%] Built target demo_leave_listen_node
+[43.536s] [35m[1mScanning dependencies of target demo_write_item[0m
+[43.567s] [ 80%] [32mBuilding CXX object CMakeFiles/demo_write_item.dir/src/demo_write_item.cpp.o[0m
+[45.969s] [ 84%] [32m[1mLinking CXX executable demo_write_item[0m
+[46.137s] [ 84%] Built target demo_write_item
+[46.149s] [35m[1mScanning dependencies of target demo_set_positions[0m
+[46.180s] [ 88%] [32mBuilding CXX object CMakeFiles/demo_set_positions.dir/src/demo_set_positions.cpp.o[0m
+[48.799s] [ 92%] [32m[1mLinking CXX executable demo_set_positions[0m
+[48.965s] [ 92%] Built target demo_set_positions
+[48.977s] [35m[1mScanning dependencies of target demo_ask_item[0m
+[49.008s] [ 96%] [32mBuilding CXX object CMakeFiles/demo_ask_item.dir/src/demo_ask_item.cpp.o[0m
+[51.393s] [100%] [32m[1mLinking CXX executable demo_ask_item[0m
+[51.556s] [100%] Built target demo_ask_item
+[51.568s] Invoked command in '/home/gy/Omron_TM_ROS2/build/demo' returned '0': AMENT_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tm_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/gy/Omron_TM_ROS2/install/tm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/gy/Omron_TM_ROS2/install/tm_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/demo -- -j4 -l4
+[51.624s] Invoking command in '/home/gy/Omron_TM_ROS2/build/demo': AMENT_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tm_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/gy/Omron_TM_ROS2/install/tm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/gy/Omron_TM_ROS2/install/tm_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/demo
+[51.635s] -- Install configuration: ""
+[51.635s] -- Execute custom install script
+[51.635s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/lib/demo/demo_send_script
+[51.636s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/lib/demo/demo_ask_sta
+[51.636s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/lib/demo/demo_connect_tm
+[51.636s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/lib/demo/demo_set_event
+[51.636s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/lib/demo/demo_set_io
+[51.636s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/lib/demo/demo_set_positions
+[51.636s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/lib/demo/demo_write_item
+[51.636s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/lib/demo/demo_ask_item
+[51.636s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/lib/demo/demo_get_feedback
+[51.637s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/lib/demo/demo_get_sct_response
+[51.638s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/lib/demo/demo_get_sta_response
+[51.638s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/lib/demo/demo_get_svr_response
+[51.639s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/lib/demo/demo_leave_listen_node
+[51.639s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/share/ament_index/resource_index/package_run_dependencies/demo
+[51.639s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/share/ament_index/resource_index/parent_prefix_path/demo
+[51.639s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/share/demo/environment/ament_prefix_path.sh
+[51.640s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/share/demo/environment/ament_prefix_path.dsv
+[51.640s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/share/demo/environment/path.sh
+[51.640s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/share/demo/environment/path.dsv
+[51.640s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/share/demo/local_setup.bash
+[51.641s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/share/demo/local_setup.sh
+[51.641s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/share/demo/local_setup.zsh
+[51.641s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/share/demo/local_setup.dsv
+[51.641s] -- Symlinking: /home/gy/Omron_TM_ROS2/install/demo/share/demo/package.dsv
+[51.653s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/share/ament_index/resource_index/packages/demo
+[51.653s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/share/demo/cmake/demoConfig.cmake
+[51.653s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/share/demo/cmake/demoConfig-version.cmake
+[51.654s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/demo/share/demo/package.xml
+[51.657s] Invoked command in '/home/gy/Omron_TM_ROS2/build/demo' returned '0': AMENT_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gy/Omron_TM_ROS2/install/tm_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/gy/Omron_TM_ROS2/install/tm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/gy/Omron_TM_ROS2/install/tm_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/demo

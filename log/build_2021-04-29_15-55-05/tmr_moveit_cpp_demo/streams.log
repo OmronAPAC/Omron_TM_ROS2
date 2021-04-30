@@ -1,0 +1,37 @@
+[0.019s] Invoking command in '/home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/gy/Omron_TM_ROS2/tmr_moveit_cpp_demo -DCMAKE_INSTALL_PREFIX=/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo
+[0.044s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.104s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.366s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.403s] -- Found rosidl_default_runtime: 1.0.1 (/opt/ros/foxy/share/rosidl_default_runtime/cmake)
+[0.421s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.427s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.577s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.931s] -- Configuring done
+[0.931s] -- Generating done
+[0.939s] -- Build files have been written to: /home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo
+[0.952s] Invoked command in '/home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/gy/Omron_TM_ROS2/tmr_moveit_cpp_demo -DCMAKE_INSTALL_PREFIX=/home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo
+[0.953s] Invoking command in '/home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo -- -j4 -l4
+[1.032s] Invoked command in '/home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo -- -j4 -l4
+[1.162s] Invoking command in '/home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo
+[1.184s] -- Install configuration: ""
+[1.185s] -- Execute custom install script
+[1.185s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/launch/run_moveit_cpp.launch.py
+[1.185s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/launch/run_moveit_cpp.rviz
+[1.185s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/config/controllers.yaml
+[1.185s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/config/moveit_cpp.yaml
+[1.185s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/ament_index/resource_index/package_run_dependencies/tmr_moveit_cpp_demo
+[1.191s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/ament_index/resource_index/parent_prefix_path/tmr_moveit_cpp_demo
+[1.191s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/environment/ament_prefix_path.sh
+[1.191s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/environment/ament_prefix_path.dsv
+[1.191s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/environment/path.sh
+[1.191s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/environment/path.dsv
+[1.191s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/local_setup.bash
+[1.191s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/local_setup.sh
+[1.191s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/local_setup.zsh
+[1.191s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/local_setup.dsv
+[1.191s] -- Symlinking: /home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/package.dsv
+[1.216s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/ament_index/resource_index/packages/tmr_moveit_cpp_demo
+[1.216s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/cmake/tmr_moveit_cpp_demoConfig.cmake
+[1.217s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/cmake/tmr_moveit_cpp_demoConfig-version.cmake
+[1.217s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_moveit_cpp_demo/share/tmr_moveit_cpp_demo/package.xml
+[1.221s] Invoked command in '/home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo

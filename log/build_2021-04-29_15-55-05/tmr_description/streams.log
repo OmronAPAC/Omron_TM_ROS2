@@ -1,0 +1,71 @@
+[0.089s] Invoking command in '/home/gy/Omron_TM_ROS2/build/tmr_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/gy/Omron_TM_ROS2/tmr_description -DCMAKE_INSTALL_PREFIX=/home/gy/Omron_TM_ROS2/install/tmr_description
+[0.589s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.782s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.106s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.371s] -- Configuring done
+[1.459s] -- Generating done
+[1.469s] -- Build files have been written to: /home/gy/Omron_TM_ROS2/build/tmr_description
+[1.533s] Invoked command in '/home/gy/Omron_TM_ROS2/build/tmr_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/gy/Omron_TM_ROS2/tmr_description -DCMAKE_INSTALL_PREFIX=/home/gy/Omron_TM_ROS2/install/tmr_description
+[1.540s] Invoking command in '/home/gy/Omron_TM_ROS2/build/tmr_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tmr_description -- -j4 -l4
+[1.790s] Invoked command in '/home/gy/Omron_TM_ROS2/build/tmr_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/gy/Omron_TM_ROS2/build/tmr_description -- -j4 -l4
+[1.924s] Invoking command in '/home/gy/Omron_TM_ROS2/build/tmr_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tmr_description
+[1.940s] -- Install configuration: ""
+[1.941s] -- Execute custom install script
+[1.941s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/ament_index/resource_index/package_run_dependencies/tmr_description
+[1.942s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/ament_index/resource_index/parent_prefix_path/tmr_description
+[1.942s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/environment/ament_prefix_path.sh
+[1.942s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/environment/ament_prefix_path.dsv
+[1.943s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/environment/path.sh
+[1.943s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/environment/path.dsv
+[1.943s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/local_setup.bash
+[1.944s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/local_setup.sh
+[1.944s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/local_setup.zsh
+[1.945s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/local_setup.dsv
+[1.945s] -- Symlinking: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/package.dsv
+[1.962s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/ament_index/resource_index/packages/tmr_description
+[1.963s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/cmake/tmr_descriptionConfig.cmake
+[1.963s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/cmake/tmr_descriptionConfig-version.cmake
+[1.963s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/package.xml
+[1.964s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/collision/tm5-900_arm1_c.stl
+[1.964s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/collision/tm5-900_arm2_c.stl
+[1.964s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/collision/tm5_base_c.stl
+[1.964s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/collision/tmr_100w_01_c.stl
+[1.964s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/collision/tmr_100w_02_c.stl
+[1.965s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/collision/tmr_400w_01_c.stl
+[1.965s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/collision/tmr_ee_c.stl
+[1.965s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5-900_arm1.mtl
+[1.965s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5-900_arm1.obj
+[1.966s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5-900_arm1.stl
+[1.966s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5-900_arm2.mtl
+[1.966s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5-900_arm2.obj
+[1.966s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5-900_arm2.stl
+[1.966s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5_base.mtl
+[1.967s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5_base.obj
+[1.967s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5_base.stl
+[1.967s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5_base_old.mtl
+[1.968s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5_base_old.obj
+[1.968s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_100w_01.mtl
+[1.968s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_100w_01.obj
+[1.968s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_100w_01.stl
+[1.968s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_100w_02.mtl
+[1.969s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_100w_02.obj
+[1.969s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_100w_02.stl
+[1.969s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_400w_01.mtl
+[1.969s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_400w_01.obj
+[1.970s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_400w_01.stl
+[1.970s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_ee.mtl
+[1.970s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_ee.obj
+[1.970s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_ee.stl
+[1.970s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/urdf/tm5-900.urdf
+[1.972s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/xacro/gripper/robotiq_2f.urdf.xacro
+[1.972s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/xacro/gripper/robotiq_85_gripper.transmission.xacro
+[1.972s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/xacro/gripper/robotiq_85_gripper.urdf.xacro
+[1.972s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/xacro/gripper/robotiq_85_gripper.xacro
+[1.972s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/xacro/gripper/robotiq_85_gripper_sim_base.urdf.xacro
+[1.972s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/xacro/macro.gazebo.xacro
+[1.973s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/xacro/macro.inertial.xacro
+[1.973s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/xacro/macro.materials.xacro
+[1.973s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/xacro/macro.tm5-900.urdf.xacro
+[1.973s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/xacro/macro.transmission.xacro
+[1.973s] -- Up-to-date symlink: /home/gy/Omron_TM_ROS2/install/tmr_description/share/tmr_description/xacro/tm5-900.urdf.xacro
+[1.978s] Invoked command in '/home/gy/Omron_TM_ROS2/build/tmr_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/gy/Omron_TM_ROS2/build/tmr_description

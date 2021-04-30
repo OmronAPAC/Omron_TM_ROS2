@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: tm-get-status
+Version: 0.0.1
+Summary: Python nodes which were previously in the ros2/examples repository but are now just used for demo purposes.
+Home-page: UNKNOWN
+Author: leowu
+Author-email: leowu102000@gmail.com
+Maintainer: Jufeng Wu
+Maintainer-email: leowu102000@gmail.com
+License: Apache License, Version 2.0
+Description: UNKNOWN
+Keywords: ROS
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development

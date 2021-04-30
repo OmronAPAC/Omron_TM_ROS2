@@ -4,6 +4,3 @@ source;share/rviz_tm/hook/pythonpath.sh
 source;share/rviz_tm/hook/ament_prefix_path.ps1
 source;share/rviz_tm/hook/ament_prefix_path.dsv
 source;share/rviz_tm/hook/ament_prefix_path.sh
-source;../../build/rviz_tm/share/rviz_tm/hook/pythonpath_develop.ps1
-source;../../build/rviz_tm/share/rviz_tm/hook/pythonpath_develop.dsv
-source;../../build/rviz_tm/share/rviz_tm/hook/pythonpath_develop.sh

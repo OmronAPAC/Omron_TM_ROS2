@@ -104,7 +104,7 @@ def generate_launch_description():
         #name='tm_driver',
         output='screen',
         arguments=[str(args)[12:-2]],
-        prefix=["bash -c 'sleep 6.0; $0 $@' "]
+        #prefix=["bash -c 'sleep 6.0; $0 $@' "]
     )
         
 
@@ -124,3 +124,4 @@ def generate_launch_description():
 
     return LaunchDescription([ tm_driver_node, pickplace_node, robot_state_publisher, 
         static_world, rviz_node, destination_publisher_node ])
+
