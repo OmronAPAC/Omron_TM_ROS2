@@ -1,0 +1,6 @@
+Invoking command in '/home/omron/Omron_TM_ROS2/build/tmr_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/omron/Omron_TM_ROS2/tmr_description -DCMAKE_INSTALL_PREFIX=/home/omron/Omron_TM_ROS2/install/tmr_description
+Invoked command in '/home/omron/Omron_TM_ROS2/build/tmr_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/omron/Omron_TM_ROS2/tmr_description -DCMAKE_INSTALL_PREFIX=/home/omron/Omron_TM_ROS2/install/tmr_description
+Invoking command in '/home/omron/Omron_TM_ROS2/build/tmr_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/omron/Omron_TM_ROS2/build/tmr_description -- -j8 -l8
+Invoked command in '/home/omron/Omron_TM_ROS2/build/tmr_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/omron/Omron_TM_ROS2/build/tmr_description -- -j8 -l8
+Invoking command in '/home/omron/Omron_TM_ROS2/build/tmr_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/omron/Omron_TM_ROS2/build/tmr_description
+Invoked command in '/home/omron/Omron_TM_ROS2/build/tmr_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/omron/Omron_TM_ROS2/build/tmr_description

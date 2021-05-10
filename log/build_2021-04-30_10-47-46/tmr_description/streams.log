@@ -1,0 +1,91 @@
+[0.066s] Invoking command in '/home/omron/Omron_TM_ROS2/build/tmr_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/omron/Omron_TM_ROS2/tmr_description -DCMAKE_INSTALL_PREFIX=/home/omron/Omron_TM_ROS2/install/tmr_description
+[0.947s] -- The C compiler identification is GNU 9.3.0
+[0.947s] -- The CXX compiler identification is GNU 9.3.0
+[0.947s] -- Check for working C compiler: /usr/bin/cc
+[0.953s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.961s] -- Detecting C compiler ABI info
+[0.961s] -- Detecting C compiler ABI info - done
+[0.962s] -- Detecting C compile features
+[0.962s] -- Detecting C compile features - done
+[0.962s] -- Check for working CXX compiler: /usr/bin/c++
+[0.962s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.962s] -- Detecting CXX compiler ABI info
+[0.962s] -- Detecting CXX compiler ABI info - done
+[0.970s] -- Detecting CXX compile features
+[0.970s] -- Detecting CXX compile features - done
+[0.970s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.995s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") 
+[0.995s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.392s] -- Configuring done
+[1.395s] -- Generating done
+[1.396s] -- Build files have been written to: /home/omron/Omron_TM_ROS2/build/tmr_description
+[1.415s] Invoked command in '/home/omron/Omron_TM_ROS2/build/tmr_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/omron/Omron_TM_ROS2/tmr_description -DCMAKE_INSTALL_PREFIX=/home/omron/Omron_TM_ROS2/install/tmr_description
+[1.417s] Invoking command in '/home/omron/Omron_TM_ROS2/build/tmr_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/omron/Omron_TM_ROS2/build/tmr_description -- -j8 -l8
+[1.539s] Invoked command in '/home/omron/Omron_TM_ROS2/build/tmr_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/omron/Omron_TM_ROS2/build/tmr_description -- -j8 -l8
+[1.938s] Invoking command in '/home/omron/Omron_TM_ROS2/build/tmr_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/omron/Omron_TM_ROS2/build/tmr_description
+[2.752s] -- Install configuration: ""
+[2.754s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/ament_index/resource_index/package_run_dependencies/tmr_description
+[2.755s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/ament_index/resource_index/parent_prefix_path/tmr_description
+[2.755s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/environment/ament_prefix_path.sh
+[2.756s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/environment/ament_prefix_path.dsv
+[2.757s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/environment/path.sh
+[2.757s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/environment/path.dsv
+[2.757s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/local_setup.bash
+[2.757s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/local_setup.sh
+[2.757s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/local_setup.zsh
+[2.758s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/local_setup.dsv
+[2.759s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/package.dsv
+[2.760s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/ament_index/resource_index/packages/tmr_description
+[2.761s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/cmake/tmr_descriptionConfig.cmake
+[2.761s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/cmake/tmr_descriptionConfig-version.cmake
+[2.761s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/package.xml
+[2.761s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes
+[2.762s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900
+[2.762s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/collision
+[2.762s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/collision/tm5_base_c.stl
+[2.762s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/collision/tmr_100w_02_c.stl
+[2.762s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/collision/tmr_100w_01_c.stl
+[2.762s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/collision/tmr_ee_c.stl
+[2.762s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/collision/tm5-900_arm1_c.stl
+[2.762s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/collision/tm5-900_arm2_c.stl
+[2.762s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/collision/tmr_400w_01_c.stl
+[2.763s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual
+[2.763s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_100w_02.stl
+[2.763s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5_base_old.obj
+[2.763s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5-900_arm1.stl
+[2.763s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5-900_arm2.obj
+[2.763s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5_base.stl
+[2.763s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_100w_01.mtl
+[2.763s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_ee.obj
+[2.763s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5-900_arm2.mtl
+[2.763s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5_base.mtl
+[2.764s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5_base.obj
+[2.764s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_400w_01.stl
+[2.764s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5_base_old.mtl
+[2.764s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_400w_01.obj
+[2.764s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_100w_02.obj
+[2.764s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5-900_arm1.mtl
+[2.764s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5-900_arm1.obj
+[2.764s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tm5-900_arm2.stl
+[2.764s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_100w_01.obj
+[2.764s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_100w_02.mtl
+[2.765s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_400w_01.mtl
+[2.765s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_ee.mtl
+[2.765s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_100w_01.stl
+[2.765s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/meshes/tm5-900/visual/tmr_ee.stl
+[2.765s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/urdf
+[2.765s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/urdf/tm5-900.urdf
+[2.765s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/xacro
+[2.766s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/xacro/tm5-900.urdf.xacro
+[2.766s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/xacro/macro.tm5-900.urdf.xacro
+[2.766s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/xacro/macro.materials.xacro
+[2.766s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/xacro/macro.inertial.xacro
+[2.766s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/xacro/gripper
+[2.766s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/xacro/gripper/robotiq_2f.urdf.xacro
+[2.767s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/xacro/gripper/robotiq_85_gripper.transmission.xacro
+[2.767s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/xacro/gripper/robotiq_85_gripper_sim_base.urdf.xacro
+[2.768s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/xacro/gripper/robotiq_85_gripper.urdf.xacro
+[2.768s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/xacro/gripper/robotiq_85_gripper.xacro
+[2.768s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/xacro/macro.gazebo.xacro
+[2.768s] -- Installing: /home/omron/Omron_TM_ROS2/install/tmr_description/share/tmr_description/xacro/macro.transmission.xacro
+[2.775s] Invoked command in '/home/omron/Omron_TM_ROS2/build/tmr_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/omron/Omron_TM_ROS2/build/tmr_description

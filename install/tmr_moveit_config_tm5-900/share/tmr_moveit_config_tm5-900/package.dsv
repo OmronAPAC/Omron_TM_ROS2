@@ -1,0 +1,8 @@
+source;share/tmr_moveit_config_tm5-900/hook/cmake_prefix_path.ps1
+source;share/tmr_moveit_config_tm5-900/hook/cmake_prefix_path.dsv
+source;share/tmr_moveit_config_tm5-900/hook/cmake_prefix_path.sh
+source;share/tmr_moveit_config_tm5-900/local_setup.bash
+source;share/tmr_moveit_config_tm5-900/local_setup.dsv
+source;share/tmr_moveit_config_tm5-900/local_setup.ps1
+source;share/tmr_moveit_config_tm5-900/local_setup.sh
+source;share/tmr_moveit_config_tm5-900/local_setup.zsh

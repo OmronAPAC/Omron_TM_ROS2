@@ -1,0 +1,12 @@
+/home/omron/Omron_TM_ROS2/build/tmr_msgs/rosidl_adapter/tmr_msgs:msg/FeedbackState.idl
+/home/omron/Omron_TM_ROS2/build/tmr_msgs/rosidl_adapter/tmr_msgs:msg/SvrResponse.idl
+/home/omron/Omron_TM_ROS2/build/tmr_msgs/rosidl_adapter/tmr_msgs:msg/SctResponse.idl
+/home/omron/Omron_TM_ROS2/build/tmr_msgs/rosidl_adapter/tmr_msgs:msg/StaResponse.idl
+/home/omron/Omron_TM_ROS2/build/tmr_msgs/rosidl_adapter/tmr_msgs:srv/ConnectTM.idl
+/home/omron/Omron_TM_ROS2/build/tmr_msgs/rosidl_adapter/tmr_msgs:srv/WriteItem.idl
+/home/omron/Omron_TM_ROS2/build/tmr_msgs/rosidl_adapter/tmr_msgs:srv/AskItem.idl
+/home/omron/Omron_TM_ROS2/build/tmr_msgs/rosidl_adapter/tmr_msgs:srv/SendScript.idl
+/home/omron/Omron_TM_ROS2/build/tmr_msgs/rosidl_adapter/tmr_msgs:srv/SetEvent.idl
+/home/omron/Omron_TM_ROS2/build/tmr_msgs/rosidl_adapter/tmr_msgs:srv/SetIO.idl
+/home/omron/Omron_TM_ROS2/build/tmr_msgs/rosidl_adapter/tmr_msgs:srv/SetPositions.idl
+/home/omron/Omron_TM_ROS2/build/tmr_msgs/rosidl_adapter/tmr_msgs:srv/AskSta.idl

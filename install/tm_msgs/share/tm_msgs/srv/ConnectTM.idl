@@ -1,0 +1,36 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tm_msgs/srv/ConnectTM.srv
+// generated code does not contain a copyright notice
+
+
+module tm_msgs {
+  module srv {
+    module ConnectTM_Request_Constants {
+      const int8 TMSVR = 0;
+      const int8 TMSCT = 1;
+    };
+    @verbatim (language="comment", text=
+      "float64 DEFAULT_TIMEOUT = 1.0" "\n"
+      "float64 DEFAULT_TIMEVAL = 3.0" "\n"
+      "server :   TMSVR, TMSCT" "\n"
+      "connect/reconnect : In Connection phase." "\n"
+      "connect    == true. Keeping connect function" "\n"
+      "reconnect  == true. If connect funcition fail, It will reconnect.")
+    struct ConnectTM_Request {
+      int8 server;
+
+      boolean connect;
+
+      boolean reconnect;
+
+      double timeout;
+
+      double timeval;
+    };
+    @verbatim (language="comment", text=
+      "ok :   connect status")
+    struct ConnectTM_Response {
+      boolean ok;
+    };
+  };
+};

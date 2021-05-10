@@ -5,52 +5,28 @@ import json
 import math
 from math import radians
 
-from libraries import Waiter
-from libraries import Move
-from libraries import IO
-from libraries import Modbus
-from libraries import Transform
-from libraries import Script
+def distance_finder(one,two) :
+    [x1,y1,z1] = one[0:3]  # first coordinates
+    [x2,y2,z2] = two[0:3]  # second coordinates
 
+    return (((x2-x1)**2)+((y2-y1)**2)+((z2-z1)**2))**(1/2)
 
-def ready_up():
-    i = 3
-    while (i > 0):
-        print("Start in " + str(i) + " ...")
-        i -= 1
-        time.sleep(1)
+data = []
+with open('scripts/Vive/positions.txt') as json_file:
+    data = json.load(json_file)
+max = len(data)
+print("Number of points: " + str(max))
+print("Time between points: " + str(round(3/max, 3)))
 
-        
-def record_modbus(max_rate = False):
-    positions = []
-    t_end = time.time() + 1
-    while time.time() < t_end:
-        positions.append(modbus.get_pos())
-        if (not max_rate):
-            time.sleep(0.1)
+largest_dist = 0
+prev = []
+for i in data:
+    if not prev:
+        prev = i
+        continue
 
-    return positions
+    dist = distance_finder(i, prev)
+    if dist > largest_dist:
+        largest_dist = dist
 
-
-def convert_units(obj):
-        x = obj[0] * 0.001
-        y = obj[1] * 0.001
-        z = obj[2] * 0.001
-        roll = radians(obj[3])
-        pitch = radians(obj[4])
-        yaw = radians(obj[5])
-
-        return [x, y, z, roll, pitch, yaw]
-
-if __name__ == '__main__':
-    rclpy.init()
-    modbus = Modbus.ModbusClass()
-
-    modbus.open_io()
-    
-
-"""
-[0.25053579711914065, -0.3518865966796875, 0.26249246215820315, 2.5706063885029513, -0.1355883055119569, 0.4173074891193833], 
-[0.22473092651367188, -0.3560032348632813, 0.24809053039550782, 2.6197755327607575, -0.09701182623329228, 0.36903576356990686], 
-[0.20163766479492187, -0.35540664672851563, 0.23374803161621094, 2.671362294656137, -0.05590593896910844, 0.33388929429483133]
-"""
+print("Largest distance: " + str(largest_dist))

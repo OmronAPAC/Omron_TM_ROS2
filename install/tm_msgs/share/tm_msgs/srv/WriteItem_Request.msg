@@ -1,0 +1,7 @@
+# 'Write'
+# id        : name
+# item/value: More details please refer to the TM_Robot_Expression.pdf Chapter(1.76.6300) 9.3 svr_write
+
+string id
+string item
+string value

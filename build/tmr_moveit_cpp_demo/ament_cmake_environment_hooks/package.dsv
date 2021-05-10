@@ -1,0 +1,4 @@
+source;share/tmr_moveit_cpp_demo/local_setup.bash
+source;share/tmr_moveit_cpp_demo/local_setup.dsv
+source;share/tmr_moveit_cpp_demo/local_setup.sh
+source;share/tmr_moveit_cpp_demo/local_setup.zsh

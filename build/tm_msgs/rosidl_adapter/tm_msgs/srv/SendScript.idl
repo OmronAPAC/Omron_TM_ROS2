@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tm_msgs/srv/SendScript.srv
+// generated code does not contain a copyright notice
+
+
+module tm_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      " request fields" "\n"
+      " More details please refer to the TM_Robot_Expression.pdf(version 1.76_6300) Chapter 7.4 TMSCT")
+    struct SendScript_Request {
+      string id;
+
+      string script;
+    };
+    @verbatim (language="comment", text=
+      "ok =   Correctness of the script.")
+    struct SendScript_Response {
+      boolean ok;
+    };
+  };
+};

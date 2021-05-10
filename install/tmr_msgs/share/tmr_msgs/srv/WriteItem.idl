@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tmr_msgs/srv/WriteItem.srv
+// generated code does not contain a copyright notice
+
+
+module tmr_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      " 'Write'")
+    struct WriteItem_Request {
+      string id;
+
+      string item;
+
+      string value;
+    };
+    struct WriteItem_Response {
+      boolean ok;
+    };
+  };
+};

@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tm_msgs/msg/SctResponse.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module tm_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      " For SendScript / SetXXX service" "\n"
+      "More details please refer to the TM_Robot_Expression.pdf Chapter 8.4")
+    struct SctResponse {
+      std_msgs::msg::Header header;
+
+      string id;
+
+      string script;
+    };
+  };
+};

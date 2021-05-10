@@ -1,0 +1,4 @@
+# generated from rosidl_cmake/cmake/rosidl_cmake-extras.cmake.in
+
+set(tm_msgs_IDL_FILES "msg/FeedbackState.idl;msg/SvrResponse.idl;msg/SctResponse.idl;msg/StaResponse.idl;srv/ConnectTM.idl;srv/WriteItem.idl;srv/AskItem.idl;srv/SendScript.idl;srv/SetEvent.idl;srv/SetIO.idl;srv/SetPositions.idl;srv/AskSta.idl")
+set(tm_msgs_INTERFACE_FILES "msg/FeedbackState.msg;msg/SvrResponse.msg;msg/SctResponse.msg;msg/StaResponse.msg;srv/ConnectTM.srv;srv/ConnectTM_Request.msg;srv/ConnectTM_Response.msg;srv/WriteItem.srv;srv/WriteItem_Request.msg;srv/WriteItem_Response.msg;srv/AskItem.srv;srv/AskItem_Request.msg;srv/AskItem_Response.msg;srv/SendScript.srv;srv/SendScript_Request.msg;srv/SendScript_Response.msg;srv/SetEvent.srv;srv/SetEvent_Request.msg;srv/SetEvent_Response.msg;srv/SetIO.srv;srv/SetIO_Request.msg;srv/SetIO_Response.msg;srv/SetPositions.srv;srv/SetPositions_Request.msg;srv/SetPositions_Response.msg;srv/AskSta.srv;srv/AskSta_Request.msg;srv/AskSta_Response.msg")
