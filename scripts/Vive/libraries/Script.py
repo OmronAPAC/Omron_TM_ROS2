@@ -17,6 +17,7 @@ class ScriptClass:
 
 
     def listener_callback(self, msg):
+        print(msg)
         if (msg.script == 'Listen1'):
             self.isNotDone = False
         if (msg.script == 'OK'):
@@ -59,7 +60,14 @@ class ScriptClass:
             self.listen_node.get_logger().info('send_script service not available, waiting again...')
         resp = self.send_script.call_async(self.script_request)
 
-
+    
+    def socket_read(self):
+        self.script_request.script = "socket_read(\"ntd_localhost\")"
+        while not self.send_script.wait_for_service(timeout_sec=1.0):
+            self.listen_node.get_logger().info('send_script service not available, waiting again...')
+        resp = self.send_script.call_async(self.script_request)
+        print(resp.result())
+    
 
 
     
