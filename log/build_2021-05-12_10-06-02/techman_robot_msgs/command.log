@@ -1,0 +1,6 @@
+Invoking command in '/home/omron/Omron_TM_ROS2/build/techman_robot_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/omron/Omron_TM_ROS2/techman_robot_msgs -DCMAKE_INSTALL_PREFIX=/home/omron/Omron_TM_ROS2/install/techman_robot_msgs
+Invoked command in '/home/omron/Omron_TM_ROS2/build/techman_robot_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/omron/Omron_TM_ROS2/techman_robot_msgs -DCMAKE_INSTALL_PREFIX=/home/omron/Omron_TM_ROS2/install/techman_robot_msgs
+Invoking command in '/home/omron/Omron_TM_ROS2/build/techman_robot_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/omron/Omron_TM_ROS2/build/techman_robot_msgs -- -j8 -l8
+Invoked command in '/home/omron/Omron_TM_ROS2/build/techman_robot_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/omron/Omron_TM_ROS2/build/techman_robot_msgs -- -j8 -l8
+Invoking command in '/home/omron/Omron_TM_ROS2/build/techman_robot_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/omron/Omron_TM_ROS2/build/techman_robot_msgs
+Invoked command in '/home/omron/Omron_TM_ROS2/build/techman_robot_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/omron/Omron_TM_ROS2/build/techman_robot_msgs

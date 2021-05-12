@@ -55,14 +55,17 @@ class ScriptClass:
   
 
     def stop_and_clear(self):
-        self.script_request.script = "StopAndClearBuffer()"
-        while not self.send_script.wait_for_service(timeout_sec=1.0):
-            self.listen_node.get_logger().info('send_script service not available, waiting again...')
+        self.script_request.script = "StopAndClearBuffer(1)"
+        #while not self.send_script.wait_for_service(timeout_sec=1.0):
+         #   self.listen_node.get_logger().info('send_script service not available, waiting again...')
         resp = self.send_script.call_async(self.script_request)
 
     
     def socket_read(self):
-        self.script_request.script = "socket_read(\"ntd_localhost\")"
+        #self.script_request.script = "socket_read(\"ntd_localhost\")"
+        self.script_request.script = "socket_read(\"\")"
+        #self.script_request.script = "socket_read(\"127.0.0.1\", 5890)"
+
         while not self.send_script.wait_for_service(timeout_sec=1.0):
             self.listen_node.get_logger().info('send_script service not available, waiting again...')
         resp = self.send_script.call_async(self.script_request)

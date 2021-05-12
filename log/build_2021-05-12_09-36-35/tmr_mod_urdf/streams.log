@@ -1,0 +1,22 @@
+[0.363s] Invoking command in '/home/omron/Omron_TM_ROS2/tmr_mod_urdf': PYTHONPATH=/home/omron/Omron_TM_ROS2/install/tmr_mod_urdf/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/tmr_mod_urdf build --build-base /home/omron/Omron_TM_ROS2/build/tmr_mod_urdf/build install --prefix /home/omron/Omron_TM_ROS2/install/tmr_mod_urdf --record /home/omron/Omron_TM_ROS2/build/tmr_mod_urdf/install.log --single-version-externally-managed
+[0.659s] running egg_info
+[0.659s] writing ../build/tmr_mod_urdf/tmr_mod_urdf.egg-info/PKG-INFO
+[0.660s] writing dependency_links to ../build/tmr_mod_urdf/tmr_mod_urdf.egg-info/dependency_links.txt
+[0.660s] writing entry points to ../build/tmr_mod_urdf/tmr_mod_urdf.egg-info/entry_points.txt
+[0.660s] writing requirements to ../build/tmr_mod_urdf/tmr_mod_urdf.egg-info/requires.txt
+[0.660s] writing top-level names to ../build/tmr_mod_urdf/tmr_mod_urdf.egg-info/top_level.txt
+[0.697s] reading manifest file '../build/tmr_mod_urdf/tmr_mod_urdf.egg-info/SOURCES.txt'
+[0.698s] writing manifest file '../build/tmr_mod_urdf/tmr_mod_urdf.egg-info/SOURCES.txt'
+[0.699s] running build
+[0.699s] running build_py
+[0.699s] running install
+[0.700s] running install_lib
+[0.703s] running install_data
+[0.703s] running install_egg_info
+[0.715s] removing '/home/omron/Omron_TM_ROS2/install/tmr_mod_urdf/lib/python3.8/site-packages/tmr_mod_urdf-0.0.0-py3.8.egg-info' (and everything under it)
+[0.715s] Copying ../build/tmr_mod_urdf/tmr_mod_urdf.egg-info to /home/omron/Omron_TM_ROS2/install/tmr_mod_urdf/lib/python3.8/site-packages/tmr_mod_urdf-0.0.0-py3.8.egg-info
+[0.715s] running install_scripts
+[0.732s] Installing modify_urdf script to /home/omron/Omron_TM_ROS2/install/tmr_mod_urdf/lib/tmr_mod_urdf
+[0.732s] Installing modify_xacro script to /home/omron/Omron_TM_ROS2/install/tmr_mod_urdf/lib/tmr_mod_urdf
+[0.732s] writing list of installed files to '/home/omron/Omron_TM_ROS2/build/tmr_mod_urdf/install.log'
+[0.774s] Invoked command in '/home/omron/Omron_TM_ROS2/tmr_mod_urdf' returned '0': PYTHONPATH=/home/omron/Omron_TM_ROS2/install/tmr_mod_urdf/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/tmr_mod_urdf build --build-base /home/omron/Omron_TM_ROS2/build/tmr_mod_urdf/build install --prefix /home/omron/Omron_TM_ROS2/install/tmr_mod_urdf --record /home/omron/Omron_TM_ROS2/build/tmr_mod_urdf/install.log --single-version-externally-managed
