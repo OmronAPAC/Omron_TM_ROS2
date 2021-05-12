@@ -5,9 +5,7 @@ import json
 import math
 from math import radians
 
-from libraries import Waiter
 from libraries import Move
-from libraries import IO
 from libraries import Modbus
 from libraries import Transform
 from libraries import Script
@@ -23,11 +21,11 @@ def ready_up():
         
 def record_modbus(max_rate = False):
     positions = []
-    t_end = time.time() + 3
+    t_end = time.time() + 6.5
     while time.time() < t_end:
         positions.append(convert_units(modbus.get_pos()))
         if (not max_rate):
-            time.sleep(0.05)
+            time.sleep(0.05) # 20 Hz
 
     return positions
 
@@ -46,19 +44,23 @@ if __name__ == '__main__':
     rclpy.init()
     modbus = Modbus.ModbusClass()
     #modbus.init_io()
-    ready_up()
+    #ready_up()
     positions = record_modbus()
     print(len(positions))
     #print(positions)
+    # Output the results in a json file
+    with open('positions.txt', 'w') as output:
+        json.dump(positions, output, indent = 2)
 
-    
+
+    """
     print("Start TM Driver now!")
     time.sleep(1)
     modbus.start_program()
     time.sleep(3)
     move = Move.MoveClass()
-
+    
     for x in positions:
         move.set_position(x)
-        
+    """
 
