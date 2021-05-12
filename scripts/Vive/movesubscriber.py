@@ -21,26 +21,22 @@ class MoveSubscriber(Node):
         self.subscription  # prevent unused variable warning
         self.tagnum = 1
         self.currtag = 1
+        self.buffsize = 10
 
     def listener_callback(self, msg):
         #self.get_logger().info(str(list(msg.data)))
-        """
+        
         self.mover.set_position_special(list(msg.data), self.tagnum)
-        self.tagnum =  (self.tagnum % 15) + 1 # tagnum will be from 1 - 15 inclusive
-        
-        if (self.tagnum - self.currtag <  10):
-            self.mover.set_position_special(list(msg.data), self.tagnum)
-            self.tagnum =  (self.tagnum % 15) + 1 # tagnum will be from 1 - 15 inclusive
+        self.tagnum =  (self.tagnum % self.buffsize) + 1 # tagnum will be from 1 - 15 inclusive
         """
-        
-        if (self.tagnum != 5):
+        if (self.tagnum != self.buffsize):
             self.mover.set_position_special(list(msg.data), self.tagnum)
-            self.tagnum =  (self.tagnum % 5) + 1 # tagnum will be from 1 - 5 inclusive
+            self.tagnum =  (self.tagnum % self.buffsize) + 1 # tagnum will be from 1 - 5 inclusive
         else:
             self.currtag = self.mover.asksta()
-            if (self.currtag >= 3): # Reducing this will ensure the buffer has stuff but need to watch out cos it will; continuously increase stuff in the buffer
-                self.tagnum =  (self.tagnum % 5) + 1 # tagnum will be from 1 - 5 inclusive
-
+            if (self.currtag >= self.buffsize - 5): # Reducing this will ensure the buffer has stuff but need to watch out cos it will; continuously increase stuff in the buffer
+                self.tagnum = (self.tagnum % self.buffsize) + 1 # tagnum will be from 1 - 5 inclusive
+        """
         
 
 def main(args=None):

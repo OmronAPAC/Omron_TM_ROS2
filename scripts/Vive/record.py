@@ -45,7 +45,7 @@ if __name__ == '__main__':
     modbus = Modbus.ModbusClass()
     #modbus.init_io()
     #ready_up()
-    positions = record_modbus()
+    positions = record_modbus(True)
     print(len(positions))
     #print(positions)
     # Output the results in a json file

@@ -8,8 +8,8 @@ class MoveClass:
         self.set_pos = self.move_node.create_client(SetPositions, "set_positions")
         
         self.move_request = SetPositions.Request()
-        self.move_request.motion_type = 2 #SetPositions.Request.PTP_T
-        self.move_request.velocity = 3.14
+        self.move_request.motion_type = 4 #SetPositions.Request.LINE_T
+        self.move_request.velocity = 100.0
         self.move_request.acc_time = 0.1
         self.move_request.blend_percentage = 100
         self.move_request.fine_goal = False
