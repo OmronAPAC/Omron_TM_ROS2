@@ -179,7 +179,7 @@ cd Omron_TM_ROS2
 . Build all package with:
 +
 ....
-colcon --symlink-install build
+colcon build --symlink-install
 ....
 +
 > Depending on your machine, this can take a while to build.
