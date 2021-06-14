@@ -104,6 +104,16 @@ In TMflow, create a flow project, then choose the __Listen__ node, __Vision__ no
 .Project Flow
 image::ProjectFlow.png[]
 
+[NOTE]
+As only 1 vision node will be used, it is advised to uncheck the "Start at Initial Position" setting.
+
+.Setting location to remove initial position
+image::visionremoveinitial.png[]
+
+[WARNING]
+This step can be skipped if you have imported `PickPlace.zip` provided in the repository files, found under the TM_Export folder. Instructions for importing the zip is located in section 5.8.6 of TMflow Software Manual version 1.82 
+
+
 ==== TM System/Network Setup
 . Go to System -> Network setting page and enter the network parameters of the robot
 +
@@ -184,6 +194,9 @@ colcon build --symlink-install
 +
 > Depending on your machine, this can take a while to build.
 If you receive a warning saying "no such command", follow the intructions link:https://docs.ros.org/en/foxy/Tutorials/Colcon-Tutorial.html#install-colcon[here].
+
+[NOTE]
+You might need to install some missing packages if you didn't already have them. They can be installed with `sudo apt install ros-foxy-control-msgs`.
 
 ==== TM ROS 2 Driver Setup/Usage
 
@@ -311,11 +324,21 @@ The vision base name is the name of the vision job with `vision_` appended to th
 +
 image::viewpick.gif[]
 +
-. Hit kbd:[ENTER] to start the vision job. You should hear the robot beep 3 times to signal the start of the TMflow program.
+. Press the play button on the robot stick. You should hear the robot beep 3 times to signal the start of the TMflow project.
++
+image::robotstick_play.jpg[]
++
+. Hit kbd:[ENTER] to start the vision job. 
 +
 image::prompt2.png[]
 +
-. Wait for the vision job to complete (the TMflow program will stop), then move the TM arm to the pick position.
+. Wait for the vision job to complete, then press the stop button on the robot stick. The robot should beep once.
+[NOTE]
+It is advised to open up the vision job to check if the landmark can be detected, or this might cause problems with detection during the execution process.
++
+image::robotstick_stop.jpg[]
++
+. Move the TM arm to the pick position.
 +
 image::pick.gif[]
 +
@@ -328,7 +351,11 @@ image::prompt3.png[]
 +
 image::viewplace.gif[]
 +
+. Press the play button on the robot stick. The robot should beep 3 times.
 . Hit kbd:[ENTER] to start the vision job.
+[NOTE]
+It is advised to open up the vision job to check if the landmark can be detected, or this might cause problems with detection during the execution process.
+. When the vision job is done, press the stop button on the robot stick. The robot should beep once.
 +
 image::prompt4.png[]
 +
