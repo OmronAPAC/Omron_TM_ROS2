@@ -285,6 +285,10 @@ This node is responsible for pubishing the .urdf information that the RViz progr
 |
 This node is responsible for publishing a transform which sets the base of the 3D model to the zero coordinate.
 
+|pp_marker
+|
+This node is responsible for publishing a transform and marker which represents an object picked up by the grippers.
+
 |===
 
 
@@ -303,7 +307,7 @@ There are 2 stages to the program: a setup phase, where the user sets the locati
 The teach_setup.py script runs through a sequence of instructions for the user to record the pick and place positions of an object, as well as the positions to view their respective landmarks. The following diagram shows the flow of the setup program:
 
 .Pickplace setup flow
-image::teachsetup.png[]
+image::teachsetup2.png[]
 
 . Run the program to teach the setup, replacing `robot_ip_address` with the ip address of the TM robot.
 +
@@ -387,12 +391,13 @@ ros2 launch pickplace pickplace.launch.py robot_ip:=<robot_ip_address>
 This will run the pick & place program as well as the RViz window for the 3D model visualisation.
 +
 image::pickplace.gif[]
-image::rviz.png[]
+image::rviz3.png[]
 +
 If you want a marker to show up when the robot picks up an item, add a topic to RViz called "marker"
 
 === Class Diagram
 
+.Class Relations diagram
 image::classrelation.png[]
 
 [CAUTION]
@@ -400,6 +405,7 @@ The `Script` class is *not* the pickplace program's python script, it is a class
 
 ==== Move Class
 
+.Explanation of Move Class
 image::moveclass.png[]
 
 The movement of the TM arm is controlled by the Move class. The `set_position` method takes in x, y, z, roll, pitch and yaw, and sends it to the listen node in the TMflow program via a service client from the TM Driver. 
@@ -409,19 +415,22 @@ Queue tags and status queries were also used to ensure that no other command exe
 
 ==== Transform Class
 
+.Explanation of Transform Class
 image::transformclass1.png[]
+.More explanations of Transform Class
 image::transformclass2.png[]
 
 This class handles all the transforms between different frames (e.g. coordinates of the pick position relative to the robot base or vision base). The TF tree is shown below:
 
 .TF Tree of pickplace program
-image::tftree.png[]
+image::tftree2.png[]
 
 [NOTE]
 safe_pick and safe_place transforms are the coordinates of the pick and place point with a -0.1m offset in the z-axis
 
 ==== Script Class
 
+.Explanation of Script Class
 image::scriptclass.png[]
 
 The Script class uses the external scripts function of the TM Driver to run external commands.
@@ -431,6 +440,7 @@ The script class is capable of sending instructions to run TM movement commands,
 
 ==== Modbus Class
 
+.Explanation of Modbus
 image::modbusclass.png[]
 
 The modbus class handles modbus communication between the client (TM machine) and server (user's computer). It allows for asynchronous control of many features of the TM robot.
