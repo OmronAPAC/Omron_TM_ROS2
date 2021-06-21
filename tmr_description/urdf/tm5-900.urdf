@@ -140,6 +140,26 @@
     </collision>
   </link>
 
+  <joint name="joint_EOAT" type="fixed">
+    <parent link="flange"/>
+    <child link="EOAT"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+
+  <link name="EOAT">
+    <visual>
+      <geometry>
+        <mesh filename="package://tmr_description/meshes/gripper/robotiq/2f-85/robotiq_85_gripper.obj"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://tmr_description/meshes/gripper/robotiq/2f-85/robotiq_85_gripper.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
   <link name="base" />
   <joint name="base_fixed_joint" type="fixed">
     <parent link="base"/>

@@ -122,6 +122,13 @@ def generate_launch_description():
         output='screen'
     )
 
+    # Destination Publisher
+    marker_publisher_node = Node(
+        package='pp_marker',
+        executable='marker',
+        output='screen'
+    )
+
     return LaunchDescription([ tm_driver_node, pickplace_node, robot_state_publisher, 
-        static_world, rviz_node, destination_publisher_node ])
+        static_world, rviz_node, destination_publisher_node, marker_publisher_node ])
 
