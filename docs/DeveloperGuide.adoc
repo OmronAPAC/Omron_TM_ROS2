@@ -311,9 +311,13 @@ image::teachsetup.png[]
 ros2 run pickplace teach_setup <robot_ip_address>
 ....
 +
+. Move the robot to an initial position to start with on program launch, then press kbd:[ENTER]
++
+image::prompt6.png[]
++
 . Enter the name of the vision base that will be created in the TMflow program by the vison job.
 +
-image::prompt1.png[]
+image::prompt7.png[]
 +
 image::visionjobname.png[]
 
@@ -384,6 +388,8 @@ This will run the pick & place program as well as the RViz window for the 3D mod
 +
 image::pickplace.gif[]
 image::rviz.png[]
++
+If you want a marker to show up when the robot picks up an item, add a topic to RViz called "marker"
 
 === Class Diagram
 
