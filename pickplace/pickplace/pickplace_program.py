@@ -9,6 +9,7 @@ pp_library =  pp_share + '/pickplace/pp_library'
 from pp_library import Modbus, Transform, Script, Move
 from rcl_interfaces.srv import SetParameters
 from rcl_interfaces.msg import Parameter, ParameterValue, ParameterType
+from std_msgs.msg import Bool
 
 # Get the new pick or place positions w.r.t the new vision base
 def get_positions(listener, modbus, tf, vbase_name, vjob_name):
@@ -57,7 +58,7 @@ def call_set_parameters(node, coordinates):
 def main():
     rclpy.init()
     pickplace_node = rclpy.create_node('pickplace_node')
-
+    flagpublisher = pickplace_node.create_publisher(Bool, 'objectflag', 10)
     vjob_name = ""
     view_pick = []
     view_place = []
@@ -65,6 +66,7 @@ def main():
     vbase_place = []
     with open(pp_share + '/config.txt') as json_file:
         data = json.load(json_file)
+        home_pos = data['home_pos']
         vjob_name = data['vjob_name']
         view_pick =  data['view_pick']
         view_place =  data['view_place']
@@ -81,11 +83,12 @@ def main():
     listener.wait_tm_connect()
     tf.add_vbases(vbase_pick, vbase_place)
 
-    home = [0.3, 0.0, 0.3, -3.14159, 0.0, 1.59]
-    mover.set_position(home)
-
+    mover.set_position(home_pos)
     try:
         while True:
+            msg = Bool()
+            msg.data = False
+            flagpublisher.publish(msg)
             mover.set_position(view_pick)
             pick, safepick = get_positions(listener, modbus, tf, "vbase_pick", vjob_name)
             call_set_parameters(pickplace_node, pick)
@@ -93,6 +96,8 @@ def main():
             
             modbus.open_io()
             mover.set_position(pick)
+            msg.data = True
+            flagpublisher.publish(msg)
             modbus.close_io()
             mover.set_position(safepick)
 
@@ -102,6 +107,8 @@ def main():
             mover.set_position(safeplace)
             mover.set_position(place)
             modbus.open_io()
+            msg.data = False
+            flagpublisher.publish(msg)
             mover.set_position(safeplace)
 
     except KeyboardInterrupt:

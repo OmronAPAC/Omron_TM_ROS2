@@ -79,6 +79,10 @@ def main():
 
     modbus.init_io()
     
+	# Set the starting position
+    input("Set HOME position, then press Enter to continue...")
+    home_pos = convert_rad(modbus.get_pos())
+    
     # Get the vision base name
     vjob_name = input("Please enter the vision base name: ")
     
@@ -115,6 +119,7 @@ def main():
 
     # Export variables to a txt file
     config = {
+        "home_pos": home_pos,
         "vjob_name": vjob_name,
         "view_pick": view_pick,
         "view_place": view_place,
