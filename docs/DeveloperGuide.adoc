@@ -24,7 +24,7 @@ endif::[]
 :url-repo: https://github.com/guanyewtan/Omron_TM_ROS2
 :url-ug: https://github.com/guanyewtan/Omron_TM_ROS2
 
-Last updated: `30 April 2021` By: `Tan Guan Yew`(link:https://github.com/guanyewtan[guanyewtan])
+Last updated: `24 June 2021` By: `Tan Guan Yew`(link:https://github.com/guanyewtan[guanyewtan]) and Zeon Chua (link:https:https://github.com/CFZeon[CFZeon])
 
 
 == Getting Started
