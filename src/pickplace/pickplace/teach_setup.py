@@ -5,7 +5,7 @@ import sys
 import os, signal
 from ament_index_python.packages import get_package_share_directory
 pp_share = get_package_share_directory('pickplace')
-pp_library =  pp_share + '/pickplace/pp_library'
+pp_library =  pp_share + '/pp_library'
 
 from math import radians
 from math import degrees
@@ -27,10 +27,10 @@ TODO:
 
 def start_program(startorstop):
     for i in range(5):
-        print(startorstop + " TM program in " + 5 - i + " seconds!")
+        print(startorstop + " TM program in " + str(5 - i) + " seconds!")
         time.sleep(1)
 
-def run_vision(listener, vjob_name, robot_ip):
+def run_vision(listener, modbus, vjob_name, robot_ip):
     start_program('Start')
     print("Starting TM Program......")
     time.sleep(1)
@@ -40,6 +40,7 @@ def run_vision(listener, vjob_name, robot_ip):
     vision_base = get_vbase(listener, modbus, vjob_name)
     os.killpg(os.getpgid(driver.pid), signal.SIGTERM)
     start_program('Stop')
+    print("Vision base coords: " + str(vision_base))
     return vision_base
     
 
@@ -78,7 +79,7 @@ def main():
     print("Starting setup...")
     rclpy.init()
     node = rclpy.create_node("init")
-    modbus = Modbus.ModbusClass()
+    modbus = Modbus.ModbusClass(robot_ip)
     tf = Transform.TransformClass()
     listener = Script.ScriptClass()
 
@@ -96,7 +97,7 @@ def main():
     view_pick = convert_rad(modbus.get_pos())
 
     # Run the TM program to get the vision base
-    pick_vision_base = run_vision(listener, vjob_name, robot_ip)
+    pick_vision_base = run_vision(listener, modbus, vjob_name, robot_ip)
 
     # Get the pick coordinate w.r.t. robot base, then close the gripper
     modbus.open_io()
@@ -109,7 +110,7 @@ def main():
     view_place = convert_rad(modbus.get_pos())
 
     # Run the TM program to get the vision base
-    place_vision_base = run_vision(listener, vjob_name, robot_ip)
+    place_vision_base = run_vision(listener, modbus, vjob_name, robot_ip)
 
     # Get the place coordinate w.r.t. robot base, then open the gripper
     input("Set PLACE position, then press Enter to continue...")

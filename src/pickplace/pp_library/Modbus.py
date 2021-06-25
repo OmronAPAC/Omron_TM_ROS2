@@ -6,7 +6,7 @@ import time
 
 
 class ModbusClass:
-    def __init__(self, ip = '192.168.2.10'):
+    def __init__(self, ip = '192.168.1.2'):
         self.host = ip
         self.port_modbus = 502
         self.client = ModbusTcpClient(self.host, self.port_modbus)
