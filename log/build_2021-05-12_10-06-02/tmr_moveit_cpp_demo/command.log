@@ -1,6 +1,0 @@
-Invoking command in '/home/omron/Omron_TM_ROS2/build/tmr_moveit_cpp_demo': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/omron/Omron_TM_ROS2/tmr_moveit_cpp_demo -DCMAKE_INSTALL_PREFIX=/home/omron/Omron_TM_ROS2/install/tmr_moveit_cpp_demo
-Invoked command in '/home/omron/Omron_TM_ROS2/build/tmr_moveit_cpp_demo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/omron/Omron_TM_ROS2/tmr_moveit_cpp_demo -DCMAKE_INSTALL_PREFIX=/home/omron/Omron_TM_ROS2/install/tmr_moveit_cpp_demo
-Invoking command in '/home/omron/Omron_TM_ROS2/build/tmr_moveit_cpp_demo': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/omron/Omron_TM_ROS2/build/tmr_moveit_cpp_demo -- -j8 -l8
-Invoked command in '/home/omron/Omron_TM_ROS2/build/tmr_moveit_cpp_demo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/omron/Omron_TM_ROS2/build/tmr_moveit_cpp_demo -- -j8 -l8
-Invoking command in '/home/omron/Omron_TM_ROS2/build/tmr_moveit_cpp_demo': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/omron/Omron_TM_ROS2/build/tmr_moveit_cpp_demo
-Invoked command in '/home/omron/Omron_TM_ROS2/build/tmr_moveit_cpp_demo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/omron/Omron_TM_ROS2/build/tmr_moveit_cpp_demo

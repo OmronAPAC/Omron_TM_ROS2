@@ -1,4 +1,0 @@
-[console_scripts]
-modify_urdf = tmr_mod_urdf.modify_urdf:main
-modify_xacro = tmr_mod_urdf.modify_xacro:main
-

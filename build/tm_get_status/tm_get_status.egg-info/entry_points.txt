@@ -1,4 +1,0 @@
-[console_scripts]
-image_talker = tm_get_status.image_pub:main
-status_talker = tm_get_status.get_status:main
-

@@ -1,9 +1,0 @@
-CMake Error: The current CMakeCache.txt directory /home/gy/Omron_TM_ROS2/build/tm_msgs/CMakeCache.txt is different than the directory /home/gy/tmr_ros2/build/tm_msgs where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
-make[1]: *** wait: No child processes.  Stop.
-make[1]: *** Waiting for unfinished jobs....
-make[1]: *** wait: No child processes.  Stop.
-make[1]: *** [CMakeFiles/Makefile2:272: CMakeFiles/tm_msgs__rosidl_typesupport_introspection_c__pyext.dir/all] Interrupt
-make[1]: *** [CMakeFiles/Makefile2:361: CMakeFiles/tm_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/all] Error 2
-make[2]: *** [CMakeFiles/tm_msgs__rosidl_typesupport_c__pyext.dir/build.make:121: CMakeFiles/tm_msgs__rosidl_typesupport_c__pyext.dir/depend] Interrupt
-make[1]: *** [CMakeFiles/Makefile2:124: CMakeFiles/tm_msgs__rosidl_typesupport_c__pyext.dir/all] Interrupt
-make: *** [Makefile:141: all] Interrupt

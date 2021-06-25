@@ -1,5 +1,0 @@
-  File "/home/gy/Omron_TM_ROS2/install/pickplace/lib/python3.8/site-packages/pickplace/teach_setup.py", line 12
-    from get_package_share_directory('pickplace') + '/pickplace/pp_library' import Modbus, Transform, Script
-                                    ^
-SyntaxError: invalid syntax
-

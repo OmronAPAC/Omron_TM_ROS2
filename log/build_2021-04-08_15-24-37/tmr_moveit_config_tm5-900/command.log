@@ -1,1 +1,0 @@
-Invoking command in '/home/gy/tmr_ros2/build/tmr_moveit_config_tm5-900': AMENT_PREFIX_PATH=/home/gy/tmr_ros2/install/tmr_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gy/tmr_ros2/install/tmr_description:/opt/ros/foxy /usr/bin/cmake /home/gy/tmr_ros2/tmr_moveit_config_tm5-900 -DCMAKE_INSTALL_PREFIX=/home/gy/tmr_ros2/install/tmr_moveit_config_tm5-900

@@ -1,1 +1,0 @@
-CMake Error: The current CMakeCache.txt directory /home/gy/Omron_TM_ROS2/build/tmr_moveit_cpp_demo/CMakeCache.txt is different than the directory /home/gy/tmr_ros2/build/tmr_moveit_cpp_demo where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
