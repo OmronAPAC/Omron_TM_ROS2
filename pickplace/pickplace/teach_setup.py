@@ -25,8 +25,13 @@ TODO:
     - Make variable ip address
 """
 
-def run_vision(listener, modbus, vjob_name, robot_ip):
-    modbus.start_program()
+def start_program(startorstop):
+    for i in range(5):
+        print(startorstop + " TM program in " + 5 - i + " seconds!")
+        time.sleep(1)
+
+def run_vision(listener, vjob_name, robot_ip):
+    start_program('Start')
     print("Starting TM Program......")
     time.sleep(1)
     # Launch the TM_Driver using subprocess, to enable the vision job to execute
@@ -34,7 +39,7 @@ def run_vision(listener, modbus, vjob_name, robot_ip):
     time.sleep(2)
     vision_base = get_vbase(listener, modbus, vjob_name)
     os.killpg(os.getpgid(driver.pid), signal.SIGTERM)
-    modbus.stop_program()
+    start_program('Stop')
     return vision_base
     
 
@@ -91,7 +96,7 @@ def main():
     view_pick = convert_rad(modbus.get_pos())
 
     # Run the TM program to get the vision base
-    pick_vision_base = run_vision(listener, modbus, vjob_name, robot_ip)
+    pick_vision_base = run_vision(listener, vjob_name, robot_ip)
 
     # Get the pick coordinate w.r.t. robot base, then close the gripper
     modbus.open_io()
@@ -104,7 +109,7 @@ def main():
     view_place = convert_rad(modbus.get_pos())
 
     # Run the TM program to get the vision base
-    place_vision_base = run_vision(listener, modbus, vjob_name, robot_ip)
+    place_vision_base = run_vision(listener, vjob_name, robot_ip)
 
     # Get the place coordinate w.r.t. robot base, then open the gripper
     input("Set PLACE position, then press Enter to continue...")

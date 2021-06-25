@@ -6,5 +6,6 @@
 *.pyc
 *.bak
 .vscode/
-.build/
-.install/
+build/
+install/
+log/
