@@ -83,7 +83,6 @@ def main():
     listener.wait_tm_connect()
     tf.add_vbases(vbase_pick, vbase_place)
 
-    mover.set_position(home_pos)
     try:
         while True:
             msg = Bool()
