@@ -68,10 +68,10 @@ def main():
         data = json.load(json_file)
         home_pos = data['home_pos']
         vjob_name = data['vjob_name']
-        view_pick =  data['view_pick']
-        view_place =  data['view_place']
-        vbase_pick =  data['vbase_pick']
-        vbase_place =  data['vbase_place']
+        view_pick = data['view_pick']
+        view_place = data['view_place']
+        vbase_pick = data['vbase_pick']
+        vbase_place = data['vbase_place']
     
     modbus = Modbus.ModbusClass()
     modbus.start_program()
