@@ -4,21 +4,21 @@ import json
 import sys
 import os, signal
 from ament_index_python.packages import get_package_share_directory
-pp_share = get_package_share_directory('pickplace')
-pp_library =  pp_share + '/pp_library'
+moma_share = get_package_share_directory('omron_moma')
+pp_library =  get_package_share_directory('pickplace') + '/pp_library'
 
 from math import radians
 from math import degrees
 
 from pp_library import IO, Transform, Script
-from pickplace_msgs import AskModbus
+from pickplace_msgs.srv import AskModbus
 from geometry_msgs.msg import TransformStamped, Vector3, Quaternion
 
-from launch import LaunchDescription
-from launch import LaunchIntrospector
-from launch import LaunchService 
-import launch_ros.actions
-from subprocess import Popen
+# from launch import LaunchDescription
+# from launch import LaunchIntrospector
+# from launch import LaunchService 
+# import launch_ros.actions
+# from subprocess import Popen
 
 """
 TODO:
@@ -26,40 +26,34 @@ TODO:
 """
 
 def start_program(startorstop):
-    for i in range(5):
-        #print(startorstop + " TM program in " + str(5 - i) + " seconds!")
-        input(startorstop + " the TM Program, then press Enter to continue...")
+    input(startorstop + " the TM Program, then press Enter to continue...")
 
-def run_vision(listener, cli, vjob_name, robot_ip):
+def run_vision(listener, node, cli, vjob_name, robot_ip):
     start_program('Start')
-    time.sleep(1)
     # Launch the TM_Driver using subprocess, to enable the vision job to execute
-    driver = Popen(['ros2', 'run', 'tm_driver', 'tm_driver', robot_ip], preexec_fn=os.setsid)
-    time.sleep(2)
-    try:
-        vision_base = get_vbase(listener, cli, vjob_name)
-    except:
-        os.killpg(os.getpgid(driver.pid), signal.SIGTERM)
-    finally:
-        os.killpg(os.getpgid(driver.pid), signal.SIGTERM)
-        start_program('Stop')
-        print("Vision base coords: " + str(vision_base))
-        return vision_base
+    #driver = Popen(['ros2', 'run', 'tm_driver', 'tm_driver', robot_ip], preexec_fn=os.setsid)
+    print('Connecting...')
+    time.sleep(4)
+    vision_base = get_vbase(listener, node, cli, vjob_name)
+    #os.killpg(os.getpgid(driver.pid), signal.SIGTERM)
+    start_program('Stop')
+    print("Vision base coords: " + str(vision_base[0:5]))
+    return vision_base
     
-def modbus_call(cli, call):
+def modbus_call(node, cli, call):
     while not cli.wait_for_service(timeout_sec=1.0):
         print("Service not available...")
     req = AskModbus.Request()
     req.req = call
     future = cli.call_async(req)
-    rclpy.spin_until_future_complete(future)
+    rclpy.spin_until_future_complete(node, future)
     return future.result().position
 
-def get_vbase(listener, cli, vjob_name):
+def get_vbase(listener, node, cli, vjob_name):
     listener.exit_script()
     listener.change_base(vjob_name)
     time.sleep(0.1)
-    new_vbase = modbus_call(cli, 'get_base')
+    new_vbase = modbus_call(node, cli, 'get_base')
     time.sleep(0.1)
     listener.change_base("RobotBase")
     time.sleep(0.1)
@@ -98,38 +92,38 @@ def main():
     io = IO.IOClass()
     tf = Transform.TransformClass()
     listener = Script.ScriptClass()
-    io.init_io()
+    modbus_call(node, cli, 'init_io') #Initialise IO
     
 	# Set the starting position
     input("Set HOME position, then press Enter to continue...")
-    home_pos = convert_rad(modbus_call(cli))
+    home_pos = convert_rad(modbus_call(node, cli, 'get_pos'))
     
     # Get the vision base name
     vjob_name = input("Please enter the vision base name: ")
     
     # Get the landmark viewing coordinates for pick w.r.t robot base
     input("Set LANDMARK position for PICK, then press Enter to continue...")
-    view_pick = convert_rad(modbus_call(cli))
+    view_pick = convert_rad(modbus_call(node, cli, 'get_pos'))
 
     # Run the TM program to get the vision base
-    pick_vision_base = run_vision(listener, cli, vjob_name, robot_ip)
+    pick_vision_base = run_vision(listener, node, cli, vjob_name, robot_ip)
 
     # Get the pick coordinate w.r.t. robot base, then close the gripper
     io.open()
     input("Set PICK position, then press Enter to continue...")
-    base_pick = modbus_call(cli)
+    base_pick = modbus_call(node, cli, 'get_pos')
     io.close()
 
     # Get the landmark viewing coordinates for place w.r.t robot base
     input("Set LANDMARK position for PLACE, then press Enter to continue...")
-    view_place = convert_rad(modbus_call(cli))
+    view_place = convert_rad(modbus_call(node, cli, 'get_pos'))
 
     # Run the TM program to get the vision base
-    place_vision_base = run_vision(listener, cli, vjob_name, robot_ip)
+    place_vision_base = run_vision(listener, node, cli, vjob_name, robot_ip)
 
     # Get the place coordinate w.r.t. robot base, then open the gripper
     input("Set PLACE position, then press Enter to continue...")
-    base_place = modbus_call(cli)
+    base_place = modbus_call(node, cli, 'get_pos')
     io.open()
 
     print("Initialising pickplace configuration...")
@@ -149,7 +143,7 @@ def main():
     }
 
     # Output the results in a json file
-    with open(pp_share + '/config.txt', 'w') as output:
+    with open(moma_share + '/config.txt', 'w') as output:
         json.dump(config, output, indent = 3)
 
     print("Initialisation complete!")

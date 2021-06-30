@@ -64,13 +64,13 @@ class ModbusClass:
     def init_io(self):
         self.client.write_coil(800, 0)
         self.client.write_coil(801, 0)
-        time.sleep(0.3)
+        time.sleep(0.2)
         self.client.write_coil(800, 1)
-        time.sleep(0.3)
+        time.sleep(0.2)
         self.client.write_coil(800, 0)
-        time.sleep(0.3)
+        time.sleep(0.2)
         self.client.write_coil(801, 1)
-        time.sleep(0.3)
+        time.sleep(0.2)
         self.client.write_coil(801, 0)
 
 

@@ -20,6 +20,12 @@ class ModbusService(Node):
             response.position = self.modbus.get_base()
         elif (request.req == 'get_pos'):
             response.position = self.modbus.get_pos()
+        elif (request.req == 'init_io'):
+            self.modbus.init_io()
+        elif (request.req == 'open_io'):
+            self.modbus.open_io()
+        elif (request.req == 'close_io'):
+            self.modbus.close_io()
         return response
 
 

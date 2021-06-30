@@ -6,7 +6,6 @@ class MoveClass:
     def __init__(self):
         self.move_node = rclpy.create_node('move_python')
         self.set_pos = self.move_node.create_client(SetPositions, "set_positions")
-        
         self.move_request = SetPositions.Request()
         self.move_request.motion_type = 2 #SetPositions.Request.PTP_T
         self.move_request.velocity = 3.14
