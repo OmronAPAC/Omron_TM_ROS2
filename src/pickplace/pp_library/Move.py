@@ -1,6 +1,7 @@
 import rclpy
 import time
 from tm_msgs.srv import *
+from tm_msgs.msg import *
 
 class MoveClass:
     def __init__(self):
@@ -25,8 +26,20 @@ class MoveClass:
         while not self.ask_sta.wait_for_service(timeout_sec=5.0):
             self.move_node.get_logger().info('ask_sta service not available, waiting again...')
         self.sta_request = AskSta.Request() #Can be made more specific?
-        self.sta_request.wait_time = 100.0
+        self.sta_request.wait_time = 20.0
         
+        self.error = False
+
+        self.error_subscription = self.move_node.create_subscription(
+            FeedbackState,
+            'feedback_states',
+            self.feedback_callback,
+            10)
+
+    def feedback_callback(self, msg):
+        if (msg.project_run == False) or (msg.robot_error == True) or (msg.e_stop == True):
+            self.error = True
+            
 
     def set_position(self, position):
         self.move_request.positions = position
@@ -36,8 +49,19 @@ class MoveClass:
         time.sleep(0.1) # IMPORTANT or the order of requests sent will be wrong
         self.set_event.call_async(self.event_request)
         time.sleep(0.1)
-        resp = self.ask_sta.call_async(self.sta_request)
-        rclpy.spin_until_future_complete(self.move_node, resp)
+        self.future = self.ask_sta.call_async(self.sta_request)
+
+        while not self.future.done() or not self.error:
+            rclpy.spin_once(self.move_node)
+
+        if self.error:
+            self.move_node.get_logger().info("ERROR ERROR")
+            return False
+        else:
+            return True
+
+
+
         #print(resp.result())
 
 

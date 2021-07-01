@@ -11,7 +11,7 @@ TO DO:
 class IOClass:
     def __init__(self):
         #rclpy.init()
-        self.io_node = rclpy.create_node('io_python')
+        self.io_node = rclpy.create_node('io_node')
         self.set_io = self.io_node.create_client(SetIO, "set_io")
         
         self.request = SetIO.Request()
