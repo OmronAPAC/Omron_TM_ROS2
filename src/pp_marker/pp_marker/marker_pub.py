@@ -63,9 +63,9 @@ class MarkerPublisher(rclpy.node.Node):
         self.marker.scale.y = 0.05
         self.marker.scale.z = 0.05
 
-        self.marker.color.r = 0.7
-        self.marker.color.g = 0.7
-        self.marker.color.b = 0.7
+        self.marker.color.r = 1.0
+        self.marker.color.g = 1.0
+        self.marker.color.b = 0.0
         
         if self.flag == True:
             self.marker.color.a = 1.0
