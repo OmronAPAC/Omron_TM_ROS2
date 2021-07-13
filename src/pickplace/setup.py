@@ -15,6 +15,7 @@ setup(
         ('share/' + package_name, ['package.xml']),
         (os.path.join('share', package_name + '/pp_library'), glob('pp_library/*.py')),
         (os.path.join('share', package_name), glob('launch/*')),
+        (os.path.join('share', package_name), glob('config/*')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -27,7 +28,8 @@ setup(
         'console_scripts': [
             'pickplace = pickplace.pickplace_program:main',
             'teach_setup = pickplace.teach_setup:main',
-            'modbus_server = pickplace.modbus_server:main'
+            'modbus_server = pickplace.modbus_server:main',
+            'destination_publisher = pickplace.destination_publisher:main'
         ],
     },
 )

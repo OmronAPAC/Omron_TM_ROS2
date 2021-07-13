@@ -4,7 +4,7 @@ import json
 import sys
 import os, signal
 from ament_index_python.packages import get_package_share_directory
-moma_share = get_package_share_directory('omron_moma')
+pickplace_share = get_package_share_directory('pickplace')
 pp_library =  get_package_share_directory('pickplace') + '/pp_library'
 
 from math import radians
@@ -143,7 +143,7 @@ def main():
     }
 
     # Output the results in a json file
-    with open(moma_share + '/config.txt', 'w') as output:
+    with open(pickplace_share + '/config.txt', 'w') as output:
         json.dump(config, output, indent = 3)
 
     print("Initialisation complete!")

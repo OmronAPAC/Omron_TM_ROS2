@@ -34,7 +34,8 @@ def generate_launch_description():
     tf = Transform.TransformClass()
 
     # Component yaml files are grouped in separate namespaces
-    robot_description_config = load_file('tmr_description', 'urdf/tm5-900.urdf')
+    #robot_description_config = load_file('tmr_description', 'urdf/tm5-900.urdf')
+    robot_description_config = load_file('tm_models', 'urdf/tm12.urdf')
     robot_description = {'robot_description' : robot_description_config}
 
     pp_config = get_package_share_directory('pickplace') + '/config.txt'
@@ -51,7 +52,7 @@ def generate_launch_description():
   
 
     # RViz
-    rviz_config_file = get_package_share_directory('rviz_tm') + "/rviz_tm.rviz"
+    rviz_config_file = get_package_share_directory('pickplace') + "/config.rviz"
     rviz_node = Node(
         package='rviz2',
         executable='rviz2',
@@ -115,13 +116,20 @@ def generate_launch_description():
         output='screen'
     )
 
-    # Destination Publisher
+    # Marker Publisher
     marker_publisher_node = Node(
         package='pp_marker',
         executable='marker',
         output='screen'
     )
+    
+    # Destination Publisher
+    destination_publisher_node = Node(
+        package='pickplace',
+        executable='destination_publisher',
+        output='screen'
+    )
 
     return LaunchDescription([ tm_driver_node, pickplace_node, robot_state_publisher, 
-        static_world, rviz_node, marker_publisher_node ])
+        static_world, rviz_node, marker_publisher_node, destination_publisher_node ])
 

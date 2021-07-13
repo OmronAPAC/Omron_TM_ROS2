@@ -209,6 +209,27 @@
   </joint>
   <link name="flange_link">
     </link>
+
+  <joint name="joint_EOAT" type="fixed">
+    <parent link="flange_link"/>
+    <child link="EOAT"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+
+  <link name="EOAT">
+    <visual>
+      <geometry>
+        <mesh filename="package://tmr_description/meshes/gripper/robotiq/2f-85/robotiq_85_gripper.obj"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://tmr_description/meshes/gripper/robotiq/2f-85/robotiq_85_gripper.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  
   <!-- ROS base to TM 'base_link' Coordinates transform -->
   <link name="base"/>
   <joint name="base-base_link" type="fixed">
