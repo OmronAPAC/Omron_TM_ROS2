@@ -36,7 +36,7 @@ Last updated: `24 June 2021` By: `Tan Guan Yew`(link:https://github.com/guanyewt
 +
 See link:https://ubuntu.com/download/desktop[Ubuntu] webpage for installation instructions (version 20.04 release).
 +
-These packages were tested using Ubuntu Linux OS. Although ROS 2 is officially supported on multiple platforms including Windows OS (experimental), *Ubuntu Linux OS is preferred* since there is greater support for packages on Ubuntu platform. (These packages have not been tested on Windows OS)
+These packages were developed and tested using only Ubuntu Linux OS. Although ROS 2 is officially supported on multiple platforms including Windows OS, *Ubuntu Linux OS is preferred* since there is greater support for packages on Ubuntu platform.
 
 . **Robot Operating System 2 (ROS 2) Foxy Fitzroy Release**
 +
@@ -63,7 +63,7 @@ The TM set up instructions here assumes you are using `TMflow v1.82.3400` to set
 
 . **Pymodbus**
 +
-Modbus communication is used alongside the TM drivers to obtain robot parameters (such as base coordinates), and is also capable of controlling many of the TM robot's features. Documenttion for Pymodbus can be found link:https://pymodbus.readthedocs.io/en/latest/readme.html[here].
+Modbus communication is used alongside the TM drivers to obtain robot information, such as joint positions, and is also capable of controlling many of the TM robot's features. Documentation for Pymodbus can be found link:https://pymodbus.readthedocs.io/en/latest/readme.html[here].
 
 === Hardware Requirements
 This package assumes a specific hardware configuration in order to work correctly.
@@ -71,10 +71,12 @@ This package assumes a specific hardware configuration in order to work correctl
 . **TM5-900**
 +
 This will be the TM robot you will be controlling via this package.
+[NOTE]
+This package has also been tested to work on the TM12-1300. However, some configurations must be changed to support the proper visualization for the TM12.
 
 . **Host machine running ROS 2**
 +
-This is the (preferably linux) machine that communicates with the TM, via ethernet connection. The ROS 2 packages are run on this machine.
+This is the machine that communicates with the TM via an ethernet connection. The ROS 2 packages are run on this machine.
 +
 
 . **Robotiq IO Coupling**
@@ -95,7 +97,7 @@ image::TM_Interface.png[]
 
 === Set Up TM
 This package utilises the link:https://github.com/TechmanRobotInc/tmr_ros2[tmr_ros2] packages for the TM drivers to communicate with the robot.
-In order to use this package, your TM must be configured correctly to communicate with the host machine running this ROS 2 package. This configuration will be done via `TMflow`, thus this guide assumes you have basic knowledge on using the `TMflow` software. More information on the TMflow software can be found in Software Manual TMflow SW1.82, 19888-400 RevH.
+In order to use this package, your TM must be configured correctly to communicate with the host machine running this ROS 2 package. This configuration will be done via `TMflow`. This guide assumes that you have basic knowledge on using the `TMflow` software. More information on the TMflow software can be found in the Software Manual, TMflow SW1.82, 19888-400 RevH.
 
 ==== TM Listen/Vision Node Setup
 
@@ -104,14 +106,14 @@ In TMflow, create a flow project, then choose the __Listen__ node, __Vision__ no
 .Project Flow
 image::ProjectFlow.png[]
 
-[NOTE]
-As only 1 vision node will be used, it is advised to uncheck the "Start at Initial Position" setting.
+[WARNING]
+To ensure that the demo program works properly, uncheck the "Start at Initial Position" setting.
 
 .Setting location to remove initial position
 image::visionremoveinitial.png[]
 
-[WARNING]
-This step can be skipped if you have imported `PickPlace.zip` provided in the repository files, found under the TM_Export folder. Instructions for importing the zip is located in section 5.8.6 of TMflow Software Manual version 1.82 
+[NOTE]
+This step can be skipped if you have imported `PickPlace.zip` provided in the repository files, found under the TM_Export folder. Instructions for importing the zip is located in section 5.8.6 of TMflow Software Manual.
 
 
 ==== TM System/Network Setup
@@ -171,7 +173,7 @@ Ensure that the ip address of the host machine and the TM robot(<<TM System/Netw
 
 
 ==== Host Machine ROS 2 Package Set Up
-Once you have your network set up correctly, you need to set up our ROS 2 package to work correctly in your host machine.
+Once you have your network set up correctly, you need to configure this ROS 2 package to work correctly in your host machine.
 
 First, make sure you have installed ROS 2 as described in <<prerequisites>>.
 
@@ -218,9 +220,9 @@ ros2 run tm_driver tm_driver <robot_ip_address>
 +
 Example: `ros2 run tm_driver tm_driver 192.168.2.10`, if the <robot_ip_address> is 192.168.2.10
 +
-Now, the user can use a __new terminal__ to run each ROS node or command, but don't forget to source the correct setup shell files afteras starting a new terminal!
+Now, the user can use a __new terminal__ to run each ROS node or command, but don't forget to source the correct setup shell files after starting a new terminal!
 +
-The TM driver is required to be running so long as a connection to the listen node of the TMflow program is required.
+The TM driver is required to be running as long as a connection to the listen node of the TMflow program is required.
 +
 For more information on the TM Drivers, click link:https://github.com/TechmanRobotInc/tmr_ros2/blob/master/README.md[here].
 
@@ -239,14 +241,14 @@ Users can establish a socket TCPlistener in the listen node to connect to extern
 
 All features available in TM ROBOT Function can be operated in the listen node. For more information on the listen node, please refer to page 181 of the __TM Expression Editor and Listen Node Reference Guide__.
 
-The TM Driver utilises TMSCT and TMSTA communication packages to send external scripts and obtain status or properties of the TM respectively. Below is an example of how the TM Driver uses these 2 communication packages to communicate through the Socket TCPlistener:
+The TM Driver utilises TMSCT and TMSTA communication packages to send external scripts and obtain the status or properties of the TM respectively. Below is an example of how the TM Driver uses these 2 communication packages to communicate through the Socket TCPlistener:
 
 . TM Driver sends a PTP (point-to-point) movement command via a ROS2 service client using TMSCT packages to the TM Robot. When the command has been successfully sent, an acknowledgement is sent back to the host machine.
 
 . A queue tag is sent via TMSCT communication packages and its status monitored using TMSTA, to check if a motion command has been completed.
 
 === Modbus
-Users can use Modbus Client to read or write the parameters and save them in the robot register, such as position, posture and IO status. Users can program with the obtained parameters or monitor the status of robot. TM Robot provides two protocol versions of Modbus: Modbus TCP and Modbus RTU for users to get data from the external Modbus device or robot register, but TCP is being used for these packages.
+Users can use Modbus Client to read or write the parameters and save them in the robot register, such as position, posture and IO status. Users can program with the obtained parameters or monitor the status of robot. TM Robot provides two protocol versions of Modbus: Modbus TCP and Modbus RTU for users to obtain data from the external Modbus device or robot register. Modbus TCP is used for these packages.
 
 .Modbus Protocol
 image::ModbusProtocol.png[]
@@ -275,7 +277,7 @@ To understand how `RViz Visualisation` is structured with the entire ROS package
 |
 This node is responsible for publishing the joint states that the RViz program subscribes to.
 
-Using this information, it updates the position of the TM shown on RVIZ.
+Using this information, it updates the position of the TM shown on RViz.
 
 |robot_description
 |
@@ -287,17 +289,16 @@ This node is responsible for publishing a transform which sets the base of the 3
 
 |pp_marker
 |
-This node is responsible for publishing a transform and marker which represents an object picked up by the grippers.
-
+This node is responsible for publishing a transform and marker that represents an object picked up by the grippers.
 |===
 
 
 == Implementation
 === Pickplace Program
-The pickplace package allows the user to easily create a pick and place program, requiring only a one time setup. The pickplace program will then continuously run a vision guided pick and place operation.
+The pickplace package allows the user to create a pick and place program, requiring only a one time setup. The pickplace program will then continuously run a vision guided pick and place operation.
 
 [NOTE]
-This implementation was designed using a TM Landmark attached to the object to be picked, and another TM landmark to find the place location. However, it is possible for the TM vision to locate other visual features on objects.
+This implementation was designed using a TM Landmark attached to the object to be picked, and another TM landmark to find the place location. However, it is possible for the TM vision to locate other visual features on objects, depending on how the vision job is trained in TMFlow.
 
 These 2 landmarks act as the vision base for the pick and place, and the vision job takes into account the tilt and rotation of the TM landmark (so long as it can be seen clearly by the camera)
 
@@ -308,12 +309,19 @@ The teach_setup.py script runs through a sequence of instructions for the user t
 
 .Pickplace setup flow
 image::teachsetup2.png[]
-
-. Run the program to teach the setup, replacing `robot_ip_address` with the ip address of the TM robot.
+. In one terminal, run `server.launch.py` to ensure that the teach_setup program can communicate with the TM robot with
++
+....
+ros2 launch pickplace server.launch.py robot_ip:=<robot_ip_address>
+....
++
+. In another terminal, run the program to initiate the setup process, replacing `robot_ip_address` with the ip address of the TM robot.
 +
 ....
 ros2 run pickplace teach_setup <robot_ip_address>
 ....
+[NOTE]
+Remember to source the ROS2 packages again in the new terminal or you might not be able to run the setup program properly.
 +
 . Move the robot to an initial position to start with on program launch, then press kbd:[ENTER]
 +
@@ -392,8 +400,7 @@ This will run the pick & place program as well as the RViz window for the 3D mod
 +
 image::pickplace.gif[]
 image::rviz3.png[]
-+
-If you want a marker to show up when the robot picks up an item, add a topic to RViz called "marker"
+
 
 === Class Diagram
 
@@ -401,7 +408,7 @@ If you want a marker to show up when the robot picks up an item, add a topic to 
 image::classrelation.png[]
 
 [CAUTION]
-The `Script` class is *not* the pickplace program's python script, it is a class that handles the scripts to be sent to the TCP socket listener in the TM machine via the TM driver.
+The `Script` class is a class that handles the scripts to be sent to the TCP socket listener in the TM machine via the TM driver. It does not contain the pickplace program.
 
 ==== Move Class
 
@@ -436,7 +443,7 @@ image::scriptclass.png[]
 The Script class uses the external scripts function of the TM Driver to run external commands.
 
 [NOTE]
-The script class is capable of sending instructions to run TM movement commands, however the TM SetPosition service client is preferred as the format of the parameters are more intuitive than a script implementation.
+The script class is capable of sending instructions to run TM movement commands, however the TM SetPosition service client from the tmr_ros2 package is preferred as the format of the parameters are easier to configure and use.
 
 ==== Modbus Class
 
@@ -446,5 +453,12 @@ image::modbusclass.png[]
 The modbus class handles modbus communication between the client (TM machine) and server (user's computer). It allows for asynchronous control of many features of the TM robot.
 
 [NOTE]
-The TM Driver provides services to open and close the IO gripper. Howeveer, modbus control of the IO is preferred as it does not require the TM Driver to be running concurrently with the program, as running the TM Driver to control the IO would require the TMflow program to be in the listen node, which prevents the TM robot from being able to be manually moved to the setup locations during the setup stage.
+The TM Driver provides services to open and close the IO gripper. However, modbus control of the IO is preferred as it does not require the TM Driver to be running concurrently with the program, as running the TM Driver to control the IO would require the TMflow program to be in the listen node, which prevents the TM robot from being able to be manually moved to the setup locations during the setup stage.
 
+==== IO Class
+
+The IO class creates a client to the modbus server to open and close the Robotiq IO gripper. It serves to simplify the API for interfacing with the TM robot.
+
+==== Pickplace Driver class
+
+The Pickplace driver class serves to gather the classes listed above to provide a consolidated interface for interacting with the TM robot. 
