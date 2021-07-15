@@ -25,7 +25,6 @@ class IOClass:
             self.io_node.get_logger().info('set_io service not available, waiting again...')
         self.set_io.call_async(self.request)
         time.sleep(1)
-        #print("Opening")
 
     def close(self):
         self.request.state = 0.0
@@ -33,7 +32,6 @@ class IOClass:
             self.io_node.get_logger().info('set_io service not available, waiting again...')
         self.set_io.call_async(self.request)
         time.sleep(1)
-        #print("Closing")
 
     def init_io(self):
         init_request = SetIO.Request()

@@ -1,6 +1,5 @@
 import os
 import sys
-import yaml
 import json
 from launch import LaunchDescription
 from launch_ros.actions import Node
@@ -61,7 +60,7 @@ def generate_launch_description():
         arguments=['-d', rviz_config_file],
         parameters=[robot_description],
         #prefix="bash -c 'sleep 5.0; $0 $@'"
-        )
+    )
 
     # Static TF
     static_world = Node(
@@ -69,7 +68,7 @@ def generate_launch_description():
         executable='static_transform_publisher',
         name='world_publisher',
         output='log',
-        arguments=['0.0', '0.0', '0.0', '0.0', '0.0', '0.0', 'world', 'base']
+        arguments=['0.0', '0.0', '0.0', '0.0', '0.0', '0.0', 'base', 'world']
     )
 
     static_viewpick = Node(
@@ -130,6 +129,29 @@ def generate_launch_description():
         output='screen'
     )
 
+    modbus_server_node = Node(
+        package='pickplace',
+        executable='modbus_server',
+        output='screen',
+    )
+    
+    static_viewpick = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='viewpick_publisher',
+        output='log',
+        arguments= view_pick
+    )
+    
+    static_viewplace = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='viewplace_publisher',
+        output='log',
+        arguments= view_place
+    )
+
     return LaunchDescription([ tm_driver_node, pickplace_node, robot_state_publisher, 
-        static_world, rviz_node, marker_publisher_node, destination_publisher_node ])
+        static_world, rviz_node, marker_publisher_node, destination_publisher_node, modbus_server_node,
+        static_viewpick, static_viewplace])
 

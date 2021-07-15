@@ -10,6 +10,11 @@ from pp_library import Modbus, Transform, Script, Move
 from rcl_interfaces.srv import SetParameters
 from rcl_interfaces.msg import Parameter, ParameterValue, ParameterType
 from std_msgs.msg import Bool
+from pickplace_msgs.srv import AskModbus
+from pickplace_msgs.msg import MoveCube
+pp_library =  get_package_share_directory('pickplace') + '/pickplace/pp_library'
+
+from pp_library import Pickplace_Driver, Transform
 
 # Get the new pick or place positions w.r.t the new vision base
 def get_positions(listener, modbus, tf, vbase_name, vjob_name):
@@ -53,12 +58,15 @@ def call_set_parameters(node, coordinates):
             "'{args.node_name}': {e}".format_map(locals()))
     return response
 
-
+def change_marker(parent, coordinates, publisher, msg):
+    msg.parent = parent
+    msg.coordinates = coordinates
+    publisher.publish(msg)
 
 def main():
     rclpy.init()
     pickplace_node = rclpy.create_node('pickplace_node')
-    flagpublisher = pickplace_node.create_publisher(Bool, 'objectflag', 10)
+    flagpublisher = pickplace_node.create_publisher(MoveCube, 'objectflag', 10)
     vjob_name = ""
     view_pick = []
     view_place = []
@@ -75,40 +83,44 @@ def main():
     
     modbus = Modbus.ModbusClass()
     modbus.start_program()
-
-    mover = Move.MoveClass()
-    listener = Script.ScriptClass()
+    pickplace_driver = Pickplace_Driver.PickPlaceClass()
+    
+    cli = pickplace_node.create_client(AskModbus, 'ask_modbus')
+    while not cli.wait_for_service(timeout_sec=1.0):
+        print("Service not available...")
+    req = AskModbus.Request()
+    req.req = 'init_io'
+    future = cli.call_async(req)
+    rclpy.spin_until_future_complete(pickplace_node, future)
     tf = Transform.TransformClass()
 
-    listener.wait_tm_connect()
+    pickplace_driver.wait_tm_connect()
     tf.add_vbases(vbase_pick, vbase_place)
+    msg = MoveCube()
 
     try:
         while True:
-            msg = Bool()
-            msg.data = False
-            flagpublisher.publish(msg)
-            mover.set_position(view_pick)
-            pick, safepick = get_positions(listener, modbus, tf, "vbase_pick", vjob_name)
+            pickplace_driver.set_position(view_pick)
+            pick, safepick = get_positions(pickplace_driver, modbus, tf, "vbase_pick", vjob_name)
             call_set_parameters(pickplace_node, pick)
-            mover.set_position(safepick)
+            change_marker("base", pick, flagpublisher, msg)
+            pickplace_driver.set_position(safepick)
             
-            modbus.open_io()
-            mover.set_position(pick)
-            msg.data = True
-            flagpublisher.publish(msg)
-            modbus.close_io()
-            mover.set_position(safepick)
+            pickplace_driver.open()
+            pickplace_driver.set_position(pick)
+            pickplace_driver.close()
+            change_marker("base", pick, flagpublisher, msg)
+            change_marker("EOAT", pick, flagpublisher, msg)
+            pickplace_driver.set_position(safepick)
 
-            mover.set_position(view_place)
-            place, safeplace = get_positions(listener, modbus, tf, "vbase_place", vjob_name)
+            pickplace_driver.set_position(view_place)
+            place, safeplace = get_positions(pickplace_driver, modbus, tf, "vbase_place", vjob_name)
             call_set_parameters(pickplace_node, place)
-            mover.set_position(safeplace)
-            mover.set_position(place)
-            modbus.open_io()
-            msg.data = False
-            flagpublisher.publish(msg)
-            mover.set_position(safeplace)
+            pickplace_driver.set_position(safeplace)
+            pickplace_driver.set_position(place)
+            pickplace_driver.open()
+            change_marker("base", place, flagpublisher, msg)
+            pickplace_driver.set_position(safeplace)
 
     except KeyboardInterrupt:
             modbus.stop_program()

@@ -4,18 +4,20 @@ from tf2_ros.transform_broadcaster import TransformBroadcaster
 from visualization_msgs.msg import Marker
 from geometry_msgs.msg import TransformStamped
 from std_msgs.msg import Bool
+from pickplace_msgs.msg import MoveCube
 
 class MarkerPublisher(rclpy.node.Node):
     marker = Marker()
-    
     
     def __init__(self):
         super().__init__('marker_publisher')
         timer_period = 0.01 #seconds
         self.broadcaster = TransformBroadcaster(self)
         self.timer = self.create_timer(timer_period, self.timer_callback)
+        self.parent="world"
+        self.coordinates = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
         self.publisher_ = self.create_publisher(Marker, '/marker', 10)
-        self.flagsub = self.create_subscription(Bool, 'objectflag', self.get_flag, 10)
+        self.flagsub = self.create_subscription(MoveCube, 'objectflag', self.get_coordinates, 10)
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.transformStamped = TransformStamped()
         self.create_transformStamped()
@@ -27,21 +29,29 @@ class MarkerPublisher(rclpy.node.Node):
         self.create_marker()
         self.publisher_.publish(self.marker)
 
-    def get_flag(self, msg):
-        self.flag = msg.data
+    def get_coordinates(self, msg):
+        self.parent = msg.parent
+        self.coordinates = msg.coordinates
 
     def create_transformStamped(self):
         self.transformStamped = TransformStamped()
 
         # Set the pose of the self.marker
         self.transformStamped.header.stamp = self.get_clock().now().to_msg()
-        self.transformStamped.header.frame_id = "EOAT"
+        
+        # set parent based on input 
+        self.transformStamped.header.frame_id = self.parent
         self.transformStamped.child_frame_id = "/marker"
         
         # translation of 0.15 in the y-axis puts the cube at approximately the gripper location
-        self.transformStamped.transform.translation.x = 0.0
-        self.transformStamped.transform.translation.y = 0.0
-        self.transformStamped.transform.translation.z = 0.15
+        if self.parent == "EOAT":
+            self.transformStamped.transform.translation.x = 0.0
+            self.transformStamped.transform.translation.y = 0.0
+            self.transformStamped.transform.translation.z = 0.15
+        else:
+            self.transformStamped.transform.translation.x = self.coordinates[0]
+            self.transformStamped.transform.translation.y = self.coordinates[1]
+            self.transformStamped.transform.translation.z = self.coordinates[2]
         
         self.transformStamped.transform.rotation.x = 0.0
         self.transformStamped.transform.rotation.y = 0.0
@@ -66,11 +76,7 @@ class MarkerPublisher(rclpy.node.Node):
         self.marker.color.r = 1.0
         self.marker.color.g = 1.0
         self.marker.color.b = 0.0
-        
-        if self.flag == True:
-            self.marker.color.a = 1.0
-        else:
-            self.marker.color.a = 0.0
+        self.marker.color.a = 1.0
         self.marker_orientation()
         
     def marker_orientation(self):
