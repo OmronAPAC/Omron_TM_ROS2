@@ -1,5 +1,6 @@
 import rclpy
 import time
+from pp_library.TM_Exception import TM_Exception
 from tm_msgs.srv import *
 from tm_msgs.msg import *
 """
@@ -82,45 +83,55 @@ class PickPlaceClass:
     #                         Error callback                          #
     ###################################################################
     def feedback_callback(self, msg):
-        if (msg.project_run == False) or (msg.robot_error == True) or (msg.e_stop == True):
+        if msg.project_run == False:
             self.error = True
+            self.error_msg = "Project is not running!"
+        elif msg.robot_error == True:
+            self.error = True
+            self.error_msg = "TM Robot Error."
+        elif msg.e_stop == True:
+            self.error = True
+            self.error_msg = "Emergency stop activated!"
 
     ###################################################################
     #                             IO fn                               #
     ###################################################################
     def open(self):
-        if not self.error:
-            self.io_request.state = 1.0
-            while not self.set_io.wait_for_service(timeout_sec=1.0):
-                self.node.get_logger().info('set_io service not available, waiting again...')
-            self.set_io.call_async(self.io_request)
-            time.sleep(1)
+        if self.error:
+            raise TM_Exception(self.error_msg)
+        self.io_request.state = 1.0
+        while not self.set_io.wait_for_service(timeout_sec=1.0):
+            self.node.get_logger().info('set_io service not available, waiting again...')
+        self.set_io.call_async(self.io_request)
+        time.sleep(1)
 
     def close(self):
-        if not self.error:
-            self.io_request.state = 0.0
-            while not self.set_io.wait_for_service(timeout_sec=1.0):
-                self.node.get_logger().info('set_io service not available, waiting again...')
-            self.set_io.call_async(self.io_request)
-            time.sleep(1)
+        if self.error:
+            raise TM_Exception(self.error_msg)
+        self.io_request.state = 0.0
+        while not self.set_io.wait_for_service(timeout_sec=1.0):
+            self.node.get_logger().info('set_io service not available, waiting again...')
+        self.set_io.call_async(self.io_request)
+        time.sleep(1)
             
 
     ###################################################################
     #                           Move fn                               #
     ###################################################################
     def set_position(self, position):
-        if not self.error:
-            self.move_request.positions = position
-            while not self.set_pos.wait_for_service(timeout_sec=1.0):
-                self.node.get_logger().info('set_positions service not available, waiting again...')
-            self.set_pos.call_async(self.move_request)
-            time.sleep(0.1) # IMPORTANT or the order of requests sent will be wrong
-            self.set_event.call_async(self.event_request)
-            time.sleep(0.1)
-            self.future = self.ask_sta.call_async(self.sta_request)
+        if self.error:
+            raise TM_Exception(self.error_msg)
+        self.move_request.positions = position
+        while not self.set_pos.wait_for_service(timeout_sec=1.0):
+            self.node.get_logger().info('set_positions service not available, waiting again...')
+        self.set_pos.call_async(self.move_request)
+        time.sleep(0.1) # IMPORTANT or the order of requests sent will be wrong
+        self.set_event.call_async(self.event_request)
+        time.sleep(0.1)
+        self.future = self.ask_sta.call_async(self.sta_request)
 
-            while not self.future.done():
-                rclpy.spin_once(self.node)
+        while not self.future.done():
+            rclpy.spin_once(self.node)
 
 
 
@@ -141,38 +152,42 @@ class PickPlaceClass:
 
 
     def wait_tm_connect(self):
-        if not self.error:
-            while (self.isNotConnected):
-                self.isNotConnected = True
-                self.script_request.script = ""
-                resp = self.send_script.call_async(self.script_request)
-                rclpy.spin_once(self.node)
-                time.sleep(1)
+        if self.error:
+            raise TM_Exception(self.error_msg)
+        while (self.isNotConnected):
+            self.isNotConnected = True
+            self.script_request.script = ""
+            resp = self.send_script.call_async(self.script_request)
+            rclpy.spin_once(self.node)
+            time.sleep(1)
 
 
     def exit_script(self):
-        if not self.error:
-            self.script_request.script = "ScriptExit()"
-            while not self.send_script.wait_for_service(timeout_sec=1.0):
-                self.node.get_logger().info('send_script service not available, waiting again...')
-            resp = self.send_script.call_async(self.script_request)
-            self.wait_for_complete()
+        if self.error:
+            raise TM_Exception(self.error_msg)
+        self.script_request.script = "ScriptExit()"
+        while not self.send_script.wait_for_service(timeout_sec=1.0):
+            self.node.get_logger().info('send_script service not available, waiting again...')
+        resp = self.send_script.call_async(self.script_request)
+        self.wait_for_complete()
 
 
     def change_base(self, base):
-        if not self.error:
-            self.script_request.script = "ChangeBase(\"" + base + "\")"
-            while not self.send_script.wait_for_service(timeout_sec=1.0):
-                self.node.get_logger().info('send_script service not available, waiting again...')
-            resp = self.send_script.call_async(self.script_request)
+        if self.error:
+            raise TM_Exception(self.error_msg)
+        self.script_request.script = "ChangeBase(\"" + base + "\")"
+        while not self.send_script.wait_for_service(timeout_sec=1.0):
+            self.node.get_logger().info('send_script service not available, waiting again...')
+        resp = self.send_script.call_async(self.script_request)
   
 
     def stop_and_clear(self):
-        if not self.error:
-            self.script_request.script = "StopAndClearBuffer()"
-            while not self.send_script.wait_for_service(timeout_sec=1.0):
-                self.node.get_logger().info('send_script service not available, waiting again...')
-            resp = self.send_script.call_async(self.script_request)
+        if self.error:
+            raise TM_Exception(self.error_msg)
+        self.script_request.script = "StopAndClearBuffer()"
+        while not self.send_script.wait_for_service(timeout_sec=1.0):
+            self.node.get_logger().info('send_script service not available, waiting again...')
+        resp = self.send_script.call_async(self.script_request)
 
 
 

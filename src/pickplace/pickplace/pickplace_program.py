@@ -6,7 +6,7 @@ from ament_index_python.packages import get_package_share_directory
 pp_share = get_package_share_directory('pickplace')
 pp_library =  pp_share + '/pickplace/pp_library'
 
-from pp_library import Modbus, Transform, Script, Move
+from pp_library import Modbus, Transform, Script, Move, TM_Exception
 from rcl_interfaces.srv import SetParameters
 from rcl_interfaces.msg import Parameter, ParameterValue, ParameterType
 from std_msgs.msg import Bool
@@ -109,7 +109,6 @@ def main():
             pickplace_driver.open()
             pickplace_driver.set_position(pick)
             pickplace_driver.close()
-            change_marker("base", pick, flagpublisher, msg)
             change_marker("EOAT", pick, flagpublisher, msg)
             pickplace_driver.set_position(safepick)
 
@@ -121,7 +120,9 @@ def main():
             pickplace_driver.open()
             change_marker("base", place, flagpublisher, msg)
             pickplace_driver.set_position(safeplace)
-
+    except TM_Exception.TM_Exception as e:
+            pickplace_node.get_logger().warn(e.error)
+            modbus.stop_program()
     except KeyboardInterrupt:
             modbus.stop_program()
 
