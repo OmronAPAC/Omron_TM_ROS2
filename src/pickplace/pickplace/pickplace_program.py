@@ -58,6 +58,7 @@ def call_set_parameters(node, coordinates):
             "'{args.node_name}': {e}".format_map(locals()))
     return response
 
+# Changes the parent of the marker to change its apparent position in RViz
 def change_marker(parent, coordinates, publisher, msg):
     msg.parent = parent
     msg.coordinates = coordinates
@@ -121,7 +122,7 @@ def main():
             change_marker("base", place, flagpublisher, msg)
             pickplace_driver.set_position(safeplace)
     except TM_Exception.TM_Exception as e:
-            pickplace_node.get_logger().warn(e.error)
+            pickplace_node.get_logger().error(str(e))
             modbus.stop_program()
     except KeyboardInterrupt:
             modbus.stop_program()

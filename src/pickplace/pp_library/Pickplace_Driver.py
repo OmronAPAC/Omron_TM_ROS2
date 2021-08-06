@@ -83,13 +83,14 @@ class PickPlaceClass:
     #                         Error callback                          #
     ###################################################################
     def feedback_callback(self, msg):
+        self.error_code = msg.error_code
+        if msg.robot_error == True:
+            self.error = True
+            self.error_msg = "TM Robot Error."
         if msg.project_run == False:
             self.error = True
             self.error_msg = "Project is not running!"
-        elif msg.robot_error == True:
-            self.error = True
-            self.error_msg = "TM Robot Error."
-        elif msg.e_stop == True:
+        if msg.e_stop == True:
             self.error = True
             self.error_msg = "Emergency stop activated!"
 
@@ -98,7 +99,7 @@ class PickPlaceClass:
     ###################################################################
     def open(self):
         if self.error:
-            raise TM_Exception(self.error_msg)
+            raise TM_Exception(self.error_msg, self.error_code)
         self.io_request.state = 1.0
         while not self.set_io.wait_for_service(timeout_sec=1.0):
             self.node.get_logger().info('set_io service not available, waiting again...')
@@ -107,7 +108,7 @@ class PickPlaceClass:
 
     def close(self):
         if self.error:
-            raise TM_Exception(self.error_msg)
+            raise TM_Exception(self.error_msg, self.error_code)
         self.io_request.state = 0.0
         while not self.set_io.wait_for_service(timeout_sec=1.0):
             self.node.get_logger().info('set_io service not available, waiting again...')
@@ -120,7 +121,7 @@ class PickPlaceClass:
     ###################################################################
     def set_position(self, position):
         if self.error:
-            raise TM_Exception(self.error_msg)
+            raise TM_Exception(self.error_msg, self.error_code)
         self.move_request.positions = position
         while not self.set_pos.wait_for_service(timeout_sec=1.0):
             self.node.get_logger().info('set_positions service not available, waiting again...')
@@ -131,6 +132,9 @@ class PickPlaceClass:
         self.future = self.ask_sta.call_async(self.sta_request)
 
         while not self.future.done():
+            # Raise exception during motion if error occurs
+            if self.error:
+                raise TM_Exception(self.error_msg, self.error_code)
             rclpy.spin_once(self.node)
 
 
@@ -148,13 +152,17 @@ class PickPlaceClass:
     def wait_for_complete(self):
         self.isNotDone = True
         while (self.isNotDone):
+            if self.error:
+                raise TM_Exception(self.error_msg, self.error_code)
             rclpy.spin_once(self.node)
 
 
     def wait_tm_connect(self):
         if self.error:
-            raise TM_Exception(self.error_msg)
-        while (self.isNotConnected):
+            raise TM_Exception(self.error_msg, self.error_code)
+        while (self.isNotConnected): 
+            if self.error:
+                raise TM_Exception(self.error_msg, self.error_code)
             self.isNotConnected = True
             self.script_request.script = ""
             resp = self.send_script.call_async(self.script_request)
@@ -164,7 +172,7 @@ class PickPlaceClass:
 
     def exit_script(self):
         if self.error:
-            raise TM_Exception(self.error_msg)
+            raise TM_Exception(self.error_msg, self.error_code)
         self.script_request.script = "ScriptExit()"
         while not self.send_script.wait_for_service(timeout_sec=1.0):
             self.node.get_logger().info('send_script service not available, waiting again...')
@@ -174,7 +182,7 @@ class PickPlaceClass:
 
     def change_base(self, base):
         if self.error:
-            raise TM_Exception(self.error_msg)
+            raise TM_Exception(self.error_msg, self.error_code)
         self.script_request.script = "ChangeBase(\"" + base + "\")"
         while not self.send_script.wait_for_service(timeout_sec=1.0):
             self.node.get_logger().info('send_script service not available, waiting again...')
@@ -183,7 +191,7 @@ class PickPlaceClass:
 
     def stop_and_clear(self):
         if self.error:
-            raise TM_Exception(self.error_msg)
+            raise TM_Exception(self.error_msg, self.error_code)
         self.script_request.script = "StopAndClearBuffer()"
         while not self.send_script.wait_for_service(timeout_sec=1.0):
             self.node.get_logger().info('send_script service not available, waiting again...')
