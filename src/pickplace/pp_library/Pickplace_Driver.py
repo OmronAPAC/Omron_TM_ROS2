@@ -83,8 +83,8 @@ class PickPlaceClass:
     #                         Error callback                          #
     ###################################################################
     def feedback_callback(self, msg):
-        self.error_code = msg.error_code
         if msg.robot_error == True:
+            self.error_code = msg.error_code
             self.error = True
             self.error_msg = "TM Robot Error."
         if msg.project_run == False:

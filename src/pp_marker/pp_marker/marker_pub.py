@@ -27,6 +27,9 @@ class MarkerPublisher(rclpy.node.Node):
         self.create_transformStamped()
         self.broadcaster.sendTransform(self.transformStamped)
         self.create_marker()
+        # Deletes all markers saved in RViz then prepares it to add new objects again
+        self.marker.action = 3
+        self.marker.action = 0
         self.publisher_.publish(self.marker)
 
     def get_coordinates(self, msg):
