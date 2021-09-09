@@ -82,7 +82,9 @@ class PickPlaceClass:
     ###################################################################
     #                         Error callback                          #
     ###################################################################
+    """Assigns the error message when an exception occursUses the service client for IO control with modbus to open the end effector"""
     def feedback_callback(self, msg):
+        self.error_code = msg.error_code
         if msg.robot_error == True:
             self.error_code = msg.error_code
             self.error = True
@@ -97,6 +99,7 @@ class PickPlaceClass:
     ###################################################################
     #                             IO fn                               #
     ###################################################################
+    """Uses the service client for IO control with modbus to open the end effector"""
     def open(self):
         if self.error:
             raise TM_Exception(self.error_msg, self.error_code)
@@ -106,6 +109,7 @@ class PickPlaceClass:
         self.set_io.call_async(self.io_request)
         time.sleep(1)
 
+    """Uses the service client for IO control with modbus to close the end effector"""
     def close(self):
         if self.error:
             raise TM_Exception(self.error_msg, self.error_code)
@@ -119,6 +123,7 @@ class PickPlaceClass:
     ###################################################################
     #                           Move fn                               #
     ###################################################################
+    """Uses service client to set cartesian position for TM robot to move to"""
     def set_position(self, position):
         if self.error:
             raise TM_Exception(self.error_msg, self.error_code)
@@ -130,7 +135,6 @@ class PickPlaceClass:
         self.set_event.call_async(self.event_request)
         time.sleep(0.1)
         self.future = self.ask_sta.call_async(self.sta_request)
-
         while not self.future.done():
             # Raise exception during motion if error occurs
             if self.error:
@@ -142,13 +146,14 @@ class PickPlaceClass:
     ###################################################################
     #                          Script fn                              #
     ###################################################################
+    """Checks if TM Robot is done initializing"""
     def listener_callback(self, msg):
         if (msg.script == 'Listen1'):
             self.isNotDone = False
         if (msg.script == 'OK'):
             self.isNotConnected = False
 
-    # Wait for the vision job to complete and the TM program to re-enter the Listen Node
+    """Wait for the vision job to complete and the TM program to re-enter the Listen Node"""
     def wait_for_complete(self):
         self.isNotDone = True
         while (self.isNotDone):
@@ -156,7 +161,7 @@ class PickPlaceClass:
                 raise TM_Exception(self.error_msg, self.error_code)
             rclpy.spin_once(self.node)
 
-
+    """Waits until TM Robot is connected"""
     def wait_tm_connect(self):
         if self.error:
             raise TM_Exception(self.error_msg, self.error_code)
@@ -170,6 +175,7 @@ class PickPlaceClass:
             time.sleep(1)
 
 
+    """Makes TM Robot exit listen node to the Pass route before """
     def exit_script(self):
         if self.error:
             raise TM_Exception(self.error_msg, self.error_code)
@@ -179,7 +185,7 @@ class PickPlaceClass:
         resp = self.send_script.call_async(self.script_request)
         self.wait_for_complete()
 
-
+    """Uses the Listen Node to change the Base of the TM Robot"""
     def change_base(self, base):
         if self.error:
             raise TM_Exception(self.error_msg, self.error_code)
@@ -189,6 +195,7 @@ class PickPlaceClass:
         resp = self.send_script.call_async(self.script_request)
   
 
+    """Uses the Listen Node to Stop the TM Robot and clear the buffer"""
     def stop_and_clear(self):
         if self.error:
             raise TM_Exception(self.error_msg, self.error_code)
