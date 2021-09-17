@@ -29,7 +29,8 @@ setup(
             'pickplace = pickplace.pickplace_program:main',
             'teach_setup = pickplace.teach_setup:main',
             'modbus_server = pickplace.modbus_server:main',
-            'destination_publisher = pickplace.destination_publisher:main'
+            'destination_publisher = pickplace.destination_publisher:main',
+            'tcp_publisher = pickplace.tcp_publisher:main'
         ],
     },
 )

@@ -10,7 +10,7 @@ from pp_library import Transform
 class DestinationPublisher(rclpy.node.Node):
     def __init__(self):
         super().__init__('destination_node')
-        timer_period = 2  # seconds
+        timer_period = 0.1  # seconds
         self.tf = Transform.TransformClass() 
         self.tfbroadcaster = TransformBroadcaster(self)
         self.timer = self.create_timer(timer_period, self.timer_callback)
@@ -20,7 +20,7 @@ class DestinationPublisher(rclpy.node.Node):
 
     def timer_callback(self):
         coord_params = self.get_parameter('destination_param').get_parameter_value().double_array_value
-        stamped_coord_params = self.tf.euler_to_stamped('base', 'destination', list(coord_params))
+        stamped_coord_params = self.tf.euler_to_stamped('tm_base', 'destination', list(coord_params))
         stamped_coord_params.header.stamp = self.get_clock().now().to_msg()
         self.tfbroadcaster.sendTransform(stamped_coord_params)
 

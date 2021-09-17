@@ -1,95 +1,78 @@
 import rclpy
 import rclpy.node
+import math
 from tf2_ros.transform_broadcaster import TransformBroadcaster
+from tf2_ros import TransformException
+from tf2_ros.buffer import Buffer
+from tf2_ros.transform_listener import TransformListener
 from visualization_msgs.msg import Marker
 from geometry_msgs.msg import TransformStamped
-from std_msgs.msg import Bool
 from pickplace_msgs.msg import MoveCube
 
+from ament_index_python.packages import get_package_share_directory
+pp_library =  get_package_share_directory('pickplace') + '/pickplace/pp_library'
+
+from pp_library import Transform
+
 class MarkerPublisher(rclpy.node.Node):
-    marker = Marker()
     
     def __init__(self):
         super().__init__('marker_publisher')
-        timer_period = 0.01 #seconds
+        self.tf = Transform.TransformClass()
+        
+        timer_period = 0.1 #seconds
         self.broadcaster = TransformBroadcaster(self)
-        self.timer = self.create_timer(timer_period, self.timer_callback)
-        self.parent="world"
-        self.coordinates = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-        self.publisher_ = self.create_publisher(Marker, '/marker', 10)
-        self.flagsub = self.create_subscription(MoveCube, 'objectflag', self.get_coordinates, 10)
-        self.timer = self.create_timer(timer_period, self.timer_callback)
         self.transformStamped = TransformStamped()
-        self.create_transformStamped()
-        self.flag = "True"
-
+        
+        self.tf_buffer = Buffer()
+        self.tf_listener = TransformListener(self.tf_buffer, self)
+        
+        self.parent = "world"
+        
+        self.publisher_ = self.create_publisher(Marker, 'object_marker', 10)
+        self.flagsub = self.create_subscription(MoveCube, 'objectflag', self.get_coordinates, 10)
+        
+        self.marker = Marker()
+        self.marker.header.frame_id = "object_marker"
+        self.marker.scale.x = 0.05
+        self.marker.scale.y = 0.05
+        self.marker.scale.z = 0.05        
+        self.marker.type = 1
+        self.marker.ns = 'cube'        
+        self.marker.color.r = 1.0
+        self.marker.color.g = 1.0
+        self.marker.color.a = 1.0        
+        self.marker.pose.orientation.w = 1.0
+        
+        self.transformStamped.header.frame_id = "world"
+        self.transformStamped.child_frame_id = "object_marker"
+        
+        self.timer = self.create_timer(timer_period, self.timer_callback)
+        
+    """
+    Publish updated location of marker
+    """
     def timer_callback(self):
-        self.create_transformStamped()
-        self.broadcaster.sendTransform(self.transformStamped)
-        self.create_marker()
+        # Updates stamps
+        self.transformStamped.header.stamp = self.get_clock().now().to_msg()
+        self.marker.header.stamp = self.get_clock().now().to_msg()
+        now = rclpy.time.Time()
+        if self.parent == "EOAT":
+            new_coords = self.tf_buffer.lookup_transform("world", "EOAT", now)
+            self.transformStamped.transform = new_coords.transform
+        elif self.parent == "tm_base":
+            new_coords = self.tf_buffer.lookup_transform("world", "destination", now)
+            self.transformStamped.transform = new_coords.transform
         # Deletes all markers saved in RViz then prepares it to add new objects again
+        # TODO: publish it in a separate timer
         self.marker.action = 3
         self.marker.action = 0
+        self.broadcaster.sendTransform(self.transformStamped)
         self.publisher_.publish(self.marker)
 
     def get_coordinates(self, msg):
         self.parent = msg.parent
         self.coordinates = msg.coordinates
-
-    def create_transformStamped(self):
-        self.transformStamped = TransformStamped()
-
-        # Set the pose of the self.marker
-        self.transformStamped.header.stamp = self.get_clock().now().to_msg()
-        
-        # set parent based on input 
-        self.transformStamped.header.frame_id = self.parent
-        self.transformStamped.child_frame_id = "/marker"
-        
-        # translation of 0.15 in the y-axis puts the cube at approximately the gripper location
-        if self.parent == "EOAT":
-            self.transformStamped.transform.translation.x = 0.0
-            self.transformStamped.transform.translation.y = 0.0
-            self.transformStamped.transform.translation.z = 0.15
-        else:
-            self.transformStamped.transform.translation.x = self.coordinates[0]
-            self.transformStamped.transform.translation.y = self.coordinates[1]
-            self.transformStamped.transform.translation.z = self.coordinates[2]
-        
-        self.transformStamped.transform.rotation.x = 0.0
-        self.transformStamped.transform.rotation.y = 0.0
-        self.transformStamped.transform.rotation.z = 0.0
-        self.transformStamped.transform.rotation.w = 1.0
-        
-        
-    def create_marker(self):        
-        self.marker = Marker()
-        self.marker.header.frame_id = "/marker"
-        self.marker.header.stamp = self.get_clock().now().to_msg()
-
-        # set shape, Arrow: 0; Cube: 1 ; Sphere: 2 ; Cylinder: 3
-        self.marker.type = 1
-        self.marker.id = 0
-        self.marker.ns = 'cube'
-
-        self.marker.scale.x = 0.05
-        self.marker.scale.y = 0.05
-        self.marker.scale.z = 0.05
-
-        self.marker.color.r = 1.0
-        self.marker.color.g = 1.0
-        self.marker.color.b = 0.0
-        self.marker.color.a = 1.0
-        self.marker_orientation()
-        
-    def marker_orientation(self):
-        self.marker.pose.position.x = 0.0
-        self.marker.pose.position.y = 0.0
-        self.marker.pose.position.z = 0.0
-        self.marker.pose.orientation.x = 0.0
-        self.marker.pose.orientation.y = 0.0
-        self.marker.pose.orientation.z = 0.0
-        self.marker.pose.orientation.w = 1.0
         
         
 def main():
