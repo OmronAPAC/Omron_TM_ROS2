@@ -268,7 +268,7 @@ To understand how `RViz Visualisation` is structured with the entire ROS package
 `RViz Visualisation` has three nodes, they are summarised as below:
 
 [cols="1,1a", options="header"]
-.LD Visualisation nodes
+.TM Visualisation nodes
 |===
 |**Node name**
 |**Description**
@@ -290,6 +290,10 @@ This node is responsible for publishing a transform which sets the base of the 3
 |pp_marker
 |
 This node is responsible for publishing a transform and marker that represents an object picked up by the grippers.
+
+|tcp_publisher
+|
+This node is responsible for publishing a transform to the flange, representing the location of the TCP that is set in TMFlow
 |===
 
 
@@ -382,6 +386,19 @@ image::prompt5.png[]
 image::place.gif[]
 +
 . A JSON file will be generated containing the coordinates of the landmark viewing positions, the pick and lace positions as well as the name of the vision job, to be used in the execution stage.
+
+==== Custom End Effector TCP settings
+Should you wish to configure your own end effector instead of the Robotiq 2F-85 gripper, there are a few steps to be followed.
+
+. Return to TMFlow
+
+. Go to Setting -> TCP Setting -> Manual input parameters of TCP
+
+. Set the appropriate position of your TCP relative to the robot flange
+
+. Click Apply
+
+Your TCP is now configured for use in this package.
 
 ==== Execution
 
