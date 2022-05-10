@@ -33,8 +33,8 @@ def generate_launch_description():
     tf = Transform.TransformClass()
 
     # Component yaml files are grouped in separate namespaces
-    #robot_description_config = load_file('tmr_description', 'urdf/tm5-900.urdf')
-    robot_description_config = load_file('tm_models', 'urdf/tm12.urdf')
+    robot_description_config = load_file('tmr_description', 'urdf/tm5-900.urdf')
+    #robot_description_config = load_file('tm_models', 'urdf/tm12.urdf')
     robot_description = {'robot_description' : robot_description_config}
 
     pp_config = get_package_share_directory('pickplace') + '/config.txt'

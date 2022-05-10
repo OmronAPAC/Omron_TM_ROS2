@@ -41,7 +41,7 @@ class ScriptClass:
     def exit_script(self):
         self.script_request.script = "ScriptExit()"
         while not self.send_script.wait_for_service(timeout_sec=1.0):
-            self.listen_node.get_logger().info('send_script service not available, waiting again...')
+            self.listen_node.get_logger().info('At exit_script: send_script service not available, waiting again...')
         resp = self.send_script.call_async(self.script_request)
         self.wait_for_complete()
 
@@ -49,14 +49,14 @@ class ScriptClass:
     def change_base(self, base):
         self.script_request.script = "ChangeBase(\"" + base + "\")"
         while not self.send_script.wait_for_service(timeout_sec=1.0):
-            self.listen_node.get_logger().info('send_script service not available, waiting again...')
+            self.listen_node.get_logger().info('At change_base: send_script service not available, waiting again...')
         resp = self.send_script.call_async(self.script_request)
   
 
     def stop_and_clear(self):
         self.script_request.script = "StopAndClearBuffer()"
         while not self.send_script.wait_for_service(timeout_sec=1.0):
-            self.listen_node.get_logger().info('send_script service not available, waiting again...')
+            self.listen_node.get_logger().info('At stop_and_clear: send_script service not available, waiting again...')
         resp = self.send_script.call_async(self.script_request)
 
 
