@@ -90,7 +90,7 @@ The diagram below gives an overview of how the communications will be configured
 image::HardwareConnection.png[]
 
 ==== Hardware Connection
-The diagram below shows the port on the TM interface which the ethernet cable is connected to (from the host machine). 
+The diagram below shows the port on the TM interface which the ethernet cable is connected to (from the host machine). Please use the port indicated by the red box since it is the only one that supports Modbus. 
 
 .TM Controller
 image::TM_Interface.png[]
@@ -113,7 +113,7 @@ To ensure that the demo program works properly, uncheck the "Start at Initial Po
 image::visionremoveinitial.png[]
 
 [NOTE]
-This step can be skipped if you have imported `PickPlace.zip` provided in the repository files, found under the TM_Export folder. Instructions for importing the zip is located in section 5.8.6 of TMflow Software Manual.
+This step can be skipped if you have imported `ROS2_teach.zip` provided in the repository files, found under the TM_Export folder. Instructions for importing the zip is located in section 5.8.6 of TMflow Software Manual.
 
 
 ==== TM System/Network Setup
